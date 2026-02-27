@@ -1,0 +1,21 @@
+# Hugo build output
+public/
+resources/_gen/
+
+# Hugo temporary
+hugo_stats.json
+.hugo_build.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*~
+
+# DSM session artifacts
+.claude/session-baseline.txt
+.claude/session-transcript.md
+.claude/transcripts/
+.claude/plans/
