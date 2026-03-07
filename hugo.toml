@@ -1,4 +1,4 @@
-baseURL = 'https://take-ai-bite.com/'
+baseURL = 'https://blog.take-ai-bite.com/'
 languageCode = 'en-us'
 title = 'TakeAIBite'
 theme = 'PaperMod'
