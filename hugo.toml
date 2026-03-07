@@ -45,7 +45,9 @@ buildExpired = false
 
   [params.homeInfoParams]
     Title = 'Take AI Bite'
-    Content = 'Principles for keeping the human genuinely present in AI-assisted work. Not by slowing the AI down, but by structuring collaboration so that every delivery is sized for real engagement.'
+    Content = """**Deliberate Systematic Methodology (DSM):** a practitioner-oriented framework for human-AI collaboration.
+
+When AI generates faster than you can review, oversight becomes rubber-stamping. You're in the room, but not in the loop. These are principles for structuring AI collaboration so every delivery is small enough to think about, sharp enough to act on, and real enough to earn genuine engagement, not just approval."""
 
   [[params.socialIcons]]
     name = 'github'
