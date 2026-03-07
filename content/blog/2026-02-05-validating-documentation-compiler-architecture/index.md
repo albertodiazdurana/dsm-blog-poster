@@ -1,7 +1,7 @@
 ---
 title: "Validating 7,400 Lines of Documentation with Compiler Architecture"
 date: 2026-02-05
-draft: false
+draft: true
 description: "How compiler architecture patterns -- parsing, symbol tables, and reference resolution -- can validate semantic cross-references in large documentation sets."
 tags: ["Documentation", "Compilers", "Python", "Static Analysis", "DSM"]
 categories: ["Technical"]

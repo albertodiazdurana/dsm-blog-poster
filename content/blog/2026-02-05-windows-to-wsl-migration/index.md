@@ -1,7 +1,7 @@
 ---
 title: "From Windows to WSL: Migrating an AI-Assisted Documentation Ecosystem"
 date: 2026-02-05T12:00:00+01:00
-draft: false
+draft: true
 description: "How decision records and a hub-and-spoke architecture made a Windows-to-WSL2 migration straightforward for a Python documentation ecosystem."
 tags: ["Python", "WSL", "DevOps", "Data Science", "Documentation"]
 categories: ["Technical"]

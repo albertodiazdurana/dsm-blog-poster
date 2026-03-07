@@ -1,7 +1,7 @@
 ---
 title: "A Methodology That Listens: How Our First Spoke Project Rewrote the Playbook"
 date: 2026-02-06
-draft: false
+draft: true
 description: "What happened when the first spoke project in a hub-and-spoke data science methodology completed its feedback cycle -- 22 scored entries, 14 proposals, and 7 accepted improvements."
 tags: ["Methodology", "Data Science", "Feedback", "DSM", "Process Improvement"]
 categories: ["Methodology"]
