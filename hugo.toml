@@ -20,6 +20,12 @@ buildExpired = false
   description = 'Deliberate Systematic Methodology (DSM): a practitioner-oriented framework for human-AI collaboration.'
   keywords = ['DSM', 'AI Collaboration', 'Methodology', 'Principles', 'Human-AI']
   author = 'Alberto Diaz Durana'
+  images = ['/logo.png']
+
+  [params.label]
+    text = 'Take AI Bite'
+    icon = '/logo.png'
+    iconHeight = 35
   DateFormat = 'January 2, 2006'
   defaultTheme = 'auto'
   disableThemeToggle = false
