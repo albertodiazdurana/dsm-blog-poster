@@ -1,7 +1,8 @@
 # Logo Creation
 
 ## Tool
-AI image generation (prompt-based)
+Recraft AI (https://www.recraft.ai)
+Project: https://www.recraft.ai/project/b5dc2fd1-5eb7-424a-a444-3c273c5e229a
 
 ## Iteration 1
 **Prompt:** Flat minimalist logo icon of a round cookie with a triangular bite taken out of the right side. Simple clean edges, warm golden-brown color, small chocolate chip dots. Solid white background. Vector style, no gradients, no shadows, no text. Designed to be recognizable at 32x32 pixels.

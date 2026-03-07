@@ -1,6 +1,6 @@
 baseURL = 'https://blog.take-ai-bite.com/'
 languageCode = 'en-us'
-title = 'TakeAIBite'
+title = 'Take AI Bite'
 theme = 'PaperMod'
 [pagination]
   pagerSize = 5
@@ -16,9 +16,9 @@ buildExpired = false
 
 [params]
   env = 'production'
-  title = 'TakeAIBite'
-  description = 'Data science, AI methodology, and software engineering -- by Alberto Diaz Durana'
-  keywords = ['Data Science', 'AI', 'Methodology', 'Blog', 'Software Engineering']
+  title = 'Take AI Bite'
+  description = 'Deliberate Systematic Methodology (DSM): a practitioner-oriented framework for human-AI collaboration.'
+  keywords = ['DSM', 'AI Collaboration', 'Methodology', 'Principles', 'Human-AI']
   author = 'Alberto Diaz Durana'
   DateFormat = 'January 2, 2006'
   defaultTheme = 'auto'
@@ -38,12 +38,12 @@ buildExpired = false
   tocopen = false
 
   [params.homeInfoParams]
-    Title = 'TakeAIBite'
-    Content = 'Data science methodology, AI-assisted development, and lessons from building real projects.'
+    Title = 'Take AI Bite'
+    Content = 'Principles for keeping the human genuinely present in AI-assisted work. Not by slowing the AI down, but by structuring collaboration so that every delivery is sized for real engagement.'
 
   [[params.socialIcons]]
     name = 'github'
-    url = 'https://github.com/albertodiazdurana'
+    url = 'https://github.com/albertodiazdurana/take-ai-bite'
 
   [[params.socialIcons]]
     name = 'linkedin'

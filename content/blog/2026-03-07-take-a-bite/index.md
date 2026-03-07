@@ -1,10 +1,10 @@
 ---
 title: "Take a Bite"
-date: 2026-02-06
+date: 2026-03-07
 draft: false
 description: "Deliver only what the reviewer can chew."
-tags: ["Methodology", "AI Collaboration", "Philosophy"]
-categories: ["Methodology"]
+tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Principles Series"]
+categories: ["Principles"]
 author: "Alberto Diaz Durana"
 showToc: false
 ShowReadingTime: true
@@ -35,3 +35,7 @@ and say "actually, let's try this differently," the portion was right.
 Both sides must also earn their assertions, how much do you know about the
 cookie? Ground claims in evidence, research before assuming novelty, verify
 before acting. Context is the foundation.
+
+---
+
+*Part of the [Principles Series](https://github.com/albertodiazdurana/take-ai-bite) -- Deliberate Systematic Methodology (DSM).*
