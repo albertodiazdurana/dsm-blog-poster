@@ -1,13 +1,14 @@
 @../../dsm-agentic-ai-data-science-methodology/DSM_Custom_Instructions_v1.1.md
 
 # Project: DSM Blog Poster
-Domain: Software Engineering (Static Site + Automation)
+Domain: Software Engineering (Static Site + Automation) / Content Operations
 
 ## Framework Documents
 This project uses:
 - **DSM 4.0: Software Engineering Adaptation** (Project Knowledge): Adapted phases for SW projects
 - **PM Guidelines** (Project Knowledge): Sprint planning structure
 - **Collaboration Methodology v1.3.0** (Project Knowledge): Core philosophy, communication style
+- **Content Operations Guide** (`docs/content-operations.md`): Role definition, legal/licensing checklist, distribution practices, asset management, lessons learned
 
 ## Project Planning Context
 
@@ -61,7 +62,8 @@ This project uses:
 - Hugo static site generation (Go templates, markdown content)
 - GitHub Actions for CI/CD
 - GitHub Pages hosting
-- LinkedIn API or manual posting workflow
+- LinkedIn cross-posting and content distribution
+- AI-generated asset licensing and management (see `docs/content-operations.md`)
 
 ### Known Challenges
 - GitHub Pages custom domain requires DNS configuration
@@ -82,6 +84,20 @@ This project uses:
 - Primary language: English
 - Number format: 1,234.56
 - Date format: YYYY-MM-DD
+
+## Session Transcript Protocol (reinforces inherited protocol)
+- Append thinking to `.claude/session-transcript.md` BEFORE acting
+- Output summary AFTER completing work
+- Conversation text = results only
+- Use Reasoning Delimiter Format for every thinking block:
+  <------------Start Thinking / HH:MM------------>
+  [reasoning content]
+- HH:MM is 24-hour local time when thinking begins; no end delimiter needed
+- Include **User:** and **Output:** markers per DSM_0.2 format
+
+## Inbox Lifecycle (reinforces inherited protocol)
+- Inbox entries are transient: DELETE after processing, do not mark "Status: Processed"
+- If an outbound inbox entry you created was consumed (file deleted by the receiving project), that is correct behavior -- do not re-create it
 
 ## Project-Specific Requirements
 - Blog posts sourced from DSM Central and spoke project `docs/blog/` folders
