@@ -99,6 +99,11 @@ This project uses:
 - Inbox entries are transient: DELETE after processing, do not mark "Status: Processed"
 - If an outbound inbox entry you created was consumed (file deleted by the receiving project), that is correct behavior -- do not re-create it
 
+## Backlog
+- Backlog items live in `docs/plans/` as `BL-{NNN}-short-title.md`
+- See `docs/plans/README.md` for the index of open and completed items
+- When a BL item is implemented, move the file to `docs/plans/done/`
+
 ## Project-Specific Requirements
 - Blog posts sourced from DSM Central and spoke project `docs/blog/` folders
 - Hugo content in `content/blog/` follows date-prefixed naming
