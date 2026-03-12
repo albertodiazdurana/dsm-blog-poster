@@ -1,3 +1,5 @@
+**Consumed at:** Session 6 start (2026-03-10)
+
 # Session 5 Checkpoint (Lightweight)
 **Date:** 2026-03-09
 **Branch:** main

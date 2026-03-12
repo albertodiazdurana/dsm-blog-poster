@@ -12,15 +12,16 @@ ShowReadingTime: true
 
 **Deliver only what the reviewer can chew.**
 
-Someone offers you a bite of a cookie. You take what fits. If they stuff you
-the whole cookie, you choke. AI collaboration works the same way.
+Someone offers you a bite of a cookie. You take a bite the size you will
+enjoy. Too small and you won't taste the cookie; too much and it will cause
+a lot of issues. AI collaboration works the same way.
 
 The human brings what AI cannot: direction, experience, and intuition. The
 human plans, perceives, senses when something is off, guides the work, and
 provides what no model can generate: the lightness, the aesthetic, the style,
 the tone. The spark. AI magnifies, amplifies, expands. It is a dichotomy that
-finds balance: it feeds and nurtures when the portions are right, it controls
-and chokes in excess.
+finds balance: it feeds and nurtures when the portions are right, it overwhelms
+and derails in excess.
 
 When an agent produces more than a human can review in one sitting, the
 collaboration quietly breaks: the human stops reading and starts clicking
@@ -38,4 +39,4 @@ before acting. Context is the foundation.
 
 ---
 
-*Part of the [Principles Series](https://github.com/albertodiazdurana/take-ai-bite) -- Deliberate Systematic Methodology (DSM).*
+*Part of the [Principles Series](https://github.com/albertodiazdurana/take-ai-bite) -- Take AI Bite, powered by Deliberate Systematic Methodology (DSM).*
