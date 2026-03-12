@@ -37,6 +37,11 @@ Both sides must also earn their assertions, how much do you know about the
 cookie? Ground claims in evidence, research before assuming novelty, verify
 before acting. Context is the foundation.
 
+Before presenting, challenge your own reasoning. Before approving, challenge
+what is presented. Self-regulation, thinking about your own thinking, is what
+keeps both sides honest. The human sets the direction; the agent follows the
+plan and questions its own choices before asking the human to trust them.
+
 ---
 
 *Part of the [Principles Series](https://github.com/albertodiazdurana/take-ai-bite) -- Take AI Bite, powered by Deliberate Systematic Methodology (DSM).*
