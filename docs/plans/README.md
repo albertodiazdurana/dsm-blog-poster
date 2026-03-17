@@ -11,6 +11,8 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 |----|-------|----------|--------------------|
 | BL-001 | [Separate content sections with nav tabs](BL-001-hugo-section-tabs.md) | Medium | When non-DSM project posts are ready |
 | BL-002 | [Migrate from PaperMod to Anatole theme](BL-002-anatole-theme-migration.md) | High | Now |
+| BL-003 | [Update site to nine principles](BL-003-nine-principles-update.md) | High | Now |
+| BL-004 | [Principle 1.9 "Think Ahead" blog post](BL-004-principle-1-9-blog-post.md) | Medium | When DSM Central blog seed is ready |
 
 ## Completed
 
