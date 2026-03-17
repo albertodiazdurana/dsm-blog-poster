@@ -10,6 +10,7 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | ID | Title | Priority | Trigger / Deadline |
 |----|-------|----------|--------------------|
 | BL-001 | [Separate content sections with nav tabs](BL-001-hugo-section-tabs.md) | Medium | When non-DSM project posts are ready |
+| BL-002 | [Migrate from PaperMod to Anatole theme](BL-002-anatole-theme-migration.md) | High | Now |
 
 ## Completed
 
