@@ -68,6 +68,12 @@ enableEmoji = false
   weight = 30
 
 [[menu.main]]
+  identifier = 'about-me'
+  name = 'About Me'
+  url = '/about-me/'
+  weight = 35
+
+[[menu.main]]
   identifier = 'tags'
   name = 'Tags'
   url = '/tags/'
