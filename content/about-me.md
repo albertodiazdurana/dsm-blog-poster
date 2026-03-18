@@ -14,7 +14,7 @@ Berlin, Germany
 
 I design systems that help humans and AI work together without the human becoming a rubber stamp.
 
-I started as a mechanical engineer in Colombia, designing hydroelectric plants and leading teams of engineers and draftsmen. Then I moved to Berlin, earned an MSc in Process and Energy Engineering at TU Berlin, and spent a decade crossing boundaries: energy consulting at GETEC, BI systems at WWF, project management at Green City Solutions, co-founding a sustainability startup (HEDERA), process mining consulting at Appian, and deploying ML models for cement manufacturing at Alcemy.
+I started as a mechanical engineer in Colombia, designing hydroelectric plants and leading teams of engineers and designers. Then I moved to Berlin, earned an MSc in Process and Energy Engineering at TU Berlin, and spent a decade crossing boundaries: energy consulting at GETEC, BI systems at WWF, project management at Green City Solutions, co-founding a sustainability startup (Hedera Sustainable Solutions GmbH), process mining consulting at Appian, and deploying ML models for cement manufacturing at Alcemy.
 
 The thread through all of this is the same: I understand physical systems, I understand data, and I understand how to connect the two in ways that make sense to the people who have to use them.
 
