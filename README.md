@@ -70,11 +70,11 @@ dsm-blog-poster/
         *.png          # Post images (co-located)
     archives.md        # Archives page
     search.md          # Search page
-  docs/                # DSM project documentation
+  dsm-docs/            # DSM project documentation
   static/
     CNAME              # Custom domain for GitHub Pages
   themes/
-    PaperMod/          # Theme (git submodule)
+    anatole/           # Theme (git submodule)
   hugo.toml            # Site configuration
 ```
 
@@ -88,7 +88,7 @@ The site deploys automatically via GitHub Actions on push to `main`. The workflo
 
 ## Custom Domain Setup (takeaibite.de)
 
-DNS configuration is managed separately in GoDaddy. See `docs/plans/handover-from-dsm-central.md` for details.
+DNS configuration is managed separately in GoDaddy. See `dsm-docs/plans/handover-from-dsm-central.md` for details.
 
 ## License
 
