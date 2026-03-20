@@ -8,7 +8,7 @@ This project uses:
 - **DSM 4.0: Software Engineering Adaptation** (Project Knowledge): Adapted phases for SW projects
 - **PM Guidelines** (Project Knowledge): Sprint planning structure
 - **Collaboration Methodology v1.3.0** (Project Knowledge): Core philosophy, communication style
-- **Content Operations Guide** (`docs/content-operations.md`): Role definition, legal/licensing checklist, distribution practices, asset management, lessons learned
+- **Content Operations Guide** (`dsm-docs/content-operations.md`): Role definition, legal/licensing checklist, distribution practices, asset management, lessons learned
 
 ## Project Planning Context
 
@@ -22,7 +22,7 @@ This project uses:
   - Documentation: README with setup and publishing workflow
 
 ### Data & Dependencies
-- **Primary inputs**: Blog posts from DSM Central (`docs/blog/`) and spoke projects
+- **Primary inputs**: Blog posts from DSM Central (`dsm-docs/blog/`) and spoke projects
 - **Dependencies**: Hugo v0.142.0 extended, GitHub Pages, GitHub Actions for deployment
 
 ### Existing Content to Migrate
@@ -63,7 +63,7 @@ This project uses:
 - GitHub Actions for CI/CD
 - GitHub Pages hosting
 - LinkedIn cross-posting and content distribution
-- AI-generated asset licensing and management (see `docs/content-operations.md`)
+- AI-generated asset licensing and management (see `dsm-docs/content-operations.md`)
 
 ### Known Challenges
 - GitHub Pages custom domain requires DNS configuration
@@ -96,16 +96,17 @@ This project uses:
 - Include **User:** and **Output:** markers per DSM_0.2 format
 
 ## Inbox Lifecycle (reinforces inherited protocol)
-- Inbox entries are transient: DELETE after processing, do not mark "Status: Processed"
-- If an outbound inbox entry you created was consumed (file deleted by the receiving project), that is correct behavior -- do not re-create it
+- Inbox entries are transient: MOVE to `_inbox/done/` after processing, do not mark "Status: Processed"
+- Processed entries in `done/` preserve communication history and traceability
+- If an outbound inbox entry you created was consumed (moved to done by the receiving project), that is correct behavior -- do not re-create it
 
 ## Backlog
-- Backlog items live in `docs/plans/` as `BL-{NNN}-short-title.md`
-- See `docs/plans/README.md` for the index of open and completed items
-- When a BL item is implemented, move the file to `docs/plans/done/`
+- Backlog items live in `dsm-docs/plans/` as `BL-{NNN}-short-title.md`
+- See `dsm-docs/plans/README.md` for the index of open and completed items
+- When a BL item is implemented, move the file to `dsm-docs/plans/done/`
 
 ## Project-Specific Requirements
-- Blog posts sourced from DSM Central and spoke project `docs/blog/` folders
+- Blog posts sourced from DSM Central and spoke project `dsm-docs/blog/` folders
 - Hugo content in `content/blog/` follows date-prefixed naming
 - Portfolio section highlights DSM ecosystem projects
 - Minimal theme, fast loading, mobile responsive

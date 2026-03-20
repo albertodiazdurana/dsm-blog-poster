@@ -29,3 +29,22 @@
 **Root Cause:** The agent recalled the inbox as the destination for cross-project communication but did not recall the intermediate docs/feedback/ drafting step defined in Section 6.4.4. The spoke-to-hub flow has two stages (draft -> push) but the agent collapsed them into one.
 
 **Proposed Change:** No DSM text change needed -- the protocol is already clear. This is an agent behavioral failure. Saved as feedback memory for future sessions.
+
+---
+
+## Entry 3: DSM_3 6.4.3 says "delete" but DSM_0.2 says "move to done/"
+
+**Date:** 2026-03-20
+**Session:** 9
+**Section:** DSM_3 6.4.3 (Inbox Lifecycle) vs DSM_0.2 (Session-Start Inbox Check)
+**Score:** 4/5
+
+**Gap:** DSM_3 Section 6.4.3 step 4 says: "Remove: Delete processed entries from the inbox file." DSM_0.2 Session-Start Inbox Check says: "After processing, **move** the entry to `_inbox/done/`. Do not mark entries as 'Status: Processed'... Processed entries in `done/` preserve communication history and traceability; entries left in the inbox root cause stale re-processing in future sessions (observed: dsm-blog-poster S3-S4)."
+
+These two documents contradict each other. DSM_0.2 was updated with the correct behavior (move to done/) and includes a rationale citing a real incident, but DSM_3 6.4.3 was not updated to match. Agents and project CLAUDE.md files that reference DSM_3 inherit the outdated "delete" instruction.
+
+**Evidence:** This project's CLAUDE.md stated "Inbox entries are transient: DELETE after processing" -- derived from DSM_3 language. Agent planned to delete inbox entries. User corrected: "Do not delete, move to _inbox/done/."
+
+**Root Cause:** DSM_0.2 was patched to fix the inbox lifecycle (citing dsm-blog-poster S3-S4 observation), but the corresponding DSM_3 Section 6.4.3 text was not updated in the same change. Spoke projects referencing DSM_3 inherit the stale instruction.
+
+**Proposed Change:** Update DSM_3 Section 6.4.3 step 4 from "Remove: Delete processed entries from the inbox file" to "Archive: Move processed entries to `_inbox/done/`." Add the traceability rationale from DSM_0.2. This brings DSM_3 in sync with DSM_0.2 and prevents spoke projects from inheriting the outdated delete behavior.

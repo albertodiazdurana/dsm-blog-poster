@@ -36,7 +36,7 @@ Before using any AI-generated content (images, code, text) in public-facing deli
 |------|-------|
 | Recraft AI | Free tier: no commercial rights, images are Recraft's property (post 2024-08-12) |
 
-Full research: `docs/research/2026-03-09_ai-asset-licensing-research.md`
+Full research: `dsm-docs/research/2026-03-09_ai-asset-licensing-research.md`
 
 ### Platform Terms of Service
 
@@ -49,26 +49,26 @@ When publishing to external platforms, verify:
 
 ### Logo
 
-- **Source of truth:** `docs/assets/logo_cropped.png` (516x516, cropped)
-- **Original source:** `docs/assets/cute-robot-with-cookie-no-legs-no-mouth.webp` (1024x1024, Ideogram)
+- **Source of truth:** `dsm-docs/assets/logo_cropped.png` (516x516, cropped)
+- **Original source:** `dsm-docs/assets/cute-robot-with-cookie-no-legs-no-mouth.webp` (1024x1024, Ideogram)
 - **Derived files in static/:** `logo.png` (1024x1024), `apple-touch-icon.png` (180x180), `favicon.ico` (32x32)
-- **History:** `docs/logo-creation.md`
+- **History:** `dsm-docs/logo-creation.md`
 
-Other repos needing the logo copy from `docs/assets/logo_cropped.png` and derive sizes locally.
+Other repos needing the logo copy from `dsm-docs/assets/logo_cropped.png` and derive sizes locally.
 
 ### Image Pipeline
 
 When adding new images to the site:
-1. Store source file in `docs/assets/`
+1. Store source file in `dsm-docs/assets/`
 2. Derive size-specific files using Pillow (Python)
 3. Place Hugo-served files in `static/`
 4. Document provenance (tool, licensing) in relevant docs
 
 ## Distribution Channels
 
-### Blog (blog.take-ai-bite.com)
+### Blog (take-ai-bite.com)
 
-- Hugo static site, PaperMod theme
+- Hugo static site, Anatole theme
 - Deployed via GitHub Actions on push to main
 - OpenGraph image: `static/logo.png`
 - Content in `content/blog/YYYY-MM-DD-slug/index.md`
@@ -90,6 +90,6 @@ When adding new images to the site:
 
 | Date | Lesson | Reference |
 |------|--------|-----------|
-| 2026-03-09 | Always verify AI tool licensing before deploying generated assets publicly | `docs/research/2026-03-09_ai-asset-licensing-research.md` |
+| 2026-03-09 | Always verify AI tool licensing before deploying generated assets publicly | `dsm-docs/research/2026-03-09_ai-asset-licensing-research.md` |
 | 2026-03-09 | LinkedIn caches preview images at share time; old posts cannot be updated | S4 session |
-| 2026-03-09 | Crop whitespace from logos before deploying -- small favicons need tight framing | `docs/logo-creation.md` |
+| 2026-03-09 | Crop whitespace from logos before deploying -- small favicons need tight framing | `dsm-docs/logo-creation.md` |
