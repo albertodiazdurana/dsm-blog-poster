@@ -96,8 +96,9 @@ This project uses:
 - Include **User:** and **Output:** markers per DSM_0.2 format
 
 ## Inbox Lifecycle (reinforces inherited protocol)
-- Inbox entries are transient: DELETE after processing, do not mark "Status: Processed"
-- If an outbound inbox entry you created was consumed (file deleted by the receiving project), that is correct behavior -- do not re-create it
+- Inbox entries are transient: MOVE to `_inbox/done/` after processing, do not mark "Status: Processed"
+- Processed entries in `done/` preserve communication history and traceability
+- If an outbound inbox entry you created was consumed (moved to done by the receiving project), that is correct behavior -- do not re-create it
 
 ## Backlog
 - Backlog items live in `dsm-docs/plans/` as `BL-{NNN}-short-title.md`

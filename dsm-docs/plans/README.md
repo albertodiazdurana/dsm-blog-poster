@@ -11,6 +11,8 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 |----|-------|----------|--------------------|
 | BL-001 | [Separate content sections with nav tabs](BL-001-hugo-section-tabs.md) | Medium | When non-DSM project posts are ready |
 | BL-004 | [Principle 1.9 "Think Ahead" blog post](BL-004-principle-1-9-blog-post.md) | Medium | When DSM Central blog seed is ready |
+| BL-005 | [Competitive positioning blog post](BL-005-competitive-positioning-blog.md) | High | Source files ready |
+| BL-006 | [Feature inventory blog post](BL-006-feature-inventory-blog.md) | High | Source file ready |
 
 ## Completed
 
