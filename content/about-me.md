@@ -24,7 +24,7 @@ The thread through all of this is the same: I understand physical systems, I und
 
 I created [Take AI Bite](https://take-ai-bite.com/), a framework for structured human-AI collaboration. It started as a personal set of notes for managing data science projects with AI coding agents. It became 9 principles, a living methodology (DSM), 14 repositories, 83 features across 11 capability domains, and 20,000 lines of documentation governing how I work with AI every day.
 
-I do not write most of the code in my projects. I design what gets built, review the result, and decide whether it ships. I directed the construction of a 531-test Python application through AI collaboration without writing its code. I run multiple simultaneous projects, reviewing one while another generates output. This is not delegation; it is orchestration, and it requires judgment, comprehension, and the discipline to say no.
+Every line of code in my projects reflects a deliberate decision. Sometimes I write it, sometimes I edit or correct what the AI produces, and sometimes I approve a suggestion that already matches what I need. Nothing ships without my judgment. I design what gets built, review the result, and decide whether it ships. I directed the construction of a 531-test Python application through AI collaboration without writing its code. I run multiple simultaneous projects, reviewing one while another generates output. This is not delegation; it is orchestration, and it requires judgment, comprehension, and the discipline to say no.
 
 The portfolio projects (SQL Query Agent, DevFlow Analyzer, RAG Document Assistant) demonstrate hands-on engineering capability. Take AI Bite and DSM demonstrate something different: the ability to design systems, govern complexity, and maintain quality across scale.
 
@@ -32,7 +32,7 @@ The portfolio projects (SQL Query Agent, DevFlow Analyzer, RAG Document Assistan
 
 ## What I Care About
 
-I enjoy reading and connecting ideas. Philosophy, literature, technical papers, podcasts. I have spent years learning about thermodynamics, heating systems, German energy standards, process mining, NLP, and now agentic AI. The pattern is always the same: deep reading, structured thinking, and the patience to understand before acting.
+I enjoy reading and connecting ideas. Philosophy, literature, technical papers, podcasts. I have spent years moving between technical domains, going deep enough in each to do real work before carrying what I learned into the next one. The pattern is always the same: deep reading, structured thinking, and the patience to understand before acting.
 
 I am good at speaking. I have clarity in my words, presence, and attitude. I have done commercials, acted on stage, and sung in public. When I present a technical concept, people listen. This is not a soft skill; it is a core professional asset that has shaped every consulting engagement, every stakeholder conversation, and every team I have led.
 
