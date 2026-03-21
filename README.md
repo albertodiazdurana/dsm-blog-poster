@@ -1,10 +1,10 @@
-# TakeAIBite
+# Take AI Bite
 
-Personal blog and portfolio site -- data science methodology, AI-assisted development, and lessons from building real projects.
+Blog and portfolio site for [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite), a framework for human-AI collaboration. Covers methodology insights, AI-assisted development, and lessons from building real projects.
 
 **Author:** Alberto Diaz Durana
-**URL:** https://takeaibite.de/
-**Built with:** [Hugo](https://gohugo.io/) + [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
+**Website:** [take-ai-bite.com](https://take-ai-bite.com/)
+**Built with:** [Hugo](https://gohugo.io/) + [Anatole](https://github.com/lxndrblz/anatole)
 
 ## Local Development
 
@@ -86,9 +86,9 @@ The site deploys automatically via GitHub Actions on push to `main`. The workflo
 2. Builds the site with `--gc --minify`
 3. Deploys to GitHub Pages
 
-## Custom Domain Setup (takeaibite.de)
+## Custom Domain Setup (take-ai-bite.com)
 
-DNS configuration is managed separately in GoDaddy. See `dsm-docs/plans/handover-from-dsm-central.md` for details.
+DNS is managed via Cloudflare. The domain `takeaibite.de` redirects to `take-ai-bite.com`. See `dsm-docs/plans/handover-from-dsm-central.md` for details.
 
 ## License
 

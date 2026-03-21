@@ -73,8 +73,28 @@ When adding new images to the site:
 - OpenGraph image: `static/logo.png`
 - Content in `content/blog/YYYY-MM-DD-slug/index.md`
 
+### Publication Notification to DSM Central
+
+After publishing a blog post, send an inbox entry to DSM Central (`_inbox/`) confirming
+publication. Central maintains a tracking index at `dsm-docs/blog/README.md` and will
+update the Published date.
+
+**Template:**
+
+```markdown
+### [YYYY-MM-DD] Blog published: {short title}
+
+**Type:** Notification
+**Priority:** Low
+**Source:** dsm-blog-poster
+
+Published `{filename}` on YYYY-MM-DD.
+URL: {blog post URL}
+```
+
 ### LinkedIn
 
+- Promotion channel only -- share link to published blog post, not a separate publication target
 - Cross-post blog content with adapted copy (conversational, not just a link dump)
 - Preview images are cached at share time -- cannot be updated retroactively
 - Use LinkedIn Post Inspector to verify/refresh cached previews before sharing
