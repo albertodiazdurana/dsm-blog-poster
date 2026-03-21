@@ -14,9 +14,11 @@ Berlin, Germany
 
 I design systems that help humans and AI work together without the human becoming a rubber stamp.
 
-I started as a mechanical engineer in Colombia, designing hydroelectric plants and leading teams of engineers and designers. Then I moved to Berlin, earned an MSc in Process and Energy Engineering at TU Berlin, and spent a decade crossing boundaries: energy consulting at GETEC, BI systems at WWF, project management at Green City Solutions, co-founding a sustainability startup (Hedera Sustainable Solutions GmbH), process mining consulting at Appian, and deploying ML models for cement manufacturing at Alcemy.
+I started as a mechanical engineer in Colombia, designing hydroelectric plants and leading teams of engineers and designers. Then I moved to Berlin, earned an MSc in Process and Energy Engineering at TU Berlin, and certified as a PMP and Lean Six Sigma practitioner. From there, a decade crossing boundaries: energy consulting at GETEC, BI systems at WWF, project management at Green City Solutions, co-founding a sustainability startup (Hedera Sustainable Solutions GmbH), process mining consulting at Appian, and deploying ML models for cement manufacturing at Alcemy.
 
-The thread through all of this is the same: I understand physical systems, I understand data, and I understand how to connect the two in ways that make sense to the people who have to use them.
+I learned to code with C++ in 2001, when laptops did not exist, there was one central computer room in the university, and the reference was a book. I taught myself Python in 2013 through videos, Stack Overflow, and trial-and-error. Things before LLMs were different.
+
+The thread through all of this is the same: modeling physical systems during my studies and certifying in project management taught me to see projects as systems of interacting knowledge areas, where internal and external factors evolve through phases within constraint boundaries. I understand physical systems, I understand data, and I understand how to connect the two in ways that make sense to the people who have to use them.
 
 ---
 
@@ -40,12 +42,16 @@ I care about building things that last. The methodology I created is not a one-t
 
 ---
 
-## What I Am Looking For
+## Why I Built This
 
-I want to bring this capability to an organization that is serious about adopting AI systematically. Whether that means leading a data science team, designing AI adoption frameworks, or architecting how humans and AI collaborate at scale, I want the work to matter and the process to be deliberate.
+I could not find what I was looking for. Every AI workflow I encountered optimized for speed: generate more, approve faster, ship sooner. None of them answered the question I actually cared about: how does the human stay meaningfully present when the machine can produce faster than anyone can read?
 
-I speak Spanish (native), English (C2), German (C2), and Portuguese (B2). I hold a PMP certification and a Lean Six Sigma credential. I have 10+ years of international experience across Colombia, Germany, Austria, and projects in 15+ countries.
+So I built my own answer. Take AI Bite is a way of working with AI where the human directs, reviews, and decides -- not as a formality, but as the source of what makes the work worth doing. The spark, the judgment, the sense of when something is right. AI amplifies that. It does not replace it.
 
-If you want to talk about how humans and AI should work together, I am always happy to have that conversation.
+This is for people who resonate with that idea. People who want to build with an agent, not just delegate to one. Who see value in accumulating experience and knowledge through collaboration, not outsourcing thinking. Who guide the work with intention, think critically about what gets produced, and select with assertiveness what ships and what does not.
+
+I speak Spanish (native), English (C2), German (C2), and Portuguese (B2). I hold a PMP certification and a Lean Six Sigma credential, and I have 10+ years of international experience across Colombia, Germany, Austria, and projects in 15+ countries.
+
+If any of this resonates, I am always happy to have that conversation.
 
 adiazdurana@gmail.com
