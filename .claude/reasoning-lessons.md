@@ -16,3 +16,7 @@ Scope: `ecosystem` (any DSM project), `pattern` (same project type), `project` (
 - [auto] S12 [pattern]: When pivoting from a composite encoding (Z as bubble size) to separate 2D plots per axis pair, the composite encoding becomes redundant. Catch and remove it in the same step rather than carrying forward dead weight.
 - [auto] S12 [pattern]: For data-driven blog posts, finalize and approve all plots before writing prose. Plot revisions ripple into the narrative; prose written first gets partially invalidated by later plot changes.
 - [auto] S12 [project]: After replacing plots, proactively remove the old image files. Orphaned assets in a Hugo leaf bundle do not break the build but accumulate silently.
+- [auto] S13 [ecosystem]: When a skill (like /humanizer) should apply persistently, enforce it in two layers: CLAUDE.md (loaded every session) for the rule, feedback memory for the why. Either alone is insufficient.
+- [auto] S13 [pattern]: When humanizing blog posts, the "Everything Else" / personal sections are often already clean. Focus humanizer effort on professional/promotional sections where AI patterns concentrate.
+- [auto] S13 [pattern]: Blog materials from source projects are raw inputs, not drafts. Read voice-calibration pages (about-me, about) before adapting tone, not after.
+- [auto] S13 [project]: Two PRs from the same session branch fail on GitHub (one PR per branch). Either split work to separate branches upfront, or accept one combined PR.
