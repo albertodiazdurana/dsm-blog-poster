@@ -8,7 +8,10 @@ categories: ["Reflections"]
 author: "Alberto Diaz Durana"
 showToc: true
 ShowReadingTime: true
+images: ["trainer-and-dragon.jpeg"]
 ---
+
+![A small person riding a small dragon in flight](trainer-and-dragon.jpeg)
 
 I did not plan to become a trainer. But here I am, 15+ projects in, with a system of AI agents I built from scratch. Each one shaped by the projects that tested them. 20,000 lines of methodology, a feedback loop that runs both ways, and a system that learns for itself and remembers what I learned even when I forget. Also, very stubborn sometimes, but that's on me, and that's why I keep refining how we work together.
 
