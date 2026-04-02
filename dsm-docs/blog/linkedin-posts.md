@@ -46,3 +46,25 @@ No single feature here is new. Memory systems, feedback loops, review gates, the
 Full post: https://take-ai-bite.com/blog/2026-03-20-dsm-features-three-dimensions/
 
 #AI #HumanAICollaboration #Methodology #DataScience #SoftwareEngineering
+
+## Post 4: The Trainer and the Agents (2026-04-02)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_ai-humanaicollaboration-dsm-activity-7445316791947395074-J8Dj
+**Status:** Published
+**Blog post:** https://take-ai-bite.com/blog/2026-04-02-trainer-and-agents/
+
+**Text:**
+
+I did not plan to become a trainer. But after 15+ projects with AI agents I built from scratch, I realized I had seen this story before.
+
+Pokemon: a trainer collects creatures and commands them. The relationship is vertical.
+
+Big Hero 6: a builder creates a companion that asks "are you satisfied with my care?" The creation carries meaning, but the builder designs and the creature executes.
+
+How to Train Your Dragon: an outcast earns trust through patience. He builds a prosthetic so the dragon can fly, but it only works when they fly together. Neither can do it alone.
+
+That last one is the closest to what I built. A methodology where every project feeds back into the system. Where the agents grade the trainer: one project scored 22 sections of my methodology and averaged 3.3 out of 5. The lowest scores revealed blind spots I did not know I had.
+
+The creatures are training the trainer.
+
+#AI #HumanAICollaboration #DSM #TakeAIBite
