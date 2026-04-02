@@ -22,35 +22,35 @@ The thread through all of this is the same: modeling physical systems during my 
 
 ---
 
-## What I Do Now
+## What I do now
 
-I created [Take AI Bite](https://take-ai-bite.com/), a framework for structured human-AI collaboration. It started as a personal set of notes for managing data science projects with AI coding agents. It became 9 principles, a living methodology (DSM), 14 repositories, 83 features across 11 capability domains, and 20,000 lines of documentation (current version 2026.03.21) governing how I work with AI every day.
+I created [Take AI Bite](https://take-ai-bite.com/), a framework for structured human-AI collaboration. It started as personal notes for managing data science projects with AI coding agents. It became 9 principles, a versioned methodology (DSM), 14 repositories, 84 features across 11 capability domains, and 20,000+ lines of documentation governing how I work with AI every day.
 
-Every line of code in my projects reflects a deliberate decision. Sometimes I write it, sometimes I edit or correct what the AI produces, and sometimes I approve a suggestion that already matches what I need. Nothing ships without my judgment. I design what gets built, review the result, and decide whether it ships. I run multiple simultaneous projects, reviewing one while another generates output. This is not delegation; it is orchestration, and it requires judgment, comprehension, and the discipline to say no.
+Every line of code in my projects reflects a deliberate decision. Sometimes I write it, sometimes I edit or correct what the AI produces, sometimes I approve a suggestion that already matches what I need. Nothing ships without my judgment. I run multiple simultaneous projects, reviewing one while another generates output. That takes comprehension and the discipline to say no.
 
-When the ecosystem grew complex enough to need its own integrity checking, I built [Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer) -- a 547-test validation tool that parses cross-references, builds knowledge graphs, detects semantic drift, and maps the connections across the entire DSM documentation network. Using the methodology to build the tooling that validates the methodology.
+When the documentation grew complex enough to need its own integrity checking, I built [Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer), a 547-test validation tool that parses cross-references, builds knowledge graphs, detects semantic drift, and maps connections across the DSM documentation network. Using the methodology to build the tooling that validates the methodology.
 
-The portfolio projects (SQL Query Agent, DevFlow Analyzer, RAG Document Assistant) demonstrate hands-on engineering capability. Take AI Bite and DSM demonstrate something different: the ability to design systems, govern complexity, and maintain quality across scale.
-
----
-
-## What I Care About
-
-I enjoy reading and connecting ideas. Philosophy, literature, technical papers, podcasts. I have spent years moving between technical domains, going deep enough in each to do real work before carrying what I learned into the next one. The pattern is always the same: deep reading, structured thinking, and the patience to understand before acting.
-
-Words carry meaning and impact -- something I learned through commercials, acting on stage, and singing in public. When I present a technical concept, people listen. This is not a soft skill; it is a core professional asset that has shaped every consulting engagement, every stakeholder conversation, and every team I have led.
-
-I care about building things that last. The methodology I created is not a one-time document; it is a living system that learns from every session, every project, and every mistake. It has an 82% backlog completion rate across 212 items because I treat it like a product, not a side project.
+The spoke projects (SQL Query Agent, DevFlow Analyzer, RAG Document Assistant) show hands-on engineering. Take AI Bite and DSM show something else: designing systems and maintaining quality across scale.
 
 ---
 
-## Why I Built This
+## What I care about
+
+I enjoy reading and connecting ideas. Philosophy, literature, technical papers, podcasts. I have spent years moving between technical domains, going deep enough in each to do real work before carrying what I learned into the next one. Deep reading, structured thinking, patience to understand before acting.
+
+Words carry meaning and impact, something I learned through commercials, acting on stage, and singing in public. When I present a technical concept, people tend to listen. That has shaped every consulting engagement and every team I have led.
+
+I care about building things that last. The methodology has an 82% backlog completion rate across 300+ items because I treat it like a product.
+
+---
+
+## Why I built this
 
 I could not find what I was looking for. Every AI workflow I encountered optimized for speed: generate more, approve faster, ship sooner. None of them answered the question I actually cared about: how does the human stay meaningfully present when the machine can produce faster than anyone can read?
 
-So I built my own answer. Take AI Bite is a way of working with AI where the human directs, reviews, and decides -- not as a formality, but as the source of what makes the work worth doing. The spark, the judgment, the sense of when something is right. AI amplifies that. It does not replace it.
+So I built my own answer. Take AI Bite is a way of working with AI where the human directs, reviews, and decides, as the source of what makes the work worth doing. The idea, the plan, the vision, the spark, the judgment, the sense of when something is right. AI amplifies that, it does not replace it.
 
-This is for people who resonate with that idea. People who want to build with an agent, not just delegate to one. Who see value in accumulating experience and knowledge through collaboration, not outsourcing thinking. Who guide the work with intention, think critically about what gets produced, and select with assertiveness what ships and what does not.
+This is for people who want to build with an agent, not just hand things off to one. Who care about accumulating experience through collaboration. Who think critically about what gets produced and choose with intention what ships.
 
 I speak Spanish (native), English (C2), German (C2), and Portuguese (B2). I hold a PMP certification and a Lean Six Sigma credential, and I have 10+ years of international experience across Colombia, Germany, Austria, and projects in 15+ countries.
 
@@ -59,11 +59,11 @@ If any of this resonates, I am always happy to have that conversation.
 adiazdurana@gmail.com
 
 
-## Everything Else
+## Everything else
 
 I value nature. I do not understand it all, and that is part of what I value -- how it finds order, how it prevails. I recharge with simple things: a landscape, a sunset, stars, art, music, good food, a freezing lake (thank you, Berlin), dancing, a walk in the snow, or in the sun with music or a podcast.
 
-I am drawn to the human body as a system. My mechanical engineering thesis was on biomechanics, and I never lost the interest: how joints, tendons, ligaments, muscles, food, and energy influence how I feel and perform. I value strength training, running, biking, and riding a unicycle. My favorite way to rest my mind is good music and a dedicated workout.
+I am drawn to the human body as a system. My mechanical engineering thesis was on biomechanics, and I never lost the interest: how joints, tendons, ligaments, muscles, food, and energy influence how I feel and perform. I value strength training, running, biking, and riding a unicycle while juggling three balls in the air. My favorite way to rest my mind is good music and a dedicated workout.
 
 I play guitar. I like looking at music in detail -- decomposing sounds and rhythms, levels and intensities, how the instruments in a band sound connected. I like the idea that philosophy, science, creativity, and art belong closely to each other. Gilles Deleuze brought inspiration here, including the rhizome: a metaphor for non-hierarchical, non-linear, interconnected systems. See the pattern? Philosophy at work is collected in [DSM_6](https://github.com/albertodiazdurana/dsm-agentic-ai-data-science-methodology/blob/main/DSM_6.0_AI_Collaboration_Principles_v1.0.md).
 

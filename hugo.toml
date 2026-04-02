@@ -20,7 +20,7 @@ enableEmoji = false
 [params]
   title = 'Take AI Bite'
   author = 'Alberto Diaz Durana'
-  description = 'A framework for human-AI collaboration where the human stays in control, grows through the work, and retains every lesson learned.'
+  description = 'A framework for human-AI collaboration where the human stays in control and retains every lesson learned.'
   profilePicture = 'images/profile.png'
   keywords = 'DSM, AI Collaboration, Methodology, Principles, Human-AI'
   favicon = 'favicons/'

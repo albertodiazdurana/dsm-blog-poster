@@ -1,8 +1,8 @@
 ---
-title: "Take AI Bite: A Framework for Human-AI Collaboration"
+title: "Take AI Bite: a framework for human-AI collaboration"
 date: 2026-03-12
 draft: false
-description: "A framework for human-AI collaboration where the human stays in control, grows through the work, and retains every lesson learned."
+description: "A collaboration framework where the human stays in control and retains every lesson learned."
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Principles Series", "Take AI Bite"]
 categories: ["Principles"]
 author: "Alberto Diaz Durana"
@@ -10,15 +10,15 @@ showToc: true
 ShowReadingTime: true
 ---
 
-AI tools generate faster than humans can review. When the output exceeds what a person can meaningfully engage with, the collaboration quietly breaks: the human stops reading and starts clicking "approve." The human in the loop becomes decorative, and the distinctive value they bring -- direction, judgment, style -- goes missing from the work.
+AI tools generate faster than humans can review. When the output exceeds what a person can meaningfully engage with, the collaboration quietly breaks: the human stops reading and starts clicking "approve." The human in the loop becomes decorative, and what they actually bring, direction, judgment, style, goes missing from the work.
 
-Take AI Bite is a set of principles for keeping the human genuinely present in AI-assisted work. Not by slowing the AI down, but by structuring collaboration so that every delivery is sized for real engagement.
+Take AI Bite is a set of principles for keeping the human genuinely present in AI-assisted work. The idea is not to slow the AI down. It is to structure collaboration so that every delivery is sized for real engagement.
 
-But it goes further than review sizing. Take AI Bite builds an agent ecosystem that retains your memory, experience, and decisions across sessions and projects. The ecosystem becomes your avatar: an extension of your professional self that grows with you, remembers what you learned, and carries your accumulated expertise into every new collaboration.
+It also goes further than review sizing. Take AI Bite builds an agent system that retains your memory, experience, and decisions across sessions and projects. Over time it becomes an extension of your professional self: it remembers what you learned and carries your expertise into every new collaboration.
 
-## The Principles
+## The principles
 
-Seven principles govern how humans and AI agents work together. Each addresses a specific failure mode in human-AI collaboration.
+Nine principles govern how humans and AI agents work together. Each addresses a specific failure mode in human-AI collaboration.
 
 | Principle | Core idea |
 |-----------|-----------|
@@ -29,39 +29,34 @@ Seven principles govern how humans and AI agents work together. Each addresses a
 | **Know Your Context** | The agent manages its own resource consumption. Don't charge ahead until overflow. |
 | **Match the Room** | Contribute proportionally to the project's culture and scale. |
 | **Own Your Process** | Disclose how the work was produced. Transparency about method is a professional obligation. |
+| **Know What You Own** | Verify licensing before deployment. Free tier does not mean free use. |
+| **Think Ahead** | Build the map before you walk the territory. Strategy emerges from operational maturity. |
 
-## The Engine: Deliberate Systematic Methodology (DSM)
+## The engine: Deliberate Systematic Methodology (DSM)
 
-These principles are operationalized by DSM, a living, versioned methodology that governs the full lifecycle of human-AI collaboration: research, implementation, governance, and disclosure.
+These principles run on DSM, a versioned methodology that covers the full lifecycle of human-AI collaboration: research, implementation, governance, and disclosure.
 
-DSM is not a static document. It evolves through a hub-spoke feedback loop where every session, every project, and every practitioner's experience feeds back into the methodology. Protocols are tested, refined, and propagated across the ecosystem. What one project discovers improves every future project.
+DSM is not static. It evolves through a hub-spoke feedback loop where every session and every project feeds back into the methodology. Protocols get tested and refined, then spread across projects. What one project discovers improves every future one.
 
-This is what makes the avatar possible. Session transcripts capture reasoning. Checkpoints preserve milestones. Memory files retain context across sessions. Feedback flows from individual projects to the central methodology and back. The result is an ecosystem that accumulates your expertise, not just your files.
+This is what makes the long-term memory possible. Session transcripts capture reasoning. Checkpoints preserve milestones. Memory files carry context across sessions. Feedback flows from projects to the central methodology and back. The result is a system that keeps your expertise, not just your files.
 
-## Start Here
+## Start here
 
-Read [Take a Bite](/blog/2026-03-07-take-a-bite/) for the short version of the founding principle. It takes two minutes and captures the core idea: someone offers you a bite of a cookie, you take a bite the size you will enjoy; too small and you won't taste the cookie, too much and it will cause a lot of issues.
+Read [Take a Bite](/blog/2026-03-07-take-a-bite/) for the short version of the founding principle. It takes two minutes. The core idea: someone offers you a bite of a cookie, you take a bite the size you will enjoy. Too small and you won't taste it; too much and it causes problems.
 
-## Field-Tested
+## Field-tested
 
-These principles were developed and validated across real projects spanning:
+These principles emerged from daily practice with AI agents across real projects: data science pipelines, production software, open source contributions in unfamiliar stacks (Android/Kotlin, all merged upstream), documentation systems with thousands of cross-referenced lines, research synthesis, and financial compliance work.
 
-- **Data science:** exploratory analysis, feature engineering, modeling pipelines
-- **Software engineering:** ML applications, production code, test-driven development
-- **Open source contribution:** external projects in unfamiliar technology domains (Android/Kotlin), with all contributions merged upstream
-- **Structured documentation:** complex, interconnected methodology systems with thousands of cross-referenced lines
-- **Research synthesis:** multi-source analysis, competitive landscape mapping, literature review
-- **Administrative processes:** financial documentation, regulatory compliance
+They are not theoretical. Practitioners working on complex multi-session tasks independently recreate DSM patterns, checkpoint directories, session handoffs, decision logs, before encountering the framework. DSM formalizes behavior that shows up naturally when people work deliberately.
 
-They are not theoretical; they emerged from daily practice with AI agents across these domains. Practitioners working on complex multi-session tasks independently recreate DSM patterns (checkpoint directories, session handoffs, decision logs) before encountering the framework. DSM formalizes behavior that emerges naturally from deliberate work.
+## What's coming
 
-## What's Coming
+This is the philosophical foundation. The full framework is being prepared for publication:
 
-This is currently the philosophical foundation. The full framework is being curated for external publication:
-
-- **Methodology tracks** for data science, software engineering, documentation, and project management, with templates, case studies, and setup scripts
-- **A queryable knowledge graph** that compiles human-authored methodology into a navigable, interconnected structure, making the ecosystem's accumulated knowledge searchable across projects and sessions
-- **Competitive positioning research** mapping the landscape of human-AI collaboration approaches across three dimensions: human control (posture), knowledge provenance, and experience accumulation
+- Methodology tracks for data science, software engineering, documentation, and project management, with templates and setup scripts
+- A queryable knowledge graph that compiles human-authored methodology into a navigable structure, searchable across projects and sessions
+- Competitive positioning research mapping human-AI collaboration approaches across three dimensions: human control, knowledge provenance, and experience accumulation
 
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "What Makes DSM Different: 84 Features Across Three Dimensions"
+title: "84 features across three dimensions"
 date: 2026-03-20
 draft: false
-description: "Most AI tools optimize for speed. DSM optimizes for collaboration quality. Here are 84 features mapped across three dimensions that define its position."
+description: "DSM's 84 features mapped across human oversight, knowledge provenance, and experience accumulation."
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Features", "Take AI Bite"]
 categories: ["Features"]
 author: "Alberto Diaz Durana"
@@ -10,94 +10,92 @@ showToc: true
 ShowReadingTime: true
 ---
 
-Most AI coding tools optimize for speed: get to the answer faster, automate more, reduce human involvement. Take-AI-Bite's DSM takes a different position entirely. It optimizes for *collaboration quality*: ensuring that the human and the AI produce better work together than either could alone, and that the quality compounds over time.
+Most AI coding tools are built to reduce human involvement. DSM is built to make human involvement worth the time: the human and the AI produce better work together than either would alone, and what they learn carries forward.
 
-This post maps DSM's 84 features across the three dimensions that define its competitive position: human oversight depth, knowledge provenance, and experience accumulation. Each dimension represents a design choice that most tools either ignore or address superficially.
-
-For the full chronological feature list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
+This post maps DSM's 84 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
 
 ---
 
-## Dimension 1: Human Oversight -- Collaboration, Not Automation
+## Human oversight
 
-Where most tools give you a slider between "approve everything" and "let the AI run," DSM builds oversight into the structure of every interaction. The human is not a bottleneck to be optimized away; the human is the quality signal that makes everything else work.
+Where most tools give you a slider between "approve everything" and "let the AI run," DSM builds oversight into the structure of every interaction.
 
-### Per-Turn Artifact Review
+### Per-turn artifact review
 
-Every artifact the AI creates passes through a three-gate approval model: concept approval (do you understand what will be created?), implementation approval (does the diff look right?), and run approval (should this execute?). Each gate is an explicit stop. The AI cannot proceed without the human engaging with the work.
+Every artifact passes through a three-gate approval model: concept (do you understand what will be created?), implementation (does the diff look right?), and run (should this execute?). The AI cannot proceed without the human engaging with the work.
 
-This extends to collections: when producing multiple items, each gets individual attention. Multiple edits to a single file require separate explanations. Notebook cells are generated one at a time, with actual output verified before the next cell is created.
+This extends to collections. Multiple edits to a single file need separate explanations. Notebook cells are generated one at a time, with output verified before the next cell is created.
 
-### Session Lifecycle Management
+### Session lifecycle
 
-Sessions are not just "start coding, stop coding." Each session has a structured start that checks inbox messages, validates the project state, compares versions, and loads accumulated context. Each session ends with a structured wrap-up that saves memory, commits work, and creates continuity documents. If a session ends unexpectedly, the next session detects the gap and offers recovery.
+Sessions are not "start coding, stop coding." Each session starts by checking inbox messages, validating project state, comparing versions, and loading context. Each session ends by saving memory, committing work, and creating continuity documents. If a session ends unexpectedly, the next session detects the gap and offers recovery.
 
-Lightweight sessions preserve continuity for quick follow-ups. Session baselines track exactly what changed. Configuration recommendations match the AI's settings to the planned work scope.
+Lightweight sessions handle quick follow-ups. Session baselines track what changed. Configuration recommendations match settings to the planned work scope.
 
-### Safety Guardrails
+### Safety guardrails
 
-Destructive commands are never auto-approved: force push, hard reset, recursive delete each require explicit human request. Sensitive files (.env, credentials) are automatically blocked from commits. External inputs are sanitized before processing. Feature branches must be tested before merging.
+Destructive commands (force push, hard reset, recursive delete) require explicit human request. Sensitive files (.env, credentials) are blocked from commits. Feature branches must be tested before merging.
 
-These are not "opt-in safety features." They are structural constraints that cannot be bypassed without the human explicitly choosing to do so.
-
----
-
-## Dimension 2: Knowledge Provenance -- Human-Curated, Not Pre-Trained
-
-Most AI tools start with a blank slate for every project: a generic model with maybe a project-specific config file. DSM starts with a versioned, human-authored knowledge ecosystem that the AI inherits, follows, and contributes to.
-
-### Methodology Document Ecosystem
-
-DSM is not a single instruction file. It is a suite of versioned documents covering data science workflows (DSM 1.0), project management (DSM 2.0), cross-project governance (DSM 3.0), software engineering (DSM 4.0), documentation standards (DSM 5.0), and AI collaboration principles (DSM 6.0). Each document is maintained with semantic versioning and a formal update workflow.
-
-Project-specific instructions reference the methodology via a configuration chain, so every project inherits the full protocol suite while retaining the ability to override specific rules.
-
-### Cross-Project Protocol Inheritance
-
-The hub-spoke architecture means protocols are authored once in the central repository and inherited by all projects automatically. When a protocol improves, every project benefits. Project type detection activates the right methodology track for each project. Participation patterns adjust communication and isolation rules based on whether a project is a standard spoke, an external contribution, or a private project.
-
-The ecosystem path registry maps cross-repository relationships, enabling automated synchronization. Mirror repos receive methodology updates automatically.
-
-### Versioned Knowledge Architecture
-
-Every change to the methodology is tracked in a changelog, tagged with semantic versions, and checkpointed with detailed context. Design decisions are numbered and documented with rationale and alternatives. Research findings are preserved with source URLs and date stamps.
-
-This is not documentation for documentation's sake. It is the mechanism that prevents knowledge loss. When a protocol decision was made six months ago, the rationale is recoverable. When research informed a design choice, the original evidence is traceable.
+These are structural constraints, not opt-in features. They cannot be bypassed without the human explicitly choosing to do so.
 
 ---
 
-## Dimension 3: Experience Accumulation -- Learning Across Sessions
+## Knowledge provenance
 
-This is DSM's strongest differentiator. Most tools treat each session as independent. Some persist project-level memory. DSM builds a learning system where experience from individual sessions propagates outward to improve the methodology for all future sessions across the entire ecosystem.
+Most AI tools start with a blank slate: a generic model, maybe a config file. DSM starts with a versioned, human-authored knowledge base that the AI inherits and contributes to.
 
-### Memory and Context Persistence
+### Methodology documents
 
-MEMORY.md provides persistent, typed memory across conversations: user preferences, project decisions, feedback patterns, and reference pointers. The session transcript captures reasoning in real time, creating a complete record of *why* decisions were made, not just what was done. Context budget management treats the AI's context window as a finite resource with explicit controls.
+DSM is a suite of versioned documents: data science workflows (1.0), project management (2.0), cross-project governance (3.0), software engineering (4.0), documentation standards (5.0), and collaboration principles (6.0). Each is maintained with semantic versioning and a formal update workflow.
 
-Handoffs ensure complex pending work survives session boundaries. Checkpoints snapshot project state at milestones. Session baselines enable precise diff tracking. When a session ends unexpectedly, transcript-based recovery reconstructs the missing wrap-up artifacts.
+Project-specific instructions reference the methodology via a configuration chain, so every project inherits the full protocol suite but can override specific rules.
 
-### Feedback Loops Across Projects
+### Protocol inheritance
 
-Spoke projects generate backlog proposals and methodology observations for the central repository, creating a systematic learning loop. At session end, feedback is automatically pushed to the central inbox. The inbox system routes notifications between projects with a processed/done lifecycle.
+The hub-spoke architecture means protocols are authored once in the central repository and inherited by all projects. When a protocol improves, every project picks it up. Project type detection activates the right methodology track. Participation patterns adjust rules based on whether a project is a standard spoke, an external contribution, or a private repo.
 
-A single spoke project generated 42 backlog proposals and 53 methodology observations, demonstrating that this is not a theoretical capability: it operates at scale, producing concrete improvements to the shared methodology.
+A path registry maps cross-repository relationships. Mirror repos receive methodology updates automatically.
 
-### Reasoning Pattern Extraction
+### Versioned knowledge
 
-Session transcripts are not just logs. They are mined for reasoning patterns that become formal guidance for future sessions. The experiment framework ensures capability tests are reproducible and their results feed back into the methodology. Stress testing compares guided vs unguided AI collaboration to measure the actual impact of structured protocols.
+Every change to the methodology is tracked in a changelog, tagged with semantic versions, and checkpointed. Design decisions are numbered and documented with rationale and alternatives. Research findings are preserved with sources and dates.
 
-External observations generate backlog items automatically. The "Earn Your Assertions" principle ensures claims are verified, not assumed. "Critical Thinking" requires the AI to challenge its own outputs. These are not passive values: they are active protocols that shape every interaction.
-
----
-
-## The Compound Effect
-
-No single feature in this list is revolutionary on its own. Pre-generation briefs, memory systems, and feedback loops exist in various forms elsewhere. What makes DSM different is that all 84 features work together as a system, and that system *learns*.
-
-A feedback observation from a spoke project becomes a backlog item in the central repository. That backlog item becomes a protocol change. That protocol change propagates to every project via the hub-spoke architecture. The next session in any project benefits from an insight that originated in a completely different context.
-
-This is the compound effect that no individual feature can replicate: the methodology improves itself through use.
+The point is preventing knowledge loss. When a protocol decision was made six months ago, the rationale is recoverable. When research informed a design choice, the original evidence is still there.
 
 ---
 
-*For the full chronological feature timeline, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md). For the competitive positioning analysis behind these three dimensions, see the [3D Positioning Map](https://github.com/albertodiazdurana/take-ai-bite/blob/main/dsm-docs/research/DSM-Rebranding/2026-03-18_competitive-positioning-map.md).*
+## Experience accumulation
+
+This is where the distance to other tools is largest. Most tools treat each session as independent. Some persist project-level memory. DSM propagates experience from individual sessions outward to improve the methodology for all future work.
+
+### Memory and context
+
+MEMORY.md provides persistent, typed memory across conversations: user preferences, project decisions, feedback patterns, reference pointers. The session transcript captures reasoning in real time, a record of why decisions were made, not just what was done. Context budget management treats the AI's context window as a finite resource.
+
+Handoffs ensure pending work survives session boundaries. Checkpoints snapshot project state. When a session ends unexpectedly, transcript-based recovery reconstructs the missing wrap-up.
+
+### Feedback loops
+
+Spoke projects generate backlog proposals and methodology observations for the central repository. At session end, feedback is pushed to the central inbox. The inbox system routes notifications between projects with a processed/done lifecycle.
+
+One spoke project generated 42 backlog proposals and 53 methodology observations. That is not a theoretical capability; those are real numbers from a real project, producing concrete improvements to the shared methodology.
+
+### Reasoning extraction
+
+Session transcripts get mined for reasoning patterns that become formal guidance for future sessions. The experiment framework ensures capability tests are reproducible and feed back into the methodology. Stress testing compares guided vs. unguided collaboration to measure the actual impact of structured protocols.
+
+External observations generate backlog items automatically. The "Earn Your Assertions" principle means claims are verified before acting. "Critical Thinking" requires the AI to challenge its own outputs. These run as active protocols in every session.
+
+---
+
+## The compound effect
+
+No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 84 features work together as a system, and the system learns.
+
+A feedback observation from a spoke project becomes a backlog item in the central repository. That item becomes a protocol change. That change propagates to every project. The next session in any project benefits from an insight that started in a completely different context.
+
+The methodology improves through use.
+
+---
+
+*For the full chronological feature timeline, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md). For the competitive positioning analysis behind these three dimensions, see the [3D positioning map](https://github.com/albertodiazdurana/take-ai-bite/blob/main/dsm-docs/research/DSM-Rebranding/2026-03-18_competitive-positioning-map.md).*

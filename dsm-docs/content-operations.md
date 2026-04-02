@@ -64,6 +64,52 @@ When adding new images to the site:
 3. Place Hugo-served files in `static/`
 4. Document provenance (tool, licensing) in relevant docs
 
+## Blog Material Pipeline
+
+Blog content can originate from any DSM project (hub or spoke). This pipeline governs how raw material becomes a published post and how the source project is notified.
+
+### 1. Intake
+
+Source projects create blog drafts in their `dsm-docs/blog/` folder and send an inbox notification to blog-poster (`_inbox/`). Blog-poster also checks ecosystem projects for new blog material during session start.
+
+### 2. Refinement
+
+Before publishing, every incoming draft goes through:
+
+1. Read `content/about-me.md` and `content/about.md` to calibrate voice
+2. Adapt the content for blog tone and audience (the source draft may be technical or internal-facing)
+3. Add Hugo frontmatter (title, date, description, tags, categories, author)
+4. Create a leaf bundle at `content/blog/YYYY-MM-DD-slug/index.md`
+5. Run `/humanizer` on the full post
+6. Review with the author before setting `draft: false`
+
+### 3. Publication
+
+Publish by merging to main. GitHub Actions deploys to take-ai-bite.com.
+
+### 4. Notify source project
+
+After publication, send an inbox entry to the source project's `_inbox/` so it can move the blog file to `dsm-docs/blog/done/`.
+
+**Template:**
+
+```markdown
+### [YYYY-MM-DD] Blog published: {short title}
+
+**Type:** Notification
+**Priority:** Low
+**Source:** dsm-blog-poster
+
+Published blog post based on your `dsm-docs/blog/{source-filename}`.
+URL: {blog post URL}
+
+Action: move `dsm-docs/blog/{source-filename}` to `dsm-docs/blog/done/`.
+```
+
+### 5. Notify DSM Central
+
+If the source project is not DSM Central, also send a publication notification to Central per the template in the Distribution Channels section below.
+
 ## Distribution Channels
 
 ### Blog (take-ai-bite.com)

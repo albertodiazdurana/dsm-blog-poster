@@ -19,9 +19,7 @@ a lot of issues. AI collaboration works the same way.
 The human brings what AI cannot: direction, experience, and intuition. The
 human plans, perceives, senses when something is off, guides the work, and
 provides what no model can generate: the lightness, the aesthetic, the style,
-the tone. The spark. AI magnifies, amplifies, expands. It is a dichotomy that
-finds balance: it feeds and nurtures when the portions are right, it overwhelms
-and derails in excess.
+the tone. The spark. AI magnifies, amplifies, expands. It is a dichotomy that finds balance: it supports and strengthens when kept in the right measure, but overwhelms and derails in excess.
 
 When an agent produces more than a human can review in one sitting, the
 collaboration quietly breaks: the human stops reading and starts clicking
@@ -33,14 +31,14 @@ respond to with substance. If the best they can say is "oh wow, impressive...
 but ok, I trust you," it was too much. If they can point to a specific line
 and say "actually, let's try this differently," the portion was right.
 
-Both sides must also earn their assertions, how much do you know about the
+Both sides must also earn their assertions. How much do you know about the
 cookie? Ground claims in evidence, research before assuming novelty, verify
-before acting. Context is the foundation.
+before acting.
 
 Before presenting, challenge your own reasoning. Before approving, challenge
-what is presented. Self-regulation, thinking about your own thinking, is what
-keeps both sides honest. The human sets the direction; the agent follows the
-plan and questions its own choices before asking the human to trust them.
+what is presented. Thinking about your own thinking is what keeps both sides
+honest. The human sets the direction; the agent follows the plan and questions
+its own choices before asking the human to trust them.
 
 ---
 
