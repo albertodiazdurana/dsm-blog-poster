@@ -1,5 +1,41 @@
 @../../dsm-agentic-ai-data-science-methodology/DSM_0.2_Custom_Instructions_v1.1.md
 
+<!-- BEGIN DSM_0.2 ALIGNMENT - do not edit manually, managed by /dsm-align -->
+## DSM Alignment (managed by /dsm-align)
+
+**Project type:** Application (DSM 4.0)
+**Participation pattern:** Spoke
+
+### Session Transcript Protocol (reinforces inherited protocol)
+- Append thinking to `.claude/session-transcript.md` BEFORE acting
+- Output summary AFTER completing work
+- Conversation text = results only
+- Use Session Transcript Delimiter Format for every block:
+  <------------Start Thinking / HH:MM------------>
+  <------------Start Output / HH:MM------------>
+  <------------Start User / HH:MM------------>
+- HH:MM is 24-hour local time when the block begins; no end delimiter needed
+- Append technique: read last 3 lines, use last non-empty line as anchor.
+  NEVER match earlier content for mid-file insertion.
+
+### Pre-Generation Brief Protocol (reinforces inherited protocol)
+- Three-gate model: concept (explain) → implementation (diff review) → run (when applicable)
+- Each gate requires explicit user approval; gates are independent
+
+### Inbox Lifecycle (reinforces inherited protocol)
+- After processing an inbox entry, move it to `_inbox/done/`
+- Do not mark entries as "Status: Processed" while keeping them in place
+
+### Punctuation
+Use "," instead of "—" for connecting phrases in any language.
+
+### App Development Protocol (reinforces inherited protocol)
+- Explain why before each action
+- Create files via Write/Edit tools; user approves via permission window
+- Wait for user confirmation before proceeding to next step
+- Build incrementally: imports → constants → one function → test → next function
+<!-- END DSM_0.2 ALIGNMENT -->
+
 # Project: DSM Blog Poster
 Domain: Software Engineering (Static Site + Automation) / Content Operations
 
@@ -85,21 +121,6 @@ This project uses:
 - Number format: 1,234.56
 - Date format: YYYY-MM-DD
 
-## Session Transcript Protocol (reinforces inherited protocol)
-- Append thinking to `.claude/session-transcript.md` BEFORE acting
-- Output summary AFTER completing work
-- Conversation text = results only
-- Use Reasoning Delimiter Format for every thinking block:
-  <------------Start Thinking / HH:MM------------>
-  [reasoning content]
-- HH:MM is 24-hour local time when thinking begins; no end delimiter needed
-- Include **User:** and **Output:** markers per DSM_0.2 format
-
-## Inbox Lifecycle (reinforces inherited protocol)
-- Inbox entries are transient: MOVE to `_inbox/done/` after processing, do not mark "Status: Processed"
-- Processed entries in `done/` preserve communication history and traceability
-- If an outbound inbox entry you created was consumed (moved to done by the receiving project), that is correct behavior -- do not re-create it
-
 ## Backlog
 - Backlog items live in `dsm-docs/plans/` as `BL-{NNN}-short-title.md`
 - See `dsm-docs/plans/README.md` for the index of open and completed items
@@ -110,3 +131,8 @@ This project uses:
 - Hugo content in `content/blog/` follows date-prefixed naming
 - Portfolio section highlights DSM ecosystem projects
 - Minimal theme, fast loading, mobile responsive
+
+## Voice and content quality
+- At session start, read `content/about-me.md` and `content/about.md` to calibrate the author's voice before writing any content
+- Run `/humanizer` on all material produced and posted by this project: blog posts, page content, descriptions, any reader-facing prose
+- This is a pre-publish gate, not optional
