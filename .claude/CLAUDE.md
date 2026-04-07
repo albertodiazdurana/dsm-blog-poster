@@ -168,6 +168,13 @@ This project uses:
 
 ## Voice and content quality
 - At session start, read `content/about-me.md` and `content/about.md` to calibrate the author's voice before writing any content
+- At session start, read the following DSM Central files to build accurate context about Take AI Bite (TAB, the public framework this blog publishes) and Deliberate Systematic Methodology (DSM, the versioned methodology that powers TAB) before writing or editing any reader-facing content. TAB is documented across DSM_6.0 (the nine AI Collaboration Principles, the "why") and DSM_6.1 + its modules A/B/C (Systems Prompt Engineering, the "what/how"). FEATURES.md is the canonical inventory of DSM features across all dimensions:
+  - `~/dsm-agentic-ai-data-science-methodology/FEATURES.md`
+  - `~/dsm-agentic-ai-data-science-methodology/DSM_6.0_AI_Collaboration_Principles_v1.0.md`
+  - `~/dsm-agentic-ai-data-science-methodology/DSM_6.1_Systems_Prompt_Engineering_v1.0.md`
+  - `~/dsm-agentic-ai-data-science-methodology/DSM_6.1.A_Operational_Channels.md`
+  - `~/dsm-agentic-ai-data-science-methodology/DSM_6.1.B_Instruction_Design_Patterns.md`
+  - `~/dsm-agentic-ai-data-science-methodology/DSM_6.1.C_Evaluation_and_Evolution.md`
 - Run `/humanizer` on all material produced and posted by this project: blog posts, page content, descriptions, any reader-facing prose
 - This is a pre-publish gate, not optional
 

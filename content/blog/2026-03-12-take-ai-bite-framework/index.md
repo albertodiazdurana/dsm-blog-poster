@@ -33,9 +33,29 @@ Nine principles govern how humans and AI agents work together. Each addresses a 
 
 ## The engine: Deliberate Systematic Methodology (DSM)
 
-These principles run on DSM, a versioned methodology that covers the full lifecycle of human-AI collaboration: research, implementation, governance, and disclosure.
+These principles run on DSM, a versioned methodology for the full lifecycle of human-AI collaboration: research, implementation, governance, disclosure. Take AI Bite is documented in two layers, and you need both.
+
+### DSM_6.0, the principles
+
+The nine principles above are **DSM_6.0: AI Collaboration Principles**. This is the philosophy layer, the "why". It says what humans bring to the work that AI cannot generate on its own, direction, judgment, the spark, and the rules that keep that contribution present instead of decorative.
+
+### DSM_6.1, Systems Prompt Engineering
+
+Principles on their own do not survive contact with months of sessions across multiple projects. To live by them you need an instruction system: documents, templates, feedback loops, and session protocols that shape AI behavior without being rewritten each time. **DSM_6.1: Systems Prompt Engineering** names that discipline, the "what" and "how". It treats every protocol, template, and command as an instruction artifact, designed and versioned the way software is.
+
+DSM_6.1 has three modules:
+
+- 6.1.A Operational Channels and Context Management. The nine `dsm-docs/` folders mapped to communication functions. Session lifecycle commands (`/dsm-go`, `/dsm-wrap-up`, parallel sessions) as context-management operations. A five-layer memory architecture from session transcript to versioned git history.
+- 6.1.B Instruction Design Patterns. The three-layer CLAUDE.md architecture (inherited protocols, alignment block, project-specific overrides). Command files as reusable prompt templates. Protocol templates with anti-patterns as negative instructions. The hub-spoke feedback loop as instruction iteration.
+- 6.1.C Evaluation and Evolution. Git history as audit trail. Automated cross-reference validation through Graph Explorer, a 547-test CI for instruction documents. Retrospective session analysis (STAA). The learning loop that closes evaluation findings back into the next protocol revision.
+
+Most prompt engineering writing stops at the first layer. Individual prompts you can write by feel. Instruction systems you cannot. DSM_6.1's central claim is context engineering at ecosystem scale: not how to give one model the right context for one task, but how to manage context across many agents, many projects, and months of sessions.
+
+### How the two layers work together
 
 DSM is not static. It evolves through a hub-spoke feedback loop where every session and every project feeds back into the methodology. Protocols get tested and refined, then spread across projects. What one project discovers improves every future one.
+
+The principles tell you what is worth caring about. The discipline gives you the materials to build a system that actually cares about those things across time. Without the second layer, the first one is a poster on the wall with a list of good intentions.
 
 This is what makes the long-term memory possible. Session transcripts capture reasoning. Checkpoints preserve milestones. Memory files carry context across sessions. Feedback flows from projects to the central methodology and back. The result is a system that keeps your expertise, not just your files.
 
