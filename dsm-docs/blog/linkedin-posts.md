@@ -71,11 +71,13 @@ The creatures are training the trainer.
 
 ## Post 5: Protocol existence is not protocol visibility (2026-04-07)
 
-**URL:** TBD
-**Status:** Draft
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_ai-humanaicollaboration-dsm-share-7447105689770078208-ov7k
+**Status:** Published
 **Blog post:** https://take-ai-bite.com/blog/2026-04-07-dsm-v1.4.5-protocol-visibility/
 
 **Text:**
+
+What this release taught me: more documentation is not the answer to agents not following documentation. Proximity is. So is reframing principles into templated instructions shaped for the moment they apply.
 
 Two failures in a single session. A spoke agent wrote a feedback file directly into the Hub without showing me first. The same agent answered a question about a skill from its one-line description, and only then asked permission to read the full definition.
 
@@ -89,7 +91,7 @@ DSM v1.4.5 fixes this by relocation, not invention. Two rules moved from upstrea
 
 Two more features in the same release follow the same shape: sprint boundaries got a structured retrospective, and the wrap-up type marker closes a session-lifecycle gap that had been quietly costing me overhead for weeks.
 
-What this release taught me: more documentation is not the answer to agents not following documentation. Proximity is. So is reframing principles into templated instructions shaped for the moment they apply.
+A note on what comes next. Right now I am calling proximity "the unit that matters" without being able to measure it. That is changing. Graph Explorer, the spoke that builds a structural graph of any DSM project, has a proposal for an agent-consumable knowledge summary that derives hub scores, reference chains, and concept clusters from the graph itself (BACKLOG-302). Once that ships, "proximity to the decision" stops being a qualitative claim and becomes a number: the distance, in the reference graph, between where a rule lives and where the agent reads. I expect that to change which rules I move next, and probably to surface a few I have not noticed yet.
 
 Full post: https://take-ai-bite.com/blog/2026-04-07-dsm-v1.4.5-protocol-visibility/
 

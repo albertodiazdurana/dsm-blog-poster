@@ -57,6 +57,8 @@ The other is reframing. You take a principle, written in the kind of language th
 
 There is a tempting answer to "agents not following documentation," and that answer is "more documentation." It is wrong almost every time. The right answers are proximity and reframing. Move the rule closer. Translate it into something the agent can act on without going back to first principles every turn.
 
+A note on what comes next. Right now I am calling proximity "the unit that matters" without being able to measure it. That is changing. Graph Explorer, the spoke that builds a structural graph of any DSM project, has a proposal for an agent-consumable knowledge summary that derives hub scores, reference chains, and concept clusters from the graph itself [BACKLOG-302]. Once that ships, "proximity to the decision" stops being a qualitative claim and becomes a number: the distance, in the reference graph, between where a rule lives and where the agent reads. I expect that to change which rules I move next, and probably to surface a few I have not noticed yet.
+
 I expect most future DSM releases to look like this one. A bit less new vocabulary. More rules quietly moving closer to where they have to do their work.
 
 ---
