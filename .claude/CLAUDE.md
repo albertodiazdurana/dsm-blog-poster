@@ -169,3 +169,12 @@ This project uses:
 - At session start, read `content/about-me.md` and `content/about.md` to calibrate the author's voice before writing any content
 - Run `/humanizer` on all material produced and posted by this project: blog posts, page content, descriptions, any reader-facing prose
 - This is a pre-publish gate, not optional
+
+## DSM Version Release Coverage
+- When DSM ships a new version (detected at session start via the version check), compare `~/dsm-agentic-ai-data-science-methodology/FEATURES.md` against the previously covered version and identify new or changed features
+- Two required updates per version bump:
+  1. Update the canonical features post at `content/blog/2026-03-20-dsm-features-three-dimensions/index.md` to reflect the new total feature count and add new features to the appropriate dimension
+  2. Draft a dedicated release post announcing the new version's features (what changed and why)
+- Both follow the standard blog workflow: voice calibration, /humanizer pre-publish gate
+- Create a BL item in `dsm-docs/plans/` to track the release post if it cannot be written in the same session
+- This is a standing rule, not a one-off: every DSM version bump triggers both updates
