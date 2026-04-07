@@ -1,7 +1,7 @@
 ---
 title: "Protocol existence is not protocol visibility: DSM v1.4.5"
 date: 2026-04-07
-draft: true
+draft: false
 description: "Two spoke agent violations in one session traced back to the same root cause, and how DSM v1.4.5 fixes it by relocating rules to where agents actually read them."
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Release Notes", "Take AI Bite"]
 categories: ["Releases"]
