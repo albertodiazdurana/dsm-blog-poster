@@ -96,3 +96,27 @@ A note on what comes next. Right now I am calling proximity "the unit that matte
 Full post: https://take-ai-bite.com/blog/2026-04-07-dsm-v1.4.5-protocol-visibility/
 
 #AI #HumanAICollaboration #DSM #TakeAIBite
+
+## Post 6: Systems problem, not a prompt engineering problem (2026-04-08)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_humanaicollaboration-llms-systemsthinking-share-7447398752887324673-kBYX
+**Status:** Published
+**Related blog updates:** https://take-ai-bite.com/about/ and https://take-ai-bite.com/blog/2026-03-12-take-ai-bite-framework/ (BL-014, DSM_6.1 layer surfaced)
+
+**Text:**
+
+Working effectively with LLMs isn't a prompt engineering problem. It's a systems problem.
+
+Since July last year I've been running an applied research program in human-AI collaboration called Take AI Bite. I started it because I couldn't find a framework that kept me in control of the work instead of reactively chasing whatever the model produced.
+
+The system around the model is what does the heavy lifting. The prompt is the smallest part of it.
+
+Underneath Take AI Bite is an operational layer I call DSM, Deliberate Systematic Methodology. It governs 14 repositories as one graph. The most recent layer, DSM 6.1, is about Systems Prompt Engineering: how context flows through operational channels, which instruction patterns hold up under pressure, and how you evaluate and evolve the whole setup over time.
+
+The honest test of any methodology is whether you'll use it on yourself. So I did. Graph Explorer is a Python application I built end-to-end through AI collaboration, without writing the code myself, to validate the very ecosystem the methodology governs. It parses 14 repositories, builds a typed knowledge graph in FalkorDB, validates 1,191 cross-references, lints conventions, compares historical commits, and tracks drift between private and public repos. It took documentation errors across the ecosystem from 448 down to 6, and it now sits at 664 tests across 15 sprints.
+
+The interesting part isn't the tool. It's that every sprint surfaced something the methodology was missing, and I fed those gaps back into DSM. Building the validator made the framework that built the validator measurably better. That's the loop I keep chasing.
+
+If you want to read more: https://take-ai-bite.com/
+
+#HumanAICollaboration #LLMs #SystemsThinking #PromptEngineering #AIEngineering
