@@ -71,8 +71,8 @@ The creatures are training the trainer.
 
 ## Post 5: Protocol existence is not protocol visibility (2026-04-07)
 
-**URL:** TBD
-**Status:** Draft
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_ai-humanaicollaboration-dsm-share-7447105689770078208-ov7k
+**Status:** Published
 **Blog post:** https://take-ai-bite.com/blog/2026-04-07-dsm-v1.4.5-protocol-visibility/
 
 **Text:**
