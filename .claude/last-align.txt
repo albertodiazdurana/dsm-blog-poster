@@ -1,0 +1,6 @@
+# Last /dsm-align run
+date: 2026-04-06
+dsm-version: v1.4.5
+result: warnings
+warnings: 7
+critical: 0

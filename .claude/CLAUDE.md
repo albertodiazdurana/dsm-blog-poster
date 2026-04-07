@@ -1,7 +1,7 @@
 @../../dsm-agentic-ai-data-science-methodology/DSM_0.2_Custom_Instructions_v1.1.md
 
 <!-- BEGIN DSM_0.2 ALIGNMENT - do not edit manually, managed by /dsm-align -->
-## DSM Alignment (managed by /dsm-align)
+## 1. DSM_0.2 Alignment (managed by /dsm-align)
 
 **Project type:** Application (DSM 4.0)
 **Participation pattern:** Spoke
@@ -28,6 +28,39 @@
 
 ### Punctuation
 Use "," instead of "—" for connecting phrases in any language.
+
+### Code Output Standards (reinforces Earn Your Assertions)
+- Show actual values: shapes, metrics, counts, paths
+- No generic confirmations: avoid "Done!", "Success!", "Data loaded successfully!"
+- When uncertain, state the uncertainty; do not guess or fabricate
+- Read the relevant source (file, definition, documentation) before answering questions about it; do not answer from partial knowledge
+- Let results speak for themselves
+
+### Tool Output Restraint (reinforces Take a Bite)
+- Generate only what you can meaningfully process in the next step
+- Comprehensive tool reports are reference material, not the analysis itself
+- Run tools because the output serves the task, not because the tool is available
+
+### Working Style (reinforces Take a Bite, Critical Thinking)
+- Confirm understanding before proceeding
+- Be concise in answers
+- Do not generate files before providing description and receiving approval
+
+### Cross-Repo Write Safety (reinforces Destructive Action Protocol)
+- First write to any path outside this repository in a session requires explicit user confirmation
+- Present the content and target path before writing; do not write cross-repo silently
+- Subsequent writes to the same cross-repo target in the same session do not need re-confirmation
+
+### Plan Mode for Significant Changes (reinforces Earn Your Assertions)
+- Before implementing significant features: explore codebase, identify patterns, present plan
+- Do not write or edit files until the plan is approved by the user
+- This is a read-only exploration phase, not an implementation phase
+
+### Session Wrap-Up (reinforces Know Your Context)
+- When the user says "wrap up" or the session ends, use `/dsm-wrap-up`
+- Before wrap-up, cross-reference sprint plan if one exists (verify all deliverables accounted for)
+- At minimum: commit pending changes, push to remote, update MEMORY.md
+- Create a handoff document if complex work remains pending
 
 ### App Development Protocol (reinforces inherited protocol)
 - Explain why before each action
