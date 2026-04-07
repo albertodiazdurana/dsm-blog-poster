@@ -68,3 +68,29 @@ That last one is the closest to what I built. A methodology where every project 
 The creatures are training the trainer.
 
 #AI #HumanAICollaboration #DSM #TakeAIBite
+
+## Post 5: Protocol existence is not protocol visibility (2026-04-07)
+
+**URL:** TBD
+**Status:** Draft
+**Blog post:** https://take-ai-bite.com/blog/2026-04-07-dsm-v1.4.5-protocol-visibility/
+
+**Text:**
+
+Two failures in a single session. A spoke agent wrote a feedback file directly into the Hub without showing me first. The same agent answered a question about a skill from its one-line description, and only then asked permission to read the full definition.
+
+Both rules already existed in DSM. Both had existed for months. The agent broke them anyway.
+
+I went looking for the gap, and the gap was not the rules. It was where the rules lived.
+
+Spoke agents inherit a long chain of methodology documents, but at session start they actually read one specific surface: the alignment template that gets written into the project's CLAUDE.md. Protocols sitting upstream are technically inherited and behaviorally invisible. The agent never lands on them at the moment of decision.
+
+DSM v1.4.5 fixes this by relocation, not invention. Two rules moved from upstream documents into the alignment template, where the agent reads them every turn. The Destructive Action Protocol becomes a three-line "Cross-Repo Write Safety" section. Earn Your Assertions becomes a one-line "read the source before answering." Same rules, new placement.
+
+Two more features in the same release follow the same shape: sprint boundaries got a structured retrospective, and the wrap-up type marker closes a session-lifecycle gap that had been quietly costing me overhead for weeks.
+
+What this release taught me: more documentation is not the answer to agents not following documentation. Proximity is. So is reframing principles into templated instructions shaped for the moment they apply.
+
+Full post: https://take-ai-bite.com/blog/2026-04-07-dsm-v1.4.5-protocol-visibility/
+
+#AI #HumanAICollaboration #DSM #TakeAIBite

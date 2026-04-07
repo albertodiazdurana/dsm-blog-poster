@@ -6,8 +6,7 @@ description: "We built a tool to check whether an AI agent can reach every secti
 tags: ["Deliberate Systematic Methodology", "DSM", "Graph Explorer", "Documentation", "Experiments", "Take AI Bite"]
 categories: ["Experiments"]
 author: "Alberto Diaz Durana"
-showToc: true
-ShowReadingTime: true
+toc: true
 ---
 
 You write documentation for your AI agent. Protocols, templates, decision frameworks. 35 files. 1,310 sections. A dispatch table. Cross-references. Module files.

@@ -6,8 +6,7 @@ description: "I built an AI agent ecosystem from scratch. Three franchise storie
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Take AI Bite"]
 categories: ["Reflections"]
 author: "Alberto Diaz Durana"
-showToc: true
-ShowReadingTime: true
+toc: true
 images: ["trainer-and-dragon.jpeg"]
 ---
 

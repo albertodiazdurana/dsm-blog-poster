@@ -1,7 +1,7 @@
 @../../dsm-agentic-ai-data-science-methodology/DSM_0.2_Custom_Instructions_v1.1.md
 
 <!-- BEGIN DSM_0.2 ALIGNMENT - do not edit manually, managed by /dsm-align -->
-## DSM Alignment (managed by /dsm-align)
+## 1. DSM_0.2 Alignment (managed by /dsm-align)
 
 **Project type:** Application (DSM 4.0)
 **Participation pattern:** Spoke
@@ -28,6 +28,39 @@
 
 ### Punctuation
 Use "," instead of "—" for connecting phrases in any language.
+
+### Code Output Standards (reinforces Earn Your Assertions)
+- Show actual values: shapes, metrics, counts, paths
+- No generic confirmations: avoid "Done!", "Success!", "Data loaded successfully!"
+- When uncertain, state the uncertainty; do not guess or fabricate
+- Read the relevant source (file, definition, documentation) before answering questions about it; do not answer from partial knowledge
+- Let results speak for themselves
+
+### Tool Output Restraint (reinforces Take a Bite)
+- Generate only what you can meaningfully process in the next step
+- Comprehensive tool reports are reference material, not the analysis itself
+- Run tools because the output serves the task, not because the tool is available
+
+### Working Style (reinforces Take a Bite, Critical Thinking)
+- Confirm understanding before proceeding
+- Be concise in answers
+- Do not generate files before providing description and receiving approval
+
+### Cross-Repo Write Safety (reinforces Destructive Action Protocol)
+- First write to any path outside this repository in a session requires explicit user confirmation
+- Present the content and target path before writing; do not write cross-repo silently
+- Subsequent writes to the same cross-repo target in the same session do not need re-confirmation
+
+### Plan Mode for Significant Changes (reinforces Earn Your Assertions)
+- Before implementing significant features: explore codebase, identify patterns, present plan
+- Do not write or edit files until the plan is approved by the user
+- This is a read-only exploration phase, not an implementation phase
+
+### Session Wrap-Up (reinforces Know Your Context)
+- When the user says "wrap up" or the session ends, use `/dsm-wrap-up`
+- Before wrap-up, cross-reference sprint plan if one exists (verify all deliverables accounted for)
+- At minimum: commit pending changes, push to remote, update MEMORY.md
+- Create a handoff document if complex work remains pending
 
 ### App Development Protocol (reinforces inherited protocol)
 - Explain why before each action
@@ -115,6 +148,7 @@ This project uses:
 - Use WARNING/OK/ERROR text conventions
 - Blog posts follow DSM Section 2.5.6 workflow
 - File naming follows DSM_0.1 convention
+- In public-facing content (blog, About pages, LinkedIn, any reader-facing prose), refer to the DSM Central repository as "the Hub". "DSM Central" is the internal governance name; the public repo is Take-AI-Bite, and "Hub" avoids confusion between the two. This rule applies to all reader-facing material; internal docs and code can keep using "DSM Central".
 
 ### Language & Formatting
 - Primary language: English
@@ -136,3 +170,32 @@ This project uses:
 - At session start, read `content/about-me.md` and `content/about.md` to calibrate the author's voice before writing any content
 - Run `/humanizer` on all material produced and posted by this project: blog posts, page content, descriptions, any reader-facing prose
 - This is a pre-publish gate, not optional
+
+## DSM Version Release Coverage
+When DSM ships a new version, produce two updates:
+1. Update the canonical features post at `content/blog/2026-03-20-dsm-features-three-dimensions/index.md` (total count + weave new features into the appropriate dimension)
+2. Draft a dedicated release post telling the *story* behind the changes, not a changelog rehash
+
+### Reconstruction trail (mandatory reading order)
+All paths are in DSM Central (`~/dsm-agentic-ai-data-science-methodology/`):
+1. **Index** , `dsm-docs/blog/feature-trail.md` , read the version's section and the "Narrative threads" at the bottom. This is the entry point.
+2. **BL files** , `dsm-docs/plans/done/BACKLOG-NNN_*.md` for each feature in scope. The Problem Statement is the "why this matters" paragraph; Origin identifies the trigger.
+3. **Inbox origins** , for any feature with an inbox-sourced BL, read the referenced entry in `_inbox/done/`. Concrete incident stories are the best blog material.
+4. **Reasoning lessons** , `.claude/reasoning-lessons.md`, search for `[auto]` or `[STAA]` entries tied to the version. These surface the meta-pattern that ties multiple features together , the headline insight.
+5. **CHANGELOG** , `CHANGELOG.md` for the version(s). Same-day version bumps are treated as one release in the post.
+
+### Post structure
+1. **Hook** , the concrete incident (from the inbox source)
+2. **Insight** , the meta-pattern from reasoning lessons
+3. **Fix** , the features that implement the fix
+4. **Bonus** , related features following the same pattern
+5. **Takeaway** , what this version reveals about how DSM evolves
+
+### Anti-patterns
+- Do not list features mechanically , the feature list already lives in FEATURES.md and CHANGELOG
+- Do not write a changelog summary , write the story the sources don't tell
+- If covering an older feature whose feature-trail.md row is empty, populate the row first via the reconstruction recipe in feature-trail.md's "How to use this index" section
+
+### Workflow
+- Both posts follow the standard blog workflow: voice calibration from `content/about-me.md` + `content/about.md`, /humanizer pre-publish gate
+- Create a BL item in `dsm-docs/plans/` if the release post cannot be completed in the same session

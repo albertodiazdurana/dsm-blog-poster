@@ -6,8 +6,7 @@ description: "How decision records and a hub-and-spoke architecture made a Windo
 tags: ["Python", "WSL", "DevOps", "Data Science", "Documentation"]
 categories: ["Technical"]
 author: "Alberto Diaz Durana"
-showToc: true
-ShowReadingTime: true
+toc: true
 slug: "windows-to-wsl-migration"
 ---
 
