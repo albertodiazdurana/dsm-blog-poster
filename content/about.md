@@ -18,3 +18,5 @@ When AI generates faster than you can review, oversight becomes rubber-stamping.
 7. **Own Your Process** -- Disclose how the work was produced
 8. **Know What You Own** -- Verify licensing before deployment
 9. **Think Ahead** -- Build the map before you walk the territory
+
+Take AI Bite has two layers. The principles above are the philosophy, the "why", documented in **DSM_6.0 (AI Collaboration Principles)**. The discipline that turns those principles into something you can actually live by, version-controlled documents, operational channels, feedback loops, is **DSM_6.1 (Systems Prompt Engineering)**, the "what" and "how", with three modules: 6.1.A Operational Channels, 6.1.B Instruction Design Patterns, 6.1.C Evaluation and Evolution. Principles are what you value. Systems Prompt Engineering is how you build a system that runs on them.

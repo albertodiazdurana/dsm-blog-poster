@@ -16,6 +16,8 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-010 | [Systems Prompt Engineering blog content](BL-010-spe-blog-content.md) | Medium | When SPE narrative angle is chosen |
 | BL-012 | [LinkedIn cross-posting automation](BL-012-linkedin-cross-posting.md) | Medium | When next blog post is ready to publish |
 | BL-013 | [Reachability experiment blog post](BL-013-reachability-blog-post.md) | Medium | On hold (technical inconsistencies) |
+| BL-014 | [TAB two layers, About page and Framework post](BL-014-tab-two-layers-about-framework.md) | High | Now (S16) |
+| BL-015 | [Update features post from 90 to 95](BL-015-features-post-90-to-95.md) | Medium | This or next blog session |
 
 ## Completed
 
