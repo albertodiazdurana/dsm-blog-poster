@@ -148,6 +148,7 @@ This project uses:
 - Use WARNING/OK/ERROR text conventions
 - Blog posts follow DSM Section 2.5.6 workflow
 - File naming follows DSM_0.1 convention
+- In public-facing content (blog, About pages, LinkedIn, any reader-facing prose), refer to the DSM Central repository as "the Hub". "DSM Central" is the internal governance name; the public repo is Take-AI-Bite, and "Hub" avoids confusion between the two. This rule applies to all reader-facing material; internal docs and code can keep using "DSM Central".
 
 ### Language & Formatting
 - Primary language: English
