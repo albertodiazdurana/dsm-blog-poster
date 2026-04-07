@@ -171,10 +171,30 @@ This project uses:
 - This is a pre-publish gate, not optional
 
 ## DSM Version Release Coverage
-- When DSM ships a new version (detected at session start via the version check), compare `~/dsm-agentic-ai-data-science-methodology/FEATURES.md` against the previously covered version and identify new or changed features
-- Two required updates per version bump:
-  1. Update the canonical features post at `content/blog/2026-03-20-dsm-features-three-dimensions/index.md` to reflect the new total feature count and add new features to the appropriate dimension
-  2. Draft a dedicated release post announcing the new version's features (what changed and why)
-- Both follow the standard blog workflow: voice calibration, /humanizer pre-publish gate
-- Create a BL item in `dsm-docs/plans/` to track the release post if it cannot be written in the same session
-- This is a standing rule, not a one-off: every DSM version bump triggers both updates
+When DSM ships a new version, produce two updates:
+1. Update the canonical features post at `content/blog/2026-03-20-dsm-features-three-dimensions/index.md` (total count + weave new features into the appropriate dimension)
+2. Draft a dedicated release post telling the *story* behind the changes, not a changelog rehash
+
+### Reconstruction trail (mandatory reading order)
+All paths are in DSM Central (`~/dsm-agentic-ai-data-science-methodology/`):
+1. **Index** , `dsm-docs/blog/feature-trail.md` , read the version's section and the "Narrative threads" at the bottom. This is the entry point.
+2. **BL files** , `dsm-docs/plans/done/BACKLOG-NNN_*.md` for each feature in scope. The Problem Statement is the "why this matters" paragraph; Origin identifies the trigger.
+3. **Inbox origins** , for any feature with an inbox-sourced BL, read the referenced entry in `_inbox/done/`. Concrete incident stories are the best blog material.
+4. **Reasoning lessons** , `.claude/reasoning-lessons.md`, search for `[auto]` or `[STAA]` entries tied to the version. These surface the meta-pattern that ties multiple features together , the headline insight.
+5. **CHANGELOG** , `CHANGELOG.md` for the version(s). Same-day version bumps are treated as one release in the post.
+
+### Post structure
+1. **Hook** , the concrete incident (from the inbox source)
+2. **Insight** , the meta-pattern from reasoning lessons
+3. **Fix** , the features that implement the fix
+4. **Bonus** , related features following the same pattern
+5. **Takeaway** , what this version reveals about how DSM evolves
+
+### Anti-patterns
+- Do not list features mechanically , the feature list already lives in FEATURES.md and CHANGELOG
+- Do not write a changelog summary , write the story the sources don't tell
+- If covering an older feature whose feature-trail.md row is empty, populate the row first via the reconstruction recipe in feature-trail.md's "How to use this index" section
+
+### Workflow
+- Both posts follow the standard blog workflow: voice calibration from `content/about-me.md` + `content/about.md`, /humanizer pre-publish gate
+- Create a BL item in `dsm-docs/plans/` if the release post cannot be completed in the same session
