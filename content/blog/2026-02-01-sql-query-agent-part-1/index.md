@@ -6,8 +6,7 @@ description: "Building a natural language to SQL agent with local LLMs, starting
 tags: ["SQL", "LLM", "Ollama", "Agents", "Python"]
 categories: ["Technical"]
 author: "Alberto Diaz Durana"
-showToc: true
-ShowReadingTime: true
+toc: true
 slug: "sql-query-agent-part-1"
 ---
 

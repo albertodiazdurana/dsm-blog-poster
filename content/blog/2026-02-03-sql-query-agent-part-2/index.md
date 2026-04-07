@@ -6,8 +6,7 @@ description: "Why human review of AI-generated SQL matters -- lessons from build
 tags: ["SQL", "LLM", "Human-AI Collaboration", "Code Review", "Python"]
 categories: ["Technical"]
 author: "Alberto Diaz Durana"
-showToc: true
-ShowReadingTime: true
+toc: true
 slug: "sql-query-agent-part-2"
 ---
 

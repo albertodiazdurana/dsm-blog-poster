@@ -1,18 +1,17 @@
 ---
-title: "84 features across three dimensions"
+title: "90 features across three dimensions"
 date: 2026-03-20
 draft: false
-description: "DSM's 84 features mapped across human oversight, knowledge provenance, and experience accumulation."
+description: "DSM's 90 features mapped across human oversight, knowledge provenance, and experience accumulation."
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Features", "Take AI Bite"]
 categories: ["Features"]
 author: "Alberto Diaz Durana"
-showToc: true
-ShowReadingTime: true
+toc: true
 ---
 
 Most AI coding tools are built to reduce human involvement. DSM is built to make human involvement worth the time: the human and the AI produce better work together than either would alone, and what they learn carries forward.
 
-This post maps DSM's 84 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
+This post maps DSM's 90 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
 
 ---
 
@@ -24,17 +23,17 @@ Where most tools give you a slider between "approve everything" and "let the AI 
 
 Every artifact passes through a three-gate approval model: concept (do you understand what will be created?), implementation (does the diff look right?), and run (should this execute?). The AI cannot proceed without the human engaging with the work.
 
-This extends to collections. Multiple edits to a single file need separate explanations. Notebook cells are generated one at a time, with output verified before the next cell is created.
+This extends to collections. Multiple edits to a single file need separate explanations. Notebook cells are generated one at a time, with output verified before the next cell is created. Cells that produce plots save the figure to disk so the agent can read it back and check what it actually drew before moving on.
 
 ### Session lifecycle
 
 Sessions are not "start coding, stop coding." Each session starts by checking inbox messages, validating project state, comparing versions, and loading context. Each session ends by saving memory, committing work, and creating continuity documents. If a session ends unexpectedly, the next session detects the gap and offers recovery.
 
-Lightweight sessions handle quick follow-ups. Session baselines track what changed. Configuration recommendations match settings to the planned work scope.
+Lightweight sessions handle quick follow-ups. Session baselines track what changed. Configuration recommendations match settings to the planned work scope. A wrap-up type marker lets the next session-start command know whether the previous session ended light or full, so the two ends of the lifecycle stay aligned. Before suggesting wrap-up, the agent now re-reads the sprint plan and checks completed deliverables against actual evidence, so "sprint complete" cannot be declared while gates are still open.
 
 ### Safety guardrails
 
-Destructive commands (force push, hard reset, recursive delete) require explicit human request. Sensitive files (.env, credentials) are blocked from commits. Feature branches must be tested before merging.
+Destructive commands (force push, hard reset, recursive delete) require explicit human request. Sensitive files (.env, credentials) are blocked from commits. Feature branches must be tested before merging. The first write to any path outside the current repository in a session requires explicit user confirmation, so an agent working in a spoke project cannot quietly write into the Hub.
 
 These are structural constraints, not opt-in features. They cannot be bypassed without the human explicitly choosing to do so.
 
@@ -60,7 +59,7 @@ A path registry maps cross-repository relationships. Mirror repos receive method
 
 Every change to the methodology is tracked in a changelog, tagged with semantic versions, and checkpointed. Design decisions are numbered and documented with rationale and alternatives. Research findings are preserved with sources and dates.
 
-The point is preventing knowledge loss. When a protocol decision was made six months ago, the rationale is recoverable. When research informed a design choice, the original evidence is still there.
+The point is preventing knowledge loss. When a protocol decision was made six months ago, the rationale is recoverable. When research informed a design choice, the original evidence is still there. The same standard applies in the moment: before answering a question about a file, a definition, or a piece of documentation, the agent reads the source. No partial knowledge passing as understanding.
 
 ---
 
@@ -86,11 +85,13 @@ Session transcripts get mined for reasoning patterns that become formal guidance
 
 External observations generate backlog items automatically. The "Earn Your Assertions" principle means claims are verified before acting. "Critical Thinking" requires the AI to challenge its own outputs. These run as active protocols in every session.
 
+Sprint boundaries are not just packing-up moments. At each boundary, the agent runs a structured retrospective across six dimensions: themes, principles, evolution, collaboration, learning, and maturity. Mechanical compliance is necessary; the analysis is what makes the boundary useful for the next sprint.
+
 ---
 
 ## The compound effect
 
-No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 84 features work together as a system, and the system learns.
+No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 90 features work together as a system, and the system learns.
 
 A feedback observation from a spoke project becomes a backlog item in the central repository. That item becomes a protocol change. That change propagates to every project. The next session in any project benefits from an insight that started in a completely different context.
 

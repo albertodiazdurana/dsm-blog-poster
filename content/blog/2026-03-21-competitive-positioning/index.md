@@ -6,8 +6,7 @@ description: "We scored 15 AI development tools on three axes, scored competitor
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Competitive Positioning", "Take AI Bite"]
 categories: ["Positioning"]
 author: "Alberto Diaz Durana"
-showToc: true
-ShowReadingTime: true
+toc: true
 ---
 
 Every AI tool answers the same question: how should humans and AI work together?

@@ -6,8 +6,7 @@ description: "How compiler architecture patterns -- parsing, symbol tables, and 
 tags: ["Documentation", "Compilers", "Python", "Static Analysis", "DSM"]
 categories: ["Technical"]
 author: "Alberto Diaz Durana"
-showToc: true
-ShowReadingTime: true
+toc: true
 slug: "validating-documentation-compiler-architecture"
 ---
 

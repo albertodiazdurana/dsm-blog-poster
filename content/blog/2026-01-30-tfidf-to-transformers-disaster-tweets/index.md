@@ -6,8 +6,7 @@ description: "A hands-on journey through text classification methods -- from bag
 tags: ["NLP", "Machine Learning", "Transformers", "TF-IDF", "Python"]
 categories: ["Technical"]
 author: "Alberto Diaz Durana"
-showToc: true
-ShowReadingTime: true
+toc: true
 slug: "tfidf-to-transformers-disaster-tweets"
 ---
 

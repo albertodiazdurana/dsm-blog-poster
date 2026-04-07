@@ -6,8 +6,7 @@ description: "What happened when the first spoke project in a hub-and-spoke data
 tags: ["Methodology", "Data Science", "Feedback", "DSM", "Process Improvement"]
 categories: ["Methodology"]
 author: "Alberto Diaz Durana"
-showToc: true
-ShowReadingTime: true
+toc: true
 slug: "methodology-that-listens"
 ---
 

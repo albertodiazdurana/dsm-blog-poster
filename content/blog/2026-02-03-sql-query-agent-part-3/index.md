@@ -6,8 +6,7 @@ description: "An ablation study comparing zero-shot and few-shot prompting strat
 tags: ["SQL", "LLM", "Prompt Engineering", "Evaluation", "Python"]
 categories: ["Technical"]
 author: "Alberto Diaz Durana"
-showToc: true
-ShowReadingTime: true
+toc: true
 slug: "sql-query-agent-part-3"
 ---
 

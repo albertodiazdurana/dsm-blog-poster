@@ -6,8 +6,7 @@ description: "Deliver only what the reviewer can chew."
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Principles Series"]
 categories: ["Principles"]
 author: "Alberto Diaz Durana"
-showToc: false
-ShowReadingTime: true
+toc: false
 ---
 
 **Deliver only what the reviewer can chew.**

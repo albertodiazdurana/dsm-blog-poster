@@ -6,8 +6,7 @@ description: "A collaboration framework where the human stays in control and ret
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Principles Series", "Take AI Bite"]
 categories: ["Principles"]
 author: "Alberto Diaz Durana"
-showToc: true
-ShowReadingTime: true
+toc: true
 ---
 
 AI tools generate faster than humans can review. When the output exceeds what a person can meaningfully engage with, the collaboration quietly breaks: the human stops reading and starts clicking "approve." The human in the loop becomes decorative, and what they actually bring, direction, judgment, style, goes missing from the work.
