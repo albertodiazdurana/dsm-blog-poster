@@ -11,7 +11,7 @@
 New features added since the post was last updated (S14):
 
 - F-091 Planning pipeline gate in alignment template
-- F-092 Runtime register context for register-sensitive skills (humanizer)
+- F-092 Runtime register context for register-sensitive skills (humanizer - we will not name the skill name "humanazer" in the post - it should remain open for any skill that addresses this type of changes)
 - F-093 Python virtual environment protocol
 - F-094 Per-turn transcript append enforcement
 - F-095 Process narration in transcript thinking blocks
