@@ -1,0 +1,6 @@
+/* Right-anchor dropdowns in the right-side nav list (e.g. Categories)
+   so they expand leftward instead of overflowing the viewport. */
+.nav__list--end .optionswitch__list {
+  right: 0;
+  left: auto;
+}
