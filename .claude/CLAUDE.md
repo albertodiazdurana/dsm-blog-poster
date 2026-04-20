@@ -94,18 +94,6 @@ This project uses:
 - **Primary inputs**: Blog posts from DSM Central (`dsm-docs/blog/`) and spoke projects
 - **Dependencies**: Hugo v0.142.0 extended, GitHub Pages, GitHub Actions for deployment
 
-### Existing Content to Migrate
-
-| # | Date | Title | Source |
-|---|------|-------|--------|
-| 1 | 2026-01-30 | From TF-IDF to Transformers: What Classifying Disaster Tweets Taught Me About How We Got to LLMs | `~/dsm-disaster-tweets/docs/blog-post-draft.md` |
-| 2 | 2026-02-01 | SQL Query Agent Part 1: From Notebook Exploration to Structured Evaluation | `~/sql-query-agent-ollama/docs/blog/blog-s01.md` |
-| 3 | 2026-02-03 | SQL Query Agent Part 2: The Value of Human Review in AI-Generated Code | `~/sql-query-agent-ollama/docs/blog/blog-s02-collaboration-value.md` |
-| 4 | 2026-02-03 | SQL Query Agent Part 3: Why Zero-Shot Beat Few-Shot | `~/sql-query-agent-ollama/docs/blog/blog-s02-ablation.md` |
-| 5 | 2026-02-05 | Validating 7,400 Lines of Documentation with Compiler Architecture | `~/dsm-graph-explorer/docs/blog/epoch-1/blog-draft.md` |
-| 6 | 2026-02-05 | From Windows to WSL: Migrating an AI-Assisted Documentation Ecosystem | `~/dsm-graph-explorer/docs/blog/epoch-2/wsl-migration-post.md` |
-| 7 | 2026-02-06 | A Methodology That Listens: How Our First Spoke Project Rewrote the Playbook | `~/dsm-agentic-ai-data-science-methodology/docs/blog/2026-02-06_blog-feedback-loop.md` |
-
 ### Stakeholders & Governance
 - **Primary**: Alberto (site owner) - professional portfolio and blog
 - **Secondary**: DSM community - methodology insights and project updates

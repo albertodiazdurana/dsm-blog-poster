@@ -27,6 +27,7 @@ enableEmoji = false
   mainSections = ['blog']
   images = ['images/profile.png']
   doNotLoadAnimations = false
+  customCss = ['css/custom.css']
   singleDateFormat = '2 January 2006'
   indexDateFormat = '2 January 2006'
   listDateFormat = '2 January 2006'
