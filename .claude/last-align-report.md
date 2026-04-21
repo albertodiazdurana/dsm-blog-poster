@@ -1,43 +1,42 @@
 # /dsm-align persistent report
 
-**Timestamp:** 2026-04-13T21:00:00+02:00
-**DSM version:** v1.4.18
-**Run mode:** check-only
-**Project:** DSM Blog Poster
-**Project type:** Application (DSM 4.0)
+**Timestamp:** 2026-04-21T00:55:00+02:00
+**DSM version:** v1.6.3 (was v1.4.18)
+**Run mode:** post-change
+**Project:** dsm-blog-poster
+**Project type:** Application (Hugo static site, Spoke)
 
 ---
 
 ## Report
 
-/dsm-align check-only report:
-- Project type: Application (DSM 4.0)
+/dsm-align post-change report:
+- Project type: Application (Hugo static site, Spoke)
 - Created: none
-- Already correct: 15 (9 dsm-docs folders, _inbox, .gitattributes, reasoning-lessons, ecosystem registry, session-transcript, hooks)
-- Fixed: none
+- Already correct: scaffold (_inbox + 8 dsm-docs folders + done subfolders), CLAUDE.md @ reference, CLAUDE.md alignment delimiters, .gitattributes (LF), reasoning-lessons.md header, ecosystem registry
+- Fixed: hooks (1 installed, 1 updated, 1 ok), .claude/settings.json (hooks merged)
 - Collisions: none
-- Warnings: 7 stale CLAUDE.md path references (migration table sources)
-- CLAUDE.md alignment: OK (up to date)
+- Warnings: 1 (DSM version jump v1.4.18 -> v1.6.3 with pending spoke-action reviews)
+- CLAUDE.md alignment: OK (delimiters present)
 - CLAUDE.md content: OK
 - CLAUDE.md redundancy: OK
-- CLAUDE.md paths: 7 stale path(s) found (all in Existing Content to Migrate table, cross-repo references)
+- CLAUDE.md paths: OK (S20 removed the stale migration table)
 - .gitattributes: OK
-- Command sync: N/A (not DSM Central)
+- Command sync: N/A (not DSM Central) - sync-commands.sh --deploy run to pick up v1.6.x command changes
 - Feedback pushed: none pending
 - EC governance scaffold: N/A (not EC)
-- Transcript hooks: 0 installed / 0 updated / 2 ok · settings.json: already ok
+- Transcript hooks: 1 installed / 1 updated / 1 ok, settings.json: merged
 
 ## Warnings (full text)
 
-1. CLAUDE.md references `~/dsm-disaster-tweets/docs/blog-post-draft.md` which does not exist. (Line 101, Existing Content to Migrate table)
-2. CLAUDE.md references `~/sql-query-agent-ollama/docs/blog/blog-s01.md` which does not exist. (Line 102)
-3. CLAUDE.md references `~/sql-query-agent-ollama/docs/blog/blog-s02-collaboration-value.md` which does not exist. (Line 103)
-4. CLAUDE.md references `~/sql-query-agent-ollama/docs/blog/blog-s02-ablation.md` which does not exist. (Line 104)
-5. CLAUDE.md references `~/dsm-graph-explorer/docs/blog/epoch-1/blog-draft.md` which does not exist. (Line 105)
-6. CLAUDE.md references `~/dsm-graph-explorer/docs/blog/epoch-2/wsl-migration-post.md` which does not exist. (Line 106)
-7. CLAUDE.md references `~/dsm-agentic-ai-data-science-methodology/docs/blog/2026-02-06_blog-feedback-loop.md` which does not exist. (Line 107)
-
-Note: All 7 stale paths are in the "Existing Content to Migrate" table documenting original source locations for blog posts. These posts may have been moved, renamed, or their source repos reorganized. The table is historical documentation; consider updating or removing stale rows.
+1. **DSM version jump v1.4.18 -> v1.6.3 with pending spoke-action reviews.** Spoke actions to review in next work:
+   - Review DSM_0.1 §7.1 (blog/public-facing content, applies to this project)
+   - Review DSM_0.2 §8.6, §8.7, §8.2.1 (Gate mechanics, artifact demand)
+   - Review DSM_6.0 §1.11 (principle relationship paragraph)
+   - Review DSM_7.0 §2.1 and §3 (Claude Code filled instance)
+   - BL-386: Declare `**Main branch:**` in CLAUDE.md project-specific section (default `main` is fine for this project; no action strictly required)
+   - BL-379: Project type detection broadened (correctly Application, no change)
+   - BL-372: Cloned-Mirror Kick-off Protocol (no action for existing spoke)
 
 ## Collisions (full text)
 
@@ -45,17 +44,15 @@ None.
 
 ## Already correct
 
-- `_inbox/` exists with `done/` and `README.md`
-- All 9 `dsm-docs/` subdirectories present with correct `done/` subfolders
-- Template files present: journal.md, checkpoints/README.md, feedback-to-dsm/README.md, handoffs/README.md, plans/README.md, research/README.md
-- `.claude/CLAUDE.md` `@` reference valid
-- CLAUDE.md alignment section matches current template
-- `.gitattributes` enforces LF line endings
-- `.claude/dsm-ecosystem.md` exists with 4 validated paths
-- `.claude/reasoning-lessons.md` exists with header
-- `.claude/session-transcript.md` exists
-- BL-319 hooks: 2 scripts present, executable, byte-identical to source
-- `.claude/settings.json` hooks entries match template
+- `_inbox/` with `done/` and `README.md`
+- All 8 canonical `dsm-docs/` folders with their `done/` subfolders
+- `.gitattributes` with LF enforcement
+- `.claude/CLAUDE.md` `@` reference to DSM_0.2
+- `.claude/CLAUDE.md` alignment delimiters present
+- `.claude/reasoning-lessons.md` header present
+- `.claude/dsm-ecosystem.md` present with ecosystem paths
+- No feedback files pending push (all pushed in prior sessions)
+- No handoffs outside `done/`
 
 ## Steps skipped
 

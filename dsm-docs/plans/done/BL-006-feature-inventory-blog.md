@@ -1,8 +1,17 @@
 # BL-006: Feature Inventory Blog Post
 
+**Status:** Implemented
+**Date Completed:** 2026-04-21 (Session 21)
 **Created:** 2026-03-20 (Session 9)
 **Priority:** High
 **Trigger:** 3D narrative source file ready in DSM Central (BL-238 D5)
+
+## Closure note (Session 21)
+
+Main deliverable published Session 9 as `content/blog/2026-03-20-dsm-features-three-dimensions/index.md`. Post was refreshed in S14 (count to 90) and again in S21 (count to 114 with the v1.4.9-v1.6.3 features woven in across the three dimensions).
+
+The "Ongoing Responsibility" for feature micro-posts and major-update refreshes is now absorbed by the CLAUDE.md "DSM Version Release Coverage" rule added in S14, which mandates both a features-post refresh and a dedicated release post on every DSM version bump. BL-018 tracks the next concrete release-post instance (v1.5.x / v1.6.x). No further ongoing tracking needed under BL-006 itself.
+
 
 ## Description
 
