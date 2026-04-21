@@ -1,8 +1,19 @@
 # BL-015: Update Features Post from 90 to 95 Features
 
+**Status:** Dropped
+**Date Completed:** 2026-04-21 (Session 21)
 **Priority:** Medium
 **Source:** Session 16 (2026-04-07), discovered while reading FEATURES.md per the new session-start TAB/DSM context rule
 **Trigger:** Same session as BL-014, or next blog session
+
+## Closure note (Session 21)
+
+Dropped after carrying 3 sessions. Rationale:
+- Original scope (90 -> 95 delta, April 6-7 features) was overtaken by DSM v1.5.x/v1.6.x, which pushed the feature count well beyond 95.
+- Doing a count-only refresh at each version bump is low-value when FEATURES.md is the canonical inventory and the blog post is a narrative piece, not a live mirror.
+- Replaced by a broader decision: features-post updates are now triggered only when a dedicated release post is written, and the count is updated at that point. Count drift between release posts is acceptable.
+- The five April 6-7 features listed below can still be referenced in a future release post covering their version range; they are preserved here as a lookup aid.
+
 
 ## Description
 
