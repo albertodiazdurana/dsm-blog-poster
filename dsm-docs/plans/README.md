@@ -17,6 +17,8 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-015 | [Update features post from 90 to 95](BL-015-features-post-90-to-95.md) | Medium | This or next blog session |
 | BL-016 | ["The Architecture You Didn't Design" blog post](BL-016-architecture-you-didnt-design-post.md) | High | On hold (BL-357 principle being restructured in DSM Central) |
 | BL-017 | ["Fix the Code, Not the Data" (combine with IronCalc content)](BL-017-fix-the-code-not-the-data-post.md) | Medium | When additional IronCalc content arrives |
+| BL-018 | [DSM v1.5.x / v1.6.x release post](BL-018-dsm-v1-5-v1-6-release-post.md) | Medium | Ready for reconstruction trail |
+| BL-019 | [PMO Director blog post](BL-019-pmo-director-blog.md) | Medium | After PM post publishes |
 
 ## Completed
 
