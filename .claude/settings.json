@@ -22,6 +22,24 @@
             "command": ".claude/hooks/validate-rename-staging.sh"
           }
         ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/validate-cross-repo-write.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/validate-cross-repo-write.sh"
+          }
+        ]
       }
     ],
     "UserPromptSubmit": [

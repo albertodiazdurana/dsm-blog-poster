@@ -1,3 +1,7 @@
+**Status:** Done , superseded
+**Date Completed:** 2026-05-12 (Session 22)
+**Closure:** Absorbed by BL-022 (cumulative v1.5-v1.9 multi-front release coverage). The release-post scope this BL named lives in BL-022 Front A.
+
 # BL-018: DSM v1.5.x / v1.6.x release post
 
 **Status:** Open

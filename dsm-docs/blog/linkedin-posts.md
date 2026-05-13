@@ -153,3 +153,28 @@ The interesting part isn't the tool. It's that every sprint surfaced something t
 If you want to read more: https://take-ai-bite.com/
 
 #HumanAICollaboration #LLMs #SystemsThinking #PromptEngineering #AIEngineering
+
+## Post 8: The inbox was a Communication Management Plan (2026-05-12)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_projectmanagement-pmp-humanaicollaboration-share-7459885565509980160-Hk2b
+**Status:** Published
+**Blog post:** https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
+**Series:** Fragment 1 of 6 from the PM post series (BL-020).
+
+**Text:**
+
+I was reading my own inbox folder when it clicked. Not the email kind, the one that lives at `_inbox/` inside every project I run, where messages from one repository land for another to pick up at the next session start. I had built it months earlier to stop losing observations between projects. Populated it without ceremony, processed it without ceremony, moved entries to `done/` when finished. It worked. I had not given it a name beyond "the inbox," and I had not asked where the pattern came from.
+
+The pattern came from a chapter I had read in a different life. In 2016 I sat for the PMP exam. One of its ten knowledge areas is Communication Management: the discipline of moving information between stakeholders deliberately rather than hoping it shows up where it needs to be. Who needs to know, in what form, by when, through which channel, and how you confirm receipt.
+
+The inbox folder is Communication Management. I had built a Communication Management Plan inside a software project and not noticed.
+
+That recognition turned into a question. If one knowledge area was already running in the project under a different name, were the others?
+
+I went back and looked. Spoiler: all ten were there. Some of them I had built deliberately. Most of them had walked in quietly, over months, doing work I had attributed to something else.
+
+I will get to the other nine in the next posts. But the part I want to put down first is the smaller, stranger thing: a decade-old credential, one I thought I had stopped using, turned out to be running my AI collaboration. I just did not have the vocabulary.
+
+Full post: https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
+
+#ProjectManagement #PMP #HumanAICollaboration #DSM #TakeAIBite
