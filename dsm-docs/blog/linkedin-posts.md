@@ -178,3 +178,194 @@ I will get to the other nine in the next posts. But the part I want to put down 
 Full post: https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
 
 #ProjectManagement #PMP #HumanAICollaboration #DSM #TakeAIBite
+
+## Post 9: Ten knowledge areas, all running, none named (2026-05-12)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_projectmanagement-pmp-humanaicollaboration-share-7460228213261148160-Orb0
+**Status:** Published
+**Blog post:** https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
+**Series:** Fragment 2 of 6 from the PM post series (BL-020).
+
+**Text:**
+
+I claimed in my last post that all ten PMP knowledge areas were running inside my AI collaboration methodology. That is a big claim. Here are three of them:
+
+**Cost Management** is the context window. The agent's context window is finite. Every file read, every tool call, every back-and-forth turn consumes a resource that runs out, and when it runs out the second half of the session degrades silently. PMI calls this cost. The methodology calls it context budget. The discipline is identical: estimate before you spend, warn when you are running low, scope the work to the resource you actually have. The names are different but the work is the same.
+
+**Risk Management** is the failure mode catalog. When something deviates from the prescribed behavior, there is a three-step response: fix the immediate issue, identify the root cause, prevent the recurrence. PMI builds risk registers for exactly this. I had a folder of recorded failure modes with associated protocols and had been calling it "reasoning lessons." It is a risk register that gets loaded into memory at each session start.
+
+**Scope Management** is the MUST/SHOULD/COULD framework on every backlog item, the scope review checkpoint at sprint boundaries, the rule that every backlog item gets a single topic and splits when it tries to become two. These are scope disciplines applied to the work the methodology exists to govern. PMI would recognize them without prompting.
+
+The other seven follow the same shape. Communication, Schedule, Integration, Quality, Resource, Stakeholder, Procurement. Each one mapped to something I had built and named locally without intentionally aligning by design with any specific curriculum it belonged to.
+
+What changed when I noticed: the vocabulary. The methodology was already doing the work. The PMI vocabulary just gave me a way to see which parts were load-bearing and which parts were decoration. Almost everything turned out to be load-bearing. The decorative bits had quietly disappeared, sprint by sprint, because the work pressured them out.
+
+A credential I had not used in a decade turned out to have been running underneath the whole time without the labels.
+
+Full post: https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
+
+#ProjectManagement #PMP #HumanAICollaboration #DSM #TakeAIBite
+
+## Post 10: I built the PM chapter before I knew it was a framework (2026-05-12)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_leadership-projectmanagement-pmp-share-7460536897677787137-i3p7
+**Status:** Published
+**Blog post:** https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
+**Series:** Fragment 3 of 6 from the PM post series (BL-020).
+**Note:** First post using the `#Leadership` hashtag in place of `#DSM`. Method for selecting hashtags from data is captured as BL-023.
+
+**Text:**
+
+I owe my last post a clarification.
+
+Communication Management was the first PMP knowledge area I *recognized* inside the methodology. It was not the first I had intended to put there. The first was Scope.
+
+Before Take AI Bite existed, before any of this had a name, I had already written DSM_2.0, the Project Management Guidelines. One of the earliest documents in the methodology. It came right after DSM_1.0, the Data Science Collaboration Methodology, and it landed there because the work needed it. I knew from the PMP that a project without a defined scope will drift, so I built the scope discipline in deliberately, with rules I had carried from a decade earlier: MUST / SHOULD / COULD on every backlog item, a single topic per item, splits when an item tries to become two.
+
+I was writing project management into a data science methodology before I had thought to name any of this as a framework.
+
+So the recognition I described last time is not that PM showed up uninvited. It is that PM was the first thing I invited in, and the rest of the knowledge areas walked in quietly behind it, over months, without announcing themselves.
+
+The PMP credential was never something I put down. I stopped applying it *intentionally*, which is different. When I started building Take AI Bite, I thought I was solving a different problem: how the human stays meaningfully present when the machine produces faster than anyone can read. The principles, the protocols, the operational channels, none of it felt like project management. It felt like figuring out how to collaborate with an agent that does not get tired and will always have something to say, even if it is wrong.
+
+Then I noticed the inbox. And the rest of the curriculum was there, doing work I had attributed to something else.
+
+The credential was not being repurposed. It was being completed.
+
+Full post: https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
+
+#ProjectManagement #PMP #HumanAICollaboration #Leadership #TakeAIBite
+
+## Post 11: The stakeholder the PMP curriculum did not have (2026-05-12)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_projectmanagement-pmp-humanaicollaboration-share-7462612124964433920-IT8q
+**Status:** Published
+**Blog post:** https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
+**Series:** Fragment 4 of 6 from the PM post series (BL-020).
+**Note:** Slug picked up first 3 hashtags only. `#Leadership` sat in position 4 and did not appear in the URL. Tag ORDER may matter for slug composition; tracked in BL-023.
+
+**Text:**
+
+I said in the last post that the PMP credential was being completed, not repurposed. There is one place where "completed" needs an asterisk.
+
+PMI's framing of project management has a stakeholder model at its core. A stakeholder is anyone whose interests, expectations, or actions affect or are affected by the project. Sponsors, customers, team members, regulators, the people next door to the construction site. The discipline is built around managing them: identifying them, understanding their interests, communicating with them at the right cadence, getting their input into the decisions that affect them. The whole curriculum assumes the stakeholders are human.
+
+The work I do now has two kinds of stakeholders.
+
+The human collaborator is one of them: me, the client, the reviewer, the eventual reader of the deliverable. The AI agent is the other. It has expectations (what counts as a valid response, what counts as a violation), it has interests in the methodology sense (the protocols it operates under shape what it can do and how), and its actions affect the project in ways that need to be communicated, reviewed, and integrated. It is not a tool in the way a compiler is a tool. It is a participant whose behavior is governed by an instruction system that I author and maintain.
+
+That instruction system is, structurally, a stakeholder management plan for a stakeholder PMI did not have to consider.
+
+The artifacts are doing the work the metaphor describes:
+
+- `CLAUDE.md` is a stakeholder communication document.
+- The session-start command is a stakeholder onboarding protocol.
+- The feedback files are a stakeholder feedback channel.
+- Version updates are stakeholder change management.
+
+This is not a stretch. The credential I had not used in a decade transferred almost without modification, except here. PMI's Stakeholder Management area is the place where the curriculum needed extending, not just completing, because the 2016 exam did not have a chapter on managing an agent that inherits behavioral protocols through a reference chain and has its own failure modes when its context drifts.
+
+Traditional project management manages one kind of stakeholder. This work manages two.
+
+Full post: https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
+
+#ProjectManagement #PMP #HumanAICollaboration #Leadership #TakeAIBite
+
+## Post 12: PMI is in the AI conversation. This is a third direction. (2026-05-12)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_projectmanagement-pmp-humanaicollaboration-share-7463186564945424385-P_uo
+**Status:** Published
+**Blog post:** https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
+**Series:** Fragment 5 of 6 from the PM post series (BL-020).
+**Note:** Trimmed ~220 characters pre-publish to land under LinkedIn's 3000-char limit (final body 2827 chars). First explicit Take AI Bite naming in the series. URL slug led with `projectmanagement-pmp-humanaicollaboration` (same as Post 11); `#Leadership` in position 4 did not enter the slug. Tag-text-order is not the deterministic slug rule (BL-023 observation).
+
+**Text:**
+
+A fair question after my last post: has PMI not already addressed AI? It has.
+
+Since I sat for the PMP in 2016, the institute has not been standing still. PMI launched **PMI-CPMAI** to credential the practice of managing AI delivery projects. It shipped **PMI Infinity**, a GenAI assistant aimed at project managers doing their existing work. And the upcoming **PMBOK 8th edition** embeds AI as a tool across the performance domains. PMI is in the AI conversation and seriously so.
+
+The direction PMI has taken is twofold:
+
+1. Credentialing the projects that deliver AI systems.
+2. Putting AI in the hands of the project manager as a tool for doing existing PM work better.
+
+Both are real and useful. Neither is the one I am pointing at in this series.
+
+The framing I have been working with in **Take AI Bite** is a third direction: treating the **instruction system that governs the agent as a stakeholder management plan** for a stakeholder the curriculum did not have to consider.
+
+Why does the AI get the stakeholder label rather than the tool label? Because of the kind of work and the kind of interaction. The agent participates per turn, per decision, per artifact. The collaboration is two-way: I review what it produced, and what it produced feeds back into the instruction system that governs the next turn. And the bidirectionality is not local to the methodology project. In any project that follows the methodology, the AI's outputs feed back into the methodology through feedback files and reasoning lessons, which then propagate to every project's instruction system. The methodology grows through that exchange. Tools generate outputs where there is no interaction or dialog. A stakeholder participates in the exchange of ideas.
+
+PMI's two directions use AI to help the PM manage human stakeholders. This work extends Stakeholder Management to cover the agent itself, as a participant whose behavior is shaped by an artifact that the human authors and maintains.
+
+I want to be honest about the distance between the three:
+
+- PMI direction 1: I am running a project, and the project produces an AI system.
+- PMI direction 2: I am running a project, and an AI helps me run it.
+- Third direction: I am running a project, and the AI is a stakeholder I am managing.
+
+Not in conflict, complementary. A PM running a Generative AI delivery (direction 1), using PMI Infinity to draft status reports (direction 2), still has to author the system prompt that governs the agent doing the technical work (third direction). The three coexist in the same project.
+
+Worth naming as distinct, though: different framings carry different obligations.
+
+Full post: https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
+
+#ProjectManagement #PMP #HumanAICollaboration #Leadership #TakeAIBite
+
+## Post 13: There is also an organization (2026-05-12)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_projectmanagement-pmp-humanaicollaboration-share-7465159793746264065-SP84
+**Status:** Published
+**Blog post:** https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
+**Series:** Fragment 6 of 6 from the PM post series (BL-020). Series closes here; hands off to BL-019 (PMO Director full blog post).
+
+**Text:**
+
+The knowledge areas are one layer. There is another underneath.
+
+The PMP curriculum teaches project management as a practice: ten knowledge areas, processes, inputs, outputs. PMI also defines a function that owns the methodology across projects: the **Project Management Office**. A PMO is not a project team. It is the organizational unit that authors the standards, maintains the templates, deploys the tooling, monitors compliance, and manages methodology adoption across the teams under its domain. The function that defines how project work happens everywhere else.
+
+That function is what **Take AI Bite's Hub** is.
+
+Not because I designed it to mirror a PMO. Because the problems a PMO exists to solve, standards drift, tooling fragmentation, compliance without authority, methodology adoption across independent teams, are the same problems a hub-and-spoke methodology ecosystem has to solve. The structure that resolves them is the same structure.
+
+Concretely, the Hub does PMO work:
+
+- Authors the methodology documents. Versions them.
+- Maintains the templates every project inherits.
+- Deploys the tooling, slash commands, hooks, validators, that runs in every project.
+- Manages the change pipeline when a methodology update needs to propagate across an ecosystem of independent repos.
+
+This is not a metaphor. The artifacts are doing the work.
+
+Which means there is a word for the role behind the methodology, too. I built a PMO and did not call it that. A next post will get to the name.
+
+Full post: https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-agentic-stakeholder/
+
+#ProjectManagement #PMP #HumanAICollaboration #Leadership #TakeAIBite
+
+## Post 14: Running a PMO for an AI-agent workforce (DRAFT, pending blog go-live)
+
+**URL:** (pending , post after the blog post is live at the URL below)
+**Status:** Drafted, not yet published. Blog post must deploy first (PR merge + GitHub Actions) so the "Full post:" link resolves.
+**Blog post:** https://take-ai-bite.com/blog/2026-05-28-pmo-director-agentic-stakeholder/
+**Source:** BL-019 (PMO Director blog post). This is the cross-post for the full blog post that the PM-post LinkedIn series (Posts 8-13) handed off to.
+**Hashtag note:** proposes dropping #PMP and adding #PMO for this post (PMO is more central to this piece than PMP). User to confirm.
+
+**Text:**
+
+I built a PMO and did not call it that.
+
+For a year I have been building Take AI Bite as a methodology for AI collaboration, and for the same year I have been building everything around it: versioned documents, alignment templates, tooling, a change pipeline, an inbox, a transcript-analysis pass that turns sessions into reasoning lessons. I had the methodology, and I had the whole apparatus that keeps it consistent across projects. I never asked what the apparatus was called.
+
+It is a Project Management Office. The function that authors the standards, maintains the templates, deploys the tooling, keeps practice consistent, and coaches the teams. Six PMO functions, six concrete artifacts, mapped without strain.
+
+One word I avoid: governance. Governance fits a thing that executes what it is given, a pipeline, a model, a deployment. It does not fit a collaborator. An agent that reads the context, questions a weak assumption, and pushes back before a bad step is not being governed. It is participating. Governance is for things that execute. Collaboration is for participants.
+
+Which is also where the PMO model needed extending. A conventional PMO serves human teams. One of mine is not human. A vanilla model does not know how to collaborate in this particular game, so onboarding means building the framework that makes the work clear and the way of working clear. The rules have to be present at the moment of play, because that is the only moment they can help.
+
+There is a name for the role behind this: PMO Director of an AI-agent workforce.
+
+Full post: https://take-ai-bite.com/blog/2026-05-28-pmo-director-agentic-stakeholder/
+
+#ProjectManagement #PMO #Leadership #HumanAICollaboration #TakeAIBite

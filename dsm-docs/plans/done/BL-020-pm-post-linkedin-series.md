@@ -1,3 +1,7 @@
+**Status:** Done
+**Date Completed:** 2026-05-12 (Session 22)
+**Closure:** All 6 fragments published to LinkedIn as Posts 8-13 on 2026-05-12. Series produced in one session; canonical record at `dsm-docs/blog/2026-04-10-pm-post-linkedin-fragments.md` and individual entries at `dsm-docs/blog/linkedin-posts.md`. PM-post arc continues with BL-019 (PMO Director blog post).
+
 # BL-020: LinkedIn series for the PM blog post
 
 **Status:** Open

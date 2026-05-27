@@ -18,8 +18,8 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-016 | ["The Architecture You Didn't Design" blog post](BL-016-architecture-you-didnt-design-post.md) | High | On hold (BL-357 principle being restructured in DSM Central) |
 | BL-017 | ["Fix the Code, Not the Data" (combine with IronCalc content)](BL-017-fix-the-code-not-the-data-post.md) | Medium | When additional IronCalc content arrives |
 | BL-019 | [PMO Director blog post](BL-019-pmo-director-blog.md) | Medium | After PM post publishes |
-| BL-020 | [LinkedIn series for the PM blog post](BL-020-pm-post-linkedin-series.md) | Medium | In progress (Fragment 1 published 2026-05-12) |
 | BL-022 | [DSM v1.5-v1.9 cumulative release coverage (multi-front)](BL-022-dsm-v1.5-v1.9-release-coverage.md) | High | Active |
+| BL-023 | [LinkedIn hashtag research method](BL-023-linkedin-hashtag-research-method.md) | Medium | Next session |
 
 ## Completed
 
@@ -36,3 +36,4 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-001 | [Expose category filtering as a navbar dropdown](done/BL-001-navbar-categories-dropdown.md) | 2026-04-14 |
 | BL-018 | [DSM v1.5.x / v1.6.x release post](done/BL-018-dsm-v1-5-v1-6-release-post.md) | 2026-05-12 (superseded by BL-022) |
 | BL-021 | [Features post update for DSM v1.7-v1.9](done/BL-021-features-post-update-v1.7-v1.9.md) | 2026-05-12 (superseded by BL-022) |
+| BL-020 | [LinkedIn series for the PM blog post (6 fragments published as Posts 8-13)](done/BL-020-pm-post-linkedin-series.md) | 2026-05-12 |
