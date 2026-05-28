@@ -344,17 +344,18 @@ Full post: https://take-ai-bite.com/blog/2026-04-10-project-management-for-the-a
 
 #ProjectManagement #PMP #HumanAICollaboration #Leadership #TakeAIBite
 
-## Post 14: Running a PMO for an AI-agent workforce (DRAFT, pending blog go-live)
+## Post 14: Running a PMO for an AI-agent workforce (2026-05-28)
 
-**URL:** (pending , post after the blog post is live at the URL below)
-**Status:** Drafted, not yet published. Blog post must deploy first (PR merge + GitHub Actions) so the "Full post:" link resolves.
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_projectmanagement-pmo-leadership-share-7465728153559363584-9TC7/
+**Status:** Published
 **Blog post:** https://take-ai-bite.com/blog/2026-05-28-pmo-director-agentic-stakeholder/
-**Source:** BL-019 (PMO Director blog post). This is the cross-post for the full blog post that the PM-post LinkedIn series (Posts 8-13) handed off to.
-**Hashtag note:** proposes dropping #PMP and adding #PMO for this post (PMO is more central to this piece than PMP). User to confirm.
+**Source:** BL-019 (PMO Director blog post). Cross-post for the full blog post that the PM-post LinkedIn series (Posts 8-13) handed off to.
+**Hashtag set:** #ProjectManagement #PMO #Leadership #HumanAICollaboration #TakeAIBite (dropped #PMP, added #PMO).
+**Slug observation (BL-023):** declared hashtag order matched URL slug lead-tags 1:1 for the first three tags (`projectmanagement-pmo-leadership`). First Post in the series where slug appears to track declared order.
 
 **Text:**
 
-I built a PMO and did not call it that.
+I built a PMO for an AI-agent workforce.
 
 For a year I have been building Take AI Bite as a methodology for AI collaboration, and for the same year I have been building everything around it: versioned documents, alignment templates, tooling, a change pipeline, an inbox, a transcript-analysis pass that turns sessions into reasoning lessons. I had the methodology, and I had the whole apparatus that keeps it consistent across projects. I never asked what the apparatus was called.
 
