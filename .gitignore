@@ -19,3 +19,5 @@ Thumbs.db
 .claude/session-transcript.md
 .claude/transcripts/
 .claude/plans/
+.claude/session.lock
+.claude/cross-repo-writes-session.txt
