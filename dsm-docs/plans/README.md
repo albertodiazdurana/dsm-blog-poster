@@ -18,6 +18,8 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-022 | [DSM v1.5-v1.9 cumulative release coverage (multi-front)](BL-022-dsm-v1.5-v1.9-release-coverage.md) | High | Active |
 | BL-023 | [LinkedIn hashtag research method](BL-023-linkedin-hashtag-research-method.md) | Medium | Next session |
 | BL-024 | ["Investigation-first" blog post + LinkedIn cross-post (Haystack OSS arc)](BL-024-haystack-investigation-first-post.md) | Medium | After BL-022 Stage 3 |
+| BL-025 | [DSM v1.10-v1.14 cumulative release coverage (multi-front)](BL-025-dsm-v1.10-v1.14-release-coverage.md) | High | Active (Stage 1 done) |
+| BL-026 | [IronCalc ACCRINT contribution arc blog post](BL-026-ironcalc-accrint-story-post.md) | Medium | When upstream source draft completes |
 
 ## Completed
 
