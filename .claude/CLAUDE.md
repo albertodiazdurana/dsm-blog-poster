@@ -176,6 +176,18 @@ This project uses:
 - File naming follows DSM_0.1 convention
 - In public-facing content (blog, About pages, LinkedIn, any reader-facing prose), refer to the DSM Central repository as "the Hub". "DSM Central" is the internal governance name; the public repo is Take-AI-Bite, and "Hub" avoids confusion between the two. This rule applies to all reader-facing material; internal docs and code can keep using "DSM Central".
 
+### TAB and DSM in reader-facing prose
+
+Take AI Bite (TAB) is the framework and the reader-facing brand. The version belongs to TAB. The files that implement TAB happen to be named `DSM_X.Y`, that is where the DSM name shows up. "DSM is part of TAB" is the reader-facing posture, not "DSM is a separate versioned layer beneath TAB", that earlier framing was internal architecture leaking into reader-facing prose.
+
+- **Take AI Bite (TAB)** owns the version. "Take AI Bite v1.6", "TAB v1.6", or just "v1.6" when context makes it clear.
+- **DSM as a standalone noun does not appear in reader-facing prose.** It only survives as file references where the file is literally named that way: `DSM_6.0`, `DSM_7.0`, `DSM_0.2 §8.10`.
+- **Principles:** "Take AI Bite's Read-the-Manual principle (DSM_6.0 §1.11)". The principle belongs to TAB, the parenthetical points to where the file lives.
+- **Release-post titles:** TAB-led. "How Take AI Bite learned to X."
+- **Release-post Takeaways re-anchor to TAB** at least once.
+- **LinkedIn hashtags:** `#TakeAIBite` (drop `#DSM` to match the convention). Topical tags as appropriate (`#AI`, `#HumanAICollaboration`, etc.).
+- **About page's "two layers" paragraph** is acceptable as optional depth for readers who want internal architecture, it does not drive vocabulary elsewhere.
+
 ### Language & Formatting
 - Primary language: English
 - Number format: 1,234.56
