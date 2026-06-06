@@ -3,8 +3,8 @@
 <!-- Do not edit; auto-generated from .claude/reasoning-lessons.md by /dsm-wrap-up Step 0 or /dsm-staa Step 8 -->
 
 **Source:** `.claude/reasoning-lessons.md`
-**Last regenerated:** 2026-05-28T01:31+02:00
-**Source mtime at regeneration:** 2026-05-28T01:31+02:00
+**Last regenerated:** 2026-06-06T11:50+02:00
+**Source mtime at regeneration:** 2026-06-06T11:49+02:00
 
 ---
 
@@ -66,3 +66,8 @@ Scope: `ecosystem` (any DSM project), `pattern` (same project type), `project` (
 - A BL dropped as "not worth a dedicated session" is not the same as "the work shouldn't happen." When the user later requests that exact work, do it without re-litigating the drop, the cheap-when-bundled case is why the standalone BL was unnecessary, not a contradiction.
 - When a post claims a framework-to-framework mapping (e.g. PMP<->DSM), verify each individual mapping against the canonical source and flag which are canonically stated vs. author-extrapolation. Let the user decide whether to claim the extrapolated ones now or canonicalize them first; do not silently present extrapolation as canonical.
 - When research surfaces a rich adjacent angle on a post that already closes cleanly, default to a short coda on the current post plus a BL for the deep dive, rather than expanding the current post. Test "coda vs. fourth act" explicitly. Inverse of the S20 thin-source heuristic: there the question is whether to write; here it is where to place it.
+- When generating handoff artifacts at the end of a long session (checkpoints, cross-repo BLs, status reports), verify each "completed" claim against actual artifact state, not session-narrative memory. Concrete: for a "Published" claim, verify the URL responds and the file is committed + merged; for a "Filed" claim, verify the file exists on disk. The S23 BL-007 falsely claimed the IronCalc post was "Published on take-ai-bite.com" when the bundle was draft:true and uncommitted; the user caught it.
+- Do not pre-emptively compress voice-rich material based on unverified assumptions about platform-reader tolerance. When cutting a voice-rich opener for "LinkedIn audiences won't tolerate length", the writer carries the deleted frame in working memory and may miss that the standalone result reads broken (here: cutting "It is curious how" from "It is curious how AI ... will embark on a quest" left "Claude Code will embark on a quest" as ungrammatical future-tense). Mitigation: re-read compressed prose without the deleted frame in mind, OR ask the user before pre-emptive compression.
+- Boot-time inbox enumeration via `ls _inbox/ | grep -v` can silently miss untracked files. /dsm-go S23 boot reported 2 inbox entries when 5 were actually present; the 3 missing entries were untracked and visible only in `git status`. Cross-check inbox state with `git ls-files --others --exclude-standard _inbox/` or with `git status` output for higher confidence at boot time.
+- For voice-rule codification under live drafting pressure, the cycle "user-flag → codify rule in skill or CLAUDE.md → apply to in-flight content → continue drafting" works when user is actively reviewing. Three rules codified mid-Bootstrap-post (TAB/DSM convention in CLAUDE.md, "an AI" singular typography in CLAUDE.md, humanizer rules #27 "Simpler Than That" reveal + #28 Forward-Positive Framing in ~/.claude/skills/humanizer/SKILL.md), each applied immediately. Cross-repo writes to ~/.claude/skills/humanizer/ benefit from path-recording in cross-repo-writes-session.txt at the first codification.
+- When applying `git mv` after a `sed -i` content change to the same file, the rename stages but the content change does not. The BL-370 hook fires correctly. Resolution: `git add -- {path}` with explicit `--` separator; the bare `git add path` was observed to no-op on a renamed-and-modified path in S23 (anecdotal, single occurrence; investigate if it recurs).
