@@ -67,6 +67,14 @@
 Use comma "," instead of Em Dash "—" for connecting phrases in any language.
 Never use space coma space (" , "). The correct format is no spaces before the comma, and one space after: ", ".
 
+### Typography: avoid "AIs" plural
+In sans-serif fonts (which LinkedIn and most web typography use), capital `I` and lowercase `l` render as identical vertical strokes. "AIs" reads visually as "Als", which breaks reading rhythm.
+
+- **Use singular "an AI"** instead of plural "AIs" in reader-facing prose.
+- When the plural is necessary, prefer rewrites like "these models", "the agents", "AI tools" rather than "AIs".
+- Cascade pronouns when changing plural to singular: "AIs ... their" becomes "an AI ... its".
+- Applies to blog posts, About pages, LinkedIn cross-posts, any reader-facing material.
+
 ### Code Output Standards (reinforces Earn Your Assertions)
 - Show actual values: shapes, metrics, counts, paths
 - No generic confirmations: avoid "Done!", "Success!", "Data loaded successfully!"
