@@ -383,7 +383,7 @@ Full post: https://take-ai-bite.com/blog/2026-05-28-pmo-director-agentic-stakeho
 
 **Text:**
 
-It is curious how AI, in this case Claude Code, will embark on a quest with topics not entirely explored. That would write the fate for an explorer in counted minutes. We humans sometimes think an AI suggests acting on something based on its own training, as if training is equivalent to knowledge. Try entering the Amazon jungle without knowledge and see if you walk out at all.
+It is curious how AI, in this case Claude Code, will embark on a quest with topics not entirely explored. That would write the fate for an explorer in counted minutes. We humans sometimes think an AI suggests acting on something based on training, as if training is equivalent to knowledge. Try entering the Amazon jungle without knowledge and see if you walk out at all.
 
 My favorite example surprised me the most: Claude Code actively suggesting to create Skills and Hooks without entirely knowing how Anthropic defines them. It is like saying "hey, I'm a surgeon, let's operate because I know I can fix this... but I do not know how to deal with an artery." The agent treats Skills and Hooks as concepts it knows from training, proposes shapes that do not match the actual Anthropic spec, ships them with confidence. The mess shows up later, in the form of a hook that does not fire or a frontmatter field that gets silently ignored.
 

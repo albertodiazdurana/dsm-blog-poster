@@ -7,7 +7,7 @@ tags: ["take-ai-bite", "claude-code", "release-notes"]
 draft: false
 ---
 
-It is curious how AI, in this case Claude Code, will embark on a quest with topics not entirely explored. That would write the fate for an explorer in counted minutes. However, we humans sometimes think that an AI suggests acting on something based on its own training, as if training is equivalent to knowledge. Try entering the Amazon jungle without knowledge and see if you walk out at all.
+It is curious how AI, in this case Claude Code, will embark on a quest with topics not entirely explored. That would write the fate for an explorer in counted minutes. However, we humans sometimes think that an AI suggests acting on something based on training, as if training is equivalent to knowledge. Try entering the Amazon jungle without knowledge and see if you walk out at all.
 
 I have a few examples that took me to realize an important pattern that was fixed with a new principle to the framework: Read the User's Manual (DSM_6.0 §1.11).
 
