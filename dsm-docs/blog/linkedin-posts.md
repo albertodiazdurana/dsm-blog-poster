@@ -370,3 +370,29 @@ There is a name for the role behind this: PMO Director of an AI-agent workforce.
 Full post: https://take-ai-bite.com/blog/2026-05-28-pmo-director-agentic-stakeholder/
 
 #ProjectManagement #PMO #Leadership #HumanAICollaboration #TakeAIBite
+
+## Post 15: How Take AI Bite learned to bootstrap itself (2026-06-03)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_how-take-ai-bite-learned-to-bootstrap-itself-share-7468948595631742976-SNd3/
+**Status:** Published
+**Blog post:** https://take-ai-bite.com/blog/2026-06-03-tab-bootstrap-release/
+**Source:** BL-022 Front E (LinkedIn cross-post for the v1.5/v1.6 release post "How Take AI Bite learned to bootstrap itself").
+**Hashtag set:** #AI #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite. First Take AI Bite post applying the new CLAUDE.md TAB/DSM convention (drops #DSM, keeps #TakeAIBite as the brand tag).
+**Slug observation (BL-023):** slug is TITLE-derived (`how-take-ai-bite-learned-to-bootstrap-itself`), NOT hashtag-derived. New outcome class compared to Posts 10-13 (hashtag-based, varied lead-tags) and Post 14 (hashtag-based, matched first 3 declared tags). LinkedIn's slug algorithm appears to sometimes pick the linked post title over hashtag tags. Possible factors to investigate in BL-023: title distinctiveness, hashtag overlap with other posts on the platform, link visibility in the post body.
+**Note:** Published version of the text contains "AIs" plural. This linkedin-posts.md file has been updated to "an AI" singular per the new CLAUDE.md typography rule, but the live LinkedIn post retains the original wording.
+
+**Text:**
+
+It is curious how AI, in this case Claude Code, will embark on a quest with topics not entirely explored. That would write the fate for an explorer in counted minutes. We humans sometimes think an AI suggests acting on something based on its own training, as if training is equivalent to knowledge. Try entering the Amazon jungle without knowledge and see if you walk out at all.
+
+My favorite example surprised me the most: Claude Code actively suggesting to create Skills and Hooks without entirely knowing how Anthropic defines them. It is like saying "hey, I'm a surgeon, let's operate because I know I can fix this... but I do not know how to deal with an artery." The agent treats Skills and Hooks as concepts it knows from training, proposes shapes that do not match the actual Anthropic spec, ships them with confidence. The mess shows up later, in the form of a hook that does not fire or a frontmatter field that gets silently ignored.
+
+A smaller version of the same story: an agent ran `gh pr create` against a repo whose default branch had been silently pointed at a session branch that no longer existed. Forty-five minutes went into investigating what looked like a GitHub outage and turned out to be a single `gh repo view` call we had not thought to make.
+
+The pattern got a name: Read the User's Manual. Before you commit to using something, find out what it actually is. The principle now has a hard gate behind it (default-branch verification at session start), a dedicated platform-quirks file the agent reads, and a self-bootstrapping protocol for fresh public-mirror clones.
+
+What v1.5 and v1.6 of Take AI Bite teach me about how the framework actually grows: it names the assumption it just paid for, and turns the name into a thing the project can rely on next time.
+
+Full post: https://take-ai-bite.com/blog/2026-06-03-tab-bootstrap-release/
+
+#AI #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite
