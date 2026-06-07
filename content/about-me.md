@@ -24,15 +24,15 @@ The thread through all of this is the same: modeling physical systems during my 
 
 ## What I do now
 
-[Take AI Bite](https://take-ai-bite.com/about/) is the framework I use to deliver client work and contribute to open source. It is how I run freelance engagements: planning, review gates, evidence trails, and the discipline to ship only what I have actually understood. I use it every day on real projects, and it evolves from what I research and implement in those projects. The collaboration principles and the versioned methodology (DSM) that sit beneath it are what govern how I work with AI.
+[Take AI Bite](https://take-ai-bite.com/about/) is the framework I use to deliver client work and contribute to open source. It is how I run freelance engagements: planning, review gates, evidence trails, and the discipline to ship only what I have actually understood. I use it every day on real projects, and it evolves from what I research and implement in those projects. Its collaboration principles and versioned methodology are what govern how I work with AI.
 
 A decade of structured project delivery (PMP, 2016) and Agile practice in client engagements is the ground this stands on. Take AI Bite is what those disciplines turned into when I applied them to AI delivery.
 
 Every line of code in my projects reflects a deliberate decision. Sometimes I write it, sometimes I edit or correct what the AI produces, sometimes I approve a suggestion that already matches what I need. Nothing ships without my judgment. I run multiple simultaneous projects, reviewing one while another generates output. That takes comprehension and the discipline to say no.
 
-When the documentation grew complex enough to need its own integrity checking, I built [Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer), a validation tool that parses cross-references, builds knowledge graphs, detects semantic drift, and maps connections across the DSM documentation network. Using the methodology to build the tooling that validates the methodology.
+When the documentation grew complex enough to need its own integrity checking, I built [Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer), a validation tool that parses cross-references, builds knowledge graphs, detects semantic drift, and maps connections across the methodology's documentation network. Using the methodology to build the tooling that validates the methodology.
 
-The spoke projects (SQL Query Agent, DevFlow Analyzer, RAG Document Assistant) show hands-on engineering. Take AI Bite and DSM show something else: designing systems and maintaining quality across scale.
+The spoke projects (SQL Query Agent, DevFlow Analyzer, RAG Document Assistant) show hands-on engineering. Take AI Bite shows something else: designing systems and maintaining quality across scale.
 
 ---
 

@@ -17,6 +17,12 @@
 - HH:MM is 24-hour local time when the block begins; no end delimiter needed
 - Append technique: read last 3 lines, use last non-empty line as anchor.
   NEVER match earlier content for mid-file insertion.
+- NEVER use Edit `replace_all: true` on `.claude/session-transcript.md`. The
+  append-anchor rule assumes a unique last-line anchor; `replace_all` duplicates
+  content at every match and explodes the file (observed: IronCalc S17 reached
+  95 MB). Recovery from a botched transcript Edit is a `[RETROACTIVE]`
+  Bash-heredoc append, never a `replace_all` cleanup. The
+  `validate-transcript-edit.sh` hook blocks this case (check 0/3).
 - Per-turn enforcement: a `UserPromptSubmit` hook in `.claude/settings.json`
   injects a reminder every turn. The hook enforces *occurrence*; the
   existing `validate-transcript-edit.sh` PreToolUse hook enforces *shape*.
@@ -55,7 +61,7 @@
 - Chunked drafting for prose deliverables (per DSM_0.2 §8.10): for project plans, proposals, reports, research papers, blog posts, and similar structured prose, the four gates take a specific shape: Gate 1 confirms purpose / audience / outcome / length / scope; Gate 2 proposes a TOC with per-section length budgets; Gate 3 drafts ONE section at a time with per-section user review and approval before the next; Gate 4 reviews the full assembled document for consistency. Full-file Write at Gate 3 is reserved for final assembly after all sections are individually approved. Triggered by document type, not length.
 
 ### Inbox Lifecycle (reinforces inherited protocol)
-- After processing an inbox entry, move it to `_inbox/done/`
+- After processing an inbox entry, move it to `_inbox/done/YYYY-MM-DD_{source}.md` (dated to avoid overwriting a prior cycle's archive of the same source). Bare `_inbox/done/{source}.md` names are append-only rolling archives; `mv`/`git mv` onto an existing bare name silently overwrites it (S211 incident: −323 lines). The date prefix makes same-source collisions impossible by construction. Forward-only: existing bare-name archives are left as-is.
 - Do not mark entries as "Status: Processed" while keeping them in place
 
 ### Actionable Work Items (reinforces DSM_3 planning pipeline)
@@ -66,14 +72,6 @@
 ### Punctuation
 Use comma "," instead of Em Dash "—" for connecting phrases in any language.
 Never use space coma space (" , "). The correct format is no spaces before the comma, and one space after: ", ".
-
-### Typography: avoid "AIs" plural
-In sans-serif fonts (which LinkedIn and most web typography use), capital `I` and lowercase `l` render as identical vertical strokes. "AIs" reads visually as "Als", which breaks reading rhythm.
-
-- **Use singular "an AI"** instead of plural "AIs" in reader-facing prose.
-- When the plural is necessary, prefer rewrites like "these models", "the agents", "AI tools" rather than "AIs".
-- Cascade pronouns when changing plural to singular: "AIs ... their" becomes "an AI ... its".
-- Applies to blog posts, About pages, LinkedIn cross-posts, any reader-facing material.
 
 ### Code Output Standards (reinforces Earn Your Assertions)
 - Show actual values: shapes, metrics, counts, paths
@@ -195,6 +193,14 @@ Take AI Bite (TAB) is the framework and the reader-facing brand. The version bel
 - **Release-post Takeaways re-anchor to TAB** at least once.
 - **LinkedIn hashtags:** `#TakeAIBite` (drop `#DSM` to match the convention). Topical tags as appropriate (`#AI`, `#HumanAICollaboration`, etc.).
 - **About page's "two layers" paragraph** is acceptable as optional depth for readers who want internal architecture, it does not drive vocabulary elsewhere.
+
+### Typography: avoid "AIs" plural
+In sans-serif fonts (which LinkedIn and most web typography use), capital `I` and lowercase `l` render as identical vertical strokes. "AIs" reads visually as "Als", which breaks reading rhythm.
+
+- **Use singular "an AI"** instead of plural "AIs" in reader-facing prose.
+- When the plural is necessary, prefer rewrites like "these models", "the agents", "AI tools" rather than "AIs".
+- Cascade pronouns when changing plural to singular: "AIs ... their" becomes "an AI ... its".
+- Applies to blog posts, About pages, LinkedIn cross-posts, any reader-facing material.
 
 ### Language & Formatting
 - Primary language: English

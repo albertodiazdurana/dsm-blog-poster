@@ -1,31 +1,30 @@
 # /dsm-align persistent report
 
-**Timestamp:** 2026-05-12T09:44:52+02:00
-**DSM version:** v1.9.0 (from CHANGELOG.md latest heading)
+**Timestamp:** 2026-06-07 (S24, drift remediation applied)
+**DSM version:** v1.14.0 (from CHANGELOG.md latest heading)
 **Run mode:** post-change
 **Project:** dsm-blog-poster
-**Project type:** Application (DSM 4.0)
+**Project type:** Application (DSM 4.0), Spoke
 
 ---
 
 ## Report
 
 /dsm-align post-change report:
-- Project type: Application (DSM 4.0)
+- Project type: Application (DSM 4.0) (detected; no override)
 - Created: none
-- Already correct: scaffold (8/8 dsm-docs folders, 6/6 done subfolders, 6/6 template files, _inbox/, _inbox/done/, _inbox/README.md, .gitattributes, .claude/session-transcript.md, .claude/dsm-ecosystem.md, .claude/reasoning-lessons.md)
-- Fixed: CLAUDE.md alignment section regenerated from v1.6.3 template to v1.9.0 template (added: per-turn enforcement, turn-boundary self-check, process narration, unconditional activation, heredoc anti-pattern, four-gate Pre-Generation Brief, what/why/how thinking block, skill self-reference, chunked drafting, Actionable Work Items section); .claude/hooks/validate-cross-repo-write.sh installed; .claude/settings.json merged with Write and Edit matchers for validate-cross-repo-write.sh
+- Already correct: scaffold (9/9 dsm-docs folders + done/ subfolders + template files), _inbox/, .claude files (session-transcript, dsm-ecosystem, reasoning-lessons), .gitattributes (eol=lf), @ reference
+- Fixed: CLAUDE.md alignment block regenerated to v1.14 template (2 surgical edits: Session Transcript replace_all bullet added; Inbox Lifecycle dated-done rule); Typography section relocated out of ALIGNMENT delimiters into project-specific Communication & Style
 - Collisions: none
-- Warnings: none
-- CLAUDE.md alignment: Regenerated (drift from v1.6.3 to v1.9.0 template)
-- CLAUDE.md content: OK (no Notebook Development Protocol in Application project)
-- CLAUDE.md redundancy: OK (no near-verbatim duplicates of DSM_0.2 sections found in project-specific area)
-- CLAUDE.md paths: OK (all spoke paths resolve; `dsm-docs/blog/feature-trail.md` is explicitly DSM-Central-relative per surrounding context and exists in DSM Central)
+- Warnings: none (Typography misplacement resolved by relocation)
+- CLAUDE.md alignment: OK (block now matches v1.14 base+App template; delimiters lines 3-114)
+- CLAUDE.md content: OK
+- CLAUDE.md redundancy: OK
+- CLAUDE.md paths: OK
 - .gitattributes: OK
 - Command sync: N/A (not DSM Central)
 - Feedback pushed: none pending
 - EC governance scaffold: N/A (not EC)
-- Transcript hooks: 1 installed (validate-cross-repo-write.sh) / 0 updated / 3 ok · settings.json: merged
 
 ## Warnings (full text)
 
@@ -38,18 +37,22 @@ None.
 ## Already correct
 
 - _inbox/ with done/ and README.md
-- All 8 dsm-docs/ canonical folders (blog, checkpoints, decisions, feedback-to-dsm, guides, handoffs, plans, research)
-- All required done/ subfolders
-- All required template files (journal.md, checkpoints/README.md, feedback-to-dsm/README.md, handoffs/README.md, plans/README.md, research/README.md)
-- .gitattributes with LF enforcement
-- .claude/session-transcript.md
-- .claude/dsm-ecosystem.md
-- .claude/reasoning-lessons.md
-- CLAUDE.md @ reference to DSM_0.2 (resolves to v1.9.0)
-- CLAUDE.md alignment delimiters present
-- 3 of 4 hooks already byte-identical to source (transcript-reminder.sh, validate-rename-staging.sh, validate-transcript-edit.sh)
+- All 9 canonical dsm-docs/ folders + required done/ subfolders + template files
+- .claude/session-transcript.md, .claude/dsm-ecosystem.md, .claude/reasoning-lessons.md
+- .gitattributes with `* text=auto eol=lf`
+- CLAUDE.md @ reference to DSM_0.2_Custom_Instructions_v1.1.md (valid)
+- No legacy feedback files; no unpushed feedback; no consumed handoffs outside done/
+
+## Spoke actions surfaced (CHANGELOG v1.10 -> v1.14) -- still for user review
+
+- Review DSM_6.0 §1.13 and DSM_0.2 §8.10 Gate 4 (writing discipline)
+- Review DSM_0.2 §8.0.1 (Gate 0 behavioral sub-rule)
+- Review DSM_4.0.A §7 (smoke-test artifact; optional, author-driven for SW projects)
+- Review DSM_0.2.C §2 (cross-repo write-only rule)
+- Run sync-commands.sh --deploy (command files changed; user-environment action)
 
 ## Steps skipped
 
 - Step 11 skipped: not DSM Central
 - Step 3-EC skipped: not External Contribution
+- Step 6 (feedback push): no pushable entries

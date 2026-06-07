@@ -4,7 +4,7 @@ date: 2026-06-03
 description: "Two financial functions, twenty sessions, three weeks. The story of contributing ACCRINTM and ACCRINT to IronCalc, and the human-AI collaboration method that let a part-time contributor carry a multi-week investigation to a clean merge."
 categories: ["Engineering"]
 tags: ["rust", "open-source", "ironcalc", "financial-functions", "human-ai-collaboration"]
-draft: true
+draft: false
 ---
 
 ## The warm-up: shipping ACCRINTM
@@ -81,7 +81,7 @@ The function merged shortly after. The one divergent case ships as the documente
 
 I have been describing this as one continuous push. It was not. The two functions spanned roughly twenty working sessions over several weeks, fitted around the rest of life. That gap, between how it reads and how it happened, is the part I most want to write about, because the bond math above is ordinary. Plenty of people can derive a day-count formula. What made this genuinely finishable, across weeks of stop-and-start work, was not skill at finance. It was that I was running the whole effort on a framework I built for exactly this kind of problem.
 
-Take a Bite (TAB) is a philosophy and practice for human-AI collaboration that I designed to make complex, long-running work reliable and robust. The reason TAB carried a twenty-session project rather than just tidying up a single afternoon is that it is more than a sizing rule. Underneath it runs the versioned methodology that turns the right-sized bite into durable practice, and three properties of this contribution I would like to highlight came out of that by design.
+Take a Bite (TAB) is a practice for human-AI collaboration that I designed to make complex, long-running work hold together over weeks. The reason TAB carried a twenty-session project rather than just tidying up a single afternoon is that it is more than a sizing rule: it is a full, versioned methodology that turns the right-sized bite into durable practice. Three properties of this contribution I would like to highlight came out of that by design.
 
 **Continuity.** Context never lived in a chat window or in my head; it accumulated in durable artifacts as it was produced, decisions and their rationale, every reference value from Excel, the canonical pattern for extending the codebase. The proof is the redo-from-scratch from the testing section. Twice I discarded the working branch and rebuilt the entire change on fresh upstream, and twice it came back byte-identical in minutes, because a rebuild from written decisions is transcription, not recall. You cannot do that from memory after a three-week gap. The framework meant I never had to.
 
