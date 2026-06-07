@@ -1,3 +1,5 @@
+**Consumed at:** Session 24 start (2026-06-07)
+
 # Session 23 Wrap-Up Checkpoint
 **Date:** 2026-06-03
 **Branch:** session-23/2026-05-28-post-fix (current; sequence is session-23/2026-05-28 -> session-23/2026-05-28-post-deploy -> session-23/2026-05-28-wrapup -> session-23/2026-05-28-post-fix, four branches due to post-merge recreations)
