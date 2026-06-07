@@ -18,8 +18,7 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-022 | [DSM v1.5-v1.9 cumulative release coverage (multi-front)](BL-022-dsm-v1.5-v1.9-release-coverage.md) | High | Active |
 | BL-023 | [LinkedIn hashtag research method](BL-023-linkedin-hashtag-research-method.md) | Medium | Next session |
 | BL-024 | ["Investigation-first" blog post + LinkedIn cross-post (Haystack OSS arc)](BL-024-haystack-investigation-first-post.md) | Medium | After BL-022 Stage 3 |
-| BL-025 | [DSM v1.10-v1.14 cumulative release coverage (multi-front)](BL-025-dsm-v1.10-v1.14-release-coverage.md) | High | Active (Stage 1 done) |
-| BL-026 | [IronCalc ACCRINT contribution arc blog post](BL-026-ironcalc-accrint-story-post.md) | Medium | When upstream source draft completes |
+| BL-025 | [DSM v1.10-v1.14 cumulative release coverage (multi-front)](BL-025-dsm-v1.10-v1.14-release-coverage.md) | High | Active (Stage 2 Front C done) |
 
 ## Completed
 
@@ -40,3 +39,4 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-006 | [Feature inventory blog post](done/BL-006-feature-inventory-blog.md) | 2026-04-21 (absorbed into CLAUDE.md release-coverage rule) |
 | BL-015 | [Update features post from 90 to 95](done/BL-015-features-post-90-to-95.md) | 2026-04-21 (dropped, superseded by v1.6.3 features-post refresh) |
 | BL-019 | [PMO Director blog post](done/BL-019-pmo-director-blog.md) | 2026-05-28 |
+| BL-026 | [IronCalc ACCRINT contribution arc blog post](done/BL-026-ironcalc-accrint-story-post.md) | 2026-06-08 |

@@ -1,11 +1,27 @@
 # BL-026: IronCalc ACCRINT contribution arc blog post
 
-**Status:** Open (source in drafting, no action yet)
+**Status:** Done (published 2026-06-08, Session 24)
 **Priority:** Medium
 **Date Created:** 2026-05-28 (Session 23)
 **Source:** `~/dsm-external-contribution-storage/IronCalc/dsm-docs/blog/2026-06-02_accrint-accrintm-story.md` (when complete; currently in section-by-section drafting upstream).
 **Origin:** `_inbox/done/2026-06-02_IronCalc.md` (S23 triage). Spoke is drafting a long-form engineering story about contributing ACCRINTM and ACCRINT to IronCalc (open-source Rust spreadsheet engine).
 **Trigger:** When the source draft completes upstream. Spoke notification will arrive when ready.
+
+## Outcome (2026-06-08, Session 24)
+
+**Done.** Published on take-ai-bite.com as a single long-form piece (candidate C of IronCalc BL-007's A/B/C set).
+
+- **Live URL:** https://take-ai-bite.com/blog/2026-06-03-ironcalc-accrint-story/ (verified live: title, body, blog index, "hold together over weeks" edit all present)
+- **Category:** Engineering. ~3,800 words. Deployed via PR #37 (merge to main, 2026-06-08).
+
+**Scope questions resolved:**
+1. **Venue:** take-ai-bite.com under "Engineering" (single venue; candidates B and A will cross-link internally per IronCalc BL-007).
+2. **Voice:** recast in take-ai-bite.com voice with the TAB/DSM rule applied (no standalone "DSM" noun; "the versioned methodology"). Humanizer gate passed (line-84 single-thing TAB reframe).
+3. **LinkedIn extract:** Post 16 pending/optional (hashtags likely #Rust #OpenSource #HumanAICollaboration).
+
+**Ordering note:** the recorded soft dependency ("BL-022 Stage 3 should land first") was consciously bypassed by user decision in S24 to publish C this session. BL-022 Post 2 (v1.9 "Slip-catching") remains pending.
+
+**Cross-spoke follow-up (pending):** IronCalc BL-007 (EC governance repo) needs candidate C marked published + URL recorded, and the IronCalc spoke notified to move its source draft (`2026-06-02_accrint-accrintm-story.md`) to done/.
 
 ## Problem statement
 
