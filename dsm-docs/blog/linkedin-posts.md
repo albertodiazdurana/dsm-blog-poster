@@ -395,4 +395,32 @@ What v1.5 and v1.6 of Take AI Bite teach me about how the framework actually gro
 
 Full post: https://take-ai-bite.com/blog/2026-06-03-tab-bootstrap-release/
 
-#AI #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite
+## Post 16: The patch is the cheap part (IronCalc ACCRINT) (2026-06-08)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_ai-humanaicollaboration-excel-share-7469809063615418368-3Vwy/
+**Status:** Published
+**Blog post:** https://take-ai-bite.com/blog/2026-06-03-ironcalc-accrint-story/
+**Source:** BL-026 / IronCalc BL-007 candidate C. LinkedIn cross-post for the IronCalc ACCRINT/ACCRINTM contribution story.
+**Hashtag set:** #AI #HumanAICollaboration #Excel #AIAgents #TakeAIBite (as published; #Excel swapped in for #ClaudeCode at post time for ACCRINT/Excel discoverability; keeps #TakeAIBite per convention, drops #DSM).
+**Note:** Humanizer pass run (passed; humanizer rule #29 "evidence as subject" was codified during this post). ACCRINT and ACCRINTM named explicitly in the body for search relevance.
+**Slug observation (BL-023):** slug `ai-humanaicollaboration-excel` is HASHTAG-derived from the first three tags (#AI #HumanAICollaboration #Excel). Matches Post 14's lead-3 hashtag behavior; contrasts Post 15's title-derived slug. Working hypothesis: LinkedIn favors the first hashtags when they are distinct/strong, and falls back to the post title otherwise.
+
+**Text:**
+
+This spring I added two functions to IronCalc, an open-source spreadsheet engine written in Rust: ACCRINTM and ACCRINT, both of which compute accrued interest on bonds. One took a couple of sessions. The other took three weeks.
+
+I started with the easy one on purpose. ACCRINTM was the warm-up, a small change to learn how the codebase wants to be extended before attempting anything hard. ACCRINT was the hard climb: a four-dimensional accrual model whose real specification is not in the documentation most people are pointed at, but in a securities formula book from the 1990s and a sibling Microsoft page written for a different product.
+
+The part worth examining is not the math. It is what earned the merge.
+
+At one point the documented formula and shipping Excel disagreed by exactly one day of accrued interest, on certain end-of-month dates, with no rule I could derive. I could have quietly patched the single failing case. Instead I built a twelve-case grid, wrote down the historical reason the two sources had drifted apart, and took it to the maintainer in the open, with the exact formulas attached so anyone could check the numbers in Excel.
+
+In the open meant a GitHub discussion on the project: one public thread that condensed weeks of investigation into something the maintainer could work through at his own pace. Because the logic was documented and every number reproducible, the divergence could be verified independently instead of taken on trust. That was enough to confirm the documented specification as the anchor and clear the function to merge, with the single divergent case shipped as the documented value and the difference recorded openly rather than papered over.
+
+That is the thread of the whole project. For a part-time contributor to an unfamiliar codebase, the patch is the cheap part. What is scarce is evidence a reviewer can stand on without re-running your reasoning. The investigation, packaged so someone else can repeat it, is the real deliverable.
+
+The accrued-interest functions are just where this one happened to live.
+
+Full post: https://take-ai-bite.com/blog/2026-06-03-ironcalc-accrint-story/
+
+#AI #HumanAICollaboration #Excel #AIAgents #TakeAIBite

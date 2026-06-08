@@ -58,6 +58,8 @@ Provisional mapping (validate during drafting):
 
 ### Front C: About page principle list
 
+**Status: Done (2026-06-08, S24)** — verified live at take-ai-bite.com/about/ (deployed via PR #37). "The Thirteen Principles" heading + §1.13 "Introduce Once, Then Deepen" added in the matching tagline style; wording verified against DSM_6.0 §1.13. Bundled with the IronCalc post deploy.
+
 `content/about.md`. "The Twelve Principles" → "The Thirteen Principles". Add §1.13 "Introduce Once, Then Deepen" to the numbered list, in the tagline style matching the existing 12. Verify wording against DSM_6.0 §1.13 before committing.
 
 ### Front D: linkedin-posts.md canonical record
