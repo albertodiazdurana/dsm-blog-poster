@@ -423,4 +423,29 @@ The accrued-interest functions are just where this one happened to live.
 
 Full post: https://take-ai-bite.com/blog/2026-06-03-ironcalc-accrint-story/
 
+## Post 17: In the loop, in charge of it, or in symbiosis (2026-06-24)
+
+**URL:** (to add after publishing)
+**Status:** Draft (pending publish)
+**Blog post:** https://take-ai-bite.com/blog/2026-06-24-in-the-loop-in-charge-or-symbiosis/
+**Source:** BL-005 (competitive positioning, refreshed June 2026). LinkedIn cross-post for the human-centered-turn / symbiosis post.
+**Hashtag set:** #AI #HumanAICollaboration #AICoding #AIAgents #TakeAIBite (drops #DSM per convention; keeps #TakeAIBite).
+**Note:** Humanizer pass run on the blog post. Short format per request (~230 words).
+
+**Text:**
+
+This year the industry made a U-turn. The same labs and tools that told us to let the agent write and stop reading the code now say the opposite: read and own it, judgment is the bottleneck, keep a human in the loop.
+
+Good. But being in the loop is not the same as being in charge of it. When you approve 93% of the prompts an agent shows you, that is not oversight, it is a reflex. Presence is not agency.
+
+And even agency is not the end of it. It still casts the human as the supervisor and the AI as the supervised. The model I keep coming back to is symbiosis: two different kinds of intelligence that stay different on purpose, coevolving through feedback until the understanding between them compounds. In biology, a mutualism works precisely because neither side can do the other's job. Human and AI fit that shape.
+
+I scored fifteen AI collaboration tools on this back in March. Most center the human as a reviewer, or upstream as a spec author. Almost none build the part where the collaboration itself learns and keeps what it learns.
+
+So the question worth asking of any AI tool is not whether a human is in the loop. It is whether the human and the AI are making each other better, and whether anything is being kept.
+
+Full post: https://take-ai-bite.com/blog/2026-06-24-in-the-loop-in-charge-or-symbiosis/
+
+#AI #HumanAICollaboration #AICoding #AIAgents #TakeAIBite
+
 #AI #HumanAICollaboration #Excel #AIAgents #TakeAIBite
