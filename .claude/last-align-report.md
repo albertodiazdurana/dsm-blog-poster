@@ -1,30 +1,31 @@
 # /dsm-align persistent report
 
-**Timestamp:** 2026-06-07 (S24, drift remediation applied)
-**DSM version:** v1.14.0 (from CHANGELOG.md latest heading)
+**Timestamp:** 2026-06-23T23:58+02:00
+**DSM version:** v1.17.0 (from ~/dsm-agentic-ai-data-science-methodology/CHANGELOG.md latest heading)
 **Run mode:** post-change
 **Project:** dsm-blog-poster
-**Project type:** Application (DSM 4.0), Spoke
+**Project type:** Application (DSM 4.0)
 
 ---
 
 ## Report
 
 /dsm-align post-change report:
-- Project type: Application (DSM 4.0) (detected; no override)
+- Project type: Application (DSM 4.0)
 - Created: none
-- Already correct: scaffold (9/9 dsm-docs folders + done/ subfolders + template files), _inbox/, .claude files (session-transcript, dsm-ecosystem, reasoning-lessons), .gitattributes (eol=lf), @ reference
-- Fixed: CLAUDE.md alignment block regenerated to v1.14 template (2 surgical edits: Session Transcript replace_all bullet added; Inbox Lifecycle dated-done rule); Typography section relocated out of ALIGNMENT delimiters into project-specific Communication & Style
+- Already correct: all dsm-docs/ folders + done/ subfolders + template files; _inbox/; .gitattributes (LF enforced); @ reference; reasoning-lessons.md
+- Fixed: CLAUDE.md alignment section regenerated (drift from §17.1 template v1.14->v1.17); session-transcript hooks installed/updated
 - Collisions: none
-- Warnings: none (Typography misplacement resolved by relocation)
-- CLAUDE.md alignment: OK (block now matches v1.14 base+App template; delimiters lines 3-114)
-- CLAUDE.md content: OK
+- Warnings: none
+- CLAUDE.md alignment: Regenerated (4 changes: chunked-drafting bullet updated; "External content is observation" bullet added; "Voice-Attribution Review" section added; "Read-Before-Draft for OSS Contributions" section added)
+- CLAUDE.md content: OK (no type mismatches; Application project, no Notebook protocol present)
 - CLAUDE.md redundancy: OK
 - CLAUDE.md paths: OK
 - .gitattributes: OK
 - Command sync: N/A (not DSM Central)
 - Feedback pushed: none pending
 - EC governance scaffold: N/A (not EC)
+- Transcript hooks: 4 installed / 2 updated / 2 ok · settings.json: merged
 
 ## Warnings (full text)
 
@@ -36,23 +37,23 @@ None.
 
 ## Already correct
 
-- _inbox/ with done/ and README.md
-- All 9 canonical dsm-docs/ folders + required done/ subfolders + template files
-- .claude/session-transcript.md, .claude/dsm-ecosystem.md, .claude/reasoning-lessons.md
-- .gitattributes with `* text=auto eol=lf`
-- CLAUDE.md @ reference to DSM_0.2_Custom_Instructions_v1.1.md (valid)
-- No legacy feedback files; no unpushed feedback; no consumed handoffs outside done/
-
-## Spoke actions surfaced (CHANGELOG v1.10 -> v1.14) -- still for user review
-
-- Review DSM_6.0 §1.13 and DSM_0.2 §8.10 Gate 4 (writing discipline)
-- Review DSM_0.2 §8.0.1 (Gate 0 behavioral sub-rule)
-- Review DSM_4.0.A §7 (smoke-test artifact; optional, author-driven for SW projects)
-- Review DSM_0.2.C §2 (cross-repo write-only rule)
-- Run sync-commands.sh --deploy (command files changed; user-environment action)
+- All 9 canonical dsm-docs/ folders present (blog, checkpoints, decisions, feedback-to-dsm, guides, handoffs, plans, research, inbox)
+- done/ subfolders present where required (blog, checkpoints, feedback-to-dsm, handoffs, plans, research)
+- Template files present: blog/journal.md, checkpoints/README.md, feedback-to-dsm/README.md, handoffs/README.md, plans/README.md, research/README.md
+- _inbox/ at project root with done/ and README.md
+- .gitattributes enforces LF (* text=auto eol=lf)
+- CLAUDE.md @ reference valid (@../../dsm-agentic-ai-data-science-methodology/DSM_0.2_Custom_Instructions_v1.1.md)
+- .claude/reasoning-lessons.md present with header
 
 ## Steps skipped
 
 - Step 11 skipped: not DSM Central
+- Step 11b/11c skipped: not DSM Central
 - Step 3-EC skipped: not External Contribution
-- Step 6 (feedback push): no pushable entries
+
+## Spoke actions surfaced (Step 13, v1.14.0 -> v1.17.0)
+
+- "Run /dsm-align to update the reinforcement block (§17.1 alignment template changed)" x4 -> APPLIED by this run
+- "Mirror sync re-delivers the hooks; /dsm-align re-chmod on spokes" -> APPLIED by this run (Step 10b)
+- "Run scripts/sync-commands.sh --deploy (command files changed)" x2 -> N/A: this spoke has no scripts/sync-commands.sh (command runtime copies are user-level, managed from DSM Central)
+- "None beyond mirror sync" -> no action
