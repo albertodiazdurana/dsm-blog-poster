@@ -1,3 +1,5 @@
+**Consumed at:** Session 25 start (2026-06-23)
+
 # Session 24 Checkpoint
 **Date:** 2026-06-08
 **Branch:** session-24/2026-06-08-post-deploy (merges to main in this wrap-up)
