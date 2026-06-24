@@ -75,6 +75,10 @@ Three months on, it is clear why that gap held. Experience accumulation is final
 
 The popular alternative goes the other way. [Spec-driven development](https://reenbit.com/bmad-vs-spec-kit-vs-openspec-choosing-your-spec-driven-ai-framework/), with Spec Kit and BMAD and Kiro, centers the human too, but upstream, on writing the spec and letting the code regenerate from it. That is genuine human authorship, and it moves the human further from the code rather than into a collaboration with it. Useful work, and a different axis from this one.
 
+Set the oversight axis aside for a moment and plot the two dimensions a coevolving practice actually runs on, where the knowledge comes from and whether experience accumulates. The picture does not change.
+
+{{< figure src="/images/blog/competitive-positioning/provenance-vs-experience.png" alt="Scatter plot of knowledge provenance versus experience accumulation for 15 AI tools, with Take AI Bite (labeled DSM) alone in the top-right corner." caption="Knowledge provenance against experience accumulation, with oversight set aside. Take AI Bite, shown as DSM, is alone in the top-right: deep human-curated knowledge paired with a practice that accumulates. Every other tool clusters in the bottom-left." >}}
+
 One honest caveat, the one we flagged on the original map: our top mark on that experience axis rests on a single practitioner's evidence. The mechanism is built for many, the proof so far is one. That keeps it a claim worth testing, not a trophy to polish.
 
 We have [made a version of this argument before](/blog/2026-04-10-project-management-for-the-agentic-stakeholder/), when we treated the AI agent as a new kind of stakeholder, a participant with a real role rather than a tool to aim. Symbiosis is where that relationship leads over time. Managing the AI well was never about ruling it; good management elevates both sides and brings out the best in each. Keep at it long enough and the elevation runs both ways.
