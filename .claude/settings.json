@@ -50,6 +50,24 @@
             "command": ".claude/hooks/transcript-reminder.sh"
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/validate-parallel-wrapup.sh"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "chmod +x .claude/hooks/*.sh 2>/dev/null || true"
+          }
+        ]
       }
     ]
   }

@@ -9,7 +9,6 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 
 | ID | Title | Priority | Trigger / Deadline |
 |----|-------|----------|--------------------|
-| BL-005 | [Competitive positioning blog post](BL-005-competitive-positioning-blog.md) | High | Source files ready |
 | BL-010 | [Systems Prompt Engineering blog content](BL-010-spe-blog-content.md) | Medium | When SPE narrative angle is chosen |
 | BL-012 | [LinkedIn cross-posting automation](BL-012-linkedin-cross-posting.md) | Medium | When next blog post is ready to publish |
 | BL-013 | [Reachability experiment blog post](BL-013-reachability-blog-post.md) | Medium | On hold (technical inconsistencies) |
@@ -40,3 +39,4 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-015 | [Update features post from 90 to 95](done/BL-015-features-post-90-to-95.md) | 2026-04-21 (dropped, superseded by v1.6.3 features-post refresh) |
 | BL-019 | [PMO Director blog post](done/BL-019-pmo-director-blog.md) | 2026-05-28 |
 | BL-026 | [IronCalc ACCRINT contribution arc blog post](done/BL-026-ironcalc-accrint-story-post.md) | 2026-06-08 |
+| BL-005 | [Competitive positioning blog post (reframed as the symbiosis post)](done/BL-005-competitive-positioning-blog.md) | 2026-06-24 |

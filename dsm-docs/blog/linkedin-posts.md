@@ -423,14 +423,17 @@ The accrued-interest functions are just where this one happened to live.
 
 Full post: https://take-ai-bite.com/blog/2026-06-03-ironcalc-accrint-story/
 
+#AI #HumanAICollaboration #Excel #AIAgents #TakeAIBite
+
 ## Post 17: In the loop, in charge of it, or in symbiosis (2026-06-24)
 
-**URL:** (to add after publishing)
-**Status:** Draft (pending publish)
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_ai-humanaicollaboration-aicoding-share-7475360115563548672-9z6X/
+**Status:** Published
 **Blog post:** https://take-ai-bite.com/blog/2026-06-24-in-the-loop-in-charge-or-symbiosis/
 **Source:** BL-005 (competitive positioning, refreshed June 2026). LinkedIn cross-post for the human-centered-turn / symbiosis post.
 **Hashtag set:** #AI #HumanAICollaboration #AICoding #AIAgents #TakeAIBite (drops #DSM per convention; keeps #TakeAIBite).
 **Note:** Humanizer pass run on the blog post. Short format per request (~230 words).
+**Slug observation (BL-023):** slug `ai-humanaicollaboration-aicoding` is HASHTAG-derived from the first three tags (#AI #HumanAICollaboration #AICoding). Matches the lead-3-hashtag behavior of Posts 14 and 16; contrasts Post 15's title-derived slug. Reinforces the working hypothesis: LinkedIn favors the first hashtags when they are distinct, falling back to the post title otherwise.
 
 **Text:**
 
@@ -438,7 +441,7 @@ This year the industry made a U-turn. The same labs and tools that told us to le
 
 Good. But being in the loop is not the same as being in charge of it. When you approve 93% of the prompts an agent shows you, that is not oversight, it is a reflex. Presence is not agency.
 
-And even agency is not the end of it. It still casts the human as the supervisor and the AI as the supervised. The model I keep coming back to is symbiosis: two different kinds of intelligence that stay different on purpose, coevolving through feedback until the understanding between them compounds. In biology, a mutualism works precisely because neither side can do the other's job. Human and AI fit that shape.
+And even agency is not the end of it. It still casts the human as the supervisor and the AI as the supervised. The model this reminded me of is symbiosis: two different kinds of intelligence that stay different on purpose, coevolving through feedback until the understanding between them compounds. In biology, a mutualism works precisely because neither side can do the other's job. Human and AI fit that shape.
 
 I scored fifteen AI collaboration tools on this back in March. Most center the human as a reviewer, or upstream as a spec author. Almost none build the part where the collaboration itself learns and keeps what it learns.
 
@@ -448,4 +451,4 @@ Full post: https://take-ai-bite.com/blog/2026-06-24-in-the-loop-in-charge-or-sym
 
 #AI #HumanAICollaboration #AICoding #AIAgents #TakeAIBite
 
-#AI #HumanAICollaboration #Excel #AIAgents #TakeAIBite
+"Take AI Bite, labeled DSM (Deliberate Systematic Methodology) in the chart, sits at maximum human oversight and is the only system that accumulates curated experience. The nearest tool is two full levels down, and the level just below it sits empty."

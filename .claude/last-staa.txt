@@ -1,0 +1,9 @@
+# Last /dsm-staa run
+date: 2026-06-23
+analyzed_session: 24
+analyzed_transcript: .claude/session-transcript.md
+appended_lessons: 3
+pruned_lessons: 5
+# note: dual-session pass. Co-analyzed S23 (.claude/transcripts/2026-05-28T09:56-ST.md)
+# with S24 (live transcript, not yet archived) to surface cross-boundary
+# meta-patterns. All 3 appended lessons tagged [STAA] S24.
