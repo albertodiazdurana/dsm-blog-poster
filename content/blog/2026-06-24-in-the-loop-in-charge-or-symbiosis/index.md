@@ -61,9 +61,9 @@ That is the part the past year of hype kept skipping. The question was never whe
 
 ## Where we already stood
 
-This is not a new idea for us, and there is a map to prove it. Back in March, we scored fifteen AI collaboration tools on three axes: how much human oversight they build in, where their operating knowledge comes from, and whether the collaboration accumulates any experience over time. We [scored the competitors first and ourselves last](https://github.com/albertodiazdurana/take-ai-bite), and challenged every one of our own numbers, because a positioning map drawn by the person being positioned deserves suspicion.
+This is not a new idea for us, and there is a map to prove it. Back in March, we scored fifteen AI collaboration tools on three axes: how much human oversight they build in, where their operating knowledge comes from, and whether the collaboration accumulates any experience over time. We scored the competitors first and ourselves last, and challenged every one of our own numbers, because a positioning map drawn by the person being positioned deserves suspicion.
 
-One note before the charts. They label Take AI Bite by the name of its methodology files, DSM (Deliberate Systematic Methodology), the versioned system the framework is built on. Wherever you see DSM in the plots below, read Take AI Bite.
+One note before the charts. They label Take AI Bite by the name of its methodology files, [DSM (Deliberate Systematic Methodology)](/about/#deliberate-systematic-methodology-dsm), the versioned system the framework is built on. Wherever you see DSM in the plots below, read Take AI Bite.
 
 One result still surprises me. On the experience axis, the level that means cross-session and human-curated was simply empty. Most tools are stateless, or reset at the end of a session. None had built the thing where a human and an agent accumulate a shared, curated practice across projects.
 
