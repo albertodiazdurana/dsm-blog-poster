@@ -1,9 +1,14 @@
 # Last /dsm-staa run
-date: 2026-06-23
-analyzed_session: 24
+date: 2026-06-24
+analyzed_session: 25
 analyzed_transcript: .claude/session-transcript.md
-appended_lessons: 3
-pruned_lessons: 5
-# note: dual-session pass. Co-analyzed S23 (.claude/transcripts/2026-05-28T09:56-ST.md)
-# with S24 (live transcript, not yet archived) to surface cross-boundary
-# meta-patterns. All 3 appended lessons tagged [STAA] S24.
+appended_lessons: 5
+pruned_lessons: 2
+# note: S25 analyzed from the LIVE transcript (not yet archived; the next
+# /dsm-go Step 5.5 will archive it). Subject chosen via AskUserQuestion over
+# the off-by-one default (latest archived = S24, already analyzed last run).
+# Appended 5 [STAA] S25 lessons (Gate-2 reopen, visual-asset pre-publish gate,
+# temporal-claim drift trend, humanizer-while-drafting, tension-surfacing A/B).
+# Pruned 2 [auto] S22 entries now codified in CLAUDE.md (replace_all-transcript,
+# version-bump cascade). Compact mirror regenerated: 71 entries, 28KB, both
+# sanity checks OK.

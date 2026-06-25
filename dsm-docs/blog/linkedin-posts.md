@@ -451,4 +451,115 @@ Full post: https://take-ai-bite.com/blog/2026-06-24-in-the-loop-in-charge-or-sym
 
 #AI #HumanAICollaboration #AICoding #AIAgents #TakeAIBite
 
+## Post 18: Process mining for AI agentic workflows (4-part series) (2026-06-24)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_process-mining-for-ai-agentic-workflows-activity-7475829259589222400-1Lz-/
+**Status:** Published
+**Blog post:** https://take-ai-bite.com/blog/pm-agentic-part-1/ (series entry; Parts 1-4)
+**Source:** Portfolio-sourced 4-part series, converted to Hugo + published this session (PR #44). Cross-post for the series launch.
+**Hashtag set:** #ProcessMining #AIAgents #AgenticAI #DataEngineering #TakeAIBite (drops #DSM per convention; keeps #TakeAIBite).
+**Note:** Humanizer pass run on the blog posts. Draws on the author's process mining consulting (Appian) and ML-in-production (Alcemy) experience. ~290 words.
+**Slug observation (BL-023):** slug `process-mining-for-ai-agentic-workflows` is TITLE-derived (matches the post title), NOT lead-3-hashtag-derived (#ProcessMining #AIAgents #AgenticAI would yield `processmining-aiagents-agenticai`). Contrasts the hashtag-derived slugs of Posts 14/16/17. Working hypothesis refinement: when the opening line / title is a clean keyword phrase, LinkedIn favors it over the leading hashtags for the slug.
+
+**Text:**
+
+"Let's put an agent on this process." I hear this sentence in almost every agentic AI project, and it always sounds reasonable. The demo that follows is usually convincing. The production system it was supposed to become often never arrives.
+
+That gap is not small. Gartner expects more than 40% of agentic AI projects to be cancelled by 2027, and at least half of generative AI projects abandoned after the proof of concept. Read the reasons and the model is rarely what kills them. What kills them is the work around the model: not knowing the real process, no honest measure of value, no path from a working prototype to a system someone trusts.
+
+I spent years doing process mining consulting before agentic AI was a category, and deploying ML in production after. So I wrote down how that work actually goes, in the order it happens.
+
+Four parts:
+
+1. A field guide to the whole thing.
+2. Discovery and value: you cannot automate what you have not measured. The documented process is a story; the lived process is what the data records.
+3. Engineering and the agent: automating a process with an agent is two engineering disciplines wearing one project name, a mature data pipeline and a young, stochastic agent. Confusing them is expensive.
+4. In production: going live is a graded handover of trust, not a switch. Autonomy is earned scope by scope, on evidence, with a human kept on the decisions that carry weight.
+
+The thread through all of it: let evidence earn each step, and keep a human meaningfully in control of what the system is allowed to do.
+
+Full post: https://take-ai-bite.com/blog/pm-agentic-part-1/
+
+#ProcessMining #AIAgents #AgenticAI #DataEngineering #TakeAIBite
+
+## Post 19: You cannot automate what you have not measured (PM series Part 2) (2026-06-24)
+
+**URL:** (pending publish)
+**Status:** Draft
+**Blog post:** https://take-ai-bite.com/blog/pm-agentic-part-2/
+**Source:** PM-agentic series Part 2 (Discovery and Value). Per-part LinkedIn cross-post.
+**Hashtag set:** #ProcessMining #AIAgents #Automation #DataDriven #TakeAIBite (drops #DSM; keeps #TakeAIBite).
+**Note:** Humanizer pass run on the blog post. ~250 words.
+**Slug observation (BL-023):** lead-3 hashtags #ProcessMining #AIAgents #Automation; record slug on publish.
+
+**Text:**
+
+Before you can automate a process, someone has to answer what the process actually is. The answer is almost never the one in the handbook.
+
+I spent years doing process mining before agentic AI was a category, and the lesson transferred intact. The documented process is a story a company tells about itself. The lived process is what the data records. Every system a business runs leaves a trail: a step, a timestamp, an actor, an object. That trail is an event log, and it cannot flatter the process the way a workshop can.
+
+When you reconstruct the real flow from it, the clean five-box diagram on the wall turns out to be a fiction. On one high-volume process, five steps everyone agreed on became hundreds of variants once mined: rework loops, skipped controls, a long tail of paths nobody had named.
+
+This matters more for agents, not less. A rule-based bot fails loudly when reality breaks its script. An agent improvises. Point one at a process you have only imagined and it will confidently act on the paths you never accounted for. It automates the fiction, fluently.
+
+So the question is not "where can we add AI." It is "where do time, cost, and rework actually leak," answered with hard numbers, before you choose the tool. Measure first. Then decide what an agent should do, what plain code should do, and what stays with a human.
+
+Full post: https://take-ai-bite.com/blog/pm-agentic-part-2/
+
+#ProcessMining #AIAgents #Automation #DataDriven #TakeAIBite
+
+## Post 20: Two engineering disciplines wearing one project name (PM series Part 3) (2026-06-24)
+
+**URL:** (pending publish)
+**Status:** Draft
+**Blog post:** https://take-ai-bite.com/blog/pm-agentic-part-3/
+**Source:** PM-agentic series Part 3 (Engineering and the Agent). Per-part LinkedIn cross-post.
+**Hashtag set:** #DataEngineering #LLMOps #AIAgents #MLOps #TakeAIBite (drops #DSM; keeps #TakeAIBite).
+**Note:** Humanizer pass run on the blog post. ~250 words.
+**Slug observation (BL-023):** lead-3 hashtags #DataEngineering #LLMOps #AIAgents; record slug on publish.
+
+**Text:**
+
+A confusion quietly costs a lot of agentic projects a quarter and a budget: assuming the data you mined to understand a process and the data your agent runs on in production are the same plumbing. They are not.
+
+Automating a process with an agent is two engineering disciplines wearing one project name. One is mature and largely deterministic. The other is young, stochastic, and unforgiving to operate.
+
+The analytics pipeline is a data-engineering problem. You pull data from source systems, turn raw events into a clean log, check quality, run it on a schedule, and keep it alive when a feed breaks at 2 a.m. The failure modes are well known and the tools are stable.
+
+The agent in production is an LLMOps problem. It is not deterministic, so you cannot test it once and call it correct. A right-looking answer can hide a wrong path. So you trace every step, sample the traces, score them, and feed the failures back. Prompts become versioned artifacts. Cost and latency become first-order concerns. And prompt injection is a real attack surface, not a footnote.
+
+The deepest split is how they fail. A pipeline fails loudly: a feed stops, an alert fires. An agent fails quietly: it keeps answering, just a little worse, and you only notice if you are sampling.
+
+In practice that is often two teams, or at least two skill sets. Treat it as a decision you made, with the gap budgeted, not an accident you discover later.
+
+Full post: https://take-ai-bite.com/blog/pm-agentic-part-3/
+
+#DataEngineering #LLMOps #AIAgents #MLOps #TakeAIBite
+
+## Post 21: Autonomy is earned, not switched on (PM series Part 4) (2026-06-24)
+
+**URL:** (pending publish)
+**Status:** Draft
+**Blog post:** https://take-ai-bite.com/blog/pm-agentic-part-4/
+**Source:** PM-agentic series Part 4 (In Production). Per-part LinkedIn cross-post; series closer.
+**Hashtag set:** #AIinProduction #HumanAICollaboration #AIAgents #MLOps #TakeAIBite (drops #DSM; keeps #TakeAIBite).
+**Note:** Humanizer pass run on the blog post. ~260 words.
+**Slug observation (BL-023):** lead-3 hashtags #AIinProduction #HumanAICollaboration #AIAgents; record slug on publish.
+
+**Text:**
+
+A built and staffed system is not the same as a live one that pays off. The gap between running and trusted is longer than it looks.
+
+Going live is not a switch. It is a graded handover of trust. The agent earns the next bit of autonomy or it does not move on. It starts in shadow mode, acting on live inputs but taking no action, its decisions compared against what people actually did, at zero risk. When the agreement is good on a slice of the work, that slice moves to assisted: the agent proposes, a person approves. Only the slice that proves itself gets supervised autonomy. Autonomy is earned scope by scope, on evidence.
+
+Then prove the value. A delivered system is not a demonstrated outcome until someone shows the number moved against the baseline you set in discovery. That needs a named owner whose job is to confirm the value, not assume it.
+
+And keep a human on the decisions that carry weight: the ones that move money, change a record, or commit the organization to something it cannot walk back. Not as a bottleneck. A human forced to approve everything stops reading and starts clicking, and a rubber stamp is worse than no check at all. Give them the context to decide quickly, and they are faster than they would be alone and safer than the agent would be alone.
+
+The thread through the whole series: let evidence earn each step, and keep a human meaningfully in control of what the system is allowed to do.
+
+Full post: https://take-ai-bite.com/blog/pm-agentic-part-4/
+
+#AIinProduction #HumanAICollaboration #AIAgents #MLOps #TakeAIBite
+
 "Take AI Bite, labeled DSM (Deliberate Systematic Methodology) in the chart, sits at maximum human oversight and is the only system that accumulates curated experience. The nearest tool is two full levels down, and the level just below it sits empty."
