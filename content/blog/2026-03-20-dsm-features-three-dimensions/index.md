@@ -1,8 +1,8 @@
 ---
-title: "129 features across three dimensions"
+title: "142 features across three dimensions"
 date: 2026-03-20
 draft: false
-description: "DSM's 129 features mapped across human oversight, knowledge provenance, and experience accumulation."
+description: "DSM's 142 features mapped across human oversight, knowledge provenance, and experience accumulation."
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Features", "Take AI Bite"]
 categories: ["Features"]
 author: "Alberto Diaz Durana"
@@ -11,7 +11,7 @@ toc: true
 
 Most AI coding tools are built to reduce human involvement. DSM is built to make human involvement worth the time: the human and the AI produce better work together than either would alone, and what they learn carries forward.
 
-This post maps DSM's 129 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
+This post maps DSM's 142 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
 
 ---
 
@@ -33,7 +33,7 @@ The gate model itself has grown two refinements. When a task contains sub-tasks 
 
 Sessions are not "start working, stop working." Each session starts by checking inbox messages, validating project state, comparing versions, and loading context. Each session ends by saving memory, committing work, and creating continuity documents. If a session ends unexpectedly, the next session detects the gap and offers recovery.
 
-Lightweight sessions handle quick follow-ups. Session baselines track what changed. Configuration recommendations match settings to the planned work scope. A wrap-up type marker lets the next session-start command know whether the previous session ended light or full, so the two ends of the lifecycle stay aligned. Before suggesting wrap-up, the agent now re-reads the sprint plan and checks completed deliverables against actual evidence, so "sprint complete" cannot be declared while gates are still open.
+Lightweight sessions handle quick follow-ups. Session baselines track what changed. Configuration recommendations match settings to the planned work scope. A wrap-up type marker lets the next session-start command know whether the previous session ended light or full, so the two ends of the lifecycle stay aligned. Before suggesting wrap-up, the agent now re-reads the sprint plan and checks completed deliverables against actual evidence, so "sprint complete" cannot be declared while gates are still open. Session start also surfaces the CI status of any open pull request on the branch, so work never resumes on top of a check that has been red for days, and the reminder to mine the previous session's transcript no longer fires when that session has already been analyzed.
 
 ### Safety guardrails
 
@@ -42,6 +42,8 @@ Destructive commands (force push, hard reset, recursive delete) require explicit
 The guardrails extend to publication. Merging a pull request against `main` is treated as equivalent in outcome to pushing to `main`, and both require specific confirmation. At session start, the agent resolves the remote default branch and hard-halts if it differs from the local main line, so a stale session branch left as the repo default cannot quietly redirect a merge. Small checks, but the kind of thing that eats 45 minutes when it goes wrong.
 
 Two recent additions tighten the guardrails further. Certain safety prompts are now marked non-suppressible: even when the user has put the agent in auto mode (skipping non-critical pauses), the marked prompts must display and receive an explicit response. The pattern emerged after an incident where auto mode silently bypassed a continuation prompt that the agent had recognized in its own thinking block, then pressed past anyway. And every session now writes a lockfile at start; if a second session opens against the same project while one is still active, it hard-halts and asks the user to resolve the conflict, rather than silently interleaving two agents' work on the same branch.
+
+The guardrails then grew outward, beyond what an agent may do, to cover whose words go out and what outside text is allowed to steer. A session writing into another repository may now only create or append files, never run git there, so a foreign session cannot author commits on a project it does not own. Content posted under the human's byline, a pull-request comment, a commit message, gets its own approval gate, because approving the send is not the same as approving the words: the full text surfaces for review before it goes out. And cooperative external content, a polite suggestion on a public thread, is treated as observation by default; acting on the agenda it proposes takes explicit authorization, since politeness is not authorization and being on-topic is not an invitation. Smaller hardenings sit underneath, like dated filenames so an archived message cannot silently overwrite its predecessor, or a guard that stops a careless bulk edit from exploding the live transcript.
 
 These are structural constraints, not opt-in features. They cannot be bypassed without the human explicitly choosing to do so.
 
@@ -73,9 +75,11 @@ Every change to the methodology is tracked in a changelog, tagged with semantic 
 
 The point is preventing knowledge loss. When a protocol decision was made six months ago, the rationale is recoverable. When research informed a design choice, the original evidence is still there. The same standard applies in the moment: before answering a question about a file, a definition, or a piece of documentation, the agent reads the source. No partial knowledge passing as understanding.
 
-A recent principle extends this outward, to the tools themselves. "Read the User's Manual" treats external-tool understanding as a prerequisite to collaboration design, not an optional afterthought. Before building a pattern on a platform feature, the agent reads the platform's own documentation and verifies the understanding against it, not against memory or experiential knowledge. The motivating incident was a per-turn enforcement hook that sat broken for two and a half months because an assumption about git's index mode never got checked. Methodology knowledge is versioned; tool knowledge has to be grounded the same way.
+A recent principle extends this outward, to the tools themselves. "Read the User's Manual" treats external-tool understanding as a prerequisite to collaboration design, not an optional afterthought. Before building a pattern on a platform feature, the agent reads the platform's own documentation and verifies the understanding against it, not against memory or experiential knowledge. The motivating incident was a per-turn enforcement hook that sat broken for two and a half months because an assumption about git's index mode never got checked. Methodology knowledge is versioned; tool knowledge has to be grounded the same way. The same discipline now reaches outbound work: before drafting a pull request for an external project, the agent reads that project's own contribution guide, its PR template, its CI gates, and a couple of recently merged requests, then drafts against those conventions instead of an internal default.
 
 A closure cycle in v1.8.0 surfaced a class of problem with this kind of provenance: dead pointers. The methodology had grown hundreds of references to backlog filing codes (BL-NNN) that only resolved inside the central repository's plans folder. A mirrored spoke reading a methodology document hit a wall when the filing code was the only identifier on offer. The fix was a three-part cleanup: roughly 170 anchors removed from mirrored documents and replaced with resolvable identifiers (section references, protocol names, file references); a new BL lookup index that maps every implemented BL number to its title, version, and resolving concept, so the codes that remain can still be resolved in one hop; and a forward-only rule that checkpoint entries must use resolvable identifiers from the moment they are written, not BL numbers an unrelated spoke agent cannot follow. Knowledge that cannot be followed is not knowledge.
+
+Two everyday practices got the same treatment, named and given a home rather than left to habit. The small, fast check run after each file is built is now a first-class artifact with a fixed place and structure, framed as the industry-standard smoke test given a repo home, not a DSM coinage. And a writing discipline, introduce each concept once and let the body deepen it instead of restating it between summary and detail, became a named principle the drafting protocol checks for.
 
 ---
 
@@ -107,11 +111,13 @@ Sprint boundaries are not just packing-up moments. At each boundary, the agent r
 
 The reasoning lessons file itself grew past what could fit in a session-start context budget. The fix kept the live file as the source of truth and added a derived compact mirror, regenerated at every wrap-up. The mirror drops the file's leading guideline lines and the per-entry provenance prefix, and preserves every lesson body verbatim. Session start reads the mirror in full, which restores the original intent of priming the agent with the actual accumulated lessons instead of a peek at the first ten lines. The transcript-analysis skill regenerates the mirror on its own runs too, so the staleness window between a deep analysis pass and the next wrap-up does not leave fresh lessons invisible at the next session start. The empirical savings from a trim-only transform were smaller than projected (about 5 percent on a 113-entry file, against a 25-to-30-percent target). Real compression behind a controlled experiment is queued; productive sessions are explicitly forbidden as A/B subjects.
 
+The loop keeps closing on itself. One recurring move, the user reshaping a proposal instead of answering it, showed up six times across four months in the reasoning lessons before it was promoted into a named rule: when the user reframes, the agent re-decomposes rather than defending its first framing. The way structured prose gets drafted changed from the same kind of evidence, one section at a time, written to a file the user edits in place instead of pasted into chat, a pattern borrowed from notebook collaboration and validated on a four-part blog series. The behavior was observed enough times to earn a protocol; the protocol now shapes the next session.
+
 ---
 
 ## The compound effect
 
-No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 129 features work together as a system, and the system learns. The count keeps moving because the methodology is in active use; the shape of what it covers, though, has stayed recognizable across every version.
+No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 142 features work together as a system, and the system learns. The count keeps moving because the methodology is in active use; the shape of what it covers, though, has stayed recognizable across every version.
 
 A feedback observation from a spoke project becomes a backlog item in the central repository. That item becomes a protocol change. That change propagates to every project. The next session in any project benefits from an insight that started in a completely different context.
 
