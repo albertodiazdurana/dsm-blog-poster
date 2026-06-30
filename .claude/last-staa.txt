@@ -1,14 +1,19 @@
 # Last /dsm-staa run
-date: 2026-06-24
-analyzed_session: 25
+date: 2026-06-25
+analyzed_session: 26
 analyzed_transcript: .claude/session-transcript.md
-appended_lessons: 5
-pruned_lessons: 2
-# note: S25 analyzed from the LIVE transcript (not yet archived; the next
-# /dsm-go Step 5.5 will archive it). Subject chosen via AskUserQuestion over
-# the off-by-one default (latest archived = S24, already analyzed last run).
-# Appended 5 [STAA] S25 lessons (Gate-2 reopen, visual-asset pre-publish gate,
-# temporal-claim drift trend, humanizer-while-drafting, tension-surfacing A/B).
-# Pruned 2 [auto] S22 entries now codified in CLAUDE.md (replace_all-transcript,
-# version-bump cascade). Compact mirror regenerated: 71 entries, 28KB, both
+appended_lessons: 2
+pruned_lessons: 3
+# note: S26 analyzed from the LIVE transcript (not yet archived; the next
+# /dsm-go Step 5.5 will archive it). Off-by-one window: latest ARCHIVED was
+# S25 (2026-06-23T23:47-ST.md) but S25 was already STAA'd last run, and S26
+# was the most recently wrapped-up session (last-wrap-up session:26). Chose
+# S26 over re-analyzing S25.
+# Appended 2 [STAA] S26 [pattern] lessons: interpret-and-flag for low-stakes
+# reversible ambiguity; reactive-humanizer-discovery scales with original-prose
+# volume (S26 = first multi-content session since S23 with zero new tells).
+# Pruned 3 entries: S22 slug-non-determinism (superseded by S25/S26 BL-023
+# data), S24 re-verify-published (absorbed by S23 overclaim + S24 propagate-fix),
+# S14 PaperMod/Anatole toc: (obsolete, on Anatole 18 sessions).
+# Net 76 -> 75 live entries. Compact mirror regenerated: 75=75, 30453B, both
 # sanity checks OK.

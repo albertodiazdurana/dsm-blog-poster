@@ -484,13 +484,13 @@ Full post: https://take-ai-bite.com/blog/pm-agentic-part-1/
 
 ## Post 19: You cannot automate what you have not measured (PM series Part 2) (2026-06-24)
 
-**URL:** (pending publish)
-**Status:** Draft
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_processmining-aiagents-automation-share-7477642862449311744-cZ2S/
+**Status:** Published
 **Blog post:** https://take-ai-bite.com/blog/pm-agentic-part-2/
 **Source:** PM-agentic series Part 2 (Discovery and Value). Per-part LinkedIn cross-post.
 **Hashtag set:** #ProcessMining #AIAgents #Automation #DataDriven #TakeAIBite (drops #DSM; keeps #TakeAIBite).
 **Note:** Humanizer pass run on the blog post. ~250 words.
-**Slug observation (BL-023):** lead-3 hashtags #ProcessMining #AIAgents #Automation; record slug on publish.
+**Slug observation (BL-023):** lead-3-hashtag-derived. Published slug `processmining-aiagents-automation` = lead 3 hashtags #ProcessMining #AIAgents #Automation, exact match. Post opener ("Before you can automate a process...") is not a clean keyword phrase, so LinkedIn fell back to hashtags rather than the title, consistent with the refined hypothesis (Post 18 was title-derived because its opener was a clean phrase).
 
 **Text:**
 
