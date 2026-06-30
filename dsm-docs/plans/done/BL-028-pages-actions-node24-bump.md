@@ -1,8 +1,9 @@
 # BL-028: Bump GitHub Pages actions off deprecated Node 20
 
-**Status:** Open
+**Status:** Done
 **Priority:** Low
 **Date Created:** 2026-06-30 (Session 27)
+**Date Completed:** 2026-06-30 (Session 27)
 **Source:** S27 deploy of PR #47. The Pages deploy run logged: "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/deploy-pages@v4."
 **Origin:** GitHub is retiring Node 20 from Actions runners (https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/). Actions still declaring `runs.using: node20` are force-run on Node 24 with a warning during the transition. When the forced fallback ends, a node20-pinned action will fail to start.
 
@@ -34,4 +35,4 @@ Bump all four to the verified latest majors in `.github/workflows/hugo.yml`. Con
 
 ## Outcome
 
-- (S27) **Done.** Bumped checkout@v4 -> v7, configure-pages@v5 -> v6, upload-pages-artifact@v3 -> v5, deploy-pages@v4 -> v5. Verified next deploy: TBD.
+- (S27) **Done.** Bumped checkout@v4 -> v7, configure-pages@v5 -> v6, upload-pages-artifact@v3 -> v5, deploy-pages@v4 -> v5 (PR #48). Deploy run 28473996634 completed green with no "Node.js 20 is deprecated" warning; live site HTTP 200, still renders "142 features".

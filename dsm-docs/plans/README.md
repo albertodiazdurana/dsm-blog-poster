@@ -19,7 +19,6 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-024 | ["Investigation-first" blog post + LinkedIn cross-post (Haystack OSS arc)](BL-024-haystack-investigation-first-post.md) | Medium | After BL-022 Stage 3 |
 | BL-025 | [DSM v1.10-v1.14 cumulative release coverage (multi-front)](BL-025-dsm-v1.10-v1.14-release-coverage.md) | High | Active (Front B absorbed by BL-027) |
 | BL-027 | [DSM v1.15-v1.17 cumulative release coverage (multi-front)](BL-027-dsm-v1.15-v1.17-release-coverage.md) | High | Active (Stage 2 Front B + C done) |
-| BL-028 | [Bump GitHub Pages actions off deprecated Node 20](BL-028-pages-actions-node24-bump.md) | Low | Active (fix applied S27) |
 
 ## Completed
 
@@ -42,3 +41,4 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-019 | [PMO Director blog post](done/BL-019-pmo-director-blog.md) | 2026-05-28 |
 | BL-026 | [IronCalc ACCRINT contribution arc blog post](done/BL-026-ironcalc-accrint-story-post.md) | 2026-06-08 |
 | BL-005 | [Competitive positioning blog post (reframed as the symbiosis post)](done/BL-005-competitive-positioning-blog.md) | 2026-06-24 |
+| BL-028 | [Bump GitHub Pages actions off deprecated Node 20](done/BL-028-pages-actions-node24-bump.md) | 2026-06-30 |
