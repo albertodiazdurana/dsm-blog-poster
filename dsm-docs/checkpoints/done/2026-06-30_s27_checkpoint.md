@@ -1,3 +1,5 @@
+**Consumed at:** Session 28 start (2026-07-02)
+
 # Session 27 Checkpoint
 **Date:** 2026-06-30
 **Branch:** session-27/2026-06-30-bl028-verify

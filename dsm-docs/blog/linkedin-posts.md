@@ -510,23 +510,23 @@ Full post: https://take-ai-bite.com/blog/pm-agentic-part-2/
 
 ## Post 20: Two engineering disciplines wearing one project name (PM series Part 3) (2026-06-24)
 
-**URL:** (pending publish)
-**Status:** Draft
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_dataengineering-llmops-aiagents-share-7478450623223525378-0Fdw/
+**Status:** Published
 **Blog post:** https://take-ai-bite.com/blog/pm-agentic-part-3/
 **Source:** PM-agentic series Part 3 (Engineering and the Agent). Per-part LinkedIn cross-post.
 **Hashtag set:** #DataEngineering #LLMOps #AIAgents #MLOps #TakeAIBite (drops #DSM; keeps #TakeAIBite).
 **Note:** Humanizer pass run on the blog post. ~250 words.
-**Slug observation (BL-023):** lead-3 hashtags #DataEngineering #LLMOps #AIAgents; record slug on publish.
+**Slug observation (BL-023):** predicted lead-3 hashtags #DataEngineering #LLMOps #AIAgents; CONFIRMED slug `dataengineering-llmops-aiagents-share` (lead-3-hashtag-derived, "share" appended before activity id). Opener not a clean keyword phrase, so lead-hashtag branch as expected (per S26 refined hypothesis: title-derived only when opener is a clean phrase).
 
 **Text:**
 
-A confusion quietly costs a lot of agentic projects a quarter and a budget: assuming the data you mined to understand a process and the data your agent runs on in production are the same plumbing. They are not.
+A confusion quietly costs a lot of agentic projects a quarter and a budget: assuming the data you mined to understand a process and the data your agent runs on in production are the same plumbing is the wrong one.
 
 Automating a process with an agent is two engineering disciplines wearing one project name. One is mature and largely deterministic. The other is young, stochastic, and unforgiving to operate.
 
 The analytics pipeline is a data-engineering problem. You pull data from source systems, turn raw events into a clean log, check quality, run it on a schedule, and keep it alive when a feed breaks at 2 a.m. The failure modes are well known and the tools are stable.
 
-The agent in production is an LLMOps problem. It is not deterministic, so you cannot test it once and call it correct. A right-looking answer can hide a wrong path. So you trace every step, sample the traces, score them, and feed the failures back. Prompts become versioned artifacts. Cost and latency become first-order concerns. And prompt injection is a real attack surface, not a footnote.
+The agent in production is an LLMOps problem. It is not deterministic, so you cannot test it once and call it correct. A right-looking answer can hide a wrong path. So you trace every step, sample the traces, score them, and feed the failures back. Prompts become versioned artifacts. Cost and latency become first-order concerns. And prompt injection get the necessary attention as a real attack surface.
 
 The deepest split is how they fail. A pipeline fails loudly: a feed stops, an alert fires. An agent fails quietly: it keeps answering, just a little worse, and you only notice if you are sampling.
 
