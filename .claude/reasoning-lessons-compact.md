@@ -3,8 +3,8 @@
 <!-- Do not edit; auto-generated from .claude/reasoning-lessons.md by /dsm-wrap-up Step 0 or /dsm-staa Step 8 -->
 
 **Source:** `.claude/reasoning-lessons.md`
-**Last regenerated:** 2026-06-30T22:42+02:00
-**Source mtime at regeneration:** 2026-06-30T22:41+02:00
+**Last regenerated:** 2026-07-03T00:20+02:00
+**Source mtime at regeneration:** 2026-07-03T00:18+02:00
 
 ---
 
@@ -87,3 +87,7 @@
 - Before bumping a dependency/action to clear a deprecation, verify the target version actually resolves it, do not assume "latest = fixed." S27 read each GitHub action's `action.yml` `runs.using` at its latest tag via `gh api .../contents/action.yml?ref=<tag>` and confirmed node24 before editing the workflow, then verified the next deploy log was warning-free. Grounding the fix in the source (CLAUDE.md read-the-source rule) applies to CI infra too.
 - `git commit` flags must precede the `--` pathspec separator. `git commit -- <paths> -m "msg"` parses `-m` and the message as pathspecs (errors "pathspec did not match"), silently no-ops the intended commit, and a following bare `git commit` (no pathspec) then sweeps ALL staged files into the wrong message. S27 hit this on C1-C3 (no-op) + C4 (swept staged new files); recovery was re-committing with `git commit -m "msg" -- <paths>`. Use flags-before-`--` always.
 - The auto-memory MEMORY.md lives outside the repo (~/.claude/projects/.../memory/), so editing it trips the cross-repo write gate (validate-cross-repo-write.sh) mid-wrap-up and mid-session. A user "yes" to a memory correction IS the confirmation, record the path in .claude/cross-repo-writes-session.txt then retry. Wrap-up Step 0.5 pre-confirms the auto-memory dir, but an in-session memory edit (S27 SEO correction) happens before that and needs the manual record.
+- LinkedIn slug derivation is non-deterministic for identical inputs. Post 15 and Post 22 shared the same title shape ("How Take AI Bite learned to X") AND the same 5-hashtag set, yet Post 15 resolved title-derived and Post 22 lead-3-hashtag-derived (`ai-humanaicollaboration-claudecode`). Refutes the S26 "clean linked-title -> title-derived" rule as deterministic; the branch is driven by a factor outside title/hashtag content (platform timing / A-B / per-post state). Record slugs on publish; do not predict with confidence (BL-023).
+- In a release/story post, frame a feature as a general capability, not by narrating the post's own construction. The v1.7-v1.9 post's chunked-drafting section first used a self-referential "this post was written one section at a time" meta beat; the user cut it for the general case ("when the framework produces a long piece of writing such as documentation or a report"). Self-referential cleverness reads as inside-baseball; the general framing serves the reader.
+- For original long-form reader-facing prose, applying the known humanizer ruleset DURING drafting (vary closers, avoid the 4-fragment staccato list, drop rule-of-three inflation, comma-not-em-dash, "an AI") plus surfacing hook candidates at Gate 1/2 (S23 #59) yields a near-clean /humanizer pass: the v1.7-v1.9 post needed only 2 Gate-4 dedup fixes and Post 22 one #19 "here is" fix. Reinforces S25 #77 / S26 #85: original long-form is where live rule-application pays off most.
+- Harness/tool defaults are not project protocol. The "Generated with Claude Code" PR-body footer came from the harness git instructions, not DSM; it conflicts with the global no-co-author-lines rule + Voice-Attribution posture, and the repo's own PRs (#47/48/49) had no such footer. When a harness default touches byline content, verify it against repo convention + project rules before applying; the project rule wins (saved as feedback_no_ai_attribution_footer).

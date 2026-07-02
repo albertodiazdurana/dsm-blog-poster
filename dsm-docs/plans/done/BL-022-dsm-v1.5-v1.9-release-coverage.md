@@ -1,8 +1,9 @@
 # BL-022: DSM v1.5-v1.9 cumulative release coverage (multi-front)
 
-**Status:** Open
+**Status:** Implemented
 **Priority:** High
 **Date Created:** 2026-05-12 (Session 22)
+**Date Completed:** 2026-07-02 (Session 28)
 **Source:** User direction in S22 to bundle the accumulated release work into one BL with a clear front-by-front checklist.
 **Origin:** DSM shipped five minor versions (v1.5.0 through v1.9.0) without a release-coverage cycle. Two prior BLs partially addressed the gap (BL-018 for the v1.5/v1.6 release post; BL-021 for the v1.7-v1.9 features-post update) but neither named the full set of artifacts that drift when DSM bumps a version. This BL closes that gap as one piece of work and formalizes the pattern for future version bumps.
 
@@ -61,7 +62,7 @@ Tick items as they complete. Each front is independent unless noted.
 
 ### Front A , Release blog post(s)
 
-- [ ] Decide bundling: one post for v1.5-v1.9, or two posts (v1.5/v1.6 cluster + v1.7-v1.9 cluster). Recommendation: two.
+- [x] Decide bundling: SPLIT into two posts. Post 1 = v1.5/v1.6 "bootstrap" (S23); Post 2 = v1.7-v1.9 "catch its own slips" (S28).
 - [ ] Read the v1.5/v1.6 reconstruction trail in `dsm-docs/plans/done/BL-018-dsm-v1-5-v1-6-release-post.md` (specific BL files + candidate story angle "How DSM learned to bootstrap itself").
 - [ ] Read the v1.7-v1.9 reconstruction trail in `_inbox/done/2026-05-12_dsm-central-v1.7-v1.9-features.md` (consolidated F-entry / BL / story-angle table).
 - [ ] Read CHANGELOG entries in DSM Central between v1.5.0 and v1.9.0.
@@ -71,8 +72,8 @@ Tick items as they complete. Each front is independent unless noted.
 - [ ] Voice calibration check against `content/about-me.md` + `content/about.md`.
 - [ ] /humanizer pre-publish gate.
 - [ ] User review of full assembled post(s) (Gate 4).
-- [ ] Publish to `content/blog/YYYY-MM-DD-dsm-vX-release/index.md`.
-- [ ] Record published URL(s) in this BL's "Outcomes" section below.
+- [x] Publish to `content/blog/YYYY-MM-DD-dsm-vX-release/index.md`. Post 1 (S23) + Post 2 (S28) both published.
+- [x] Record published URL(s) in this BL's "Outcomes" section below.
 
 ### Front B , Features post update (count and weaving)
 
@@ -98,15 +99,15 @@ Tick items as they complete. Each front is independent unless noted.
 
 ### Front D , linkedin-posts.md canonical record
 
-- [ ] For each LinkedIn post published in Front E, append a Post N entry to `dsm-docs/blog/linkedin-posts.md` following the existing schema (URL, Status, Blog post link, Text body, hashtags).
+- [x] For each LinkedIn post published in Front E, append a Post N entry to `dsm-docs/blog/linkedin-posts.md` following the existing schema (URL, Status, Blog post link, Text body, hashtags). Post 15 (S23) + Post 22 (S28) both recorded.
 
 ### Front E , LinkedIn cross-post(s)
 
-- [ ] Draft one LinkedIn post per release blog post produced in Front A (250-400 words, first-person, hashtags, "Full post:" link).
-- [ ] /humanizer pre-publish gate per LinkedIn post.
-- [ ] User review per LinkedIn post.
-- [ ] Publish on LinkedIn.
-- [ ] Record published URL(s) in this BL's "Outcomes" section below.
+- [x] Draft one LinkedIn post per release blog post produced in Front A (250-400 words, first-person, hashtags, "Full post:" link). Post 15 (S23) + Post 22 (S28).
+- [x] /humanizer pre-publish gate per LinkedIn post.
+- [x] User review per LinkedIn post.
+- [x] Publish on LinkedIn.
+- [x] Record published URL(s) in this BL's "Outcomes" section below.
 
 ### Front F , dsm-portfolio inbox notification
 
@@ -117,20 +118,24 @@ Tick items as they complete. Each front is independent unless noted.
 
 ### Closure
 
-- [ ] All 6 fronts marked complete OR explicitly deferred with reason recorded in "Outcomes" below.
-- [ ] CLAUDE.md "DSM Version Release Coverage" section verified up to date with the 6-front pattern (already done as part of BL-022 creation, but re-check on closure).
-- [ ] Move BL-022 to `dsm-docs/plans/done/` with Date Completed.
+- [x] All 6 fronts marked complete OR explicitly deferred with reason recorded in "Outcomes" below. All 6 delivered.
+- [x] CLAUDE.md "DSM Version Release Coverage" section verified up to date with the 6-front pattern (re-checked S28; the 6-stage pipeline shape still matches).
+- [x] Move BL-022 to `dsm-docs/plans/done/` with Date Completed (S28, 2026-07-02).
 
 ## Outcomes
 
 (Fill in as fronts complete.)
 
-- Front A published URL(s): (deferred to next session)
+- Front A published URL(s):
+  - Post 1 (v1.5/v1.6 "How Take AI Bite learned to bootstrap itself"): https://take-ai-bite.com/blog/2026-06-03-tab-bootstrap-release/ , published S23 (2026-06-03).
+  - Post 2 (v1.7-v1.9 "How Take AI Bite learned to catch its own slips"): https://take-ai-bite.com/blog/2026-07-02-tab-slip-catching-release/ , published S28 (2026-07-02), PR #50, live-verified (HTTP 200, markers present). Gate 4 + humanizer passed.
 - Front B published commit: Session 22 (2026-05-12); features post moved 114 to 129, 14 F-entries woven, humanized, committed and pushed on `session-22/2026-05-12` branch.
 - Front C published commit: Session 22 (2026-05-12); About page moved to "The Twelve Principles" with Principle 12 added, committed on same branch.
-- Front E LinkedIn URL(s): (pending Front A)
+- Front E LinkedIn URL(s):
+  - Post 15 (v1.5/v1.6 bootstrap): https://www.linkedin.com/posts/albertodiazdurana_how-take-ai-bite-learned-to-bootstrap-itself-share-7468948595631742976-SNd3/ , published S23. Slug title-derived.
+  - Post 22 (v1.7-v1.9 slip-catching): https://www.linkedin.com/posts/albertodiazdurana_ai-humanaicollaboration-claudecode-share-7478565980596658176-sCCy/ , published S28 (2026-07-02). Slug LEAD-3-HASHTAG-derived (`ai-humanaicollaboration-claudecode`), refuting the title-derived prediction; Post 15 vs Post 22 = identical title/hashtag inputs, different slug derivation (BL-023 non-determinism data point).
 - Front F notification delivered: 2026-05-12 to `~/dsm-data-science-portfolio-working-folder/_inbox/2026-05-12_dsm-blog-poster_dsm-v1.5-v1.9-features-update.md`.
-- Deferrals: Front A (release blog post), Front D, Front E all deferred to the next session per user direction at S22 end. Stage 3 of the pipeline picks up there.
+- Deferrals (resolved S28): Front A/D/E were deferred at S22 end; all delivered S23 (Post 1 + Post 15) and S28 (Post 2 + Post 22). No open deferrals remain.
 
 ## Success criteria
 

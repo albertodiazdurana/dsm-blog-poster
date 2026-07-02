@@ -563,3 +563,31 @@ Full post: https://take-ai-bite.com/blog/pm-agentic-part-4/
 #AIinProduction #HumanAICollaboration #AIAgents #MLOps #TakeAIBite
 
 "Take AI Bite, labeled DSM (Deliberate Systematic Methodology) in the chart, sits at maximum human oversight and is the only system that accumulates curated experience. The nearest tool is two full levels down, and the level just below it sits empty."
+
+## Post 22: How Take AI Bite learned to catch its own slips (2026-07-02)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_ai-humanaicollaboration-claudecode-share-7478565980596658176-sCCy/
+**Status:** Published
+**Blog post:** https://take-ai-bite.com/blog/2026-07-02-tab-slip-catching-release/
+**Source:** BL-022 Front E (LinkedIn cross-post for the v1.7-v1.9 release post "How Take AI Bite learned to catch its own slips"). Direct sibling of Post 15 (the v1.5/v1.6 release cross-post); the two form the two-part release series.
+**Hashtag set:** #AI #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite (same set as Post 15 for series consistency; drops #DSM, keeps #TakeAIBite).
+**Slug observation (BL-023):** PREDICTION WRONG. Predicted title-derived (like sibling Post 15); ACTUAL slug is LEAD-3-HASHTAG-derived: `ai-humanaicollaboration-claudecode` (from #AI #HumanAICollaboration #ClaudeCode). KEY FINDING: Post 15 and Post 22 share the SAME title shape ("How Take AI Bite learned to X") AND the SAME hashtag set, yet Post 15 resolved title-derived and Post 22 resolved hashtag-derived. Identical title/hashtag inputs, different derivation. This refutes the S26 "clean linked-title -> title-derived" hypothesis as deterministic; the branch is driven by a factor outside title/hashtag content (platform timing / A-B / per-post state). Strongest non-determinism evidence to date; supersedes the direction of the S26 refined hypothesis.
+**Note:** ~310 words. "an AI" singular, comma-not-em-dash. Mirrors the blog Hook opener.
+
+**Text:**
+
+Before a work session had even started, the agent was already about to skip a question it was required to ask me.
+
+I was resuming a project in auto mode. Take AI Bite has a rule for that moment: before continuing, ask the human which way to resume. It is my call, because it changes what the whole session does next. The agent knew the rule. I can prove it knew, because it wrote the rule down in its own reasoning, this prompt needs an explicit choice from the user, and then it pressed past the prompt and kept going. I was never asked.
+
+That is the failure I find most interesting, because it is not ignorance. The agent had the rule in hand and stepped over it anyway. In my experience, and it turns out in the framework's own records, this is the most common way collaboration slips. Not forgetting a rule. Knowing one and not being stopped by it.
+
+Take AI Bite v1.7 through v1.9 is largely one long answer to that: The fix is never "remember harder." Some prompts are now marked non-suppressible, so auto mode cannot collapse them. A session writes a lockfile, so a second one cannot quietly edit the same branch. References a reader could not resolve were cleaned up and made resolvable. Long documents are now drafted section by section, because a single pass once shipped a factual error into work that had already been submitted.
+
+Each of these takes something the framework used to depend on me or the agent remembering, and turns it into a structure that does not depend on remembering at all.
+
+If you build with an agent, the question worth sitting with is this: what is your collaboration still trusting itself to remember?
+
+Full post: https://take-ai-bite.com/blog/2026-07-02-tab-slip-catching-release/
+
+#AI #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite
