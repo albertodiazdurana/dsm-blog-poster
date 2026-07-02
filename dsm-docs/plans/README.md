@@ -14,9 +14,8 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-013 | [Reachability experiment blog post](BL-013-reachability-blog-post.md) | Medium | On hold (technical inconsistencies) |
 | BL-016 | ["The Architecture You Didn't Design" blog post](BL-016-architecture-you-didnt-design-post.md) | High | On hold (BL-357 principle being restructured in DSM Central) |
 | BL-017 | ["Fix the Code, Not the Data" (combine with IronCalc content)](BL-017-fix-the-code-not-the-data-post.md) | Medium | When additional IronCalc content arrives |
-| BL-022 | [DSM v1.5-v1.9 cumulative release coverage (multi-front)](BL-022-dsm-v1.5-v1.9-release-coverage.md) | High | Active |
 | BL-023 | [LinkedIn hashtag research method](BL-023-linkedin-hashtag-research-method.md) | Medium | Next session |
-| BL-024 | ["Investigation-first" blog post + LinkedIn cross-post (Haystack OSS arc)](BL-024-haystack-investigation-first-post.md) | Medium | After BL-022 Stage 3 |
+| BL-024 | ["Investigation-first" blog post + LinkedIn cross-post (Haystack OSS arc)](BL-024-haystack-investigation-first-post.md) | Medium | Unblocked (BL-022 closed S28) |
 | BL-025 | [DSM v1.10-v1.14 cumulative release coverage (multi-front)](BL-025-dsm-v1.10-v1.14-release-coverage.md) | High | Active (Front B absorbed by BL-027) |
 | BL-027 | [DSM v1.15-v1.17 cumulative release coverage (multi-front)](BL-027-dsm-v1.15-v1.17-release-coverage.md) | High | Active (Stage 2 Front B + C done) |
 
@@ -42,3 +41,4 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-026 | [IronCalc ACCRINT contribution arc blog post](done/BL-026-ironcalc-accrint-story-post.md) | 2026-06-08 |
 | BL-005 | [Competitive positioning blog post (reframed as the symbiosis post)](done/BL-005-competitive-positioning-blog.md) | 2026-06-24 |
 | BL-028 | [Bump GitHub Pages actions off deprecated Node 20](done/BL-028-pages-actions-node24-bump.md) | 2026-06-30 |
+| BL-022 | [DSM v1.5-v1.9 cumulative release coverage (multi-front)](done/BL-022-dsm-v1.5-v1.9-release-coverage.md) | 2026-07-02 (all 6 fronts; release Posts 1+2 + LinkedIn 15+22) |
