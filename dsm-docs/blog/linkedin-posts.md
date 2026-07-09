@@ -589,3 +589,26 @@ If you build with an agent, the question worth sitting with is this: what is you
 Full post: https://take-ai-bite.com/blog/2026-07-02-tab-slip-catching-release/
 
 #AI #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite
+## Post 23: How Take AI Bite builds its own guardrails (2026-07-06)
+
+**URL:** (pending publish)
+**Status:** Draft
+**Blog post:** https://take-ai-bite.com/blog/2026-07-06-tab-safe-defaults-release/
+**Source:** BL-025/BL-027 Front E (LinkedIn cross-post for the v1.10-v1.12 release post "How Take AI Bite builds its own guardrails"). Post A of the v1.10-v1.17 theme split; sibling of Posts 15 + 22 (the release-post series).
+**Hashtag set:** #Guardrails #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite. Leads with the topical #Guardrails (drops #AI) to make the slug distinctive; keeps #TakeAIBite as the brand tag, drops #DSM per the CLAUDE.md convention.
+**Slug observation (BL-023):** predict lead-3 hashtags -> `guardrails-humanaicollaboration-claudecode`; opener not a clean keyword phrase, so lead-hashtag branch expected. Record actual slug on publish.
+**Note:** ~200 words. Matches the blog post's plain, near-impersonal register; leads with the fractal/propagation frame to introduce the guardrail principle. "an AI" singular, comma-not-em-dash.
+
+**Text:**
+
+Take AI Bite versions 1.10 through 1.12 add guardrails, and there is something fractal about them. A fractal repeats its whole shape at smaller and smaller scale. Each guardrail is a small copy of the one idea the framework runs on, make the safe path the one you get by default, set down at the scale of a single edit, file, or repository.
+
+A guardrail is not a reminder to be careful. It changes what an ordinary operation does, so the damaging version can no longer happen. A move that used to overwrite an archive now lands on a dated name that cannot collide. A session may write into another repository but not run git there. A narrow check refuses a runaway edit before it happens. None of them ask anyone to remember anything.
+
+And because Take AI Bite runs as a hub and its spokes, a fix proven on one project propagates to all of them. Fractal in shape, propagation in reach. A single overwritten archive on one project becomes, a version later, a guardrail every project already has.
+
+That is how the framework grows.
+
+Full post: https://take-ai-bite.com/blog/2026-07-06-tab-safe-defaults-release/
+
+#Guardrails #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite
