@@ -591,12 +591,12 @@ Full post: https://take-ai-bite.com/blog/2026-07-02-tab-slip-catching-release/
 #AI #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite
 ## Post 23: How Take AI Bite builds its own guardrails (2026-07-06)
 
-**URL:** (pending publish)
-**Status:** Draft
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_guardrails-humanaicollaboration-claudecode-share-7481100704569462785-i34M/
+**Status:** Published
 **Blog post:** https://take-ai-bite.com/blog/2026-07-06-tab-safe-defaults-release/
 **Source:** BL-025/BL-027 Front E (LinkedIn cross-post for the v1.10-v1.12 release post "How Take AI Bite builds its own guardrails"). Post A of the v1.10-v1.17 theme split; sibling of Posts 15 + 22 (the release-post series).
 **Hashtag set:** #Guardrails #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite. Leads with the topical #Guardrails (drops #AI) to make the slug distinctive; keeps #TakeAIBite as the brand tag, drops #DSM per the CLAUDE.md convention.
-**Slug observation (BL-023):** predict lead-3 hashtags -> `guardrails-humanaicollaboration-claudecode`; opener not a clean keyword phrase, so lead-hashtag branch expected. Record actual slug on publish.
+**Slug observation (BL-023):** predicted lead-3 hashtags -> `guardrails-humanaicollaboration-claudecode`; CONFIRMED slug `guardrails-humanaicollaboration-claudecode-share` (lead-3-hashtag-derived, "share" appended before activity id). Opener ("Take AI Bite versions...") not a clean keyword phrase, so lead-hashtag branch as expected. A clean-prediction case (matches the S26 refined hypothesis direction); does not bear on the S28 Post 15-vs-22 non-determinism finding.
 **Note:** ~200 words. Matches the blog post's plain, near-impersonal register; leads with the fractal/propagation frame to introduce the guardrail principle. "an AI" singular, comma-not-em-dash.
 
 **Text:**
