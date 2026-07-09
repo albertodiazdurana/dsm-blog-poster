@@ -47,6 +47,8 @@ Reconstruction trail per CLAUDE.md pipeline Stage 3 mandatory reading order.
 
 **Blocked on:** BL-022 Front A completion.
 
+**Update (S29):** v1.10-v1.17 split by theme (not BL range) into two posts. **Post A** (v1.10-v1.12 guardrails cluster, F-129..F-132) is **PUBLISHED (2026-07-06)**: "How Take AI Bite builds its own guardrails", https://take-ai-bite.com/blog/2026-07-06-tab-safe-defaults-release/ (PR #52). Post A covers this BL's F-130/F-131/F-132 (plus F-129 from BL-027's carry-over). The v1.13-v1.14 features from this BL's range (F-134 User-Reframes-Proposal, F-135 Introduce Once) belong to **Post B** (v1.13-v1.17 cluster), still pending. Front E LinkedIn for Post A pending. Sequencing + closure tracked in BL-027 (which absorbs this BL's remaining fronts).
+
 ### Front B: Features post update
 
 `content/blog/2026-03-20-dsm-features-three-dimensions/index.md`. Count update 129 → 136 (verify before publishing). Weave F-130 through F-136 into the three dimensions as integrations, not a list.

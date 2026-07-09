@@ -1,5 +1,5 @@
 ---
-title: "How Take AI Bite learned to build its own guardrails"
+title: "How Take AI Bite builds its own guardrails"
 date: 2026-07-06
 description: "Take AI Bite v1.10 through v1.12 add guardrails: changes that make an unsafe operation impossible or blocked, rather than asking the agent to remember to avoid it. A short walk through what each one prevents."
 categories: ["Methodology"]

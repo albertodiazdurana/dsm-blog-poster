@@ -51,6 +51,12 @@ F-129 through F-135 carry over from the BL-025 range (v1.10-v1.14) that Front B 
 ### Front A: Release blog post(s)
 Story-shaped post(s) following the 5-part structure (Hook, Insight, Fix, Bonus, Takeaway). Reconstruction trail per CLAUDE.md pipeline Stage 3. **Blocked on:** BL-022 + BL-025 Front A.
 
+**Bundling decision (S29):** the v1.10-v1.17 range was split by theme, not by BL range, into two thesis-driven posts. **Post A** = v1.10-v1.12 "guardrails" cluster (F-129..F-132); **Post B** = v1.13-v1.17 "naming the behavior a principle implies" cluster (F-134..F-141, incl. the 14th principle Observe Before Engaging). F-133 (smoke tests as named artifact) dropped from Post A (not a guardrail); reassign to Post B or omit.
+
+**Post A: PUBLISHED (2026-07-06, S29).** "How Take AI Bite builds its own guardrails", https://take-ai-bite.com/blog/2026-07-06-tab-safe-defaults-release/ (PR #52). Covers F-129/F-130/F-131/F-132. Chunked-drafting Gates 1-4 + humanizer pass; fractal/propagation bookend. Live-verified.
+
+**Post B: PENDING** (v1.13-v1.17 cluster). Front A does not fully close until Post B ships.
+
 ### Front B: Features post update
 `content/blog/2026-03-20-dsm-features-three-dimensions/index.md`. Count 129 -> 142. Weave F-129 through F-141 into the three dimensions as integrations, not a list. **Status: shipped S27** (see Outcomes). Weaving map:
 - **Human Oversight (guardrails grow outward + lifecycle):** F-129 (cross-repo write-only), F-136 (Soft Injection / Frame Capture), F-137 (Voice-Attribution Review), F-132 (collision-safe inbox-done), F-131 (wrap-up cross-repo pre-confirm), F-130 (transcript replace_all guard), F-139 (open-PR CI at boot), F-140 (STAA reminder crash-recovery fix).
