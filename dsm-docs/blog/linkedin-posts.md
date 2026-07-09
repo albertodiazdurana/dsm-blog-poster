@@ -526,7 +526,7 @@ Automating a process with an agent is two engineering disciplines wearing one pr
 
 The analytics pipeline is a data-engineering problem. You pull data from source systems, turn raw events into a clean log, check quality, run it on a schedule, and keep it alive when a feed breaks at 2 a.m. The failure modes are well known and the tools are stable.
 
-The agent in production is an LLMOps problem. It is not deterministic, so you cannot test it once and call it correct. A right-looking answer can hide a wrong path. So you trace every step, sample the traces, score them, and feed the failures back. Prompts become versioned artifacts. Cost and latency become first-order concerns. And prompt injection get the necessary attention as a real attack surface.
+The agent in production is an LLMOps problem. It is not deterministic, so you cannot test it once and call it correct. A right-looking answer can hide a wrong path. So you trace every step, sample the traces, score them, and feed the failures back. Prompts become versioned artifacts. Cost and latency become first-order concerns. And prompt injection gets the necessary attention as a real attack surface.
 
 The deepest split is how they fail. A pipeline fails loudly: a feed stops, an alert fires. An agent fails quietly: it keeps answering, just a little worse, and you only notice if you are sampling.
 
@@ -538,13 +538,13 @@ Full post: https://take-ai-bite.com/blog/pm-agentic-part-3/
 
 ## Post 21: Autonomy is earned, not switched on (PM series Part 4) (2026-06-24)
 
-**URL:** (pending publish)
-**Status:** Draft
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_aiinproduction-humanaicollaboration-aiagents-share-7478715733686931456-udWK/
+**Status:** Published
 **Blog post:** https://take-ai-bite.com/blog/pm-agentic-part-4/
-**Source:** PM-agentic series Part 4 (In Production). Per-part LinkedIn cross-post; series closer.
+**Source:** PM-agentic series Part 4 (In Production). Per-part LinkedIn cross-post; series closer. Closes the PM-agentic 4-part LinkedIn series (Posts 18-21).
 **Hashtag set:** #AIinProduction #HumanAICollaboration #AIAgents #MLOps #TakeAIBite (drops #DSM; keeps #TakeAIBite).
 **Note:** Humanizer pass run on the blog post. ~260 words.
-**Slug observation (BL-023):** lead-3 hashtags #AIinProduction #HumanAICollaboration #AIAgents; record slug on publish.
+**Slug observation (BL-023):** predicted lead-3 hashtags #AIinProduction #HumanAICollaboration #AIAgents; CONFIRMED slug `aiinproduction-humanaicollaboration-aiagents-share` (lead-3-hashtag-derived, "share" appended before activity id). Opener not a clean keyword phrase, so lead-hashtag branch as expected (consistent with the S26 refined hypothesis direction). A clean-prediction case; does not bear on the S28 Post 15-vs-22 non-determinism finding (which was identical inputs, divergent derivation).
 
 **Text:**
 
@@ -561,8 +561,6 @@ The thread through the whole series: let evidence earn each step, and keep a hum
 Full post: https://take-ai-bite.com/blog/pm-agentic-part-4/
 
 #AIinProduction #HumanAICollaboration #AIAgents #MLOps #TakeAIBite
-
-"Take AI Bite, labeled DSM (Deliberate Systematic Methodology) in the chart, sits at maximum human oversight and is the only system that accumulates curated experience. The nearest tool is two full levels down, and the level just below it sits empty."
 
 ## Post 22: How Take AI Bite learned to catch its own slips (2026-07-02)
 
