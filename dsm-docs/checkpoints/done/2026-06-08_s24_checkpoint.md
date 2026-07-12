@@ -1,5 +1,7 @@
 **Consumed at:** Session 25 start (2026-06-23)
 
+> **Note (added S30, 2026-07-12):** The Front C record below added "Introduce Once, Then Deepen" as About-page principle 13. As of TAB v1.18.0 that principle was relocated to DSM_0.2 §8.10 and renamed "Present Once, Then Deepen" (a writing discipline, no longer a principle); the DSM_6.0 §1.13 slot is now "Forward the Why" (F-142, BL-473), and the About page was updated to match in S30 (PR #55). This checkpoint is preserved as the accurate S24 record.
+
 # Session 24 Checkpoint
 **Date:** 2026-06-08
 **Branch:** session-24/2026-06-08-post-deploy (merges to main in this wrap-up)

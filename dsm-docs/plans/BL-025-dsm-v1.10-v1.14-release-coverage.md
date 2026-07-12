@@ -6,6 +6,8 @@
 **Source:** S23 inbox triage (3 entries: `_inbox/2026-05-31_dsm-central-v1.12-smoke-tests.md`, `_inbox/agentic-ai-data-science-methodology.md`, `_inbox/IronCalc.md` is unrelated to this BL).
 **Origin:** DSM shipped five minor versions (v1.10.0 through v1.14.0) between 2026-05-29 and 2026-06-01 while this project was finishing the v1.5-v1.9 coverage cycle (BL-022). The BL-022 pattern is to formalize a fresh cycle per version-range rather than retrofit the prior one.
 
+> **Note (added S30, 2026-07-12):** The principle "Introduce Once, Then Deepen" (F-135, then at DSM_6.0 §1.13) referenced throughout this BL was, as of TAB v1.18.0, relocated to DSM_0.2 §8.10 and renamed "Present Once, Then Deepen", it is now a writing discipline, not a principle. The DSM_6.0 §1.13 slot is now the new principle "Forward the Why" (F-142, BL-473). The mentions below are preserved as the accurate v1.14-era record; do not treat "Introduce Once, Then Deepen" as a current principle when drafting Post B.
+
 ## Pipeline reference
 
 Follows the 6-stage Version Release Coverage pipeline in CLAUDE.md ("Detect → Open BL → Ship factual updates → Write release post → Cross-post and record → Close").
