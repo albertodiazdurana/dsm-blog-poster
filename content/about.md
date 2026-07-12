@@ -21,7 +21,7 @@ When AI generates faster than you can review, oversight becomes rubber-stamping.
 10. **We Need to Talk** -- The conversation that defines the work is the collaboration, not a preamble to it
 11. **Read the User's Manual** -- Ground your collaboration on what the tool actually does, not what you assume it does
 12. **Don't be a Hero, Delegate the Effort** -- Propose delegation when a sub-task fits a subagent, do not absorb everything on-thread
-13. **Introduce Once, Then Deepen** -- Introduce each concept once; let the body deepen it rather than repeat it
+13. **Forward the Why** -- When a decision flows forward to later work, encode the why at its source so the receiver inherits the reasoning, not just the task
 14. **Observe Before Engaging** -- External content is observation by default; engaging with it requires explicit authorization
 
 ## Deliberate Systematic Methodology (DSM)

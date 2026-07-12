@@ -6,6 +6,8 @@
 **Source:** S27 inbox triage. Entries: `_inbox/2026-06-16_dsm-central-v1.16.0-features.md` (F-137..F-140, count 136 -> 140), `_inbox/dsm-agentic-ai-data-science-methodology.md` (F-141, v1.17.0), `_inbox/2026-06-23_dsm-align-update.md` (alignment v1.14 -> v1.17, informational).
 **Origin:** DSM shipped v1.15.0 through v1.17.0 (released through 2026-06-18) while this project was finishing earlier coverage cycles. Per the BL-022/BL-025 pattern, a fresh cycle is formalized per version range rather than retrofitting the prior one.
 
+> **Note (added S30, 2026-07-12):** F-135 "Introduce Once, Then Deepen" (then at DSM_6.0 §1.13), referenced below in the Post B scope, was, as of TAB v1.18.0, relocated to DSM_0.2 §8.10 and renamed "Present Once, Then Deepen", now a writing discipline, not a principle. The DSM_6.0 §1.13 slot is now the new principle "Forward the Why" (F-142, BL-473). When drafting Post B, frame F-135 as the writing-discipline it now is (Present Once, Then Deepen), not as a standing principle.
+
 ## Pipeline reference
 
 Follows the 6-stage Version Release Coverage pipeline in CLAUDE.md ("Detect -> Open BL -> Ship factual updates -> Write release post -> Cross-post and record -> Close").

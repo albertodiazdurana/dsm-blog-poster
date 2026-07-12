@@ -1,3 +1,7 @@
+**Consumed at:** Session 30 start (2026-07-12)
+
+> **Note (added S30, 2026-07-12):** The Post B scope below lists "F-135 Introduce Once" as a principle-era feature. As of TAB v1.18.0, "Introduce Once, Then Deepen" was relocated to DSM_0.2 §8.10 and renamed "Present Once, Then Deepen" (a writing discipline, no longer a principle); the DSM_6.0 §1.13 slot is now "Forward the Why" (F-142, BL-473). This checkpoint is preserved as the accurate S29 record.
+
 # Session 29 Checkpoint
 **Date:** 2026-07-09
 **Branch:** session-29/2026-07-03-post-deploy-2
