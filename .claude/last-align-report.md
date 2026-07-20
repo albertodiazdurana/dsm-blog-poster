@@ -1,10 +1,10 @@
 # /dsm-align persistent report
 
-**Timestamp:** 2026-06-23T23:58+02:00
-**DSM version:** v1.17.0 (from ~/dsm-agentic-ai-data-science-methodology/CHANGELOG.md latest heading)
+**Timestamp:** 2026-07-12T (session 30)
+**DSM version:** v1.18.0 (from dsm-central/CHANGELOG.md latest heading)
 **Run mode:** post-change
 **Project:** dsm-blog-poster
-**Project type:** Application (DSM 4.0)
+**Project type:** Application (DSM 4.0) (no override)
 
 ---
 
@@ -13,19 +13,18 @@
 /dsm-align post-change report:
 - Project type: Application (DSM 4.0)
 - Created: none
-- Already correct: all dsm-docs/ folders + done/ subfolders + template files; _inbox/; .gitattributes (LF enforced); @ reference; reasoning-lessons.md
-- Fixed: CLAUDE.md alignment section regenerated (drift from §17.1 template v1.14->v1.17); session-transcript hooks installed/updated
+- Already correct: all canonical dsm-docs/ folders + done/ subfolders, _inbox/, .gitattributes (LF), ecosystem registry (4 paths), feedback-to-dsm scaffold
+- Fixed: CLAUDE.md alignment section, Punctuation bullet regenerated to §17.1 template (one-paragraph form; was the old two-line form) per v1.17.1 spoke action
 - Collisions: none
 - Warnings: none
-- CLAUDE.md alignment: Regenerated (4 changes: chunked-drafting bullet updated; "External content is observation" bullet added; "Voice-Attribution Review" section added; "Read-Before-Draft for OSS Contributions" section added)
-- CLAUDE.md content: OK (no type mismatches; Application project, no Notebook protocol present)
+- CLAUDE.md alignment: Drift fixed (Punctuation bullet, 3 lines -> 1 paragraph)
+- CLAUDE.md content: OK
 - CLAUDE.md redundancy: OK
 - CLAUDE.md paths: OK
 - .gitattributes: OK
 - Command sync: N/A (not DSM Central)
 - Feedback pushed: none pending
 - EC governance scaffold: N/A (not EC)
-- Transcript hooks: 4 installed / 2 updated / 2 ok · settings.json: merged
 
 ## Warnings (full text)
 
@@ -37,23 +36,24 @@ None.
 
 ## Already correct
 
-- All 9 canonical dsm-docs/ folders present (blog, checkpoints, decisions, feedback-to-dsm, guides, handoffs, plans, research, inbox)
-- done/ subfolders present where required (blog, checkpoints, feedback-to-dsm, handoffs, plans, research)
-- Template files present: blog/journal.md, checkpoints/README.md, feedback-to-dsm/README.md, handoffs/README.md, plans/README.md, research/README.md
-- _inbox/ at project root with done/ and README.md
-- .gitattributes enforces LF (* text=auto eol=lf)
-- CLAUDE.md @ reference valid (@../../dsm-agentic-ai-data-science-methodology/DSM_0.2_Custom_Instructions_v1.1.md)
-- .claude/reasoning-lessons.md present with header
+- All 8 canonical dsm-docs/ folders present with required done/ subfolders
+- _inbox/ + _inbox/done/ present
+- .gitattributes enforces `* text=auto eol=lf`
+- .claude/dsm-ecosystem.md registry (dsm-central, take-ai-bite, portfolio, graph-explorer)
+- feedback-to-dsm/ README + done/, no unpushed per-session feedback
+- CLAUDE.md `@` reference to DSM_0.2 valid
+- Alignment delimiters present
 
 ## Steps skipped
 
 - Step 11 skipped: not DSM Central
-- Step 11b/11c skipped: not DSM Central
-- Step 3-EC skipped: not External Contribution
+- Steps 3-EC skipped: not External Contribution
 
-## Spoke actions surfaced (Step 13, v1.14.0 -> v1.17.0)
+## Spoke actions (v1.17.0 -> v1.18.0, surfaced for user review)
 
-- "Run /dsm-align to update the reinforcement block (§17.1 alignment template changed)" x4 -> APPLIED by this run
-- "Mirror sync re-delivers the hooks; /dsm-align re-chmod on spokes" -> APPLIED by this run (Step 10b)
-- "Run scripts/sync-commands.sh --deploy (command files changed)" x2 -> N/A: this spoke has no scripts/sync-commands.sh (command runtime copies are user-level, managed from DSM Central)
-- "None beyond mirror sync" -> no action
+- v1.17.1: Run /dsm-align to update Punctuation bullet -> APPLIED by this run
+- v1.18.0: Review DSM_6.0 §1.13 (new principle; mirrored)
+- v1.18.0: Review DSM_0.2 §8.10 Gate 4 (now self-sources the writing discipline)
+- v1.18.0: Review DSM_0.2.C §2 (safety-rule change; inherited via @)
+- v1.18.0: Review DSM_0.1 §10 + DSM_1.0.D §6.4.5 (mirrored)
+- v1.18.0: Review inbox-lifecycle / context-budget / handoff guidance (mirrored)

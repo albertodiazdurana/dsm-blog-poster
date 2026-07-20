@@ -1,19 +1,23 @@
 # Last /dsm-staa run
-date: 2026-06-25
-analyzed_session: 26
+date: 2026-07-12
+analyzed_session: 29
 analyzed_transcript: .claude/session-transcript.md
-appended_lessons: 2
+appended_lessons: 3
 pruned_lessons: 3
-# note: S26 analyzed from the LIVE transcript (not yet archived; the next
-# /dsm-go Step 5.5 will archive it). Off-by-one window: latest ARCHIVED was
-# S25 (2026-06-23T23:47-ST.md) but S25 was already STAA'd last run, and S26
-# was the most recently wrapped-up session (last-wrap-up session:26). Chose
-# S26 over re-analyzing S25.
-# Appended 2 [STAA] S26 [pattern] lessons: interpret-and-flag for low-stakes
-# reversible ambiguity; reactive-humanizer-discovery scales with original-prose
-# volume (S26 = first multi-content session since S23 with zero new tells).
-# Pruned 3 entries: S22 slug-non-determinism (superseded by S25/S26 BL-023
-# data), S24 re-verify-published (absorbed by S23 overclaim + S24 propagate-fix),
-# S14 PaperMod/Anatole toc: (obsolete, on Anatole 18 sessions).
-# Net 76 -> 75 live entries. Compact mirror regenerated: 75=75, 30453B, both
-# sanity checks OK.
+# note: S29 analyzed from the LIVE transcript (not yet archived; the next
+# /dsm-go Step 5.5 will archive it as the S29 -ST.md). Off-by-one window:
+# latest ARCHIVED was S28 (2026-07-02T16:04-ST.md), last-wrap-up session:29.
+# User chose S29 (live, 867 lines) over the S28 default. S27 + S28 remain
+# un-STAA'd (last-staa before this run was S26).
+# Appended 3 [STAA] S29 [pattern] lessons (reasoning-process layer the S29
+# /dsm-wrap-up [auto] pass did not cover): (1) repeated same-direction
+# per-section trim feedback = FRAME signal not prose signal (precedes the
+# restart-from-bite-1); (2) don't inherit Gate-1 length/register from sibling
+# posts when the post's character is deliberately different (upstream cause of
+# the restart); (3) title-claim accuracy is a Gate-4 consistency property
+# (S29 published then retitled = 2 deploys). Pruned 3: S12 parallel-coords
+# 15-systems clutter + S12 composite-encoding Z-as-bubble (both hyper-specific
+# single dataviz incident, 17 sessions old), S13 two-PRs-per-branch (obvious +
+# codified in feedback_session_branch_after_pr_merge.md). Kept S12 plots-before-
+# prose (reusable). Net 89 -> 89 live entries. Compact mirror regenerated:
+# 89=89, 38431B, both sanity checks OK.
