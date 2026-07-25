@@ -1,25 +1,51 @@
 # Last /dsm-staa run
-date: 2026-07-24
-analyzed_session: 30
+date: 2026-07-25
+analyzed_session: 31
 analyzed_transcript: .claude/session-transcript.md
-appended_lessons: 4
-pruned_lessons: 4
-# note: S30 analyzed from the LIVE transcript (62 lines, not yet archived; the
-# next /dsm-go Step 5.5 will archive it). Off-by-one window: latest ARCHIVED was
-# S29 (2026-07-03T09:32-ST.md), which the PREVIOUS /dsm-staa had already analyzed
-# from its own live file. last-wrap-up session:30, so S30 was the only unanalyzed
-# recent subject. S27 + S28 remain un-STAA'd (gap carried from the prior run).
-# Appended 4 [STAA] S30 lessons on the process layer the S30 /dsm-wrap-up [auto]
-# pass did not sample: (1) a harness gate that blocks once is a standing session
-# constraint (auto-mode refused gh pr merge on PR #55 AND PR #56); (2) past-tense
-# thinking blocks are duplicate output blocks, occurrence compliance != auditability;
-# (3) a boot report must say what the gate measured, not gloss a count result into
-# a substance claim ("14=14, wording not count" -> was a full replacement);
-# (4) a wrap-up's "STAA recommended: no" reports domain-rule yield, not analysis
-# value (2nd consecutive instance after S29). Pruned 4: [STAA] S8 generic
-# "verify the full step sequence" (be-more-careful shape, 22 sessions old),
-# [auto] S13 read-voice-pages-first (codified in CLAUDE.md), [auto] S17 file-first
-# drafting (codified as feedback_content_drafting_workflow.md), [auto] S23 bare
-# `git add` no-op (self-labeled anecdotal, no recurrence in 7 sessions).
-# Net 92 -> 92 live entries. Compact mirror regenerated: 92=92, 41469B, both
-# sanity checks OK.
+appended_lessons: 6
+pruned_lessons: 6
+# note: S31 analyzed from the LIVE transcript (1854 lines, not yet archived; the
+# next /dsm-go Step 5.5 will archive it). Off-by-one window (BL-442) applied:
+# latest ARCHIVED was 2026-07-12T08:29-ST.md = S30, which the PREVIOUS /dsm-staa
+# run (2026-07-24) had already analyzed from its own live file, so defaulting to
+# latest-archived would have re-run a completed pass. last-wrap-up session:31.
+# S27 + S28 remain un-STAA'd (gap carried from the two prior runs).
+# The S31 /dsm-wrap-up appended 6 [auto] entries first (buildFuture/UTC deploy
+# trap, render-before-defending a presentation recommendation, protective
+# reframes as a false-claim site, non-convergence as a stop-and-ask signal, the
+# intentionally-unpopulated "mandatory read" index, BL-023 slug data point), so
+# this pass targeted only the process layer that [auto] did not sample:
+# (1) scope-check a safety rule before invoking it to BLOCK, since blocking
+# always reads as conservative and an out-of-scope citation is cover (S31
+# declined to cite DSM_0.2.C 3.1 against its own drafting gate);
+# (2) one affirmative on N open questions -> interpret all N, then build the ONE
+# deliverable least contaminated if a pick is wrong (blast-radius selection,
+# extends #74/#77); (3) a cross-cutting framing note is retroactive AND standing,
+# constraining every unwritten section (extends #45, which owns the reopen half);
+# (4) section budgets go stale after a cross-cutting rewrite, and a self-set
+# numeric target is an estimate to report a miss on, not to hit by degrading the
+# section; (5) at Gate 4 run the repetition pass BEFORE the humanizer per BL-454,
+# since repetition is not an AI tell; (6) a cross-post leads with a different
+# asset than its source post.
+# Two findings offered and NOT appended (held as opt-in; user approved the main
+# set only): a one-word in-place edit can carry a content directive rather than
+# mere approval (extends #45); and do not compress a multi-part rule into a
+# one-word cost label in a decision table (the "breaks convention" overstatement
+# on the Title A choice, adjacent to [auto] S31 render-before-defending but a
+# different mechanism).
+# Pruned 6, all superseded or non-lessons: [auto] S13 humanizer "Everything Else"
+# sections; [auto] S20 Anatole optionswitch right-anchor CSS (shipped code fact,
+# in MEMORY's Navbar note); [auto] S21 PMP "stopped applying intentionally"
+# (generalized by the S25 management-as-elevation entry); [auto] S22
+# onboarding-reframe thesis (published post content); [auto] S26 + [auto] S29
+# BL-023 slug data points (both absorbed by the S28 non-determinism finding and
+# the [auto] S31 data point).
+# Net 98 -> 98 live entries. File remains over 8.1 budget (98 vs ~70 target,
+# 46.8 KB mirror vs 8 KB cap). Four promotion candidates surfaced to the user and
+# NOT acted on (STAA does not edit CLAUDE.md): S23 hook-scoring dimensions (its
+# own text calls for a Stage-3 CLAUDE.md amendment, never done), S29 Gate-1
+# length/register non-inheritance, S29 Gate-4 title-claim check, S22 read the
+# type of an in-place edit.
+# Compact mirror regenerated with the canonical DSM_0.2.A 8.1 transform (line
+# 937), not a re-inlined copy: 98=98 entries, 48970 B live -> 46850 B mirror,
+# both sanity checks silent.
