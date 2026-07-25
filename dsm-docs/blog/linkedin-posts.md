@@ -612,3 +612,33 @@ That is how the framework grows.
 Full post: https://take-ai-bite.com/blog/2026-07-06-tab-safe-defaults-release/
 
 #Guardrails #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite
+
+## Post 24: The rules that almost cover the case (2026-07-25)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_aisafety-humanaicollaboration-claudecode-share-7486578704370888704-yZ4T/
+**Status:** Published
+**Blog post:** https://take-ai-bite.com/blog/2026-07-25-tab-naming-the-behavior/
+**Source:** BL-025/BL-027 Front E (LinkedIn cross-post for the v1.13-v1.17 release post "The rules that almost cover the case"). Post B of the v1.10-v1.17 theme split; sibling of Posts 15, 22, 23 (the release-post series). On publication + Front D record, BL-025 and BL-027 both close.
+**Hashtag set:** #AISafety #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite. Leads with #AISafety to keep the slug distinctive from Post 23's `guardrails-...` (the three gaps are safety-protocol gaps: soft injection, byline attribution, OSS submission hygiene); keeps #TakeAIBite, drops #DSM per the CLAUDE.md convention.
+**Slug observation (BL-023):** PREDICTION (recorded pre-publication): lead-3-hashtag-derived, `aisafety-humanaicollaboration-claudecode`. Opener ("A comment went up on a public thread under my name") is not a clean keyword phrase, so the lead-hashtag branch was expected per the S26 refined hypothesis. Confidence was deliberately low: the S28 Post 15-vs-22 finding showed identical title/hashtag inputs producing divergent derivation, so this was a data point to collect, not a forecast to rely on. **CONFIRMED:** actual slug `aisafety-humanaicollaboration-claudecode-share` (lead-3-hashtag-derived, "share" appended before activity id 7486578704370888704, same shape as Post 23). Third consecutive clean prediction on the lead-hashtag branch (Posts 21, 23, 24), all with non-keyword-phrase openers, which strengthens the S26 refined hypothesis **for that branch only**. It does NOT bear on the S28 non-determinism finding: nothing here tests identical inputs, so a correct prediction on the branch does not explain why the branch is sometimes taken and sometimes not.
+**Note:** ~285 words. Leads with the byline incident, which the blog post keeps buried in its middle section, so the two pieces have different entry points rather than the cross-post reading as a preview. The window/soft-injection case appears one paragraph down as support. "an AI" singular, comma-not-em-dash.
+
+**Text:**
+
+A comment went up on a public thread under my name before anyone had read the words.
+
+Not a rogue agent. The session had been careful. Every file edit came to me as a diff and I approved each one on its own before it ran. Then the last step arrived as a single unit: commit, push, post a comment. Posting a comment is a command, so what I was shown was a command, with the comment text sitting inside it as an argument. I approved an action.
+
+Take AI Bite already had a rule about writing into repositories I do not own. That rule asks where the file lands. It does not ask whose voice it is written in.
+
+That turns out to be the pattern in Take AI Bite v1.13 through v1.17. Three of these gaps had a rule sitting right next to them, doing real work, asking a slightly different question than the one that mattered. A protocol that screens external input for shell commands and injection patterns finds nothing to flag in a thread of friendly, well argued comments. A principle that says to ground your work in what a tool actually does had never sent an agent to read the receiving project's contribution guide.
+
+A rule that almost covers the case costs more than no rule at all, because it produces the feeling of coverage. Nobody goes looking for a gap when something that sounds right is already in place.
+
+None of these was caught by a gate. I caught them in review, reading over finished work before it counted as done. The review did its job. That it had to do the job alone is what these five changes address.
+
+A principle tells you what to value. It does not change what happens until the behavior it implies is named at the moment the decision gets made.
+
+Full post: https://take-ai-bite.com/blog/2026-07-25-tab-naming-the-behavior/
+
+#AISafety #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite

@@ -1,8 +1,9 @@
 # BL-027: DSM v1.15-v1.17 cumulative release coverage (multi-front)
 
-**Status:** Open
+**Status:** Complete
 **Priority:** High
 **Date Created:** 2026-06-30 (Session 27)
+**Date Completed:** 2026-07-25 (Session 31)
 **Source:** S27 inbox triage. Entries: `_inbox/2026-06-16_dsm-central-v1.16.0-features.md` (F-137..F-140, count 136 -> 140), `_inbox/dsm-agentic-ai-data-science-methodology.md` (F-141, v1.17.0), `_inbox/2026-06-23_dsm-align-update.md` (alignment v1.14 -> v1.17, informational).
 **Origin:** DSM shipped v1.15.0 through v1.17.0 (released through 2026-06-18) while this project was finishing earlier coverage cycles. Per the BL-022/BL-025 pattern, a fresh cycle is formalized per version range rather than retrofitting the prior one.
 
@@ -57,7 +58,7 @@ Story-shaped post(s) following the 5-part structure (Hook, Insight, Fix, Bonus, 
 
 **Post A: PUBLISHED (2026-07-06, S29).** "How Take AI Bite builds its own guardrails", https://take-ai-bite.com/blog/2026-07-06-tab-safe-defaults-release/ (PR #52). Covers F-129/F-130/F-131/F-132. Chunked-drafting Gates 1-4 + humanizer pass; fractal/propagation bookend. Live-verified.
 
-**Post B: PENDING** (v1.13-v1.17 cluster). Front A does not fully close until Post B ships.
+**Post B: PUBLISHED (2026-07-25, S31).** "The rules that almost cover the case", https://take-ai-bite.com/blog/2026-07-25-tab-naming-the-behavior/ (PR #57). Covers F-134/F-136/F-137/F-138 as the core, plus F-135/F-141 as the writing-discipline pair; F-139/F-140 omitted as tooling rather than behavior-naming (recorded at Gate 1, S29). Thesis: a principle states a value and does not stop the failure it warns against until the behavior is named at the decision point; the Gate-2 reconstruction sharpened this to the "near-miss gate", in three of the four core cases an ADJACENT rule already existed and produced a false sense of coverage. Chunked-drafting Gates 1-4; repetition refactor before /humanizer per BL-454; live-verified by marker with cache-bust (not by HTTP 200). Front A now closes: Post A (v1.10-v1.12) + Post B (v1.13-v1.17) together cover F-129..F-141.
 
 ### Front B: Features post update
 `content/blog/2026-03-20-dsm-features-three-dimensions/index.md`. Count 129 -> 142. Weave F-129 through F-141 into the three dimensions as integrations, not a list. **Status: shipped S27** (see Outcomes). Weaving map:
@@ -69,10 +70,13 @@ Story-shaped post(s) following the 5-part structure (Hook, Insight, Fix, Bonus, 
 **Status: Done (2026-06-24, S26, PR #45)** — About at "The Fourteen Principles"; §1.14 "Observe Before Engaging" added, verified against DSM_6.0 §1.14. No drift remaining.
 
 ### Front D: linkedin-posts.md canonical record
-After each LinkedIn post in Front E publishes, record URL + "Status: Published". **Blocked on:** Front E.
+**Status: Done (2026-07-25, S31).** Post 23 recorded S29; Post 24 recorded S31 with URL + "Status: Published" + the confirmed BL-023 slug observation.
 
 ### Front E: LinkedIn cross-post(s)
-One LinkedIn post per release blog post produced in Front A. 250-400 words, first-person, hashtags, "Full post:" link. /humanizer pre-publish gate. **Blocked on:** Front A.
+**Status: Done (2026-07-25, S31).** Two posts, one per Front A release post.
+- **Post 23** (Post A, guardrails): published S29, https://www.linkedin.com/posts/albertodiazdurana_guardrails-humanaicollaboration-claudecode-share-7481100704569462785-i34M/
+- **Post 24** (Post B, near-miss rules): published S31, https://www.linkedin.com/posts/albertodiazdurana_aisafety-humanaicollaboration-claudecode-share-7486578704370888704-yZ4T/ ~290 words, led with the byline incident (which the blog post keeps in its middle section) so the cross-post is not a preview of the blog's opening. Hashtag set `#AISafety #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite`, lead tag chosen to keep the slug distinct from Post 23's `guardrails-...`.
+- **BL-023 data point:** slug predicted PRE-publication as lead-3-hashtag-derived and CONFIRMED (`aisafety-humanaicollaboration-claudecode-share`). Third consecutive clean prediction on the lead-hashtag branch (Posts 21, 23, 24), all with non-keyword-phrase openers. Strengthens the S26 refined hypothesis for that branch only; does NOT bear on the S28 non-determinism finding, since nothing here tests identical inputs.
 
 ### Front F: dsm-portfolio inbox notification
 **Status: Done (2026-06-30, S27)** — written to `~/dsm-data-science-portfolio-working-folder/_inbox/2026-06-30_dsm-blog-poster_dsm-v1.15-v1.17-release.md` (Stage 2 factual-update notice: features post 142, BL-027 opened, release post pending). Cross-repo write gate cleared (content + path approved, create-only, no git in target per F-129).
@@ -87,14 +91,24 @@ One LinkedIn post per release blog post produced in Front A. 250-400 words, firs
 
 All six fronts marked Done or explicitly Deferred with a recorded reason. Move BL to `done/` on closure. On closure, also move BL-025 to `done/` (its Front B satisfied here) if its remaining fronts are resolved or deferred.
 
-## Stage status (S27)
+## Stage status (final, S31)
 
-- **Stage 0/1:** Done. Drift recorded (features 129 -> 142; principles 14 = 14).
-- **Stage 2:** Done. Front B shipped, Front C already done (S26), Front F shipped.
-- **Stage 3 (Front A) + Stage 4 (Fronts D/E):** pending, blocked on BL-022 + BL-025 release-post sequencing.
+- **Stage 0/1:** Done (S27). Drift recorded (features 129 -> 142; principles 14 = 14).
+- **Stage 2:** Done (S27). Front B shipped, Front C already done (S26), Front F shipped.
+- **Stage 3 (Front A):** Done. Post A published S29, Post B published S31.
+- **Stage 4 (Fronts E then D):** Done S31. LinkedIn Posts 23 + 24 published and recorded.
+- **Stage 5 (Close):** Done S31. CLAUDE.md release-coverage pipeline verified still current in shape; this BL and BL-025 moved to `done/`; plans README index updated.
+
+## Carried forward, NOT closed by this BL
+
+The features post (`content/blog/2026-03-20-dsm-features-three-dimensions/index.md`) claims **142**; `FEATURES.md` now has **143** entries (F-000..F-142, 0-indexed). The single missing entry is **F-142 "Forward the Why"** (BL-473, DSM_6.0 §1.13 replacement), which belongs to **v1.18.0** and is therefore outside this BL's v1.15-v1.17 range and outside BL-025's v1.10-v1.14 range. Recorded here rather than absorbed into this closure so it does not evaporate: it is a Front B item for the next (v1.18.x) release-coverage cycle. Verified S31 by `grep -cE '^- \*\*F-[0-9]+' FEATURES.md` = 143, max index F-142.
 
 ## Outcomes
 
 - (S27) Front B shipped: features post 129 -> 142, F-129..F-141 woven tight across the three dimensions; humanizer pass (1 fix), hugo build clean. Commit / PR: TBD.
 - (S27) Front F shipped: portfolio inbox notification written.
 - (S27) Front C confirmed already done (S26, PR #45).
+- (S29) Front A Post A published: "How Take AI Bite builds its own guardrails" (PRs #52 publish + #53 retitle). Front E Post 23 published + recorded.
+- (S31) Front A Post B published: "The rules that almost cover the case" (PR #57), https://take-ai-bite.com/blog/2026-07-25-tab-naming-the-behavior/. Live-verified by marker with cache-bust; present on the blog index, in RSS, and in the Methodology category listing.
+- (S31) Front E Post 24 published + Front D recorded. BL-023 slug prediction recorded pre-publication and confirmed.
+- (S31) Both BLs closed. **Deploy note worth carrying forward:** `hugo.toml` sets `buildFuture = false`, and a post dated the current local day is still future-dated in UTC until 00:00Z. GitHub Actions builds in UTC, so a merge between local midnight and 02:00 (CEST) produces a green deploy of a site that silently omits the post. Caught at S31 by building without `--buildFuture` instead of trusting a "BUILD OK" summary; the merge landed at 00:10:36Z, ten minutes past the boundary.

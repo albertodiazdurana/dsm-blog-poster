@@ -1,23 +1,25 @@
 # Last /dsm-staa run
-date: 2026-07-12
-analyzed_session: 29
+date: 2026-07-24
+analyzed_session: 30
 analyzed_transcript: .claude/session-transcript.md
-appended_lessons: 3
-pruned_lessons: 3
-# note: S29 analyzed from the LIVE transcript (not yet archived; the next
-# /dsm-go Step 5.5 will archive it as the S29 -ST.md). Off-by-one window:
-# latest ARCHIVED was S28 (2026-07-02T16:04-ST.md), last-wrap-up session:29.
-# User chose S29 (live, 867 lines) over the S28 default. S27 + S28 remain
-# un-STAA'd (last-staa before this run was S26).
-# Appended 3 [STAA] S29 [pattern] lessons (reasoning-process layer the S29
-# /dsm-wrap-up [auto] pass did not cover): (1) repeated same-direction
-# per-section trim feedback = FRAME signal not prose signal (precedes the
-# restart-from-bite-1); (2) don't inherit Gate-1 length/register from sibling
-# posts when the post's character is deliberately different (upstream cause of
-# the restart); (3) title-claim accuracy is a Gate-4 consistency property
-# (S29 published then retitled = 2 deploys). Pruned 3: S12 parallel-coords
-# 15-systems clutter + S12 composite-encoding Z-as-bubble (both hyper-specific
-# single dataviz incident, 17 sessions old), S13 two-PRs-per-branch (obvious +
-# codified in feedback_session_branch_after_pr_merge.md). Kept S12 plots-before-
-# prose (reusable). Net 89 -> 89 live entries. Compact mirror regenerated:
-# 89=89, 38431B, both sanity checks OK.
+appended_lessons: 4
+pruned_lessons: 4
+# note: S30 analyzed from the LIVE transcript (62 lines, not yet archived; the
+# next /dsm-go Step 5.5 will archive it). Off-by-one window: latest ARCHIVED was
+# S29 (2026-07-03T09:32-ST.md), which the PREVIOUS /dsm-staa had already analyzed
+# from its own live file. last-wrap-up session:30, so S30 was the only unanalyzed
+# recent subject. S27 + S28 remain un-STAA'd (gap carried from the prior run).
+# Appended 4 [STAA] S30 lessons on the process layer the S30 /dsm-wrap-up [auto]
+# pass did not sample: (1) a harness gate that blocks once is a standing session
+# constraint (auto-mode refused gh pr merge on PR #55 AND PR #56); (2) past-tense
+# thinking blocks are duplicate output blocks, occurrence compliance != auditability;
+# (3) a boot report must say what the gate measured, not gloss a count result into
+# a substance claim ("14=14, wording not count" -> was a full replacement);
+# (4) a wrap-up's "STAA recommended: no" reports domain-rule yield, not analysis
+# value (2nd consecutive instance after S29). Pruned 4: [STAA] S8 generic
+# "verify the full step sequence" (be-more-careful shape, 22 sessions old),
+# [auto] S13 read-voice-pages-first (codified in CLAUDE.md), [auto] S17 file-first
+# drafting (codified as feedback_content_drafting_workflow.md), [auto] S23 bare
+# `git add` no-op (self-labeled anecdotal, no recurrence in 7 sessions).
+# Net 92 -> 92 live entries. Compact mirror regenerated: 92=92, 41469B, both
+# sanity checks OK.

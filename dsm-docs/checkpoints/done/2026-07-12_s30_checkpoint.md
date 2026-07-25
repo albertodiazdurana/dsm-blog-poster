@@ -1,3 +1,5 @@
+**Consumed at:** Session 31 start (2026-07-25)
+
 # Session 30 Checkpoint
 **Date:** 2026-07-12
 **Branch:** session-30/2026-07-12-post-deploy

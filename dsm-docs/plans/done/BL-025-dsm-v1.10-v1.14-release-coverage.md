@@ -1,6 +1,7 @@
 # BL-025: DSM v1.10-v1.14 cumulative release coverage (multi-front)
 
-**Status:** Open
+**Status:** Complete
+**Date Completed:** 2026-07-25 (Session 31)
 **Priority:** High
 **Date Created:** 2026-05-28 (Session 23)
 **Source:** S23 inbox triage (3 entries: `_inbox/2026-05-31_dsm-central-v1.12-smoke-tests.md`, `_inbox/agentic-ai-data-science-methodology.md`, `_inbox/IronCalc.md` is unrelated to this BL).
@@ -94,3 +95,16 @@ Stage 2 fronts (B + C + F) are the cheap "stop the bleeding" updates. Per CLAUDE
 ## Success criteria
 
 Identical to BL-022: all six fronts marked Done or explicitly Deferred with a recorded reason. Move BL to `done/` on closure.
+
+## Closure (2026-07-25, S31)
+
+All six fronts resolved. This BL's remaining fronts were tracked through BL-027 per the S29 theme-split decision; both close together.
+
+- **Front A: Done.** The v1.13-v1.14 features from this BL's range (F-134 User-Reframes-Proposal, F-135 the writing discipline now named "Present Once, Then Deepen") shipped in **Post B**, "The rules that almost cover the case" (2026-07-25, PR #57), https://take-ai-bite.com/blog/2026-07-25-tab-naming-the-behavior/. F-130/F-131/F-132 shipped in **Post A** (2026-07-06). Between the two posts, F-129..F-141 are covered.
+- **Front B: Done by BL-027 (S27).** Scoped here as 129 -> 136 but never shipped under this BL; BL-027's Front B covered the full 129 -> 142 span in one edit, satisfying both.
+- **Front C: Done (2026-06-08, S24).** Recorded above. Note the principle it added at §1.13, "Introduce Once, Then Deepen", was later relocated to a DSM_0.2 §8.10 writing discipline and renamed "Present Once, Then Deepen" (BL-473 / v1.18.0); the §1.13 slot now holds "Forward the Why", updated live in S30. This front was accurate when shipped.
+- **Front D: Done (S29 + S31).** LinkedIn Posts 23 and 24 recorded with URLs and "Status: Published".
+- **Front E: Done (S29 + S31).** LinkedIn Post 23 (Post A) and Post 24 (Post B).
+- **Front F: Done by BL-027 (S27).** Portfolio inbox notification written for the combined coverage cycle.
+
+**Not closed by this BL:** the features post is at 142 against FEATURES.md's 143. The missing entry is F-142 "Forward the Why" (v1.18.0), outside this BL's range. Carried forward to the next release-coverage cycle; recorded in BL-027's "Carried forward" section.
