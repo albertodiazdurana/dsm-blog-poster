@@ -15,7 +15,6 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-016 | ["The Architecture You Didn't Design" blog post](BL-016-architecture-you-didnt-design-post.md) | High | On hold (BL-357 principle being restructured in DSM Central) |
 | BL-017 | ["Fix the Code, Not the Data" (combine with IronCalc content)](BL-017-fix-the-code-not-the-data-post.md) | Medium | When additional IronCalc content arrives |
 | BL-023 | [LinkedIn hashtag research method](BL-023-linkedin-hashtag-research-method.md) | Medium | Next session |
-| BL-024 | ["Investigation-first" blog post + LinkedIn cross-post (Haystack OSS arc)](BL-024-haystack-investigation-first-post.md) | Medium | Unblocked (release-coverage queue clear as of S31) |
 
 ## Completed
 
@@ -42,3 +41,4 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-022 | [DSM v1.5-v1.9 cumulative release coverage (multi-front)](done/BL-022-dsm-v1.5-v1.9-release-coverage.md) | 2026-07-02 (all 6 fronts; release Posts 1+2 + LinkedIn 15+22) |
 | BL-025 | [DSM v1.10-v1.14 cumulative release coverage (multi-front)](done/BL-025-dsm-v1.10-v1.14-release-coverage.md) | 2026-07-25 (closed with BL-027; theme-split Posts A+B + LinkedIn 23+24) |
 | BL-027 | [DSM v1.15-v1.17 cumulative release coverage (multi-front)](done/BL-027-dsm-v1.15-v1.17-release-coverage.md) | 2026-07-25 (all 6 fronts; absorbed BL-025 Fronts B+F) |
+| BL-024 | ["Investigation-first" blog post + LinkedIn cross-post (Haystack OSS arc)](done/BL-024-haystack-investigation-first-post.md) | 2026-07-25 (dropped, content-selection decision; spoke notified) |

@@ -1,8 +1,8 @@
 ---
-title: "142 features across three dimensions"
+title: "143 features across three dimensions"
 date: 2026-03-20
 draft: false
-description: "DSM's 142 features mapped across human oversight, knowledge provenance, and experience accumulation."
+description: "DSM's 143 features mapped across human oversight, knowledge provenance, and experience accumulation."
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Features", "Take AI Bite"]
 categories: ["Features"]
 author: "Alberto Diaz Durana"
@@ -11,7 +11,7 @@ toc: true
 
 Most AI coding tools are built to reduce human involvement. DSM is built to make human involvement worth the time: the human and the AI produce better work together than either would alone, and what they learn carries forward.
 
-This post maps DSM's 142 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
+This post maps DSM's 143 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
 
 ---
 
@@ -79,7 +79,9 @@ A recent principle extends this outward, to the tools themselves. "Read the User
 
 A closure cycle in v1.8.0 surfaced a class of problem with this kind of provenance: dead pointers. The methodology had grown hundreds of references to backlog filing codes (BL-NNN) that only resolved inside the central repository's plans folder. A mirrored spoke reading a methodology document hit a wall when the filing code was the only identifier on offer. The fix was a three-part cleanup: roughly 170 anchors removed from mirrored documents and replaced with resolvable identifiers (section references, protocol names, file references); a new BL lookup index that maps every implemented BL number to its title, version, and resolving concept, so the codes that remain can still be resolved in one hop; and a forward-only rule that checkpoint entries must use resolvable identifiers from the moment they are written, not BL numbers an unrelated spoke agent cannot follow. Knowledge that cannot be followed is not knowledge.
 
-Two everyday practices got the same treatment, named and given a home rather than left to habit. The small, fast check run after each file is built is now a first-class artifact with a fixed place and structure, framed as the industry-standard smoke test given a repo home, not a DSM coinage. And a writing discipline, introduce each concept once and let the body deepen it instead of restating it between summary and detail, became a named principle the drafting protocol checks for.
+Two everyday practices got the same treatment, named and given a home rather than left to habit. The small, fast check run after each file is built is now a first-class artifact with a fixed place and structure, framed as the industry-standard smoke test given a repo home, not a DSM coinage. And a writing discipline, present each concept once and let the body deepen it instead of restating it between summary and detail, became a named discipline the drafting protocol checks for.
+
+The newest addition targets the place where provenance leaks most reliably: the handoff. A decision made in one session travels forward as an instruction and arrives stripped of the reasoning that produced it, so whoever picks it up reconstructs intent backwards, or guesses. "Forward the Why" makes the causal link part of what gets written at the source, so a later session inherits "resume at X because Y depends on it" rather than "resume at X". Three places that used to be flat now carry it: a backlog item records what it couples to, a checkpoint's pending list gives the reason each item is still pending, and a plan derives its steps from their dependencies instead of listing tasks in order. The origin fits the pattern of most principles here. A spoke project had been doing two of these independently for months and only named the parent once someone noticed they were the same move.
 
 ---
 
@@ -117,7 +119,7 @@ The loop keeps closing on itself. One recurring move, the user reshaping a propo
 
 ## The compound effect
 
-No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 142 features work together as a system, and the system learns. The count keeps moving because the methodology is in active use; the shape of what it covers, though, has stayed recognizable across every version.
+No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 143 features work together as a system, and the system learns. The count keeps moving because the methodology is in active use; the shape of what it covers, though, has stayed recognizable across every version.
 
 A feedback observation from a spoke project becomes a backlog item in the central repository. That item becomes a protocol change. That change propagates to every project. The next session in any project benefits from an insight that started in a completely different context.
 

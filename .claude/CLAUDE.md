@@ -241,6 +241,7 @@ In sans-serif fonts (which LinkedIn and most web typography use), capital `I` an
   - `~/dsm-agentic-ai-data-science-methodology/DSM_6.1.C_Evaluation_and_Evolution.md`
 - Run `/humanizer` on all material produced and posted by this project: blog posts, page content, descriptions, any reader-facing prose
 - This is a pre-publish gate, not optional
+- The humanizer is maintained by us at `~/.claude/skills/humanizer/` (private repo `albertodiazdurana/humanizer`, forked from `blader/humanizer` MIT, no upstream sync). When a humanizer pass MISSES a tell that the author then catches in review, write it to that repo's `BACKLOG.md` in the same session. Every rule from 26 up exists because a scan passed text a human caught; the catch is the only moment that information exists. See its `MAINTENANCE.md` for the release checklist
 
 ## DSM Version Release Coverage
 

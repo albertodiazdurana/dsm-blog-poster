@@ -1,11 +1,32 @@
 # BL-024: "Investigation-first" blog post + LinkedIn cross-post (Haystack OSS arc)
 
-**Status:** Open
+**Status:** Dropped
+**Date Completed:** 2026-07-25 (Session 32)
 **Priority:** Medium
 **Date Created:** 2026-05-28 (Session 23)
 **Source:** `~/_projects/heating-systems-conversational-ai/dsm-docs/blog/journal.md` (entry `### [2026-05-08] Investigation-first: how a code gap became a docs gap`)
 **Origin:** `_inbox/done/heating-systems-conversational-ai.md` (S23 triage). Spoke offered the journal entry for blog-poster extraction per the publication notification workflow.
 **Trigger:** After BL-022 Stage 3 (DSM v1.5-v1.9 release post) lands.
+
+## Closure note (Session 32)
+
+Dropped by owner decision. The Haystack OSS arc will not be published on
+take-ai-bite.com.
+
+This is a content-selection decision, not a scoping or feasibility one. The
+blocking dependency (BL-022 Stage 3) cleared in S28, the release-coverage queue
+that held the item behind it cleared in S31, and the source material was ready
+throughout. Nothing below was found wanting; the item simply did not get chosen.
+
+Success criterion 7 (notification back to the spoke) was honored in the closing
+direction rather than the publishing one: the heating-systems-conversational-ai
+spoke was informed that the offer will not be taken up, so its journal entry is
+released from the publication pipeline. See
+`~/_projects/heating-systems-conversational-ai/_inbox/2026-07-25_dsm-blog-poster_bl-024-declined.md`.
+
+The source material remains intact and unconsumed at
+`~/_projects/heating-systems-conversational-ai/dsm-docs/blog/journal.md`
+(lines 153-218), should the arc be revisited under a new BL.
 
 ## Problem statement
 
