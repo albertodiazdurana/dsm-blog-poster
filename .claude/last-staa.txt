@@ -1,51 +1,84 @@
 # Last /dsm-staa run
-date: 2026-07-25
-analyzed_session: 31
+date: 2026-07-30
+analyzed_session: 32
 analyzed_transcript: .claude/session-transcript.md
-appended_lessons: 6
-pruned_lessons: 6
-# note: S31 analyzed from the LIVE transcript (1854 lines, not yet archived; the
-# next /dsm-go Step 5.5 will archive it). Off-by-one window (BL-442) applied:
-# latest ARCHIVED was 2026-07-12T08:29-ST.md = S30, which the PREVIOUS /dsm-staa
-# run (2026-07-24) had already analyzed from its own live file, so defaulting to
-# latest-archived would have re-run a completed pass. last-wrap-up session:31.
-# S27 + S28 remain un-STAA'd (gap carried from the two prior runs).
-# The S31 /dsm-wrap-up appended 6 [auto] entries first (buildFuture/UTC deploy
-# trap, render-before-defending a presentation recommendation, protective
-# reframes as a false-claim site, non-convergence as a stop-and-ask signal, the
-# intentionally-unpopulated "mandatory read" index, BL-023 slug data point), so
-# this pass targeted only the process layer that [auto] did not sample:
-# (1) scope-check a safety rule before invoking it to BLOCK, since blocking
-# always reads as conservative and an out-of-scope citation is cover (S31
-# declined to cite DSM_0.2.C 3.1 against its own drafting gate);
-# (2) one affirmative on N open questions -> interpret all N, then build the ONE
-# deliverable least contaminated if a pick is wrong (blast-radius selection,
-# extends #74/#77); (3) a cross-cutting framing note is retroactive AND standing,
-# constraining every unwritten section (extends #45, which owns the reopen half);
-# (4) section budgets go stale after a cross-cutting rewrite, and a self-set
-# numeric target is an estimate to report a miss on, not to hit by degrading the
-# section; (5) at Gate 4 run the repetition pass BEFORE the humanizer per BL-454,
-# since repetition is not an AI tell; (6) a cross-post leads with a different
-# asset than its source post.
-# Two findings offered and NOT appended (held as opt-in; user approved the main
-# set only): a one-word in-place edit can carry a content directive rather than
-# mere approval (extends #45); and do not compress a multi-part rule into a
-# one-word cost label in a decision table (the "breaks convention" overstatement
-# on the Title A choice, adjacent to [auto] S31 render-before-defending but a
-# different mechanism).
-# Pruned 6, all superseded or non-lessons: [auto] S13 humanizer "Everything Else"
-# sections; [auto] S20 Anatole optionswitch right-anchor CSS (shipped code fact,
-# in MEMORY's Navbar note); [auto] S21 PMP "stopped applying intentionally"
-# (generalized by the S25 management-as-elevation entry); [auto] S22
-# onboarding-reframe thesis (published post content); [auto] S26 + [auto] S29
-# BL-023 slug data points (both absorbed by the S28 non-determinism finding and
-# the [auto] S31 data point).
-# Net 98 -> 98 live entries. File remains over 8.1 budget (98 vs ~70 target,
-# 46.8 KB mirror vs 8 KB cap). Four promotion candidates surfaced to the user and
-# NOT acted on (STAA does not edit CLAUDE.md): S23 hook-scoring dimensions (its
-# own text calls for a Stage-3 CLAUDE.md amendment, never done), S29 Gate-1
-# length/register non-inheritance, S29 Gate-4 title-claim check, S22 read the
-# type of an in-place edit.
-# Compact mirror regenerated with the canonical DSM_0.2.A 8.1 transform (line
-# 937), not a re-inlined copy: 98=98 entries, 48970 B live -> 46850 B mirror,
+appended_lessons: 8
+pruned_lessons: 5
+# note: S32 analyzed from the LIVE transcript (1339 lines / 75 KB, not yet
+# archived; the next /dsm-go Step 5.5 will archive it). The BL-442 off-by-one
+# window applied with a twist: latest ARCHIVED was 2026-07-25T00:01-ST.md = S31,
+# which the PREVIOUS /dsm-staa run had already analyzed (marker recorded
+# analyzed_session: 31), so defaulting to latest-archived would have re-run a
+# completed pass. last-wrap-up recorded session: 32 / type full.
+# S27 + S28 remain un-STAA'd (gap now carried across four runs).
+# The S32 /dsm-wrap-up appended 7 [auto] entries first (LICENSE-before-arguing,
+# answer-key-before-scoring, consistency-check-at-the-bump, count-gate-blind-to-
+# reclassification, re-point-remotes-before-any-push, two shell failures that
+# report success, squash-undoes-a-deliberate-commit-split), so this pass targeted
+# only the process layer [auto] did not sample:
+# (1) a classifier outage kills ALL write tools at once while Read/WebFetch
+# survive, so re-sequence to the read-only half rather than wait (extends the S30
+# single-refused-tool lesson);
+# (2) the append-anchor rule and Edit's uniqueness requirement can be mutually
+# unsatisfiable when the last non-empty line is short ("once."), and the heredoc
+# is then the first move, not the second (new mechanism for the S22 lesson, which
+# blames stock closing phrases);
+# (3) absence in a WebFetch result is not absence in the source, since the fetch
+# is small-model-summarized and drops list items; pull the API section index then
+# fetch by section, and label verbatim vs summarized confidence;
+# (4) a source-diff pass finds the class reactive catching cannot (rule-vs-rule
+# conflicts, wholly absent sections), because the reviewer only ever sees prose;
+# (5) split a removal instruction by cost class, execute the safe category fully
+# and isolate the load-bearing item (licence notice, evidence citation) with one
+# reason;
+# (6) publish the denominator next to the score, "11/11" reads as a tested
+# ruleset when 28 of 36 rules were never exercised;
+# (7) bind maintenance triggers to events that already happen, a calendar review
+# of a low-frequency asset is theater and the document becomes something to avoid;
+# (8) in a planning turn still execute the one item whose cost RISES with delay
+# (the pinned source revision), labeled apart from the proposals.
+# Six findings offered and NOT appended (held as opt-in; user approved the core
+# set only): widen grep scope before concluding a user-named string does not
+# exist (a file-scoped grep is evidence about the file, not the artifact); do not
+# renumber identifiers other artifacts cite by number; correct a user's framing
+# when it implies a gate that does not exist ("before we apply it" on a file
+# already on disk); in-repo governance edits fire no gate, so the absence of
+# friction is the over-editing risk signal; a cross-repo notification unblocks the
+# other project's decision rather than executing it; and `grep` aliased to `ugrep`
+# rejects the canonical /dsm-go baseline snippet's bare '^\?' pattern (awk on $1
+# works).
+# UPDATE, same run: the ugrep item was NOT left as a held finding. At the user's
+# direction it was verified firsthand and filed as
+# dsm-docs/feedback-to-dsm/2026-07-30_ugrep-shim-breaks-dsm-go-baseline-checksums.md
+# with a pending-push action item at
+# _inbox/2026-07-30_staa-s32_ugrep-feedback-pending-push.md. Both uncommitted;
+# STAA does not commit. Investigation upgraded S32's account on three points:
+# `grep` is a Claude Code-injected shell function (execs the claude binary as
+# ugrep -G), not a local shell alias, so the defect is ecosystem-wide; the
+# pipeline exits 0 despite the error, so the baseline's whole # Checksums block is
+# written empty with no failure signal; and the fix is two characters ('^[?]'),
+# verified under both ugrep 7.5.0 and GNU grep 3.7. The other three GNU BRE sites
+# in the skill set were tested and are unaffected. Precedent for an STAA run
+# filing feedback: done/2026-05-28_staa-step8-wrapup-step0-transform-drift.md.
+# Pruned 5, all duplicated or superseded: [STAA] S19 read-the-upstream-BL
+# (duplicated the [auto] S19 entry immediately above it); [auto] S20 Hugo
+# taxonomy/buildDrafts (shipped-code fact, not a reasoning lesson); [auto] S14
+# expect-2-3-iterations-on-CLAUDE.md-rules (generic, no action attached); [auto]
+# S23 voice-rule codification cycle (superseded by the humanizer repo's own
+# MAINTENANCE.md + the CLAUDE.md capture pointer shipped in S32); and the two
+# cross-repo-hook entries ([auto] S22 + [auto] S27 MEMORY.md) MERGED into one,
+# which now also carries the full-file-path scoping and the S32 exercise.
+# Net 105 -> 108 live entries. Still over the §8.1 budget (108 vs ~70 target,
+# 54.6 KB mirror vs the 8 KB cap, under the 60 KB advisory). Fourth consecutive
+# session flagging the prune; this pass did 5 removals, which is a trim, not the
+# structural prune the file needs.
+# Promotion candidates surfaced and NOT acted on (STAA does not edit CLAUDE.md):
+# S32 bind-triggers-to-existing-events (its two standing rules , a new rule ships
+# with a fixture instance, report against the ruleset not reality , now live in
+# the humanizer repo's MAINTENANCE.md and arguably belong there only); S23
+# hook-scoring dimensions (its own text calls for a Stage-3 CLAUDE.md amendment,
+# still never done, carried from the S31 marker); S29 Gate-1 length/register
+# non-inheritance; S29 Gate-4 title-claim check.
+# Compact mirror regenerated with the canonical DSM_0.2.A §8.1 transform (line
+# 955), not a re-inlined copy: 108 = 108 entries, 56926 B live -> 54578 B mirror,
 # both sanity checks silent.

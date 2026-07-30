@@ -1,8 +1,8 @@
 ---
-title: "143 features across three dimensions"
+title: "147 features across three dimensions"
 date: 2026-03-20
 draft: false
-description: "DSM's 143 features mapped across human oversight, knowledge provenance, and experience accumulation."
+description: "DSM's 147 features mapped across human oversight, knowledge provenance, and experience accumulation."
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Features", "Take AI Bite"]
 categories: ["Features"]
 author: "Alberto Diaz Durana"
@@ -11,7 +11,7 @@ toc: true
 
 Most AI coding tools are built to reduce human involvement. DSM is built to make human involvement worth the time: the human and the AI produce better work together than either would alone, and what they learn carries forward.
 
-This post maps DSM's 143 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
+This post maps DSM's 147 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
 
 ---
 
@@ -23,7 +23,7 @@ Where most tools give you a slider between "approve everything" and "let the AI 
 
 Every artifact passes through a three-gate approval model: concept (do you understand what will be created?), implementation (does the diff look right?), and run (should this execute?). The AI cannot proceed without the human engaging with the work. Before the three gates, there is a fourth conversation: Gate 0, where the human and the agent define the work together before any plan is drafted. Presenting a pre-formed plan for approval reduces the human from collaborator to approver; Gate 0 keeps the definition itself shared.
 
-The same review discipline applies when the work decomposes into pieces. Multiple edits to a single file need separate explanations. In Jupyter Notebooks cells are generated one at a time, with output verified before the next cell is created. Cells that produce plots save the figure to disk so the agent can read it back and check what it actually drew before moving on.
+The same review discipline applies when the work decomposes into pieces, and what counts as a piece is set by the reviewer rather than the producer: the smallest increment someone can actually verify, one testable function, one notebook cell producing one output, one short passage of prose. Multiple edits to a single file need separate explanations. In Jupyter Notebooks cells are generated one at a time, with output verified before the next cell is created. Cells that produce plots save the figure to disk so the agent can read it back and check what it actually drew before moving on. Code is written test-first, as a standing rule rather than a per-project preference. And an auto-approved write clears the implementation gate and nothing else: the concept gate is a conversation, and no permission dialog stands in for it.
 
 Enforcement is structural. A per-turn hook appends reasoning to a live transcript as the first tool call of every turn, so the record of thinking cannot be skipped by an eager agent. When a protocol violation is detected mid-output, the output itself is a stop condition: the agent halts, names the violation, and waits for confirmation before resuming. Before a Gate 2 approval, the agent is required to surface the strongest counter-evidence to its own recommendation, shifting the burden of critical evaluation from user vigilance to protocol.
 
@@ -41,7 +41,9 @@ Destructive commands (force push, hard reset, recursive delete) require explicit
 
 The guardrails extend to publication. Merging a pull request against `main` is treated as equivalent in outcome to pushing to `main`, and both require specific confirmation. At session start, the agent resolves the remote default branch and hard-halts if it differs from the local main line, so a stale session branch left as the repo default cannot quietly redirect a merge. Small checks, but the kind of thing that eats 45 minutes when it goes wrong.
 
-Two recent additions tighten the guardrails further. Certain safety prompts are now marked non-suppressible: even when the user has put the agent in auto mode (skipping non-critical pauses), the marked prompts must display and receive an explicit response. The pattern emerged after an incident where auto mode silently bypassed a continuation prompt that the agent had recognized in its own thinking block, then pressed past anyway. And every session now writes a lockfile at start; if a second session opens against the same project while one is still active, it hard-halts and asks the user to resolve the conflict, rather than silently interleaving two agents' work on the same branch.
+Three recent additions tighten the guardrails further. Certain safety prompts are now marked non-suppressible: even when the user has put the agent in auto mode (skipping non-critical pauses), the marked prompts must display and receive an explicit response. The pattern emerged after an incident where auto mode silently bypassed a continuation prompt that the agent had recognized in its own thinking block, then pressed past anyway.
+
+The same treatment now covers cost. Before the agent turns one instruction into many independent model calls against a shared usage window, it has to say what that will cost: the shape of the fan-out, an order-of-magnitude token estimate, the model tier, and what happens if the window empties mid-run, with cheaper alternatives offered as real options rather than a footnote. The gate is deliberately narrow. It fires on fan-out, not on work that merely looks expensive, because a gate that fires on everything is one the user learns to click through. The origin was a session that exhausted its window partway through and returned a partial deliverable. And every session now writes a lockfile at start; if a second session opens against the same project while one is still active, it hard-halts and asks the user to resolve the conflict, rather than silently interleaving two agents' work on the same branch.
 
 The guardrails then grew outward, beyond what an agent may do, to cover whose words go out and what outside text is allowed to steer. A session writing into another repository may now only create or append files, never run git there, so a foreign session cannot author commits on a project it does not own. Content posted under the human's byline, a pull-request comment, a commit message, gets its own approval gate, because approving the send is not the same as approving the words: the full text surfaces for review before it goes out. And cooperative external content, a polite suggestion on a public thread, is treated as observation by default; acting on the agenda it proposes takes explicit authorization, since politeness is not authorization and being on-topic is not an invitation. Smaller hardenings sit underneath, like dated filenames so an archived message cannot silently overwrite its predecessor, or a guard that stops a careless bulk edit from exploding the live transcript.
 
@@ -81,7 +83,9 @@ A closure cycle in v1.8.0 surfaced a class of problem with this kind of provenan
 
 Two everyday practices got the same treatment, named and given a home rather than left to habit. The small, fast check run after each file is built is now a first-class artifact with a fixed place and structure, framed as the industry-standard smoke test given a repo home, not a DSM coinage. And a writing discipline, present each concept once and let the body deepen it instead of restating it between summary and detail, became a named discipline the drafting protocol checks for.
 
-The newest addition targets the place where provenance leaks most reliably: the handoff. A decision made in one session travels forward as an instruction and arrives stripped of the reasoning that produced it, so whoever picks it up reconstructs intent backwards, or guesses. "Forward the Why" makes the causal link part of what gets written at the source, so a later session inherits "resume at X because Y depends on it" rather than "resume at X". Three places that used to be flat now carry it: a backlog item records what it couples to, a checkpoint's pending list gives the reason each item is still pending, and a plan derives its steps from their dependencies instead of listing tasks in order. The origin fits the pattern of most principles here. A spoke project had been doing two of these independently for months and only named the parent once someone noticed they were the same move.
+The newest addition targets the place where provenance leaks most reliably: the handoff. A decision made in one session travels forward as an instruction and arrives stripped of the reasoning that produced it, so whoever picks it up reconstructs intent backwards, or guesses. "Forward the Why" makes the causal link part of what gets written at the source, so a later session inherits "resume at X because Y depends on it" rather than "resume at X". It names three faces of the same move: a unit of work registering what later work will depend on, a closing session delegating to the next one, and a plan deriving its steps from their dependencies instead of listing tasks in order. The origin fits the pattern of most principles here. A spoke project had been doing two of these independently for months and only named the parent once someone noticed they were the same move.
+
+Those same two are the ones that now carry mechanisms in the methodology itself, a version after the principle was named. A backlog item that settles something later items will build on records the coupling on itself, while the interface is still cheap to change; when the consuming item is eventually built, the record is checked against what actually happened, and the output that matters is the mismatch. A session's pending list states, per item, what the continuation requires, what it depends on, what order that forces, and what breaks if it is skipped. The rule bounds its own verbosity: an item is longer by exactly the causal links the receiver would otherwise rebuild, and an item with no dependency is stated plainly rather than padded with invented rationale. The planning face is still only named.
 
 ---
 
@@ -119,7 +123,7 @@ The loop keeps closing on itself. One recurring move, the user reshaping a propo
 
 ## The compound effect
 
-No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 143 features work together as a system, and the system learns. The count keeps moving because the methodology is in active use; the shape of what it covers, though, has stayed recognizable across every version.
+No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 147 features work together as a system, and the system learns. The count keeps moving because the methodology is in active use; the shape of what it covers, though, has stayed recognizable across every version.
 
 A feedback observation from a spoke project becomes a backlog item in the central repository. That item becomes a protocol change. That change propagates to every project. The next session in any project benefits from an insight that started in a completely different context.
 
