@@ -119,9 +119,13 @@ When an em dash ("—") connects phrases, replace it directly with a comma in th
 
 ### App Development Protocol (reinforces inherited protocol)
 - Explain why before each action
-- Create files via Write/Edit tools; user approves via permission window
-- Wait for user confirmation before proceeding to next step
-- Build incrementally: imports → constants → one function → test → next function
+- A bite is the smallest increment the user can verify (DSM_6.0 §1.1): one testable function for code (test-first), one cell producing one output for notebooks, a short passage for prose
+- Describe the file and get concept approval in conversation BEFORE creating it. The permission window approves a write, not the concept, and never substitutes for the description stop, including when write permissions are auto-approved
+- Approving a build sequence or file list authorizes starting, not authoring every file in it. Each file gets its own description stop
+- One bite per stop: author exactly one bite, then stop for review, regardless of how many were planned
+- Cadence follows the artifact's medium, not the previous artifact's rhythm. Where media differ, the finer gate wins
+- Code is test-first: write and agree the test before the implementation it drives
+- Build incrementally: imports → constants → one test → the function it drives → next test
 <!-- END DSM_0.2 ALIGNMENT -->
 
 # Project: DSM Blog Poster
