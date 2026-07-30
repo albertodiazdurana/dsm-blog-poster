@@ -105,7 +105,11 @@ Proposed weaving map (to be confirmed when drafting):
 
 ### Front F: dsm-portfolio inbox notification
 
-**Status: Open.** Write to `~/dsm-data-science-portfolio-working-folder/_inbox/2026-07-30_dsm-blog-poster_dsm-v1.19-release.md` with a short summary and links. Triggers the cross-repo write confirmation gate: present content and path, get approval, create-only, no git operations in the target.
+**Status: Done (2026-07-31, S33).** Written to `~/dsm-data-science-portfolio-working-folder/_inbox/2026-07-31_dsm-blog-poster_dsm-v1.19-release.md`. Both gates cleared with the body and path surfaced in conversation and explicitly approved (cross-repo write per Cross-Repo Write Safety, byline content per Voice-Attribution Review); create-only, no git operations in the target per F-129.
+
+Content: Stage 2 summary (features post 143 -> 147 with the four entries named, About page unchanged and why), plus a counting note explaining the F-000 indexing so the portfolio does not re-derive the 147-versus-146 discrepancy if it runs the gate command itself. Format matched to the S27 precedent at `_inbox/done/2026-06-30_dsm-blog-poster_dsm-v1.15-v1.17-release.md`.
+
+Filename carries 2026-07-31, the actual write date, not the 2026-07-30 this BL originally recorded. A dated-filename convention exists to make collisions impossible; a date that is not the write date defeats it.
 
 ## Out of scope
 
@@ -122,11 +126,18 @@ All six fronts marked Done or explicitly Deferred with a recorded reason. On clo
 
 - **Stage 0 (Detect):** Done (S33). Two versions behind; range named as v1.18.0-v1.19.0.
 - **Stage 1 (Open BL):** Done (S33). This file. Deltas recorded.
-- **Stage 2 (Ship factual updates):** Open. Front C already Done; Fronts B and F pending.
+- **Stage 2 (Ship factual updates):** **Done (S33).** Front B shipped (features post 143 -> 147, plus a correction to the F-142 paragraph's implementation overclaim); Front C verified Done by heading text; Front F written and confirmed.
 - **Stage 3 (Front A):** Open. One post, bundling decided S33; thesis and hook open at Gate 1.
 - **Stage 4 (Fronts E then D):** Open.
 - **Stage 5 (Close):** Open.
 
 ## Outcomes
 
-(To be filled as fronts land.)
+- **(S33) Front B shipped.** Features post 143 -> 147. F-143 placed as the definition the per-turn review paragraph's existing list was already instantiating; F-144 added as a second non-suppressible instance in Safety guardrails (count two -> three, paragraph split at the cost seam because the addition made it the post's longest at 218 words); F-145/F-146 absorbed into a rewritten Forward the Why passage. That passage also **corrected an overclaim**: the S32 text read "three places that used to be flat now carry it", which claimed implementation of all three faces when v1.18.0 had named the principle without shipping a mechanism. It now reads "it names three faces", and the planning face is stated plainly as still only named. Repetition pass before /humanizer per BL-454; humanizer clean against the current ruleset; build verified at the page (0 stale "143" in rendered HTML, meta description and blog index updated). Commit `b8daf2e`.
+- **(S33) Front C verified Done.** No change needed; all fourteen DSM_6.0 §1.x heading texts compared against `content/about.md`.
+- **(S33) Front F shipped.** Portfolio notification written to `_inbox/2026-07-31_dsm-blog-poster_dsm-v1.19-release.md`.
+- **(S33) Stage 2 closed.** Fronts A, D, E remain.
+
+### Carried forward, not owned by this BL
+
+Two DSM Central defects were found while running Stage 0/1 and are filed in `dsm-docs/feedback-to-dsm/2026-07-30_ugrep-shim-breaks-dsm-go-baseline-checksums.md`, **pending push**: the ugrep shim silently emptying `/dsm-go` Step 5 baseline checksums, and the `## [vX.Y.Z]` CHANGELOG heading spec that never matches the real format, which defeats Step 1.8's conditional-align optimization. Neither belongs to this cycle's fronts; both were surfaced by it.
