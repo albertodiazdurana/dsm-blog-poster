@@ -1,0 +1,42 @@
+### [2026-07-30] Feedback file pending push to DSM Central: ugrep shim breaks `/dsm-go` baseline checksums
+
+**Type:** Action Item
+**Priority:** High
+**Source:** STAA run analyzing S32 (this project)
+
+A DSM feedback file was written but NOT pushed. The STAA run that produced it
+does not push feedback (that is `/dsm-wrap-up` Step 6's job) and performs no
+commits, so this needs a main session to carry it.
+
+**File:** `dsm-docs/feedback-to-dsm/2026-07-30_ugrep-shim-breaks-dsm-go-baseline-checksums.md`
+
+> **Update (S33, 2026-07-30):** the file now covers **two** defects, not one. A second
+> instance was folded in during S33: `/dsm-go` Step 1.8 and `/dsm-align` Step 13 both
+> specify reading the latest `## [vX.Y.Z]` CHANGELOG heading, but the real headings
+> carry no `v`, while the marker template writes `dsm-version: vX.Y.Z`. The two sides
+> of the version comparison are stored in different formats, so it can never report a
+> match and the conditional-align optimization (documented as saving ~30-40% of boot
+> context) never fires. A shared-pattern section was added covering both. The filename
+> was left unchanged so this entry and `.claude/last-staa.txt` keep resolving.
+
+**Action for the next main session:**
+
+1. Commit the file (it is uncommitted, along with this inbox entry).
+2. At wrap-up, let Step 6 push it to DSM Central and send the accompanying
+   inbox notification. Step 6 was reported as "nothing to push" in S32 because
+   `feedback-to-dsm/` held only `README.md`; that is no longer true.
+3. Move this entry to `_inbox/done/2026-07-30_staa-s32.md` once the push lands.
+
+**Why Priority High.** The local action is mechanical, but the defect it reports
+is active on every `/dsm-go` boot in every DSM project under this Claude Code
+version, and it is silent: `grep -v '^\?'` and `grep '^\?'` at `dsm-go.md:538-539`
+both fail under the harness's ugrep shim, so the session baseline's entire
+`# Checksums` block is written empty while the pipeline exits 0. Those checksums
+are what `/dsm-wrap-up` uses to tell pre-existing uncommitted files apart from
+session work. The fix is two characters per line (`'^[?]'`), verified under both
+ugrep 7.5.0 and GNU grep 3.7, so the cost of the fix is trivial next to the
+number of degraded baselines that accumulate while it waits.
+
+**Not in scope of the report, already checked:** the three other GNU BRE sites in
+the skill set (`dsm-go.md:391`, `dsm-light-go.md:90`, `dsm-wrap-up.md:60`) were
+tested individually and are fine. This is a two-line fix, not a sweep.
