@@ -1,5 +1,7 @@
 # Two published `/dsm-go` snippets fail against their real input: Step 5 baseline checksums and the Step 1.8 CHANGELOG version read
 
+**Pushed:** 2026-07-31 (S33 wrap-up, to `dsm-central/_inbox/dsm-blog-poster.md`)
+
 **Date:** 2026-07-30
 **Project:** dsm-blog-poster
 **Sessions:** Instance 1 filed by the STAA run analyzing S32 (finding originated in the S32 `/dsm-go` boot, 2026-07-25). Instance 2 and the shared-pattern section added in S33 (2026-07-30), found at the S33 boot.
