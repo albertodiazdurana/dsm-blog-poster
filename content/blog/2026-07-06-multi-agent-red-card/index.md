@@ -4,12 +4,12 @@ date: 2026-07-06
 description: "Multi-agent orchestration as a decision instrument, to make an engineering call and then unmake it. Two experiments, thirty-plus agents, and a format that cost more than it saved."
 categories: ["Experiments"]
 tags: ["multi-agent", "claude-code", "experiments", "take-ai-bite"]
-draft: true
+draft: false
 ---
 
 ## Kickoff: a format gets sent off
 
-The World Cup final was on while I was working, so let's borrow the terminology to
+The World Cup was on while I was working, so let's borrow the terminology to
 tell the following story. That week a team of AI agents red-carded a decision I'd
 spent a sprint building toward.
 
