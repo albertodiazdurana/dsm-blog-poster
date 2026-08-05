@@ -642,3 +642,35 @@ A principle tells you what to value. It does not change what happens until the b
 Full post: https://take-ai-bite.com/blog/2026-07-25-tab-naming-the-behavior/
 
 #AISafety #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite
+
+## Post 25: The agent answered 15. The answer was 112. (2026-08-06)
+
+**URL:** (pending publication)
+**Status:** Draft
+**Blog post:** https://take-ai-bite.com/blog/2026-07-06-multi-agent-red-card/ (NOT LIVE until PR #63 merges and the Actions deploy completes; verify with a cache-busted fetch before posting)
+**Source:** BL-031 Front E (LinkedIn cross-post for the graph-explorer Epoch-5 post "How a Fleet of Agents Red-Carded My Own Decision"). First cross-post in this project sourced from a spoke experiment rather than a release; siblings by shape are Posts 16 (IronCalc) and 18-21 (the portfolio PM series).
+**Hashtag set:** #MultiAgent #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite. Leads with #MultiAgent to keep the slug distinctive from Post 23's `guardrails-...` and Post 24's `aisafety-...`; keeps #TakeAIBite, drops #DSM per the CLAUDE.md convention.
+**Slug observation (BL-023):** PREDICTION (recorded pre-publication): lead-3-hashtag-derived, `multiagent-humanaicollaboration-claudecode`. The opener ("One of my agents was asked how many orphaned documents a repository had") is not a clean keyword phrase, so the lead-hashtag branch is expected per the S26 refined hypothesis. Confidence deliberately low, as with Post 24: the S28 Post 15-vs-22 finding showed identical title and hashtag inputs producing divergent derivation, so this is a data point to collect rather than a forecast to rely on. Would be a fourth consecutive clean prediction on the lead-hashtag branch if confirmed.
+**Note:** ~290 words. Leads with the 112-versus-15 orphan count, which the blog post buries in the middle of its A/B section, so the two pieces have different entry points and the cross-post does not read as a preview (S31 lead-asset rule). Register follows the owner's "anecdotal, not scientific" direction: one concrete number pair carries the story, and the measured percentages the post has available are deliberately left out. The blog post's closing line ("a decision instrument you cannot second-guess is not an instrument, it is a mirror") is NOT reused here, so it still lands fresh for a reader who follows the link; the cross-post closes on the same thesis in different words. "an AI" singular, comma-not-em-dash.
+
+**Text:**
+
+One of my agents was asked how many orphaned documents a repository had. It answered 15. The correct answer was 112.
+
+Nothing was wrong with the agent. It read the map I had given it, and the map said 15, because the format I had just spent a sprint migrating to drops the "and 97 more" that the old one kept.
+
+I had committed to that migration for one reason. The new format promised roughly 10% fewer tokens on a file every agent reads at the start of every session, in every project I run. Multiply that out and the move looked obvious.
+
+So I pointed a fleet of agents at my own decision and gave them one objective: decide, with evidence, whether it was worth it.
+
+They found the format cost more tokens, not fewer. Then they found something worse. Nobody had ever checked whether the map helped an agent navigate anything at all, in any format. I had spent a sprint tuning the price of a briefing without ever confirming the briefing worked.
+
+A second experiment tested that. Twenty-four agents, eight navigation tasks, none of them told which version of the map they had, the correct answers written down before a single one ran. The map earned its place. The format did not.
+
+What stays with me is not the format. It is that I had picked a number because it was easy to count and mistaken it for the thing I actually cared about. Tokens are easy to argue about. Whether an agent can find its way is not.
+
+I did not need a fleet of agents to answer my question. I needed them to tell me I was asking the wrong one.
+
+Full post: https://take-ai-bite.com/blog/2026-07-06-multi-agent-red-card/
+
+#MultiAgent #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite
