@@ -14,7 +14,6 @@ OPEN BEFORE PUBLISH:
 - Directory date 2026-08-05 is PROVISIONAL. hugo.toml sets buildFuture=false
   and Actions builds in UTC, so a post dated the current LOCAL day is omitted
   from the build until 00:00Z. Renaming the bundle is one git mv.
-- DEC-010 appears before the "numbered records" convention that explains it.
 - draft: true until the date is set.
 -->
 
@@ -56,7 +55,8 @@ paid on every session, earns a harder look than I would otherwise have given it.
 
 So when a compact tabular format called TOON, for Token-Oriented Object Notation,
 showed up promising the same information in fewer tokens, the move looked obvious. I wrote a decision record,
-DEC-010, to migrate the table of contents from Markdown to TOON, and I did the
+[DEC-010](https://github.com/albertodiazdurana/dsm-graph-explorer/blob/master/dsm-docs/decisions/DEC-010-toon-migration-format.md),
+to migrate the table of contents from Markdown to TOON, and I did the
 responsible thing: I gave it a falsifiable test. If TOON didn't cut token cost by
 at least 10% on a real corpus, the migration was off. A decision with a built-in
 way to lose is good discipline.
