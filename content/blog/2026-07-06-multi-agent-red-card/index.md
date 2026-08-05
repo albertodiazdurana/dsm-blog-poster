@@ -1,21 +1,11 @@
 ---
 title: "How a Fleet of Agents Red-Carded My Own Decision"
-date: 2026-08-05
+date: 2026-07-06
 description: "Multi-agent orchestration as a decision instrument, to make an engineering call and then unmake it. Two experiments, thirty-plus agents, and a format that cost more than it saved."
 categories: ["Experiments"]
 tags: ["multi-agent", "claude-code", "experiments", "take-ai-bite"]
 draft: true
 ---
-
-<!--
-BL-031. All seven sections converted from the graph-explorer source draft.
-
-OPEN BEFORE PUBLISH:
-- Directory date 2026-08-05 is PROVISIONAL. hugo.toml sets buildFuture=false
-  and Actions builds in UTC, so a post dated the current LOCAL day is omitted
-  from the build until 00:00Z. Renaming the bundle is one git mv.
-- draft: true until the date is set.
--->
 
 ## Kickoff: a format gets sent off
 
