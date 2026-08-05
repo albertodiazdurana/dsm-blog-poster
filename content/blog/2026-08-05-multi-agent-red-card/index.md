@@ -14,7 +14,6 @@ OPEN BEFORE PUBLISH:
 - Directory date 2026-08-05 is PROVISIONAL. hugo.toml sets buildFuture=false
   and Actions builds in UTC, so a post dated the current LOCAL day is omitted
   from the build until 00:00Z. Renaming the bundle is one git mv.
-- TOON is named 16 times and never sourced or linked.
 - DEC-010 appears before the "numbered records" convention that explains it.
 - draft: true until the date is set.
 -->
@@ -26,8 +25,8 @@ tell the following story. That week a team of AI agents red-carded a decision I'
 spent a sprint building toward.
 
 I'd committed to migrating my project's "table of contents for LLMs" from Markdown to
-TOON, a compact format I picked for exactly one reason: it promised to shave roughly
-10% off the tokens every agent pays to read it. The plan was real, a decision record, a
+[TOON](https://github.com/toon-format/toon), a compact format I picked for exactly one
+reason: it promised to shave roughly 10% off the tokens every agent pays to read it. The plan was real, a decision record, a
 backlog, phased tasks. Then I pointed a fleet of agents at my own reasoning and gave
 them one objective: decide, with evidence, whether migrating to TOON was actually worth
 it. They didn't just find a bug in the format. They found I'd been optimizing the wrong
@@ -55,8 +54,8 @@ multiplication is what made this worth stopping for. A format decision affecting
 repository is a preference. The same decision, multiplied across an ecosystem and
 paid on every session, earns a harder look than I would otherwise have given it.
 
-So when a compact tabular format called TOON showed up promising the same
-information in fewer tokens, the move looked obvious. I wrote a decision record,
+So when a compact tabular format called TOON, for Token-Oriented Object Notation,
+showed up promising the same information in fewer tokens, the move looked obvious. I wrote a decision record,
 DEC-010, to migrate the table of contents from Markdown to TOON, and I did the
 responsible thing: I gave it a falsifiable test. If TOON didn't cut token cost by
 at least 10% on a real corpus, the migration was off. A decision with a built-in
