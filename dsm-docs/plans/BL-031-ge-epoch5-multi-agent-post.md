@@ -133,22 +133,75 @@ if the draft turns out to need more than conversion.
    caught by the author rather than the agent. This is the third, and again the
    author caught it.
 
-2. **Front matter. RESOLVED 2026-08-05.** Category is **`Methodology`**, not
-   GE's proposed `Technical`. The post's own angle is methodology-as-instrument,
-   and Methodology is where the release posts live, so the category matches both
-   the content and the existing shelf.
+2. **Front matter. RESOLVED 2026-08-05, superseding an earlier resolution the
+   same day.** Category is **`Experiments`**, not GE's proposed `Technical` and
+   not `Methodology`.
+
+   The first resolution recorded here was `Methodology`, recommended and approved
+   before the category listing had been checked. That listing shows `Experiments`
+   already exists and holds exactly one post,
+   `content/blog/2026-04-02-reachability-experiment/`, which is the OTHER
+   graph-explorer experiment post (BL-013's). Shelving both GE experiment posts
+   together wins on consistency, and GE's own proposed tag list already carried
+   "Experiments". The owner re-decided once the fact was surfaced.
+
+   Recording the supersession rather than overwriting it: the approval was
+   downstream of a recommendation made without a fact, which is why the fact was
+   re-surfaced instead of the earlier decision being left to stand.
 
    Remaining front matter as GE proposed it, still subject to the Gate-4 pass:
    `title: "How a Fleet of Agents Red-Carded My Own Decision"`,
    `slug: "multi-agent-red-card"`,
    `tags: ["Multi-Agent", "AI Collaboration", "Experiments", "Methodology"]`.
-   Note the tag list already carries "Methodology", so once the category moves
-   there the tag is redundant and should probably drop.
+   The "Experiments" tag is now redundant with the category and should probably
+   drop; the sibling post's tag list is worth comparing at Gate 4.
+
+4. **Ecosystem framing. NEW, owner-supplied 2026-08-05.** The experiment was not
+   GE-local curiosity. It aimed at a problem shared across **all Take AI Bite
+   projects**: every session in every project needs the project map in context,
+   and that map costs tokens every time it is read. TOON was chosen as an
+   approach precisely because its reduced structure promised to cut that
+   recurring, ecosystem-wide cost.
+
+   This is the single most important addition to the draft, and it is not a
+   copy edit. As written, the draft scopes the stakes to one repository ("Every
+   agent that reads it pays for it, on every task, forever", line 32). The
+   owner's framing lifts that to every project on every session, which is what
+   makes the post belong on take-ai-bite rather than on a GE-internal blog. It
+   also resolves the "zero mentions of Take AI Bite in 1,974 words" gap by
+   supplying the actual reason the story matters here, rather than bolting a
+   mention on.
+
+   **Proposed placement (overrulable):** "The bet: buying tokens with a format",
+   where the Intrinsic Table of Contents is introduced, not the Kickoff. The
+   Kickoff's power is its specificity, one decision red-carded; front-loading an
+   ecosystem-scale justification would dilute it. Widening on the second beat
+   keeps the hook personal and makes the stakes land where the reader already
+   understands what the map is.
+
+   **Proposed degree of anchoring (overrulable):** name Take AI Bite once, at
+   this point, and let the rest of the post stay in the first person about the
+   project. Per the CLAUDE.md convention, "Take AI Bite" is the reader-facing
+   name and DSM survives only as file references.
+
+   **Open factual question, blocks this paragraph only:** is the project map
+   currently deployed across TAB projects, or was ecosystem-wide adoption the
+   goal at the time of the experiment? The paragraph must not imply the map
+   already ships everywhere if it does not. This is the same
+   naming-versus-shipping overclaim caught in the features post in S33 ("three
+   places now carry it" for a principle that had only been named), and the
+   distinction costs one clause to get right.
 
 3. **Title claim.** "Red-Carded My Own Decision" is a metaphor rather than a
    capability claim, so the S29 "learned to X" overclaim rule does not bite. Kept
    here so the Gate-4 title-claim check has a recorded answer rather than being
    skipped.
+
+3a. **TOON attribution. RESOLVED 2026-08-05.** The draft's "the TOON format
+   silently drops the 'and 97 more' total that Markdown keeps" was queried as
+   possibly describing this project's TOON generator rather than the format. The
+   owner confirms it is the format's behaviour, established by the experiment's
+   own results. The sentence stands as written; no hedge needed.
 
 ## Downstream Impact Map
 
