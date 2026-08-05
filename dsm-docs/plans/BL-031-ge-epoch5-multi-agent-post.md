@@ -115,11 +115,12 @@ if the draft turns out to need more than conversion.
    - Nothing downstream needs touching; lines 49 and 163 ("before the season
      starts", "Sprint 18") are metaphor-internal and version-internal respectively
 
-   **Open sub-question:** the actual date of the 2026 World Cup final is not
-   verifiable from inside this repo, and the owner's "a few weeks ago" is the only
-   evidence on hand. Do not invent a date in published prose. Either phrase the
-   anchor without a hard date ("during the World Cup final") or confirm the date
-   before drafting.
+   **Sub-question CLOSED 2026-08-05.** The owner released the constraint: the
+   exact final date "is not important". Phrase the anchor without a hard date ,
+   "during the World Cup final" or equivalent , and do not pin a calendar date in
+   published prose. This also removes the need to verify the date against an
+   external source, which was the only part of this decision the repo could not
+   settle on its own.
 
    Deploy trap that still constrains the publication date whatever the anchor
    says: `hugo.toml` sets `buildFuture = false` and GitHub Actions builds in UTC,
