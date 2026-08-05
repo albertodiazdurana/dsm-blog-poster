@@ -1,84 +1,144 @@
 # Last /dsm-staa run
-date: 2026-07-30
-analyzed_session: 32
+date: 2026-08-05
+analyzed_session: 33
 analyzed_transcript: .claude/session-transcript.md
-appended_lessons: 8
-pruned_lessons: 5
-# note: S32 analyzed from the LIVE transcript (1339 lines / 75 KB, not yet
-# archived; the next /dsm-go Step 5.5 will archive it). The BL-442 off-by-one
-# window applied with a twist: latest ARCHIVED was 2026-07-25T00:01-ST.md = S31,
-# which the PREVIOUS /dsm-staa run had already analyzed (marker recorded
-# analyzed_session: 31), so defaulting to latest-archived would have re-run a
-# completed pass. last-wrap-up recorded session: 32 / type full.
-# S27 + S28 remain un-STAA'd (gap now carried across four runs).
-# The S32 /dsm-wrap-up appended 7 [auto] entries first (LICENSE-before-arguing,
-# answer-key-before-scoring, consistency-check-at-the-bump, count-gate-blind-to-
-# reclassification, re-point-remotes-before-any-push, two shell failures that
-# report success, squash-undoes-a-deliberate-commit-split), so this pass targeted
-# only the process layer [auto] did not sample:
-# (1) a classifier outage kills ALL write tools at once while Read/WebFetch
-# survive, so re-sequence to the read-only half rather than wait (extends the S30
-# single-refused-tool lesson);
-# (2) the append-anchor rule and Edit's uniqueness requirement can be mutually
-# unsatisfiable when the last non-empty line is short ("once."), and the heredoc
-# is then the first move, not the second (new mechanism for the S22 lesson, which
-# blames stock closing phrases);
-# (3) absence in a WebFetch result is not absence in the source, since the fetch
-# is small-model-summarized and drops list items; pull the API section index then
-# fetch by section, and label verbatim vs summarized confidence;
-# (4) a source-diff pass finds the class reactive catching cannot (rule-vs-rule
-# conflicts, wholly absent sections), because the reviewer only ever sees prose;
-# (5) split a removal instruction by cost class, execute the safe category fully
-# and isolate the load-bearing item (licence notice, evidence citation) with one
-# reason;
-# (6) publish the denominator next to the score, "11/11" reads as a tested
-# ruleset when 28 of 36 rules were never exercised;
-# (7) bind maintenance triggers to events that already happen, a calendar review
-# of a low-frequency asset is theater and the document becomes something to avoid;
-# (8) in a planning turn still execute the one item whose cost RISES with delay
-# (the pinned source revision), labeled apart from the proposals.
-# Six findings offered and NOT appended (held as opt-in; user approved the core
-# set only): widen grep scope before concluding a user-named string does not
-# exist (a file-scoped grep is evidence about the file, not the artifact); do not
-# renumber identifiers other artifacts cite by number; correct a user's framing
-# when it implies a gate that does not exist ("before we apply it" on a file
-# already on disk); in-repo governance edits fire no gate, so the absence of
-# friction is the over-editing risk signal; a cross-repo notification unblocks the
-# other project's decision rather than executing it; and `grep` aliased to `ugrep`
-# rejects the canonical /dsm-go baseline snippet's bare '^\?' pattern (awk on $1
-# works).
-# UPDATE, same run: the ugrep item was NOT left as a held finding. At the user's
-# direction it was verified firsthand and filed as
-# dsm-docs/feedback-to-dsm/2026-07-30_ugrep-shim-breaks-dsm-go-baseline-checksums.md
+appended_lessons: 12
+pruned_lessons: 12
+# note: S33 analyzed from the LIVE transcript (1549 lines / 90 KB, not yet
+# archived; the next /dsm-go Step 5.5 will archive it). Same BL-442 off-by-one
+# twist as the previous run: latest ARCHIVED was 2026-07-25T23:02-ST.md = S32,
+# already analyzed (prior marker recorded analyzed_session: 32), so defaulting to
+# latest-archived would have re-run a completed pass. last-wrap-up recorded
+# session: 33 / type full. S27 + S28 remain un-STAA'd (gap now carried across
+# five runs).
+#
+# The S33 /dsm-wrap-up appended 7 [auto] entries first, all domain-layer
+# (CHANGELOG spec-vs-source mismatch, trace-the-drafting-channel before routing a
+# defect upstream, naming-converted-into-implementation overclaim, measure the
+# base artifact before calling a density a finding, compare a paragraph against
+# the artifact's distribution rather than a word target, verify the shared
+# property before merging two findings, scope a release-coverage BL by what is
+# unowned). This pass targeted only the process layer they did not sample:
+# (1) order a two-step sequence so a partial failure leaves the record
+# UNDER-claiming (push-then-archive, not archive-then-push), which is the
+# ORDERING form of the S23/S24/S31 overclaim family;
+# (2) satisfy a protocol instruction's PURPOSE when its literal form was written
+# for a different artifact shape, with a checkable sufficiency test (wrap-up Step
+# 6a's "append the content" vs a 275-line standalone investigation);
+# (3) one-bite-per-stop applies to AUTHORED increments; a mechanical increment
+# closes with its verification passes in one turn;
+# (4) withhold a hook-grade asset from a lower-stakes artifact and RECORD the
+# reservation so the later gate knows it is available;
+# (5) a framing the user approved ON is a verification target, not a settled
+# premise, and the correction belongs in the artifact not only the conversation
+# (the "both exit 0" claim that turned out to be exit 1);
+# (6) a description of a file inside a marker is not the file, and it feels most
+# authoritative when your own prior session wrote the description;
+# (7) classify every wrap-up artifact as rides-in-the-PR vs local-session-state
+# BEFORE writing it (the last-wrap-up.txt commit that hit branch protection);
+# (8) end a message with exactly ONE named next action, because your own
+# message's ordering is what disambiguates the next generic affirmative;
+# (9) a flag repeated across N sessions measures the flag's inefficacy, not the
+# problem, so convert it to a work item or retire the check;
+# (10) a filed-but-unfixed upstream defect creates a standing LOCAL workaround,
+# and the workaround needs its own correctness check against the real input
+# shape ($NF vs $2 on a three-field staged-rename line);
+# (11) an IDE selection binds a generic affirmative to a specific question;
+# (12) when a check's literal predicate fires but the condition it exists to
+# detect did not occur, report not-applicable WITH the reason (Step 5.8).
+#
+# PRUNE, option (b) per the user: 4 thematic merges + 6 drops = 12 removed,
+# against 12 appended. Merges: the three-entry overclaim family (S23 [auto] +
+# S23 [STAA] + S24 [STAA]) into one carrying forms/root-cause/propagation/
+# mitigations; three deploy-verification entries (S24 lag + S25 per-edit + S26
+# cache-bust) into one; S30 harness-gate + S32 classifier-outage into one
+# covering single-refused-tool and full-write-path-outage; S28 slug
+# non-determinism + S31 BL-023 data point into one. Drops: S9 governance-folder
+# rename grep, S16 define-acronyms-inline (codified in CLAUDE.md's TAB/DSM
+# section), S13 enumerate-constraints (subsumed by surface-tension-early), S20
+# audit-open-BLs (superseded by S27 verify-then-act; its 3-session staleness
+# trigger was folded INTO that entry rather than lost), S24
+# read-current-file-state (codified in feedback_content_drafting_workflow), S31
+# Hugo future-dating (verbatim in MEMORY.md Project State).
+#
+# NET RESULT AND WHY IT MATTERS: 115 -> 115 entries, 60,862 -> 67,049 bytes.
+# Net zero entries and +6,187 bytes. Merging consolidates duplication but
+# lengthens the survivors, and each session appends 5-8 more. Entry-level
+# trimming provably cannot converge. That measurement is the evidence for
+# BL-030 (see below) and was written into it.
+#
+# BL-030 FILED: dsm-docs/plans/BL-030-reasoning-lessons-structural-prune.md,
+# indexed in plans/README.md. This is the "convert the flag to a work item" move
+# that finding (9) demands, after six consecutive sessions of flagging without
+# action. Root cause named as three missing structural properties: no categories,
+# no stable identifiers, no retention rule. NOTE: the positional #NN
+# cross-references in the live file are ALREADY stale (#31 claims to be about
+# post extracts but entry 31 is S23 verify-claims; #52 claims merge-over-squash
+# but entry 52 is figures-by-thesis), broken by prior prunes. The 12 new entries
+# therefore use descriptive references only. Filing a BL is outside /dsm-staa's
+# normal three-file write scope; done at explicit user direction, precedent
+# done/2026-05-28_staa-step8-wrapup-step0-transform-drift.md and the S32 ugrep
+# feedback file.
+#
+# INDEX DRIFT FOUND AND FIXED: plans/README.md still described BL-029 as
+# "Stage 1 done; Fronts B/F next" while BL-029:129 records Stage 2 closed (S33).
+# S33 propagated its Front F correction to three places inside the BL and missed
+# the fourth artifact carrying the same claim. Row corrected. Offered as a
+# candidate 13th lesson, not appended (user reviewed 12).
+#
+# CARRIED, still unowned after three markers: the S23 hook-scoring-dimensions
+# entry and the S29 Gate-4 title-claim entry both call for a CLAUDE.md Stage-3
+# amendment that has never been made. /dsm-staa does not edit CLAUDE.md, which is
+# why they keep surviving. Recorded in BL-030's "Carried forward, not owned"
+# section so they have a home rather than a fourth marker mention.
+#
+# Compact mirror regenerated with the canonical DSM_0.2.A §8.1 transform
+# (Session_Lifecycle.md:955), not a re-inlined copy: 115 = 115 entries,
+# 67,049 B live -> 64,534 B mirror, both sanity checks silent.
+#
+# PROCESS OBSERVATION (no lesson proposed): S30's [STAA] past-tense-thinking-block
+# lesson landed. Every S33 thinking block names a live choice, a rejected path or
+# a doubt before acting. No protocol violations, no [RETROACTIVE] appends.
+#
+# UNCOMMITTED at end of this run (STAA does not commit): 5 working-tree changes
+# on main. BL-030 (untracked) + plans/README.md (modified) + THREE MODIFIED
+# TRACKED FILES: .claude/reasoning-lessons.md, .claude/reasoning-lessons-compact.md
+# and this marker.
+#
+# SKILL DEFECT FOUND AND FILED (third instance of the "published assertion vs its
+# real input" pattern) at
+# dsm-docs/feedback-to-dsm/2026-08-05_local-state-files-assumed-gitignored-are-tracked.md,
 # with a pending-push action item at
-# _inbox/2026-07-30_staa-s32_ugrep-feedback-pending-push.md. Both uncommitted;
-# STAA does not commit. Investigation upgraded S32's account on three points:
-# `grep` is a Claude Code-injected shell function (execs the claude binary as
-# ugrep -G), not a local shell alias, so the defect is ecosystem-wide; the
-# pipeline exits 0 despite the error, so the baseline's whole # Checksums block is
-# written empty with no failure signal; and the fix is two characters ('^[?]'),
-# verified under both ugrep 7.5.0 and GNU grep 3.7. The other three GNU BRE sites
-# in the skill set were tested and are unaffected. Precedent for an STAA run
-# filing feedback: done/2026-05-28_staa-step8-wrapup-step0-transform-drift.md.
-# Pruned 5, all duplicated or superseded: [STAA] S19 read-the-upstream-BL
-# (duplicated the [auto] S19 entry immediately above it); [auto] S20 Hugo
-# taxonomy/buildDrafts (shipped-code fact, not a reasoning lesson); [auto] S14
-# expect-2-3-iterations-on-CLAUDE.md-rules (generic, no action attached); [auto]
-# S23 voice-rule codification cycle (superseded by the humanizer repo's own
-# MAINTENANCE.md + the CLAUDE.md capture pointer shipped in S32); and the two
-# cross-repo-hook entries ([auto] S22 + [auto] S27 MEMORY.md) MERGED into one,
-# which now also carries the full-file-path scoping and the S32 exercise.
-# Net 105 -> 108 live entries. Still over the §8.1 budget (108 vs ~70 target,
-# 54.6 KB mirror vs the 8 KB cap, under the 60 KB advisory). Fourth consecutive
-# session flagging the prune; this pass did 5 removals, which is a trim, not the
-# structural prune the file needs.
-# Promotion candidates surfaced and NOT acted on (STAA does not edit CLAUDE.md):
-# S32 bind-triggers-to-existing-events (its two standing rules , a new rule ships
-# with a fixture instance, report against the ruleset not reality , now live in
-# the humanizer repo's MAINTENANCE.md and arguably belong there only); S23
-# hook-scoring dimensions (its own text calls for a Stage-3 CLAUDE.md amendment,
-# still never done, carried from the S31 marker); S29 Gate-1 length/register
-# non-inheritance; S29 Gate-4 title-claim check.
-# Compact mirror regenerated with the canonical DSM_0.2.A §8.1 transform (line
-# 955), not a re-inlined copy: 108 = 108 entries, 56926 B live -> 54578 B mirror,
-# both sanity checks silent.
+# _inbox/2026-08-05_staa-s33_gitignore-feedback-pending-push.md. Both uncommitted;
+# STAA does not push. Investigation widened the finding well past the original
+# three-file observation: SIX .claude/ local-state files are tracked here
+# (last-align-report.md, last-align.txt, last-staa.txt, last-wrap-up.txt,
+# reasoning-lessons.md, reasoning-lessons-compact.md) and ALL SIX are at
+# origin/main on a PUBLIC repo, reasoning-lessons.md since 6d676d1 (S9 wrap-up,
+# ~5 months). Ecosystem sweep of 5 repos: claim true ONLY in DSM Central where the
+# specs were written; take-ai-bite partial; blog-poster, portfolio and
+# graph-explorer have no rule (graph-explorer is public with files committed but
+# NOT yet pushed, so it leaks on next push). Root cause is dsm-align.md:499's
+# assumed "existing .claude/ rule", which cannot exist in a spoke because .claude/
+# is a MIXED directory whose tracked half (CLAUDE.md, 7 hooks, dsm-ecosystem.md,
+# settings.json) is load-bearing; only per-file rules work, Central has 6 such
+# lines, no spoke has any, and no skill installs or verifies them except
+# /dsm-finalize-project Step 4 at end of project life. The belief likely
+# generalized from dsm-go.md:660, which correctly notes Claude Code's
+# .git/info/exclude adds .claude/ for EXTERNAL Contribution repos. DSM_0.2.A
+# §26.1 (session lockfile) already shows the correct requirement-with-install
+# form and is cited in the report as the model. Pattern widened honestly rather
+# than asserted: Instances 1-2 are snippets that fail when run, Instance 3 is a
+# prose property claim with NO failure mode until someone checks it, which is
+# strictly worse. Original narrower note follows.
+# /dsm-staa Step 9 says "The marker is gitignored and
+# local-only" and its Notes say "All three are gitignored local-only artifacts;
+# none is committed". FALSE for this project. `git check-ignore` returns nothing
+# for all three and `git ls-files .claude/` lists all three as tracked; .gitignore
+# covers only session-baseline.txt, session-transcript.md, transcripts/, plans/,
+# session.lock and cross-repo-writes-session.txt. Consequence: STAA leaves three
+# modified TRACKED files behind while documenting itself as leaving none, so the
+# next session's baseline shows unexplained dirt and an unscoped `git add` can
+# sweep them into an unrelated commit message (the S14 wildcard-add shape). Fix is
+# either to gitignore them in spokes or to drop the claim from the skill; the
+# claim is the part that is wrong regardless of which way it is resolved.
