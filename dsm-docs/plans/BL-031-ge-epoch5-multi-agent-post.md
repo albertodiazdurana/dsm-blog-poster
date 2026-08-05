@@ -132,12 +132,17 @@ if the draft turns out to need more than conversion.
    caught by the author rather than the agent. This is the third, and again the
    author caught it.
 
-2. **Front matter.** GE proposed `title: "How a Fleet of Agents Red-Carded My
-   Own Decision"`, `slug: "multi-agent-red-card"`, `categories: ["Technical"]`,
+2. **Front matter. RESOLVED 2026-08-05.** Category is **`Methodology`**, not
+   GE's proposed `Technical`. The post's own angle is methodology-as-instrument,
+   and Methodology is where the release posts live, so the category matches both
+   the content and the existing shelf.
+
+   Remaining front matter as GE proposed it, still subject to the Gate-4 pass:
+   `title: "How a Fleet of Agents Red-Carded My Own Decision"`,
+   `slug: "multi-agent-red-card"`,
    `tags: ["Multi-Agent", "AI Collaboration", "Experiments", "Methodology"]`.
-   Recorded as PROPOSED, not locked. The category in particular is worth a look:
-   the post's own angle is methodology-as-instrument, which may fit "Methodology"
-   better than "Technical".
+   Note the tag list already carries "Methodology", so once the category moves
+   there the tag is redundant and should probably drop.
 
 3. **Title claim.** "Red-Carded My Own Decision" is a metaphor rather than a
    capability claim, so the S29 "learned to X" overclaim rule does not bite. Kept
