@@ -203,6 +203,47 @@ if the draft turns out to need more than conversion.
    owner confirms it is the format's behaviour, established by the experiment's
    own results. The sentence stands as written; no hedge needed.
 
+## Post-vs-source discrepancies found when DEC-010 was linked (2026-08-05)
+
+Linking `DEC-010` made the post's claims about it checkable by any reader in
+one click, so the record was read before the link went in. Three mismatches
+between the post and the document. None is fixed; all are factual claims about
+the author's own record.
+
+1. **The artifact has two names.** The post calls it the "Intrinsic Table of
+   Contents" throughout. DEC-010's title is "Migrate Knowledge-Summary Output to
+   TOON". A reader who clicks lands on "Knowledge-Summary" and has to work out
+   it is the same thing. Either they are the same artifact renamed between S48
+   and now, in which case one sentence in the post can say so, or they are not,
+   in which case the post is linking to the wrong record.
+
+2. **The 10% figure is doing double duty.** The post uses 10% twice, once as
+   the promise ("it promised to shave roughly 10% off the tokens") and once as
+   the acceptance gate ("If TOON didn't cut token cost by at least 10% on a real
+   corpus, the migration was off"). The record separates them: Central's research
+   projected **14.6%**, and condition C3 required "≥10% measured savings (not
+   projected)" as the kill switch. The gate figure is exact; the promise figure
+   is not. Understating the promise is the conservative direction, but a reader
+   who clicks sees 14.6% where the post said roughly 10%.
+
+3. **"An amendment" is two.** The post says the record "now carries an amendment
+   reversing it". It carries two: Amendment 1 (2026-07-03, S52) halted
+   implementation after measuring **+1.74%** on the DSM Central corpus, tripping
+   C3; Amendment 2 (2026-07-06, S53) formally abandoned the migration, citing
+   EXP-011's finding that "markdown strictly dominates the current TOON".
+   Singular is not wrong, since Amendment 2 does reverse it, but it undercounts.
+
+Point 3 also supplies a number the post does not use: **+1.74%**. The post says
+TOON "produced *more* tokens than the Markdown it replaced" without ever saying
+how much more. The measured figure is available and specific.
+
+**Link durability:** the URL is a `blob/master/...` branch link rather than a
+commit permalink. Verified that `master` is the repo's actual default branch and
+that the repo is PUBLIC. A branch link is the right choice here despite being
+less durable than a SHA, because the record is live and carries amendments; a
+permalink would freeze it at a revision that predates the reversal the post
+describes.
+
 ## Downstream Impact Map
 
 None. This is a leaf content item: it settles no schema, vocabulary or shared
