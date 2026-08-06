@@ -59,29 +59,29 @@ if the draft turns out to need more than conversion.
 
 ## Checklist
 
-- [ ] Read the full GE draft plus `materials.md`; confirm or correct the
+- [x] Read the full GE draft plus `materials.md`; confirm or correct the
       completeness assessment before committing to a conversion-shaped plan
-- [ ] Decide the publication date (see Open decisions)
-- [ ] Create `content/blog/{date}-multi-agent-red-card/index.md` as a leaf bundle
-- [ ] Apply the TAB/DSM reader-facing convention: TAB owns the version and the
+- [x] Decide the publication date (see Open decisions)
+- [x] Create `content/blog/{date}-multi-agent-red-card/index.md` as a leaf bundle
+- [x] Apply the TAB/DSM reader-facing convention: TAB owns the version and the
       brand; DSM survives only as file references. Grep the converted text for
       DSM as a standalone noun
-- [ ] Apply the "an AI" singular typography rule; grep for `AIs`
-- [ ] Punctuation rule: em dashes become `, ` (no space before the comma)
-- [ ] Check any figures or charts for internal labels that need a reader-facing
+- [x] Apply the "an AI" singular typography rule; grep for `AIs`
+- [x] Punctuation rule: em dashes become `, ` (no space before the comma)
+- [x] Check any figures or charts for internal labels that need a reader-facing
       bridge (S25 lesson; applies to visual assets, not only prose)
-- [ ] Repetition and dedup pass BEFORE `/humanizer` (BL-454 order; the humanizer
+- [x] Repetition and dedup pass BEFORE `/humanizer` (BL-454 order; the humanizer
       never flags repetition, so running it first spends the pass on prose about
       to be cut)
-- [ ] `/humanizer` pre-publish gate. For already-humanized upstream prose this is
+- [x] `/humanizer` pre-publish gate. For already-humanized upstream prose this is
       an evidence-based grep audit rather than a rewrite; report the actual greps
-- [ ] Build locally WITHOUT `--buildFuture` and confirm the post's path is in the
+- [x] Build locally WITHOUT `--buildFuture` and confirm the post's path is in the
       built output before merging
-- [ ] Publish, then verify the live page by grepping the rendered HTML for a
+- [x] Publish, then verify the live page by grepping the rendered HTML for a
       specific new string, cache-busted with `?cb=$RANDOM`
 - [ ] Notify dsm-graph-explorer so it can move its `dsm-docs/blog/` source file
       to `done/` (cross-repo write; needs confirmation)
-- [ ] LinkedIn cross-post as the next Post N in `dsm-docs/blog/linkedin-posts.md`,
+- [x] LinkedIn cross-post as the next Post N in `dsm-docs/blog/linkedin-posts.md`,
       leading with a DIFFERENT asset than the blog post's opener (S31 lesson)
 
 ## Open decisions
