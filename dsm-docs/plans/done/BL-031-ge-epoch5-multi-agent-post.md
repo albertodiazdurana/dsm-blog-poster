@@ -1,8 +1,9 @@
 # BL-031: Adapt the GE Epoch-5 multi-agent post for Take AI Bite
 
-**Status:** Open
+**Status:** Complete
 **Priority:** Medium
 **Date Opened:** 2026-08-05
+**Date Completed:** 2026-08-06
 **Target:** Review and publish in S34 (owner decision, 2026-08-05)
 **Origin:** `_inbox/2026-07-06_dsm-graph-explorer_epoch5-multi-agent-blog-post.md`, pushed by the dsm-graph-explorer spoke on 2026-07-06. Routed to its own BL per `BL-029:116`, which classified it as an unrelated content thread that needed one.
 **Author:** dsm-blog-poster S34
@@ -79,7 +80,7 @@ if the draft turns out to need more than conversion.
       built output before merging
 - [x] Publish, then verify the live page by grepping the rendered HTML for a
       specific new string, cache-busted with `?cb=$RANDOM`
-- [ ] Notify dsm-graph-explorer so it can move its `dsm-docs/blog/` source file
+- [x] Notify dsm-graph-explorer so it can move its `dsm-docs/blog/` source file
       to `done/` (cross-repo write; needs confirmation)
 - [x] LinkedIn cross-post as the next Post N in `dsm-docs/blog/linkedin-posts.md`,
       leading with a DIFFERENT asset than the blog post's opener (S31 lesson)
@@ -243,6 +244,33 @@ that the repo is PUBLIC. A branch link is the right choice here despite being
 less durable than a SHA, because the record is live and carries amendments; a
 permalink would freeze it at a revision that predates the reversal the post
 describes.
+
+## Outcomes
+
+**Published:** https://take-ai-bite.com/blog/2026-07-06-multi-agent-red-card/
+(`content/blog/2026-07-06-multi-agent-red-card/index.md`, category `Experiments`,
+dated 2026-07-06 to DEC-010's last amendment, deployed 2026-08-05 and verified
+cache-busted).
+
+**Cross-post:** LinkedIn Post 25,
+https://www.linkedin.com/posts/albertodiazdurana_multiagent-humanaicollaboration-claudecode-share-7491033806167265280-IonJ/
+
+**GE notified (S35, 2026-08-06):**
+`~/dsm-graph-explorer/_inbox/2026-08-06_dsm-blog-poster_epoch5-post-published.md`
+(3,941 bytes, written against GE's own `_inbox/README.md` entry template). The
+entry does two jobs rather than one: it requests the archive move, and it hands
+back the three findings recorded above that GE cannot otherwise see , the World
+Cup framing overstatement in GE's own outgoing summary, the three DEC-010
+post-versus-source mismatches, and the unused +1.74% measurement. Sent before this
+BL was closed, so a partial failure would have left the record under-claiming
+rather than claiming a delivery that never happened.
+
+**Open decision 4's factual question is resolved in the artifact.** The published
+paragraph reads "the map was built here first, on its way to every project in my
+Take AI Bite ecosystem, where the same briefing would be read at the start of
+every session". Built here first / on its way to / would be read is intent, not
+deployment, so the naming-versus-shipping overclaim the question guarded against
+was avoided. Nothing was referred to GE on this point.
 
 ## Downstream Impact Map
 

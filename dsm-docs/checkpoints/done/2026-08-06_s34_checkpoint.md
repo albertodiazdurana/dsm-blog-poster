@@ -1,3 +1,5 @@
+**Consumed at:** Session 35 start (2026-08-06)
+
 # Session 34 Checkpoint
 **Date:** 2026-08-06
 **Branch:** session-34/2026-08-06-post-merge
