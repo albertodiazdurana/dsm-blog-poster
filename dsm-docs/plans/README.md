@@ -17,7 +17,6 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-023 | [LinkedIn hashtag research method](BL-023-linkedin-hashtag-research-method.md) | Medium | Next session |
 | BL-029 | [DSM v1.18.0-v1.19.0 release coverage (multi-front)](BL-029-dsm-v1.18-v1.19-release-coverage.md) | High | Active (Stage 2 closed S33; Front A next, then D/E) |
 | BL-030 | [Structural prune of reasoning-lessons.md](BL-030-reasoning-lessons-structural-prune.md) | Medium | Increment 1 landed (S33 STAA); next increment unscheduled |
-| BL-031 | [Adapt the GE Epoch-5 multi-agent post](BL-031-ge-epoch5-multi-agent-post.md) | Medium | Active (target: review + publish in S34) |
 
 ## Completed
 
@@ -45,3 +44,4 @@ Backlog items for the blog-poster project. Each item is a standalone file with d
 | BL-025 | [DSM v1.10-v1.14 cumulative release coverage (multi-front)](done/BL-025-dsm-v1.10-v1.14-release-coverage.md) | 2026-07-25 (closed with BL-027; theme-split Posts A+B + LinkedIn 23+24) |
 | BL-027 | [DSM v1.15-v1.17 cumulative release coverage (multi-front)](done/BL-027-dsm-v1.15-v1.17-release-coverage.md) | 2026-07-25 (all 6 fronts; absorbed BL-025 Fronts B+F) |
 | BL-024 | ["Investigation-first" blog post + LinkedIn cross-post (Haystack OSS arc)](done/BL-024-haystack-investigation-first-post.md) | 2026-07-25 (dropped, content-selection decision; spoke notified) |
+| BL-031 | [Adapt the GE Epoch-5 multi-agent post](done/BL-031-ge-epoch5-multi-agent-post.md) | 2026-08-06 (published + LinkedIn Post 25; GE notified S35) |
