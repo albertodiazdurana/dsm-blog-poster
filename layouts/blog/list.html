@@ -1,0 +1,92 @@
+{{/*
+  Blog archive with a pinned "Start here" block.
+
+  Scoped to the blog section on purpose. The theme ships no taxonomy.html or
+  term.html, so layouts/_default/list.html also renders every /categories/ and
+  /tags/ page; overriding there would print the pinned block on all of them.
+
+  A post is pinned by giving it a non-zero `weight` in its front matter. The
+  same weight pins it on the home page, which sorts by weight before date, so
+  one front-matter line drives both listings. GroupByDate ignores weight
+  entirely, which is why the archive needs this template rather than a sort
+  option.
+
+  Pinned posts are removed from the year groups below so they are not listed
+  twice.
+*/}}
+{{ define "main" }}
+  {{ $pinned := where .Data.Pages "Weight" "!=" 0 }}
+  {{ $rest := where .Data.Pages "Weight" 0 }}
+  <div
+    class="archive {{ with .Site.Params.doNotLoadAnimations }}
+      .
+    {{ else }}
+      animated fadeInDown
+    {{ end }}"
+  >
+    {{ with $pinned }}
+      <div class="archive__heading">{{ i18n "start_here" | default "Start here" }}</div>
+      {{ range . }}
+        <ul class="archive__list">
+          <li class="archive__list-item">
+            {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
+              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+            {{ else }}
+              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
+            {{ end }}
+            <div class="archive__list-date">
+              {{ if isset .Site.Params "listdateformat" }}
+                {{ if .Site.Params.localizedDates }}
+                  {{ time.Format .Site.Params.listDateFormat .Date }}
+                {{ else }}
+                  {{ .Date.Format .Site.Params.listDateFormat }}
+                {{ end }}
+
+              {{ else }}
+                {{ if .Site.Params.localizedDates }}
+                  {{ time.Format "Jan 2" .Date }}
+                {{ else }}
+                  {{ .Date.Format "Jan 2" }}
+                {{ end }}
+
+              {{ end }}
+            </div>
+          </li>
+        </ul>
+      {{ end }}
+    {{ end }}
+
+    {{ range $rest.GroupByDate "2006" }}
+      <div class="archive__heading">{{ .Key }}</div>
+      {{ range .Pages }}
+        <ul class="archive__list">
+          <li class="archive__list-item">
+            {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
+              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+            {{ else }}
+              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
+            {{ end }}
+            <div class="archive__list-date">
+              {{ if isset .Site.Params "listdateformat" }}
+                {{ if .Site.Params.localizedDates }}
+                  {{ time.Format .Site.Params.listDateFormat .Date }}
+                {{ else }}
+                  {{ .Date.Format .Site.Params.listDateFormat }}
+                {{ end }}
+
+              {{ else }}
+                {{ if .Site.Params.localizedDates }}
+                  {{ time.Format "Jan 2" .Date }}
+                {{ else }}
+                  {{ .Date.Format "Jan 2" }}
+                {{ end }}
+
+              {{ end }}
+            </div>
+          </li>
+        </ul>
+      {{ end }}
+
+    {{ end }}
+  </div>
+{{ end }}

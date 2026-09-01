@@ -1,6 +1,16 @@
 # Last /dsm-align run
-date: 2026-08-05
+date: 2026-09-01
 dsm-version: 1.20.0
 result: warnings
-warnings: 3
+warnings: 2
 critical: 0
+# HELD at 1.20.0 deliberately, this is not a stale marker.
+# The run against DSM 1.25.0 found one template drift it did NOT fix: the
+# §17.1 base template has lost the `### Punctuation` heading and its rule
+# sentence while retaining the three Scope paragraphs BL-505/BL-513 added to
+# it, so regenerating verbatim would delete a live project convention and
+# leave the Scope block orphaned under `### Actionable Work Items`. Held per
+# the S24 rule: do not advance the last-checked marker past drift that was
+# offered and not applied. Everything else in the 1.20.0 -> 1.25.0 range was
+# applied (BL-519 routing bullet, BL-532 + BL-518 hook updates, blog README).
+# Advance to 1.25.0 once the punctuation question is decided.

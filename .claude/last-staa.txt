@@ -1,144 +1,96 @@
 # Last /dsm-staa run
-date: 2026-08-05
-analyzed_session: 33
+date: 2026-09-01
+analyzed_session: 35
 analyzed_transcript: .claude/session-transcript.md
-appended_lessons: 12
-pruned_lessons: 12
-# note: S33 analyzed from the LIVE transcript (1549 lines / 90 KB, not yet
-# archived; the next /dsm-go Step 5.5 will archive it). Same BL-442 off-by-one
-# twist as the previous run: latest ARCHIVED was 2026-07-25T23:02-ST.md = S32,
-# already analyzed (prior marker recorded analyzed_session: 32), so defaulting to
-# latest-archived would have re-run a completed pass. last-wrap-up recorded
-# session: 33 / type full. S27 + S28 remain un-STAA'd (gap now carried across
-# five runs).
+appended_lessons: 3
+pruned_lessons: 3
+# note: S35 analyzed from the LIVE transcript (770 lines), not yet archived, so
+# the same BL-442/BL-509 off-by-one as the previous three runs. Under BL-509 this
+# is no longer a warning but row 3 of the selection table: A = 34 (newest archive
+# 2026-08-05T13:56-ST.md), W = 35 (last-wrap-up.txt), S = 34 (prior marker), so
+# A <= S < W leaves exactly ONE unanalysed candidate and the live file is the
+# default rather than an override. Seventh consecutive run inside that window.
+# S27 + S28 remain un-STAA'd.
 #
-# The S33 /dsm-wrap-up appended 7 [auto] entries first, all domain-layer
-# (CHANGELOG spec-vs-source mismatch, trace-the-drafting-channel before routing a
-# defect upstream, naming-converted-into-implementation overclaim, measure the
-# base artifact before calling a density a finding, compare a paragraph against
-# the artifact's distribution rather than a word target, verify the shared
-# property before merging two findings, scope a release-coverage BL by what is
-# unowned). This pass targeted only the process layer they did not sample:
-# (1) order a two-step sequence so a partial failure leaves the record
-# UNDER-claiming (push-then-archive, not archive-then-push), which is the
-# ORDERING form of the S23/S24/S31 overclaim family;
-# (2) satisfy a protocol instruction's PURPOSE when its literal form was written
-# for a different artifact shape, with a checkable sufficiency test (wrap-up Step
-# 6a's "append the content" vs a 275-line standalone investigation);
-# (3) one-bite-per-stop applies to AUTHORED increments; a mechanical increment
-# closes with its verification passes in one turn;
-# (4) withhold a hook-grade asset from a lower-stakes artifact and RECORD the
-# reservation so the later gate knows it is available;
-# (5) a framing the user approved ON is a verification target, not a settled
-# premise, and the correction belongs in the artifact not only the conversation
-# (the "both exit 0" claim that turned out to be exit 1);
-# (6) a description of a file inside a marker is not the file, and it feels most
-# authoritative when your own prior session wrote the description;
-# (7) classify every wrap-up artifact as rides-in-the-PR vs local-session-state
-# BEFORE writing it (the last-wrap-up.txt commit that hit branch protection);
-# (8) end a message with exactly ONE named next action, because your own
-# message's ordering is what disambiguates the next generic affirmative;
-# (9) a flag repeated across N sessions measures the flag's inefficacy, not the
-# problem, so convert it to a work item or retire the check;
-# (10) a filed-but-unfixed upstream defect creates a standing LOCAL workaround,
-# and the workaround needs its own correctness check against the real input
-# shape ($NF vs $2 on a three-field staged-rename line);
-# (11) an IDE selection binds a generic affirmative to a specific question;
-# (12) when a check's literal predicate fires but the condition it exists to
-# detect did not occur, report not-applicable WITH the reason (Step 5.8).
+# The S35 /dsm-wrap-up appended 4 [auto] entries first, all on the domain/
+# decision layer: green-needs-a-baseline, the cross-repo guard's "outside this
+# repo" scope catching /tmp, `gh run rerun --failed` re-running the needs: chain,
+# and notification-strands-findings. Those were this pass's four strongest
+# candidates, so the pass was retargeted to the process/collaboration layer the
+# [auto] sweep did not sample. Re-deriving them would have reproduced exactly the
+# duplicate the S34 STAA run identified as its headline finding.
 #
-# PRUNE, option (b) per the user: 4 thematic merges + 6 drops = 12 removed,
-# against 12 appended. Merges: the three-entry overclaim family (S23 [auto] +
-# S23 [STAA] + S24 [STAA]) into one carrying forms/root-cause/propagation/
-# mitigations; three deploy-verification entries (S24 lag + S25 per-edit + S26
-# cache-bust) into one; S30 harness-gate + S32 classifier-outage into one
-# covering single-refused-tool and full-write-path-outage; S28 slug
-# non-determinism + S31 BL-023 data point into one. Drops: S9 governance-folder
-# rename grep, S16 define-acronyms-inline (codified in CLAUDE.md's TAB/DSM
-# section), S13 enumerate-constraints (subsumed by surface-tension-early), S20
-# audit-open-BLs (superseded by S27 verify-then-act; its 3-session staleness
-# trigger was folded INTO that entry rather than lost), S24
-# read-current-file-state (codified in feedback_content_drafting_workflow), S31
-# Hugo future-dating (verbatim in MEMORY.md Project State).
+# User approved the recommendation as-is, no changes.
 #
-# NET RESULT AND WHY IT MATTERS: 115 -> 115 entries, 60,862 -> 67,049 bytes.
-# Net zero entries and +6,187 bytes. Merging consolidates duplication but
-# lengthens the survivors, and each session appends 5-8 more. Entry-level
-# trimming provably cannot converge. That measurement is the evidence for
-# BL-030 (see below) and was written into it.
+# APPENDED (3), all [ecosystem]:
+# (1) a diagnostic prior drawn from the repo's OWN history is the one most likely
+#     to be confirmed rather than tested, so withhold it until the evidence is
+#     read (held Dart Sass + the S27 node24 bump, refused to lead with either,
+#     both wrong, cause was GitHub's Pages queue); corollary: `gh run view`
+#     before `--log-failed`, because a failure log presupposes the failure;
+# (2) a deliberate deviation and a mistake are indistinguishable in an artifact,
+#     so record the intent in the DURABLE record at the moment you deviate (two
+#     instances: the boot skip of the voice-calibration reads, and the
+#     2026-08-06 date stamps left standing after local midnight rolled) , the
+#     reader who will silently "fix" an unexplained anomaly is a future session
+#     with no access to the conversation;
+# (3) ambiguity costs nothing until the candidate readings produce different next
+#     actions ("check on this first <URL>" was ambiguous between diagnose and
+#     confirm; the same command answered both), which is an earlier and cheaper
+#     test than the S26 reversibility rule.
 #
-# BL-030 FILED: dsm-docs/plans/BL-030-reasoning-lessons-structural-prune.md,
-# indexed in plans/README.md. This is the "convert the flag to a work item" move
-# that finding (9) demands, after six consecutive sessions of flagging without
-# action. Root cause named as three missing structural properties: no categories,
-# no stable identifiers, no retention rule. NOTE: the positional #NN
-# cross-references in the live file are ALREADY stale (#31 claims to be about
-# post extracts but entry 31 is S23 verify-claims; #52 claims merge-over-squash
-# but entry 52 is figures-by-thesis), broken by prior prunes. The 12 new entries
-# therefore use descriptive references only. Filing a BL is outside /dsm-staa's
-# normal three-file write scope; done at explicit user direction, precedent
-# done/2026-05-28_staa-step8-wrapup-step0-transform-drift.md and the S32 ugrep
-# feedback file.
+# MERGED rather than appended (2), per the BL-030 discipline:
+# - the S33 one-named-next-action entry now also covers the NON-binding case: a
+#   generic instruction is not an answer to a specific question you raised
+#   ("wrap up" arrived with the date-rollover question open). The S35 wrap-up had
+#   already judged this an extension and declined to append it as a fifth [auto];
+#   this pass agrees and merges instead of overriding.
+# - the S33 flag-inefficacy entry gains a THIRD discharge it did not name:
+#   OMISSION. S35 is the first session to actually execute its retirement
+#   direction, by leaving the file-size flag out of the boot report entirely on
+#   the grounds that BL-030 owns it.
 #
-# INDEX DRIFT FOUND AND FIXED: plans/README.md still described BL-029 as
-# "Stage 1 done; Fronts B/F next" while BL-029:129 records Stage 2 closed (S33).
-# S33 propagated its Front F correction to three places inside the BL and missed
-# the fourth artifact carrying the same claim. Row corrected. Offered as a
-# candidate 13th lesson, not appended (user reviewed 12).
+# PRUNED (3): S9 DSM_3-vs-DSM_0.2 (dormant 26 sessions, and generic); S19
+# ironic-framing halt (fired once, never recurred across 16 sessions of post
+# production); S21 multi-platform-extract restructuring (largely absorbed into
+# CLAUDE.md Stage 4 Front E; flagged to the user as the weakest of the three and
+# approved).
 #
-# CARRIED, still unowned after three markers: the S23 hook-scoring-dimensions
-# entry and the S29 Gate-4 title-claim entry both call for a CLAUDE.md Stage-3
-# amendment that has never been made. /dsm-staa does not edit CLAUDE.md, which is
-# why they keep surviving. Recorded in BL-030's "Carried forward, not owned"
-# section so they have a home rather than a fourth marker mention.
+# NET: 130 -> 130 entries, 77,223 -> 80,557 bytes (+3,334). FIRST net-zero-entry
+# pass in three sessions, but the file still grew in bytes because the merges add
+# text without adding entries. Entry-level discipline is holding for the first
+# time; byte-level growth is not. BL-030 owns the structural fix.
 #
-# Compact mirror regenerated with the canonical DSM_0.2.A §8.1 transform
-# (Session_Lifecycle.md:955), not a re-inlined copy: 115 = 115 entries,
-# 67,049 B live -> 64,534 B mirror, both sanity checks silent.
+# PROVENANCE HEADER CREATED (BL-526 property 4). The file had no `**Last
+# appended:**` line at all, so this run created it and states within the line
+# that earlier appends predate the header, so its date is not misread as the
+# file's first write. `**Last pruned:**` created in the same edit with the three
+# prune reasons. Both use bold, not `### `, per the §8.1 heading convention that
+# reserves `### ` for category headings.
 #
-# PROCESS OBSERVATION (no lesson proposed): S30's [STAA] past-tense-thinking-block
-# lesson landed. Every S33 thinking block names a live choice, a rejected path or
-# a doubt before acting. No protocol violations, no [RETROACTIVE] appends.
+# Compact mirror regenerated with the canonical DSM_0.2.A §8.1 transform read
+# from source (Session_Lifecycle.md:1004, NOT re-inlined): 130 = 130 entries,
+# 80,557 B live -> 77,243 B mirror, both sanity checks silent.
+# UPPER-BOUND ADVISORY FIRED: mirror 77,243 B / bound 61,440 B (read from §8.1 at
+# regeneration time per BL-491) / 1.3x OVER. Non-blocking, file written. Consider
+# pruning the live file or promoting older lessons to MEMORY.md before the next
+# wrap-up.
 #
-# UNCOMMITTED at end of this run (STAA does not commit): 5 working-tree changes
-# on main. BL-030 (untracked) + plans/README.md (modified) + THREE MODIFIED
-# TRACKED FILES: .claude/reasoning-lessons.md, .claude/reasoning-lessons-compact.md
-# and this marker.
+# PROCESS OBSERVATIONS (no lessons proposed): the whole session ran on about ten
+# words of user instruction (one URL plus "yes", "yes", "approve", "wrap up") and
+# every one bound unambiguously, because each agent turn closed on exactly one
+# named question , four consecutive clean binds on top of the S33/S34 evidence
+# for that entry. The S30 past-tense test passes again: every S35 thinking block
+# names a live choice, a rejected path or a doubt before acting, no [RETROACTIVE]
+# appends. The S34 irreversible-before-record entry was applied deliberately (GE
+# write before BL close) with the failure analysis stated out loud.
 #
-# SKILL DEFECT FOUND AND FILED (third instance of the "published assertion vs its
-# real input" pattern) at
-# dsm-docs/feedback-to-dsm/2026-08-05_local-state-files-assumed-gitignored-are-tracked.md,
-# with a pending-push action item at
-# _inbox/2026-08-05_staa-s33_gitignore-feedback-pending-push.md. Both uncommitted;
-# STAA does not push. Investigation widened the finding well past the original
-# three-file observation: SIX .claude/ local-state files are tracked here
-# (last-align-report.md, last-align.txt, last-staa.txt, last-wrap-up.txt,
-# reasoning-lessons.md, reasoning-lessons-compact.md) and ALL SIX are at
-# origin/main on a PUBLIC repo, reasoning-lessons.md since 6d676d1 (S9 wrap-up,
-# ~5 months). Ecosystem sweep of 5 repos: claim true ONLY in DSM Central where the
-# specs were written; take-ai-bite partial; blog-poster, portfolio and
-# graph-explorer have no rule (graph-explorer is public with files committed but
-# NOT yet pushed, so it leaks on next push). Root cause is dsm-align.md:499's
-# assumed "existing .claude/ rule", which cannot exist in a spoke because .claude/
-# is a MIXED directory whose tracked half (CLAUDE.md, 7 hooks, dsm-ecosystem.md,
-# settings.json) is load-bearing; only per-file rules work, Central has 6 such
-# lines, no spoke has any, and no skill installs or verifies them except
-# /dsm-finalize-project Step 4 at end of project life. The belief likely
-# generalized from dsm-go.md:660, which correctly notes Claude Code's
-# .git/info/exclude adds .claude/ for EXTERNAL Contribution repos. DSM_0.2.A
-# §26.1 (session lockfile) already shows the correct requirement-with-install
-# form and is cited in the report as the model. Pattern widened honestly rather
-# than asserted: Instances 1-2 are snippets that fail when run, Instance 3 is a
-# prose property claim with NO failure mode until someone checks it, which is
-# strictly worse. Original narrower note follows.
-# /dsm-staa Step 9 says "The marker is gitignored and
-# local-only" and its Notes say "All three are gitignored local-only artifacts;
-# none is committed". FALSE for this project. `git check-ignore` returns nothing
-# for all three and `git ls-files .claude/` lists all three as tracked; .gitignore
-# covers only session-baseline.txt, session-transcript.md, transcripts/, plans/,
-# session.lock and cross-repo-writes-session.txt. Consequence: STAA leaves three
-# modified TRACKED files behind while documenting itself as leaving none, so the
-# next session's baseline shows unexplained dirt and an unscoped `git add` can
-# sweep them into an unrelated commit message (the S14 wildcard-add shape). Fix is
-# either to gitignore them in spokes or to drop the claim from the skill; the
-# claim is the part that is wrong regardless of which way it is resolved.
+# CARRIED, still unowned after five markers: the S23 hook-scoring-dimensions
+# entry, the S29 Gate-4 title-claim entry and the S34 Voice-Attribution
+# discriminator all call for CLAUDE.md amendments that have never been made.
+# /dsm-staa does not edit CLAUDE.md.
+#
+# UNCOMMITTED at end of this run (STAA does not commit): reasoning-lessons.md,
+# reasoning-lessons-compact.md and this marker, all three TRACKED in this repo.
+# The skill's Step 9 still calls them "gitignored and local-only", which remains
+# FALSE here , the 2026-08-05 defect report on this is still unfixed upstream.

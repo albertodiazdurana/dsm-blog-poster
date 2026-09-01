@@ -69,6 +69,12 @@ enableEmoji = false
   weight = 30
 
 [[menu.main]]
+  identifier = 'features'
+  name = 'Features'
+  url = '/blog/2026-03-20-dsm-features-three-dimensions/'
+  weight = 32
+
+[[menu.main]]
   identifier = 'about-me'
   name = 'About Me'
   url = '/about-me/'

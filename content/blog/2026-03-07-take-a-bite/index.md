@@ -7,6 +7,7 @@ tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Principl
 categories: ["Principles"]
 author: "Alberto Diaz Durana"
 toc: false
+weight: 1
 ---
 
 **Deliver only what the reviewer can chew.**
