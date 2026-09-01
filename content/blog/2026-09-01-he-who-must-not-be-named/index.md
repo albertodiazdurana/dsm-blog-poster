@@ -11,6 +11,8 @@ toc: false
 
 *A defect I could not write down, because writing it down summoned it.*
 
+**Never tell Opus 5 or Fable 5 to append or extract "Thin + King" or anything like it (you get the math, right?). Whatever these models are plotting is not for you to know.**
+
 ## The name you can't write
 
 Harry Potter fans call him He Who Must Not Be Named. Lovecraft readers know The Unnamable: the cosmic horrors like Hastur or Azathoth whose true name, spoken aloud, is said to bring on madness or death. Both traditions keep the same rule. Some names you do not say, because saying them summons the very thing you were trying to avoid.
