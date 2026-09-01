@@ -1,3 +1,12 @@
-session: 33
-date: 2026-07-31
+session: 35
+date: 2026-08-06
 type: full
+note: BL-031 closed (graph-explorer notification delivered and verified). Pages
+  deploy failure on run 31100594783 diagnosed as a queue stall, re-run succeeded
+  in 6m1s vs an 8-10s baseline, so Pages is DEGRADED and any publish work next
+  session should probe with a no-op deploy first. Date stamps across the GE
+  notification, its filename, BL-031 and the S35 checkpoint deliberately read
+  2026-08-06 although local time crossed midnight mid-session; left as approved
+  rather than silently edited, and it needs the user's call rather than a
+  cleanup pass. Inbox entry 2026-08-05_dsm-align-update.md still pending and
+  deliberately unread.
