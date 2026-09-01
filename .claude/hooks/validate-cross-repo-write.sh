@@ -115,8 +115,44 @@ def allowlisted(p):
         return True
     return False
 
+# --- cd base resolution (BL-532) -----------------------------------------
+# os.getcwd() is the HOOK process's directory, which is the repo root. It is
+# NOT the directory the inspected command establishes for itself. Before this
+# block, a command shaped
+#     cd <outside-repo> && cat > note.md
+# resolved note.md to <repo-root>/note.md, matched the in-repo test below, and
+# was skipped in silence: the write landed outside the repo with no warning.
+#
+# Resolution base is the LAST literal cd in the command, which is the one
+# nearest the write. A cd whose target is variable-constructed or command-
+# substituted cannot be resolved statically and leaves the base unchanged,
+# preserving the pre-existing skip rather than erroring.
+#
+# NOT COVERED. Stated explicitly because the §22 root cause of BL-484 was
+# prose over-claiming what the mechanism delivers:
+#   - The Bash tool's working directory PERSISTS between calls. A cd issued in
+#     an EARLIER call moves the base for a later relative write and is
+#     invisible to this hook, which sees one command at a time.
+#   - pushd/popd, cd inside a subshell or shell function, and cd whose target
+#     is command-substituted.
+#   - Any write whose target the extraction regexes above do not match.
+# This block narrows the hole; it does not close it.
+cd_base = None
+for m in re.finditer(r'(?:^|[;&|])\s*cd\s+([^\s;|&<>()]+)', cmd):
+    raw = m.group(1).strip().strip('\"\\'')
+    if not raw or '\$' in raw or '\`' in raw:
+        continue
+    if raw.startswith('~'):
+        raw = home + raw[1:]
+    if not os.path.isabs(raw):
+        raw = os.path.join(os.getcwd(), raw)
+    cd_base = os.path.normpath(raw)
+
+base = cd_base if cd_base else os.getcwd()
+
 hits = []
 seen = set()
+skipped_unresolved = False
 for t in targets:
     t = t.strip().strip('\"\\'')
     if not t or t.startswith('&'):
@@ -124,9 +160,10 @@ for t in targets:
     if t.startswith('~'):
         t = home + t[1:]
     if '\$' in t:            # variable-constructed; cannot resolve statically
+        skipped_unresolved = True
         continue
     if not os.path.isabs(t):
-        t = os.path.join(os.getcwd(), t)
+        t = os.path.join(base, t)
     t = os.path.normpath(t)
     if allowlisted(t):
         continue
@@ -137,6 +174,26 @@ for t in targets:
     if t not in seen:
         seen.add(t)
         hits.append(t)
+
+# Backstop (BL-532). The block above resolves a relative write against a
+# literal cd. It cannot resolve a write target that is itself variable-
+# constructed, so 'cd /outside && cat > VAR.md' would fall through in silence
+# even though the cd is known and known to be outside the repo. Warn on the
+# directory instead of the file.
+#
+# Three conditions, each one an over-firing guard (DSM_0.2 §8.9.2):
+#   - cd_base is set, so a variable cd still degrades to silence;
+#   - a write target was actually skipped as unresolvable, so an ordinary
+#     'cd /elsewhere && ls' with no write stays silent, and so does a command
+#     whose targets all resolved cleanly;
+#   - cd_base is outside the repo, not allowlisted, and not already confirmed.
+if cd_base and skipped_unresolved:
+    outside = not (cd_base == repo or cd_base.startswith(repo + '/'))
+    if outside and not allowlisted(cd_base):
+        if not any(cd_base == c or cd_base.startswith(c + '/') for c in confirmed):
+            if cd_base not in seen:
+                seen.add(cd_base)
+                hits.append(cd_base + '/  (cd target; write filename not statically resolvable)')
 
 for h in hits:
     print(h)
