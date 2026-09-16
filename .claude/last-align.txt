@@ -13,4 +13,12 @@ critical: 0
 # the S24 rule: do not advance the last-checked marker past drift that was
 # offered and not applied. Everything else in the 1.20.0 -> 1.25.0 range was
 # applied (BL-519 routing bullet, BL-532 + BL-518 hook updates, blog README).
-# Advance to 1.25.0 once the punctuation question is decided.
+# UPDATED 2026-09-16 at S36 wrap-up. The punctuation question IS decided, upstream,
+# and in the OPPOSITE direction from the fix this marker was holding for: DSM v1.26.1
+# (F-175) RETIRED the rule rather than restoring it, having found the same orphaned
+# Scope block independently. Verified: the block is gone from DSM_0.2.T (grep count 0).
+# So no upstream feedback is owed and the resolution is to REMOVE the Punctuation
+# section from .claude/CLAUDE.md, not restore it.
+# STILL HELD, on a new and current reason: /dsm-align has never run against 1.26.3,
+# and Central is now six releases ahead of this marker. Advancing it now would skip
+# that run. Owned by BL-033.
