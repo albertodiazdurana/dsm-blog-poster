@@ -1,12 +1,15 @@
-session: 35
-date: 2026-08-06
+session: 36
+date: 2026-09-16
 type: full
-note: BL-031 closed (graph-explorer notification delivered and verified). Pages
-  deploy failure on run 31100594783 diagnosed as a queue stall, re-run succeeded
-  in 6m1s vs an 8-10s baseline, so Pages is DEGRADED and any publish work next
-  session should probe with a no-op deploy first. Date stamps across the GE
-  notification, its filename, BL-031 and the S35 checkpoint deliberately read
-  2026-08-06 although local time crossed midnight mid-session; left as approved
-  rather than silently edited, and it needs the user's call rather than a
-  cleanup pass. Inbox entry 2026-08-05_dsm-align-update.md still pending and
-  deliberately unread.
+note: Session ran 2026-09-01/02, wrapped 2026-09-16; the checkpoint records the
+  gap deliberately so the two dates are not read as an inconsistency. Published
+  "He Who Must Not Be Named" + LinkedIn Post 26, pinned "Take a Bite" to both
+  listings, added a Features nav tab (PR #66), then filed BL-032 and BL-033
+  (PR #67). Pages RECOVERED at 10s, so S35's degradation constraint is lifted.
+  last-align.txt stays HELD at 1.20.0 on a corrected reason: the punctuation
+  defect it was holding for was resolved upstream by F-175 in the OPPOSITE
+  direction (rule retired, not restored), so the CLAUDE.md fix is a deletion,
+  but /dsm-align has still never run against 1.26.3. BL-033 owns it.
+  UNRESOLVED and needing the user: a second Claude session appended to the
+  session transcript at 23:43 on 2026-09-01 while this session held the lock
+  (pid 802583) and Step 0.7 had reported LOCK_ABSENT.
