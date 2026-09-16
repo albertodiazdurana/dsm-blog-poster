@@ -68,10 +68,33 @@ specification lists, and it inflates the boot scaffold count to a false 9/9. S36
 auto-fix rule. F-173 is upstream confirmation that it is a ghost, so removal is now
 evidenced rather than inferred. It is one tracked empty file.
 
+## S37 progress (2026-09-16), the three already-actionable items are all done
+
+1. **Punctuation section removed.** `/dsm-align` ran 1.20.0 → 1.26.3 and regenerated the
+   §17.1 managed block from `DSM_0.2.T_Alignment_Templates.md`. The scripted diff was
+   exactly three hunks: `### Punctuation` removed (F-175), and the transcript delimiter +
+   Pre-Gen-Brief label renamed thinking → plan (F-174). No upstream feedback owed.
+2. **`last-align.txt` corrected and advanced to 1.26.3.** The hold is discharged; the note
+   now records what the run found rather than a hold reason. Hooks: 3 updated from Central;
+   `settings.json` merged (BL-484 Bash matcher, first landing on this spoke).
+3. **Ghost `dsm-docs/inbox/` deleted** (`git rm dsm-docs/inbox/.gitkeep`). Boot scaffold
+   count drops from a false 9/9 to a true 8/8.
+
+**Inbox processed.** The FEATURES rolling archive (now spanning F-147..F-175, not just the
+four notifications named above) was read in full and archived to
+`_inbox/done/2026-09-04_dsm-agentic-ai-data-science-methodology.md`; the two align
+notifications were archived too. Front B still reads it from `done/` at weave time.
+
+**Central notified (Front-F-adjacent, but about the deploy, not the release).** Appended a
+question to `~/dsm-agentic-ai-data-science-methodology/_inbox/dsm-blog-poster.md` asking
+whether `scripts/sync-commands.sh --deploy` will run at Central, since the v1.20-v1.26
+spoke actions require it and this project loads ~4-month-stale `/dsm-*` command copies.
+That deploy is Central's operation, not this spoke's.
+
 ## Stage checklist (per CLAUDE.md DSM Version Release Coverage)
 
 - [x] **Stage 0 , Detect.** Range named, deltas measured, notifications located.
-- [ ] **Stage 1 , Open the BL.** This file. Deltas recorded above.
+- [x] **Stage 1 , Open the BL.** This file. Deltas recorded above.
 - [ ] **Stage 2 , Factual updates**
   - [ ] Front B , features post 147 → 176, weaving new F-entries as narrative threads across Human Oversight / Knowledge Provenance / Experience Accumulation, not as a list
   - [ ] Front C , About page. **No change needed**, 14 = 14 verified on heading text. Record the verification rather than marking the front skipped.
@@ -103,7 +126,7 @@ range's Front A skips that cluster entirely.
 
 ## Acceptance criteria
 
-- [ ] All four inbox notifications read and moved to `_inbox/done/YYYY-MM-DD_{source}.md` per the dated-archive convention
+- [x] All inbox notifications read and moved to `_inbox/done/YYYY-MM-DD_{source}.md` per the dated-archive convention (S37; the archive spans F-147..F-175)
 - [ ] Features post count reconciled against the gate at the time of the edit, not against the 176 recorded here, since the gate moves
-- [ ] The three already-actionable items above are resolved or explicitly deferred with a reason
+- [x] The three already-actionable items above are resolved (S37: Punctuation removed, marker advanced, ghost deleted)
 - [ ] Stage gates marked complete or deferred in this file

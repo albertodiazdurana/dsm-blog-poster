@@ -1,24 +1,16 @@
 # Last /dsm-align run
-date: 2026-09-01
-dsm-version: 1.20.0
+date: 2026-09-16
+dsm-version: 1.26.3
 result: warnings
-warnings: 2
+warnings: 3
 critical: 0
-# HELD at 1.20.0 deliberately, this is not a stale marker.
-# The run against DSM 1.25.0 found one template drift it did NOT fix: the
-# §17.1 base template has lost the `### Punctuation` heading and its rule
-# sentence while retaining the three Scope paragraphs BL-505/BL-513 added to
-# it, so regenerating verbatim would delete a live project convention and
-# leave the Scope block orphaned under `### Actionable Work Items`. Held per
-# the S24 rule: do not advance the last-checked marker past drift that was
-# offered and not applied. Everything else in the 1.20.0 -> 1.25.0 range was
-# applied (BL-519 routing bullet, BL-532 + BL-518 hook updates, blog README).
-# UPDATED 2026-09-16 at S36 wrap-up. The punctuation question IS decided, upstream,
-# and in the OPPOSITE direction from the fix this marker was holding for: DSM v1.26.1
-# (F-175) RETIRED the rule rather than restoring it, having found the same orphaned
-# Scope block independently. Verified: the block is gone from DSM_0.2.T (grep count 0).
-# So no upstream feedback is owed and the resolution is to REMOVE the Punctuation
-# section from .claude/CLAUDE.md, not restore it.
-# STILL HELD, on a new and current reason: /dsm-align has never run against 1.26.3,
-# and Central is now six releases ahead of this marker. Advancing it now would skip
-# that run. Owned by BL-033.
+# S37: ran against 1.26.3 (was HELD at 1.20.0 across S36 for the Punctuation
+# template drift, now RESOLVED). Regenerated the §17.1 managed block from
+# DSM_0.2.T_Alignment_Templates.md: removed the retired ### Punctuation section
+# (F-175/v1.26.1) and renamed the transcript delimiter + Pre-Gen-Brief label
+# thinking->plan (F-174/v1.26.0). Hooks: 3 updated from Central; settings.json
+# merged (BL-484 Bash matcher for validate-cross-repo-write.sh, first landing on
+# this spoke). Outstanding spoke action NOT performed by this run:
+# scripts/sync-commands.sh --deploy (many v1.20-v1.26 entries require it; the
+# /dsm-* command runtime copies are ~4 months stale, e.g. /dsm-backlog missing
+# Risks + Test Execution Log). Surfaced to user.
