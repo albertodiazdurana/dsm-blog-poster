@@ -2,6 +2,33 @@
 
 Reference file for published LinkedIn posts and their humanized versions.
 
+## Style: read before drafting a new post
+
+Voice-and-shape spec distilled from the author's edits across Posts 25-27. The
+mechanics live in the CLAUDE.md Front E spec (first-person, comma not em dash,
+"an AI" not "AIs", #TakeAIBite plus a distinct lead hashtag, "Full post:" link,
+/humanizer gate); this is the layer on top of them.
+
+- **Lead on the idea, not a fact.** The first line is the hook and the reader
+  decides there. Open on a counterintuitive claim or a sharp reframe (Post 27:
+  "Some bugs you cannot fix by looking harder."), never a factual setup. Post 27's
+  rejected first draft opened "For months, one of my projects reported 8 out of 9
+  at every startup", which the author called too factual and not interesting for
+  readers.
+- **Open cold; cut hedges and joins.** Start on the claim. Drop the connective
+  run-up, the softening qualifiers and the absolutes. Author edits on Posts 25 and
+  26 both moved this way; the standing note was "prefers paragraphs that open cold".
+- **Short and tight, ~200-250 words.** Shorter beats comprehensive. Post 27 was cut
+  from 351 words to 236 on the author's "make it shorter" call, deliberately a touch
+  under the usual 250 floor. Compress a supporting fact into a single clause instead
+  of giving it a paragraph: the 8/9 count went from a two-paragraph opener to the
+  clause "a completeness check that could never reach its own maximum".
+- **Shape a problem/fix story as hook then cause then solution.** After the idea-hook,
+  name the cause, then the fix. Concrete examples illustrate the solution; they are
+  neither the lead nor a standalone list.
+- **Lead-asset rule (reasoning lesson 83/123).** Open on a different asset than the
+  source blog post's opening, so a reader who clicks through gets a new entry point.
+
 ## Post 1: Blog launch (2026-03-07)
 
 **URL:** https://www.linkedin.com/posts/albertodiazdurana_take-ai-bite-activity-7436142360511717376-lWF7
@@ -733,3 +760,29 @@ The real fix came from subtracting, one block at a time, until a single instruct
 Full post: https://lnkd.in/daPiJeDY
 
 #ContextEngineering #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite
+
+## Post 27: Some bugs you cannot fix by looking harder (2026-09-24)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_softwareengineering-humanaicollaboration-share-7508871175112904705-sHvf/ (resolved from the shortlink `https://lnkd.in/p/dpqpVai9` via a single 301; tracking params stripped)
+**Status:** Published 2026-09-24; /humanizer clean (236 words)
+**Blog post:** https://take-ai-bite.com/blog/2026-09-24-tab-structural-fixes-release/ (live, verified S38 cache-busted, age:0)
+**Source:** S38 Front E, cross-post for "How Take AI Bite fixes what watching can't" (BL-033 Stage 4, the v1.20-v1.26 release post). Release-story cross-post; sibling shape to Posts 22/23/24.
+**Hashtag set:** #SoftwareEngineering #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite. Leads with #SoftwareEngineering to keep the slug distinct from Post 26's `contextengineering-`, Post 25's `multiagent-`, Post 24's `aisafety-` and Post 23's `guardrails-`; keeps #TakeAIBite, drops #DSM per the CLAUDE.md convention.
+**Lead-asset note (lesson 83/123):** opens on the CAUSE-frame (some bugs cannot be fixed by looking harder; a wrong result that looks exactly like a right one), not on a specific incident , a DIFFERENT lead than the blog Hook (the half-deleted-rule incident) and than Post 26 (the boot-refusal). Author feedback drove the rewrite: the earlier 8/9-count opener read as too factual; the revision is shorter (~220w) and centred on cause + solution.
+**Slug observation (BL-023):** PREDICTION (pre-publication): lead-3-hashtag-derived, `softwareengineering-humanaicollaboration-claudecode`, on the declared basis that the opener ("Some bugs you cannot fix by looking harder.") is not a clean keyword phrase (the S26 refined-hypothesis condition). Confidence deliberately low per the S28 non-determinism finding (identical inputs, Posts 15 vs 22, derived differently). To be scored from the resolved canonical URL after the author posts; the S28 half of BL-023 stays untouched either way. **CONFIRMED (branch) / MISS (count):** actual slug `softwareengineering-humanaicollaboration-share-7508871175112904705-sHvf`. The branch prediction held , the slug is hashtag-derived (lead hashtags + `share` + activity id), not title-derived (a title-derived slug would read `some-bugs-you-cannot-fix-...`). The COUNT was wrong: predicted lead-3 (`...-claudecode`), actual **lead-2** (`softwareengineering-humanaicollaboration`), with `#ClaudeCode` absent. This is the FIRST count miss after five consecutive lead-3 confirmations (Posts 21, 23, 24, 25, 26). `#SoftwareEngineering` (19 chars) is the longest lead hashtag used to date, and the 3-hashtag string would have been 51 chars against Post 26's fitting 50, which is *consistent with* a length-bounded slug rather than a fixed lead-3, but one data point does not fix the boundary. What it does settle: "lead-3" was never a law, so the branch produces lead-N and N is not constant. **The S28 non-determinism finding is untouched:** this tests which slug the hashtag branch produces once taken, not why the branch is taken over the title branch; BL-023's open half is unchanged.
+
+**Text (draft):**
+
+Some bugs you cannot fix by looking harder.
+
+The ones I mean share a single property: a wrong result that looks exactly like a right one. A check reports "complete" while the thing it was built to find sits right there, uncounted. A safety sweep runs clean over the very deletion it was meant to catch. When a pass and a failure print the same line, careful reading buys you nothing.
+
+That is why more attention is the wrong instinct. The fix is never "look closer." It is to change the structure until a wrong result stops looking like a right one.
+
+A recent release of Take AI Bite was almost entirely this. A completeness check that could never reach its own maximum got a number it could actually hit. A formatting rule that cost something on every edit, forever, got retired for a tool you run once, on demand. A phrase that had quietly been refusing sessions at boot got reworded to what it always meant, then renamed out of every file that could carry the old wording back.
+
+None of these made the framework more careful. They changed how it is built, so that carefulness is not what its safety rests on. That is the difference between good intentions and a system: intentions ask you to watch harder next time; a system changes the shape of the problem so you do not have to.
+
+Full post: https://take-ai-bite.com/blog/2026-09-24-tab-structural-fixes-release/
+
+#SoftwareEngineering #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite
