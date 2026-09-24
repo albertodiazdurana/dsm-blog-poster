@@ -1,10 +1,10 @@
 # /dsm-align persistent report
 
-**Timestamp:** 2026-09-01T23:02+02:00
-**DSM version:** 1.25.0 (from ~/dsm-agentic-ai-data-science-methodology/CHANGELOG.md latest heading)
+**Timestamp:** 2026-09-16T13:20+02:00
+**DSM version:** 1.26.3
 **Run mode:** post-change
 **Project:** dsm-blog-poster
-**Project type:** Application (DSM 4.0) , no override section present; detection signals are ambiguous (no primary runtime marker; `public/` build output + `scripts/` + a `hugo.yml` deploy workflow), and the recorded type was retained per the §17 do-not-silently-reclassify rule
+**Project type:** Application (DSM 4.0)
 
 ---
 
@@ -12,58 +12,46 @@
 
 /dsm-align post-change report:
 - Project type: Application (DSM 4.0)
-- Created: dsm-docs/blog/README.md (Blog Publication Tracker stub, per v1.24.0 / BL-517)
-- Already correct: 8/8 dsm-docs folders, 6/6 done/ subfolders, 6/7 template files, _inbox/ + done/ + README.md, .gitattributes (LF enforced), .claude/session-transcript.md, .claude/dsm-ecosystem.md (4/4 paths validated on disk), .claude/reasoning-lessons.md, settings.json hook entries (6/6 template entries present including all three validate-cross-repo-write.sh matchers)
-- Fixed: 2 hook scripts updated from Central (validate-cross-repo-write.sh 8944 -> 11857 B per BL-532; validate-transcript-edit.sh 4304 -> 7243 B per BL-518); all 8 hooks re-chmod +x; CLAUDE.md alignment block gained the BL-519 PROJECT-PLAN.md routing bullet under Actionable Work Items
-- Collisions: 1 (dsm-docs/inbox/ ghost folder)
-- Warnings: 2 (see full text below)
-- CLAUDE.md alignment: Drift partially resolved , BL-519 routing line applied; the punctuation-scope drift is HELD pending a user decision (see Warning 1)
-- CLAUDE.md content: OK (Application project; no Notebook Development Protocol present)
-- CLAUDE.md redundancy: OK
-- CLAUDE.md paths: OK (28 candidate paths checked; 5 flagged and all 5 are false positives , 2 GitHub repo slugs, 2 YYYY-MM-DD/vX.Y filename patterns the `{}` placeholder filter does not catch, and dsm-docs/blog/feature-trail.md which is a DSM Central path and verified present there)
+- Created: none
+- Already correct: scaffold 8/8 canonical dsm-docs/ folders + done/ subfolders, `_inbox/`, `@` reference, `.gitattributes` (LF), `.claude/session-transcript.md`, `.claude/dsm-ecosystem.md`, `.claude/reasoning-lessons.md`
+- Fixed: CLAUDE.md alignment block regenerated from DSM_0.2.T (3 hunks: delimiter label thinking->plan, Pre-Gen-Brief label thinking->plan, `### Punctuation` section removed); 3 hooks updated from Central; settings.json merged (BL-484 Bash matcher for validate-cross-repo-write.sh)
+- Collisions: 2 non-canonical dsm-docs/ folders (assets/, inbox/)
+- Warnings: 3 (see below)
+- CLAUDE.md alignment: Regenerated (3 lines/section differ from prior)
+- CLAUDE.md content: OK (Application-typed sections consistent)
+- CLAUDE.md redundancy: not re-scanned (template-managed block; project sections stable)
+- CLAUDE.md paths: OK (spot-check; no stale path introduced)
 - .gitattributes: OK
 - Command sync: N/A (not DSM Central)
-- Feedback pushed: none pending (no per-session files, no technical.md)
+- Feedback pushed: none pending
 - EC governance scaffold: N/A (not EC)
 
 ## Warnings (full text)
 
-1. **The §17.1 template has lost the Punctuation rule but kept its Scope block. Verbatim regeneration would delete a live project convention.**
+1. Pre-existing broken edit carried in from S36 (outside alignment delimiters): the humanizer bullet in the "Voice and content quality" section had its "forked from `blader/humanizer` MIT, no upstream sync)" clause removed but the opening "(" left in place, so the line now reads "(private repo `albertodiazdurana/humanizer`. When ..." with an unbalanced parenthesis. Not introduced by this run; flagged for the user to close the paren or restore the clause. The MIT/blader attribution itself is retained in the humanizer repo's LICENSE and commit history per lesson S32-#89.
 
-   `DSM_0.2.T_Alignment_Templates.md` carries three paragraphs beginning "**Scope.** The rule governs files that reach a reader outside the project, by any channel." sitting between `### Actionable Work Items` and `### Code Output Standards` with **no heading and no antecedent for "The rule"**. The `### Punctuation` heading and its rule sentence appear nowhere in the template, nowhere in `DSM_0.2_Custom_Instructions_v1.1.md`, and nowhere in any `DSM_0.2.*` module; `grep -rn 'When an em dash'` over DSM Central returns hits only inside two closed backlog files (BACKLOG-469, BACKLOG-505). The BL-513 deliberate-application caveat the v1.21.2 CHANGELOG describes as shipping in the same revision (comma splice, numeric range separator) is also absent from the template.
+2. Non-canonical folder `dsm-docs/inbox/` (ghost): one tracked empty `.gitkeep`. Confirmed upstream by F-173 as a phantom ninth folder no specification defines; this project is the measured instance carrying it. Owned by BL-033; deletion drops the boot scaffold count from a false 9/9 to a true 8/8. Reported, not auto-removed.
 
-   CHANGELOG v1.21.1 (BL-505) and v1.21.2 (BL-513) both carry **Spoke action: Run `/dsm-align` to pick up the revised §17.1 alignment block**, so the intent is clearly that spokes gain the Scope block *attached to the punctuation rule*, not that they lose the rule.
-
-   This spoke currently holds the rule text without the Scope block. Regenerating verbatim from the template would produce the inverse: Scope paragraphs orphaned under an unrelated heading, and no punctuation rule , in a project whose prose convention depends on it (the comma-for-em-dash form is applied throughout this repo's content and is named in project MEMORY).
-
-   Held for a user decision rather than applied. Proposed resolution is to keep `### Punctuation` and append the three Scope paragraphs beneath it, which is what both BLs describe, and to report the template defect upstream.
-
-2. **Ghost folder `dsm-docs/inbox/` is present and git-tracked (contains only an empty `.gitkeep`).**
-
-   `/dsm-go` Step 0.5 names this project by name as the measured instance: the folder was created to satisfy a nine-entry canonical list that no specification actually defines, inflating the scaffold count to a false 9/9. The canonical inbox is `_inbox/` at project root, which exists and is correct. Reported, not auto-removed, per Step 3b.
+3. Spoke actions across v1.20.0->v1.26.3 not performed by this run: many CHANGELOG entries require `scripts/sync-commands.sh --deploy` (a Central-side command deploy, not something /dsm-align does). The /dsm-* command runtime copies are ~4 months stale (F-159/BL-518); the flagged real consequence is a stale `/dsm-backlog` missing the Risks and Test Execution Log sections and a `/dsm-checkpoint` missing Causal-Forward. Review-only spoke actions (§10.1, §19.2, §19.3, §20.4, §21.4, §8.9.2) reach this spoke via the `@` chain and need no action.
 
 ## Collisions (full text)
 
-`dsm-docs/inbox/` collides with the canonical `_inbox/` at project root. Tracked file: `dsm-docs/inbox/.gitkeep` (0 bytes). See Warning 2.
+- `dsm-docs/assets/` : non-canonical, holds project asset material (competitive-positioning plots etc.). Likely intentional; reported for awareness, not auto-renamed.
+- `dsm-docs/inbox/` : ghost folder (see Warning 2). Reported, not auto-renamed.
 
 ## Already correct
 
-- All 8 canonical `dsm-docs/` subfolders: blog, checkpoints, decisions, feedback-to-dsm, guides, handoffs, plans, research
-- All 6 required `done/` subfolders
-- Template files present: blog/journal.md, checkpoints/README.md, feedback-to-dsm/README.md, handoffs/README.md, plans/README.md, research/README.md
-- `_inbox/`, `_inbox/done/`, `_inbox/README.md`
-- `.gitattributes` present and enforcing `* text=auto eol=lf`
-- CLAUDE.md `@` reference valid: `@../../dsm-agentic-ai-data-science-methodology/DSM_0.2_Custom_Instructions_v1.1.md`
-- Alignment delimiters present at lines 3 and 96
-- `.claude/dsm-ecosystem.md` present; all 4 registered paths exist on disk (dsm-central, take-ai-bite, portfolio, graph-explorer)
-- `settings.json` hooks: all 6 template `(matcher, command)` pairs already present, including the three `validate-cross-repo-write.sh` matchers (Write / Edit / Bash). BL-503's multi-matcher fix has landed here; the S34 report that Bash coverage never reached this spoke is now resolved.
-- No sprint-plan files matching `^#\s+Sprint\s+\d+\b` in dsm-docs/plans/ or done/, so step 3a had no candidates
-- No consumed handoffs outside `done/`
+- All 8 canonical dsm-docs/ folders present with required done/ subfolders and template files
+- `_inbox/` present with README.md and done/
+- CLAUDE.md `@` reference to DSM_0.2_Custom_Instructions_v1.1.md valid
+- `.gitattributes` enforces `* text=auto eol=lf`
+- `.claude/dsm-ecosystem.md`, `.claude/reasoning-lessons.md`, `.claude/session-transcript.md` present
+- No legacy feedback files; no per-session feedback pending push; no consumed handoffs outside done/
+- No sprint-plan files (project uses BL files), so Template 8 audit has no candidates
 
 ## Steps skipped
 
-- Step 11 skipped: not DSM Central
-- Step 11b skipped: not DSM Central
-- Step 11c skipped: `dsm-docs/blog/feature-trail.md` is a hub-only artifact and is absent here
-- Step 3-EC skipped: not an External Contribution
-- Step 6 produced no push: no per-session feedback files and no `technical.md`
+- Steps 2-6 partial: scaffold already complete (no creates); feedback push skipped (nothing ripe)
+- Step 11 skipped: not DSM Central (Command sync = N/A)
+- Steps 11b, 11c skipped: not DSM Central
+- Step 3-EC skipped: not External Contribution
