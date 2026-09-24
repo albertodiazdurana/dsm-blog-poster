@@ -1,6 +1,7 @@
 # BL-033: DSM v1.20.0 to v1.26.3 release coverage
 
-**Status:** Open
+**Status:** CLOSED (all six fronts complete)
+**Date Completed:** 2026-09-24 (Session 38)
 **Priority:** High
 **Date Opened:** 2026-09-16
 **Origin:** S36 Stage 0. `/dsm-go` Step 1.8 reported last-align 1.20.0 against CHANGELOG 1.25.0 at boot; by wrap-up Central was at 1.26.3. Four inbox notifications from Central are unprocessed, the most recent pushed 2026-09-04.
@@ -99,9 +100,9 @@ That deploy is Central's operation, not this spoke's.
   - [x] Front B , features post 147 → 176 (commit d6e3a5e). Wove F-147..F-175 as narrative threads across the three dimensions (11 weave points + a meta-through-line on the self-catching-check pattern), count updated in all 4 places, Gate 4 passed (dedup + /humanizer, 2 rule-9 density fixes, em-dash 0). +910 words (3482 → 4392). **PUBLISHED via PR #68 (merge 922501f), deploy run 35979127525 success (25s); verified live 2026-09-24 at https://take-ai-bite.com/blog/2026-03-20-dsm-features-three-dimensions/ , "176" serves, age:0, 0 stale "147 features".**
   - [x] Front C , About page. **No change needed, verified S37 2026-09-24 on heading TEXT not count:** DSM_6.0 has 14 §1.x headings (1.1 Take a Bite … 1.14 Observe Before Engaging, 1.13 Forward the Why); `content/about.md` heading "The Fourteen Principles" + 14 numbered items match all 14 heading texts exactly. No same-slot swap. Recorded rather than skipped so a future session does not re-run the check.
   - [x] Front F , portfolio inbox notification sent S37 2026-09-24 to `~/dsm-data-science-portfolio-working-folder/_inbox/2026-09-24_dsm-blog-poster_dsm-v1.26-release.md` (Low priority, informational: 147→176 features, 14 principles unchanged).
-- [ ] **Stage 3 , Release post (Front A).** Note the ordering dependency with BL-029 below.
-- [ ] **Stage 4 , LinkedIn cross-post (Front E) + record (Front D)**
-- [ ] **Stage 5 , Close**
+- [x] **Stage 3 , Release post (Front A). PUBLISHED live 2026-09-24** at https://take-ai-bite.com/blog/2026-09-24-tab-structural-fixes-release/ ("How Take AI Bite fixes what watching can't", category Methodology, ~1,175 words). PR #70 (merge a31cebe), deploy run 35998812152 success (41s); verified live cache-busted , title served, S36 cross-link resolves, 0 stale draft title, listed on /blog/, age:0. **DIFFERENTIATE branch chosen** (not skip): v1.20-v1.26 story with the v1.26 self-blind-check cluster (F-171/172/173/174/175) as spine + the earlier "guards that never fired" (F-160/156/164/165/169/170) as precursors; thesis "the durable fix is structural, not vigilance". The S36 "He Who Must Not Be Named" incident is referenced as ONE linked pointer, not retold (user's explicit no-repeat gate); distinct from Front B's inventory (different examples, no "passing while failing" framing). Gate 4 + /humanizer clean (F-170 dedup + F-172 rule-27 fixes). **BL-029 note:** the same reference-not-retell + differentiated-thesis resolution is the template for BL-029's identical collision.
+- [x] **Stage 4 , LinkedIn cross-post (Front E) + record (Front D)** , Post 27 "Some bugs you cannot fix by looking harder" published 2026-09-24: https://www.linkedin.com/posts/albertodiazdurana_softwareengineering-humanaicollaboration-share-7508871175112904705-sHvf/ (from shortlink https://lnkd.in/p/dpqpVai9). /humanizer clean (236w); idea-first opener adopted per author feedback, and the LinkedIn style is now registered in the linkedin-posts.md header. BL-023: hashtag-branch confirmed, lead-3 count MISSED (actual lead-2, first miss in six), S28 non-determinism untouched.
+- [x] **Stage 5 , Close** , CLAUDE.md release-coverage section verified current (Front E gained a pointer to the new LinkedIn Style section); BL moved to done/; plans README updated. Session 38, 2026-09-24.
 
 ## Ordering dependency with BL-029, and a candidate that may dissolve it
 

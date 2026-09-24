@@ -290,7 +290,7 @@ Each stage has a trigger, an action, and a gate to the next stage. Gates are exp
 
 **Two fronts ship here, in order:**
 
-- **Front E , LinkedIn cross-post.** One LinkedIn post per release blog post produced. Draft in `dsm-docs/blog/linkedin-posts.md` as the next Post N. Format: 250 to 400 words, first-person, hashtags, "Full post:" link. /humanizer pre-publish gate.
+- **Front E , LinkedIn cross-post.** One LinkedIn post per release blog post produced. Draft in `dsm-docs/blog/linkedin-posts.md` as the next Post N. Read the Style section at the top of that file first for the voice-and-shape layer (idea-first opener, ~200-250 words, open cold, hook then cause then solution). Format: 250 to 400 words, first-person, hashtags, "Full post:" link. /humanizer pre-publish gate.
 - **Front D , linkedin-posts.md canonical record.** After the LinkedIn post is published, record the URL and "Status: Published" on the same Post N entry. The draft and the record live in the same file; "Front D" is the act of completing the entry with the live URL.
 
 **Gate to Stage 5:** LinkedIn post(s) published with URL(s) recorded.
