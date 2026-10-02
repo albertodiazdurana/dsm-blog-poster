@@ -1,8 +1,8 @@
 ---
-title: "176 features across three dimensions"
+title: "180 features across three dimensions"
 date: 2026-03-20
 draft: false
-description: "DSM's 176 features mapped across human oversight, knowledge provenance, and experience accumulation."
+description: "DSM's 180 features mapped across human oversight, knowledge provenance, and experience accumulation."
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Features", "Take AI Bite"]
 categories: ["Features"]
 author: "Alberto Diaz Durana"
@@ -11,7 +11,7 @@ toc: true
 
 Most AI coding tools are built to reduce human involvement. DSM is built to make human involvement worth the time: the human and the AI produce better work together than either would alone, and what they learn carries forward.
 
-This post maps DSM's 176 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
+This post maps DSM's 180 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
 
 ---
 
@@ -95,6 +95,8 @@ The newest addition targets the place where provenance leaks most reliably: the 
 
 Those same two are the ones that now carry mechanisms in the methodology itself, a version after the principle was named. A backlog item that settles something later items will build on records the coupling on itself, while the interface is still cheap to change; when the consuming item is eventually built, the record is checked against what actually happened, and the output that matters is the mismatch. A session's pending list states, per item, what the continuation requires, what it depends on, what order that forces, and what breaks if it is skipped. The rule bounds its own verbosity: an item is longer by exactly the causal links the receiver would otherwise rebuild, and an item with no dependency is stated plainly rather than padded with invented rationale. The planning face is still only named.
 
+Provenance also has an outward edge. The public mirror had been carrying real project and client names in its provenance lines, a confidentiality leak and, to an outside reader, a dead end. Those names are now reworded to keep the session and backlog id and drop the name, and the rule is methodology rather than habit. The framing stays honest: the scanner is a backstop and operator review the last gate, not a claim of impossibility.
+
 ---
 
 ## Experience accumulation
@@ -108,6 +110,8 @@ MEMORY.md provides persistent, typed memory across conversations: user preferenc
 Handoffs ensure pending work survives session boundaries. Checkpoints snapshot project state. When a session ends unexpectedly, transcript-based recovery reconstructs the missing wrap-up. When the normal boot chain itself is broken, a minimal read-only entry point starts a session with no side effects, just enough context to diagnose what went wrong without making it worse.
 
 The split between memory and checkpoint became sharper recently. The session-start command was burning 30 to 40 percent of context on a single methodology check that did not actually need to run on every session, plus a defensive inbox read that pulled file bodies into context before the user had even asked. Three changes cut the cost: the methodology alignment check now only runs when the methodology version actually changed, hook permissions are repaired unconditionally with a single command instead of relying on the alignment check, and the inbox reports filenames only at session start, with content reads deferred until the user asks for them. Sonnet sessions became economically sustainable; Opus sessions freed context for the actual work. The always-loaded core got the same treatment from the other direction: the instruction file read in full on every turn, not only at session start, was cut by about two fifths, with the origin stories, enforcement narratives, and single-use template text moved into companion files the core reads only when it needs them. On the other end, the wrap-up command now produces a checkpoint file alongside the memory update, so "pending next session" items move out of memory (which holds global context and strategic vision) and into the checkpoint (which the next session consumes and moves to done).
+
+The memory file now ages itself instead of waiting to be trimmed by hand. It had kept growing because the split between permanent and session notes left nothing to stop the session half refilling. Two move-only skills now age it down a chain: the oldest session's notes drop out of the always-loaded file into an on-demand long-term one, and from there into a deeper archive. Once that drains the session zone, the permanent zone is the only half still growing, so wrap-up measures it and flags it for review rather than ageing it on a timer.
 
 ### Feedback loops
 
@@ -127,13 +131,15 @@ The reasoning lessons file itself grew past what could fit in a session-start co
 
 That full-read intent needed a bound that worked. The mirror's two original size caps could not: one named a limit the file already blew past, the other was impossible to exceed, so a partial read and a complete one produced the same boot report. A single measured bound replaced them, and a breach now reports the file's real size and states what was actually read instead of claiming the whole. Transcript analysis stopped defaulting to the latest archived transcript too: it counts how many remain unanalysed and acts on that, none halting, one becoming the default, two asking which, after the old default was overridden on six straight runs because the case it flagged as unusual was the ordinary shape of the work.
 
+The bound set the file's total size, but a second target, how many entries to keep, could not hold alongside it at the length entries were actually written. The missing lever was per-entry length, not how many entries accumulate. Each one now targets about 600 characters, where the two targets meet, and an over-length entry is shortened or split rather than dropped.
+
 The loop keeps closing on itself. One recurring move, the user reshaping a proposal instead of answering it, showed up six times across four months in the reasoning lessons before it was promoted into a named rule: when the user reframes, the agent re-decomposes rather than defending its first framing. The way structured prose gets drafted changed from the same kind of evidence, one section at a time, written to a file the user edits in place instead of pasted into chat, a pattern borrowed from notebook collaboration and validated on a four-part blog series. The behavior was observed enough times to earn a protocol; the protocol now shapes the next session.
 
 ---
 
 ## The compound effect
 
-No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 176 features work together as a system, and the system learns. The count keeps moving because the methodology is in active use; the shape of what it covers, though, has stayed recognizable across every version.
+No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 180 features work together as a system, and the system learns. The count keeps moving because the methodology is in active use; the shape of what it covers, though, has stayed recognizable across every version.
 
 A feedback observation from a spoke project becomes a backlog item in the central repository. That item becomes a protocol change. That change propagates to every project. The next session in any project benefits from an insight that started in a completely different context.
 

@@ -1,16 +1,26 @@
 # Last /dsm-align run
-date: 2026-09-16
-dsm-version: 1.26.3
+date: 2026-10-02
+dsm-version: 1.26.6
 result: warnings
 warnings: 3
 critical: 0
-# S37: ran against 1.26.3 (was HELD at 1.20.0 across S36 for the Punctuation
-# template drift, now RESOLVED). Regenerated the §17.1 managed block from
-# DSM_0.2.T_Alignment_Templates.md: removed the retired ### Punctuation section
-# (F-175/v1.26.1) and renamed the transcript delimiter + Pre-Gen-Brief label
-# thinking->plan (F-174/v1.26.0). Hooks: 3 updated from Central; settings.json
-# merged (BL-484 Bash matcher for validate-cross-repo-write.sh, first landing on
-# this spoke). Outstanding spoke action NOT performed by this run:
-# scripts/sync-commands.sh --deploy (many v1.20-v1.26 entries require it; the
-# /dsm-* command runtime copies are ~4 months stale, e.g. /dsm-backlog missing
-# Risks + Test Execution Log). Surfaced to user.
+# S39: ran against 1.26.6 (was 1.26.3 from S37). Version bumped across three
+# same-month releases (1.26.4 Sep-30, 1.26.5 Oct-01, 1.26.6 Oct-02).
+# CLAUDE.md alignment block: IN SYNC (diffed live managed block against
+# DSM_0.2.T_Alignment_Templates.md line-for-line; content identical, template
+# mtime Sep-4 predates all three releases, no CHANGELOG template change). No
+# regeneration needed.
+# Changes applied this run (post-change): 2 hooks synced from Central
+# (validate-rename-staging.sh, validate-transcript-edit.sh byte-differed,
+# updated + chmod +x). settings.json already ok (all (matcher,command) pairs
+# present incl. BL-484 Bash matcher merged S37).
+# Warnings: 3 path false-positives from Step 8c, all benign/intentional:
+#   (1) albertodiazdurana/humanizer = GitHub repo slug, not a local path
+#   (2) content/blog/YYYY-MM-DD-dsm-vX-release/index.md = template-example path
+#   (3) dsm-docs/blog/feature-trail.md = Central-relative reference (exists in
+#       Central), not a local file. No action needed on any.
+# Spoke actions 1.26.4-1.26.6: all "arrives with next mirror sync" skill
+# deliveries (wrap-up evergreen-size reporting, memory-decommission commands,
+# reasoning-lessons ceiling, de-identified methodology). NONE is "Run
+# /dsm-align". These depend on the still-owed mirror sync + sync-commands.sh
+# --deploy (S37 outstanding: /dsm-* runtime copies stale). Surfaced to user.
