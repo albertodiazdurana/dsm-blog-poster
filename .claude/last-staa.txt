@@ -1,93 +1,68 @@
 # Last /dsm-staa run
-date: 2026-09-24
-analyzed_session: 37
+date: 2026-10-02
+analyzed_session: 38
 analyzed_transcript: .claude/session-transcript.md
-appended_lessons: 3
-pruned_lessons: 1
+appended_lessons: 1
+pruned_lessons: 0
 #
-# BL-509 selection: A = 36 (newest archive 2026-09-01T23:01-ST.md, parsed from
-# its own "# Session 36 Transcript" header, not the filename), W = 37
-# (last-wrap-up.txt), S = 36 (prior marker). W > A and A <= S < W, so ROW 3
-# fires: exactly ONE unanalysed candidate (the live .claude/session-transcript.md,
-# Session 37), which is the DEFAULT rather than an override; the archived S36 is
-# already analysed (S=36 >= A=36). No halt, no warning. This is the second
-# consecutive live-file default (S36 was the first, once S35 had been archived).
+# BL-509 selection: A = 37 (newest archive 2026-09-16T13:13-ST.md, parsed from its
+# own "# Session 37 Transcript" header, not the filename), W = 38 (last-wrap-up.txt),
+# S = 37 (prior marker). W > A and A <= S < W, so ROW 3 fires: exactly ONE unanalysed
+# candidate (the live .claude/session-transcript.md, Session 38), the DEFAULT rather
+# than an override; the archived S37 is already analysed (S=37 >= A=37). No halt, no
+# warning. Third consecutive live-file default (S36, S37, now S38): the wrapped session
+# is not archived until the next /dsm-go Step 5.5, which a STAA session never triggers.
 #
-# The S37 /dsm-wrap-up [auto] pass had already taken the four strongest
-# DOMAIN/MECHANICS-layer findings (meta-through-line weave, unmeasured-baseline
-# budgets compound, transcript-anchor collision recurrence, features-post count
-# convention now = gate). This pass was retargeted to the PROCESS/COLLABORATION
-# layer the [auto] sweep undersamples, per the S30/S34/S35 STAA-targeting
-# discipline. The wrap-up itself flagged this ("STAA recommended: yes ... the
-# [auto] sweep undersamples at the process/collaboration layer").
+# TARGETING: the S38 /dsm-wrap-up had already appended 3 [auto] lessons covering the
+# DOMAIN/MECHANICS layer (plural-differentiation-targets + "point to it"; dry-opener-is-
+# a-weak-hook + LinkedIn Style registered; BL-023 lead-3 -> lead-N) and recommended
+# "STAA: no", naming the process/collaboration layer as the gap. This pass was retargeted
+# to exactly that layer per the S30/S34/S35 STAA-targeting discipline.
 #
-# APPENDED (3):
-# (1) [ecosystem] Fine-grained bite gating is what makes terse user
-#     acknowledgments unambiguous. 11 bites advanced on bare "continue"/"next"/
-#     "approve"; each bound to exactly one pending action because one-bite-per-stop
-#     guarantees a single pending item. Reason to HOLD the fine gate rather than
-#     batch. Seen twice (S36 marker recorded it as an observation), so graduated.
-# (2) [pattern] In chunked drafting, a setup->payoff structure spanning bites must
-#     be planted deliberately and tracked across review stops. S37 bite 7 ended on
-#     "Both had reported success throughout" to set up bite 11's meta-close, across
-#     4 intervening stops. Distinct from the [auto] meta-through-line entry
-#     (CARRY a cluster) vs this (COORDINATE across fragmented bites).
-# (3) [project] When a feature's incident is already the subject of a published
-#     post, reference it factually and do not retell; the retell belongs to the
-#     owning post. S37 wove F-172 with "no boot-refusal retell (S36 He-Who owns
-#     it)". This is the EXACT discrimination now gating BL-033 Stage 3 Front A and
-#     BL-029 (both blocked on the F-171/F-172 collision) -> forward-relevant.
+# APPENDED (1):
+# (1) [ecosystem] When the user waives a process gate, re-anchor the invariant that gate
+#     was protecting onto the next surviving gate, name the carrier, and expect a leak
+#     rather than assuming the plan prevented it. S38: the one-bite drafting cadence was
+#     overridden at 13:14; the agent honored it without re-litigating and named Gate-4 as
+#     the new carrier of the "no S36 repeat" invariant, but the one-pass draft STILL leaked
+#     S36 content into two sections despite an explicit ownership map, caught by the user at
+#     full-draft review one step before Gate 4. The fine gate was doing real work. Complements
+#     S37 [STAA] bite-gating-disambiguates-terse-input and S21 [STAA] honor-without-re-litigating
+#     (adds the invariant-protection half).
 #
-# MERGED rather than appended (1): the S37 [auto] unmeasured-baseline entry (line
-# ~144) gains the COLLABORATION face -- the wrong baseline was escalated to the
-# user as a live "compress or keep" decision at bite 5 BEFORE it was measured,
-# then dissolved once measured. Do not ask the user to adjudicate a tradeoff
-# computed from an unmeasured number.
+# CONSIDERED AND DECLINED:
+# (a) L2 "pre-register the decision rule before the triggering condition resolves" (classifier
+#     fallback at lines 357-359/378; next-STAA trigger at 542-545; generalizing the S35 deploy-
+#     outcome note). Genuine ecosystem discipline and meets the seen-twice bar, but already
+#     recorded in the S35 MEMORY note where it is discoverable; declined to avoid duplicating a
+#     MEMORY fact as a lesson. Promote on a THIRD venue.
+# (b) S36 link verified via curl with a known-live sibling as control (lines 257-280): clean
+#     Earn Your Assertions. The only reusable edge (a draft's own draft:true is a red herring;
+#     verify the link TARGET's independent liveness) is marginal; declined.
+# (c) Humanizer reported-not-fixed (lines 309-311): the "What Is Not a Tell" guard working as
+#     codified in the skill. Dedup-before-humanizer (lesson 82/BL-454), relative-time drift-fix
+#     (lesson 44/136), classifier-no-retry-loop (lesson 70/S30): all cited in-transcript, clean
+#     execution, reinforce not new.
 #
-# PRUNED (1): S14 wildcard `git add content/blog/*` (dormant 23 sessions,
-# superseded by the explicit-staging habit demonstrated in S37: reset staging,
-# stage each set, commit without pathspec). Flagged to the user and approved.
+# PROCESS OBSERVATIONS (no lessons): the wrap-up pre-registered the condition for the NEXT STAA
+# ("if BL-029 reuses the differentiate template, STAA that second instance") -- itself an L2
+# instance. MEMORY hit its 20KB warning twice and the wrap-up flagged a dedicated compaction for
+# next session rather than rushing it. The S30 past-tense-thinking test passes: every S38 plan
+# block names a live choice or doubt before acting, boot steps 0-6 the sanctioned post-hoc exception.
 #
-# CONSIDERED AND DECLINED (no lesson, competent execution of existing discipline):
-# in-flight bite reallocation (F-149/F-155 moved to their natural subsections,
-# each move stated); boot-surfacing of the 6-release align cascade as the top
-# decision rather than auto-firing Step 1.8 (an instance of the S24 hold-the-marker
-# family, handled cleanly). Both mentioned to the user; recommended skip; user
-# proceeded on the proposal.
+# PRUNED (0): no clearly-dormant superseded candidate surfaced this pass. The file is structurally
+# over the mirror bound (142 entries) but BL-030 owns that structural fix; forcing a prune to chase
+# a line target would be noise. No prune.
 #
-# NET: 136 -> 138 entries (+3 append, -1 prune; the merge adds text, not an entry).
-# Live 90,899 B. Mirror regenerated with the canonical DSM_0.2.A §8.1 transform
-# read from source (lines 1026-1049, NOT re-inlined): 138 = 138 entries, both
-# BL-447 sanity checks OK. UPPER-BOUND ADVISORY FIRED: mirror 86,261 B / 61,440 B
-# bound = 1.40x OVER, up from the wrap-up's 1.37x. Non-blocking, file written.
-# BL-030 owns the structural fix.
+# NET: 141 -> 142 entries (+1 append, 0 prune). Live 94,613 B. Mirror regenerated with the canonical
+# DSM_0.2.A §8.1 transform read from source (lines 1038-1061, NOT re-inlined): 142 = 142 entries,
+# both BL-447 sanity checks OK. Mirror 89,483 B / 61,440 B bound = ~1.46x OVER (up from the wrap-up's
+# 1.44x with the +1 entry). Non-blocking, file written. BL-030 owns the structural fix.
 #
-# EDIT-MECHANICS (clean this run): the prune Edit matched the entry line PLUS its
-# TRAILING newline (per the S36 marker's mid-line-join rule), not the leading one.
-# Re-verified 138/138 with zero mid-line joins (the "two [auto]/[STAA] tokens on
-# one line" grep matched only entries that REFERENCE another entry's tag in prose,
-# a known false positive; the precise "marker not at line start" grep returned
-# NONE). No repair needed, unlike the S36-STAA incident.
+# TRACKING CAVEAT STANDS (S35): reasoning-lessons.md, the compact mirror, and this marker are all
+# TRACKED in this repo, NOT gitignored, contrary to the skill's Step 9 wording. STAA does not commit,
+# so the two modified files are left as uncommitted working-tree changes for the next /dsm-wrap-up.
 #
-# TRACKING CAVEAT STANDS (S35): all three artifacts (reasoning-lessons.md, the
-# compact mirror, this marker) are TRACKED in this repo, NOT gitignored. The
-# skill's Step 9 still calls them "gitignored and local-only", which remains FALSE
-# here. STAA does not commit, so the two modified files plus this marker are left
-# as uncommitted working-tree changes for the next /dsm-wrap-up to stage. The
-# upstream defect report on this mislabel is still open.
-#
-# CARRIED, still unowned: the S23 hook-scoring-dimensions entry, the S29 Gate-4
-# title-claim entry and the S34 Voice-Attribution discriminator all call for
-# CLAUDE.md amendments that have never been made. /dsm-staa does not edit CLAUDE.md.
-# NEW this run: appended lesson (3) supplies the decision criterion the gated
-# BL-033 Stage 3 Front A / BL-029 collision needs; it is a lesson, not a CLAUDE.md
-# edit, but the release post should apply it at Gate 1.
-#
-# PROCESS OBSERVATIONS (no lessons proposed): the 8-day session ran on ~14 terse
-# user inputs each binding unambiguously (appended lesson 1 codifies WHY). The S30
-# past-tense-thinking test passes: every S37 thinking block names a live choice, a
-# rejected path or a doubt before acting, with the boot block (Steps 0-6 recorded
-# post-hoc per Step 6's activation rule) as the sanctioned exception. The bite-5
-# budget self-correction and the 00:11 clock-honesty note (F-160 / S35 date-rollover)
-# are both in-flight corrections delivered out loud, consistent with the S33
-# correction-out-loud discipline.
+# CARRIED, still unowned (no CLAUDE.md edit; STAA does not edit CLAUDE.md): the S23 hook-scoring-
+# dimensions entry, the S29 Gate-4 title-claim entry, and the S34 Voice-Attribution discriminator all
+# still call for CLAUDE.md amendments never made.
