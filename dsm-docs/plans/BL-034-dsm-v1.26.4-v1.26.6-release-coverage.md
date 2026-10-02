@@ -41,7 +41,7 @@ Range: **v1.26.4 (2026-09-30) through v1.26.6 (2026-10-02)**, three releases, fo
 
 - [x] **Stage 0 , Detect.** Range named, deltas measured, notifications located and read (S39).
 - [x] **Stage 1 , Open the BL.** This file. Deltas recorded above.
-- [ ] **Stage 2 , Factual updates** (authorized S39 to ship this session)
+- [x] **Stage 2 , Factual updates** (shipped S39). **Front B PUBLISHED live** 2026-10-02 at https://take-ai-bite.com/blog/2026-03-20-dsm-features-three-dimensions/ via PR #72 (merge commit), deploy run 37060927815 success (build 12s, deploy 9s, healthy baseline); verified live cache-busted: "180 features" x11, 0 stale "176", age:0, all 4 weave phrases serving.
   - [x] Front B , features post 176 → 180. **Drafted + Gate 4 clean** (S39). Wove F-176 into Knowledge provenance (public mirror project-agnostic by construction, §5.7, backstop-not-proof framing); F-178+F-179 into Experience accumulation / Memory and context (the always-loaded file ages itself: session-zone tier-down + evergreen-zone review flag); F-177 into Experience accumulation / Reasoning extraction (per-entry ~600-char ceiling resolving the count-vs-byte contradiction). Count updated in all 4 places. Gate 4: dedup pass (3 fixes: "read in full" echo, F-177 cap re-naming, "pointer to nothing"->"dead end") then /humanizer (artifact grep clean, 6 earned contrast constructions within the author's established range per lesson #101, 1 grammar fix). Local Hugo build verified (180 serves x11, 0 stale 176). +~230 words (4392->~4620). PUBLISH status recorded at Stage 2 close below.
   - [x] Front C , About page. **No change needed, verified S39** on heading TEXT not count: DSM_6.0 has 14 §1.x headings; `content/about.md` heading "The Fourteen Principles" + 14 numbered items match. None of F-176..F-179 is a new §1.x principle (F-176 §5.7, F-177 §8, F-178/F-179 memory/wrap-up tooling). No same-slot swap. Recorded, not edited.
   - [x] Front F , portfolio inbox notification sent S39 to `~/dsm-data-science-portfolio-working-folder/_inbox/2026-10-02_dsm-blog-poster_dsm-v1.26.6-release.md` (Low priority, informational: 176->180 features, 14 principles unchanged).
@@ -52,5 +52,5 @@ Range: **v1.26.4 (2026-09-30) through v1.26.6 (2026-10-02)**, three releases, fo
 ## Acceptance criteria
 
 - [x] All three inbox notifications read and moved to `_inbox/done/YYYY-MM-DD_{source}.md` per the dated-archive convention (S39)
-- [ ] Features post count reconciled against the gate at the time of the edit, not against the 180 recorded here, since the gate moves
+- [x] Features post count reconciled against the gate at the time of the edit (gate = 180 at edit time, 2026-10-02; matches FEATURES.md Current count line)
 - [ ] Stage gates marked complete or deferred in this file
