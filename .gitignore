@@ -16,7 +16,7 @@ Thumbs.db
 
 # DSM session artifacts
 .claude/session-baseline.txt
-.claude/session-transcript.md
+.claude/worklog.md
 .claude/transcripts/
 .claude/plans/
 .claude/session.lock

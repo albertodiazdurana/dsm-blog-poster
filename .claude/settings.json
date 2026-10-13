@@ -58,6 +58,33 @@
             "command": ".claude/hooks/validate-transcript-edit.sh"
           }
         ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/validate-boot-safeguard-write.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/validate-boot-safeguard-write.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/validate-boot-safeguard-write.sh"
+          }
+        ]
       }
     ],
     "UserPromptSubmit": [
