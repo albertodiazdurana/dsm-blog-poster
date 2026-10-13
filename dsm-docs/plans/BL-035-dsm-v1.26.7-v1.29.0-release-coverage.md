@@ -56,7 +56,7 @@ The Front A thesis must differ from BL-033's "structural fix" frame, BL-034's "l
 - [x] **Stage 0 — Detect.** Range named (v1.26.7–1.29.0, 9 F-entries), deltas measured, notification located and read (S40).
 - [x] **Stage 1 — Open the BL.** This file. Deltas recorded above.
 - [ ] **Stage 2 — Factual updates.**
-  - [ ] Front B — features post 180 → 189. Weave F-180..F-188 into the three dimensions (human oversight / knowledge provenance / experience accumulation); update the count in title, description, opening (line 14), and closing (line 142). Gate 4 dedup + `/humanizer` pre-publish gate. Re-run the count gate at edit time.
+  - [x] Front B — features post **180 → 189, PUBLISHED live** 2026-10-13 at https://take-ai-bite.com/blog/2026-03-20-dsm-features-three-dimensions/ via PR #74 (merge aa78d77), deploy run 38383613267 success. Wove F-180..F-188 across the three dimensions (F-181/182 → Human oversight/Session lifecycle; F-185+F-188 → Knowledge provenance/Protocol inheritance; F-186+F-180 → Versioned knowledge; F-183 → confidentiality outward edge; F-184+F-187 → Experience accumulation/Reasoning extraction). Count updated in title/description/opening/closing. Gate 4: seam/dedup pass (4 new→host seams framed as sequels, not re-introductions) + /humanizer clean (artifact grep clean; 2 readability fixes, voice preserved). Verified live cache-busted: 189 ×12, 0 stale 180, all weave phrases serving, age:0.
   - [x] Front C — About page. **No change needed, verified S40** on heading TEXT: DSM_6.0 has 14 §1.x headings; `content/about.md` "The Fourteen Principles" + 14 items match; none of F-180..F-188 is a new §1.x principle. Recorded, not edited.
   - [ ] Front F — portfolio inbox notification to `~/dsm-data-science-portfolio-working-folder/_inbox/` (cross-repo write gate).
 - [ ] **Stage 3 — Release post (Front A).** Pending. Thesis TBD at Gate 1 (see clustering above; differentiate from BL-033/BL-034/BL-029).
@@ -65,6 +65,6 @@ The Front A thesis must differ from BL-033's "structural fix" frame, BL-034's "l
 
 ## Acceptance criteria
 
-- [ ] Central notification read and moved to `_inbox/done/YYYY-MM-DD_{source}.md` per the dated-archive convention (held until Stage 2 B ships)
-- [ ] Features post count reconciled against the gate at the time of the edit (gate = 189 on 2026-10-09; re-run at edit time)
-- [ ] Stage gates marked complete or deferred in this file
+- [x] Central notification read and moved to `_inbox/done/2026-10-09_agentic-ai-data-science-methodology.md` (archived at Front B publish, PR #74)
+- [x] Features post count reconciled against the gate at edit time (gate = 189; FEATURES.md Current count 189; 0 stale 180 live)
+- [ ] Stage gates marked complete or deferred in this file (Front F + Stage 3-5 pending)
