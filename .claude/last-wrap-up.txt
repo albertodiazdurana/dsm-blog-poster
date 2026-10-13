@@ -1,11 +1,11 @@
-session: 39
-date: 2026-10-02
+session: 42
+date: 2026-10-13
 type: full
-note: Full wrap-up. Opened BL-034 (v1.26.4-1.26.6 release coverage) + closed its
-  Stage 2: Front B features post 176->180 PUBLISHED live (PR #72, deploy 9s healthy,
-  cache-bust verified), Front C 14=14 verified, Front F portfolio notified. /dsm-align
-  1.26.3->1.26.6 (block in sync, no regen; 2 hooks synced). Processed 3 Central inbox
-  notifications. MEMORY compacted 20.7KB->13.8KB (long-owed; grouped S19-S33 rows).
-  1 [auto] lesson (Front B weave seam-collision). Compact mirror 1.47x over bound
-  (BL-030 owns the structural prune). BL-034 Stages 3-5 (Front A release post +
-  LinkedIn + close) pending; BL-029 still blocked at Gate 1 on thesis.
+note: Full wrap-up. Closed BL-585 Step 8 (spot-check: all S41 migration claims
+  reproduce) and passed Step 9: strict-model Opus 5.5 /dsm-go boot of this spoke
+  ran clean. Reported to Central via the §5 operator line + an approved inbox
+  entry. S41 (Opus 4.8, BL-585 Step 8, /dsm-align 1.29.0->1.33.1) had ended
+  without a wrap-up; folded into MEMORY here. 3 [auto] lessons pushed to Central.
+  Marker written BEFORE the commit this time (Step 12 ordering leaves it dirty).
+  Compact mirror 1.51x over the 61,440 B bound (BL-030). Carried: BL-035 Front F,
+  Front A stack decision (BL-029/034/035), BL-032 disposition. STAA: no.
