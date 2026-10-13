@@ -1,25 +1,33 @@
 # Last /dsm-align run
-date: 2026-10-09
-dsm-version: 1.29.0
+date: 2026-10-13
+dsm-version: 1.33.1
 result: warnings
 warnings: 3
 critical: 0
-# S40: ran against 1.29.0 (was 1.26.6 from S39). Version bumped across
-# 1.26.7, 1.26.8, 1.27.0, 1.27.1, 1.27.2, 1.28.0, 1.29.0 (Oct 5-9).
-# CLAUDE.md alignment block: IN SYNC. Managed block (lines 4-93) matches
-# DSM_0.2.T_Alignment_Templates.md base template + DSM 4.0 (Application)
-# addition; template mtime Sep-4 predates all seven releases, no template
-# change. No regeneration needed (same finding as S39).
-# Hooks: 4 already byte-identical, chmod +x reapplied. settings.json already
-# ok (all (matcher,command) pairs present incl. BL-484 Bash matcher).
+# S41: BL-585 Phase 1 Step 8 boot-safeguard spoke migration (Opus 4.8).
+# Version 1.29.0 (S40) -> 1.33.1. POST-CHANGE run.
+# CLAUDE.md alignment block: REGENERATED from DSM_0.2.T base template + DSM 4.0
+#   (Application) addition. Now clean: "Worklog Protocol", .claude/worklog.md,
+#   "worklog plan block"; the retired "Session Transcript"/"thinking block"
+#   framing is gone. Block now matches the template (future runs: OK in sync).
+# Hooks: installed validate-boot-safeguard-write.sh (BL-584 Phase 2 guard);
+#   updated transcript-reminder.sh + validate-transcript-edit.sh to Central's
+#   clean versions; validate-cross-repo-write.sh + validate-rename-staging.sh
+#   already byte-identical (chmod +x reapplied). settings.json: +3 guard
+#   entries (Write/Edit/Bash). Retired orphaned/unwired
+#   validate-transcript-heredoc.sh (git rm; absent from Central, carried the
+#   retired path token).
+# Live-file migration: .gitignore + hooks now point at .claude/worklog.md; old
+#   live-file retired; MEMORY.md path token quarantined (1 hit -> worklog).
+#   P1 trigger literal absent from every boot surface (no pseudonymisation).
 # Feedback: none pending (feedback-to-dsm has only .gitkeep + README.md).
-# Warnings: 3 Step-8c path false-positives, all benign/intentional (same as
-# S39): (1) albertodiazdurana/humanizer = GitHub repo slug; (2)
-# content/blog/YYYY-MM-DD-dsm-vX-release/index.md = template-example path; (3)
-# dsm-docs/blog/feature-trail.md = Central-relative reference (exists in
-# Central). No action on any.
-# Spoke actions 1.26.7-1.29.0: ALL "none required" / Central-only / inherited
-# via @ ref / "arrives with next mirror sync + sync-commands.sh --deploy". None
-# requires a manual spoke edit or /dsm-align remedy. 1.27.0 §5.8 PII rule: N/A
-# (not a sensitive-data spoke). The still-owed mirror sync + sync-commands.sh
-# --deploy (outstanding since S37) gates delivery of the new skill versions.
+# Warnings: 3 Step-8c path false-positives, unchanged from S39/S40 and all
+#   benign/intentional: (1) albertodiazdurana/humanizer = GitHub repo slug;
+#   (2) content/blog/YYYY-MM-DD-dsm-vX-release/index.md = template-example path;
+#   (3) dsm-docs/blog/feature-trail.md = Central-relative reference (exists in
+#   Central). No action on any.
+# Spoke actions 1.29.0-1.33.1: only 1.33.0 is actionable = the boot-safeguard
+#   migration, executed this session. 1.30.0/1.31.0/1.32.0 "none required" (fork
+#   backlog line; §5.9 opt-in; §2g silent unless Restricted-data trigger set -
+#   not a sensitive-data spoke). 1.33.1 none. Decisive strict-model boot check
+#   is operator-run (decision record Step 9).
