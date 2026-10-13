@@ -1,8 +1,8 @@
 # /dsm-align persistent report
 
-**Timestamp:** 2026-10-02T15:35:00+02:00
-**DSM version:** 1.26.6 (from ~/dsm-agentic-ai-data-science-methodology/CHANGELOG.md latest heading)
-**Run mode:** post-change
+**Timestamp:** 2026-10-09T14:55:00+02:00
+**DSM version:** 1.29.0 (from ~/dsm-agentic-ai-data-science-methodology/CHANGELOG.md latest heading)
+**Run mode:** check-only
 **Project:** dsm-blog-poster
 **Project type:** Application (DSM 4.0)
 
@@ -10,27 +10,37 @@
 
 ## Report
 
-/dsm-align post-change report:
+/dsm-align check-only report:
 - Project type: Application (DSM 4.0)
 - Created: none
-- Already correct: 8 dsm-docs/ folders + 6 done/ subfolders + 8 template files + _inbox/ + .gitattributes + 3 .claude/ files + @ reference + alignment block
-- Fixed: 2 transcript hooks synced from Central (validate-rename-staging.sh, validate-transcript-edit.sh updated + chmod +x)
+- Already correct: 8 (all dsm-docs/ folders with done/ where required; all template files/READMEs; _inbox/ + done/ + README; .claude files; @ reference; alignment block; .gitattributes; 4 transcript hooks)
+- Fixed: none
 - Collisions: none
-- Warnings: 3 (Step 8c path references, all benign false-positives)
-- CLAUDE.md alignment: OK (content diffed line-for-line against DSM_0.2.T_Alignment_Templates.md, identical)
-- CLAUDE.md content: OK (Application sections only; App Development Protocol present, no Notebook Protocol)
-- CLAUDE.md redundancy: OK (project-specific sections are custom, not DSM_0.2 duplicates)
-- CLAUDE.md paths: 3 stale (all intentional, see Warnings)
-- .gitattributes: OK (LF enforced)
+- Warnings: none (no feedback-file / handoff / collision warnings)
+- CLAUDE.md alignment: OK (up to date — managed block matches base + DSM 4.0 Application addition; template unchanged since Sep 4)
+- CLAUDE.md content: OK
+- CLAUDE.md redundancy: OK
+- CLAUDE.md paths: 3 stale path(s) found (all benign/intentional — see below)
+- .gitattributes: OK
 - Command sync: N/A (not DSM Central)
+- Active-index currency: N/A (not DSM Central)
+- Decision-record status: N/A (not DSM Central)
 - Feedback pushed: none pending
 - EC governance scaffold: N/A (not EC)
 
 ## Warnings (full text)
 
-1. CLAUDE.md references `albertodiazdurana/humanizer` which does not exist as a local path. BENIGN: this is a GitHub repo slug (owner/repo) for the private humanizer repo, not a filesystem path. No action.
-2. CLAUDE.md references `content/blog/YYYY-MM-DD-dsm-vX-release/index.md` which does not exist. BENIGN: this is a template-placeholder example path in the DSM Version Release Coverage pipeline (Stage 3 Front A), not a real file. No action.
-3. CLAUDE.md references `dsm-docs/blog/feature-trail.md` which does not exist locally. BENIGN: the release-coverage pipeline specifies this path is "in DSM Central"; it exists at ~/dsm-agentic-ai-data-science-methodology/dsm-docs/blog/feature-trail.md. Central-relative reference, not local. No action.
+The 3 items below are Step 8c path false-positives, all benign/intentional and
+identical to the S39 run. No action required.
+
+1. `dsm-docs/blog/feature-trail.md` — absent in this repo; this is a
+   Central-relative reference (exists at
+   ~/dsm-agentic-ai-data-science-methodology/dsm-docs/blog/feature-trail.md),
+   used by the DSM Version Release Coverage pipeline reconstruction trail.
+2. `content/blog/YYYY-MM-DD-dsm-vX-release/index.md` — a template-example path
+   in the release-coverage pipeline spec, not a real file.
+3. `albertodiazdurana/humanizer` — a GitHub repository slug (the private
+   humanizer fork), not a local filesystem path.
 
 ## Collisions (full text)
 
@@ -38,19 +48,25 @@ None.
 
 ## Already correct
 
-- All 8 canonical dsm-docs/ folders (blog, checkpoints, decisions, feedback-to-dsm, guides, handoffs, plans, research)
-- All 6 done/ subfolders (blog, checkpoints, feedback-to-dsm, handoffs, plans, research)
-- All 8 template files (blog/journal.md, blog/README.md, checkpoints/README.md, feedback-to-dsm/README.md, handoffs/README.md, plans/README.md, research/README.md, _inbox/README.md)
-- _inbox/ + _inbox/done/
-- .gitattributes with LF enforcement
-- .claude/session-transcript.md, .claude/dsm-ecosystem.md, .claude/reasoning-lessons.md
-- CLAUDE.md @ reference to DSM_0.2_Custom_Instructions_v1.1.md
-- CLAUDE.md alignment block (line-for-line identical to current template)
-- settings.json hook entries (all (matcher,command) pairs present, incl. BL-484 Bash matcher)
-- 2 of 4 transcript hooks already byte-identical to Central (transcript-reminder.sh, validate-cross-repo-write.sh)
+- All 8 canonical dsm-docs/ folders present (blog, checkpoints, decisions,
+  feedback-to-dsm, guides, handoffs, plans, research)
+- done/ present in blog, checkpoints, feedback-to-dsm, handoffs, plans, research
+  (decisions and guides correctly have no done/)
+- Template files present: blog/journal.md, blog/README.md, and README.md in
+  checkpoints, feedback-to-dsm, handoffs, plans, research
+- _inbox/ with done/ and README.md present
+- .claude/session-transcript.md, .claude/dsm-ecosystem.md,
+  .claude/reasoning-lessons.md all present
+- CLAUDE.md @ reference valid (relative path to DSM_0.2_Custom_Instructions_v1.1.md)
+- CLAUDE.md alignment block in sync with template (line-for-line, base + App)
+- .gitattributes enforces LF (* text=auto eol=lf)
+- Transcript hooks: 4 byte-identical, chmod +x reapplied; settings.json has all
+  (matcher,command) pairs incl. BL-484 Bash matcher
+- No feedback pending (feedback-to-dsm has only .gitkeep + README.md)
+- No consumed handoffs outside done/
 
 ## Steps skipped
 
-- Step 11 skipped: not DSM Central
-- Step 11b/11c skipped: not DSM Central
-- Step 3-EC skipped: not External Contribution
+- Steps 11, 11b, 11c, 11d, 11e skipped: not DSM Central (spoke project)
+- Step 3-EC skipped: not an External Contribution
+- Step 2 backlog migration: n/a (no dsm-docs/backlog/ legacy folder)

@@ -1,8 +1,8 @@
 ---
-title: "180 features across three dimensions"
+title: "189 features across three dimensions"
 date: 2026-03-20
 draft: false
-description: "DSM's 180 features mapped across human oversight, knowledge provenance, and experience accumulation."
+description: "DSM's 189 features mapped across human oversight, knowledge provenance, and experience accumulation."
 tags: ["Deliberate Systematic Methodology", "DSM", "AI Collaboration", "Features", "Take AI Bite"]
 categories: ["Features"]
 author: "Alberto Diaz Durana"
@@ -11,7 +11,7 @@ toc: true
 
 Most AI coding tools are built to reduce human involvement. DSM is built to make human involvement worth the time: the human and the AI produce better work together than either would alone, and what they learn carries forward.
 
-This post maps DSM's 180 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
+This post maps DSM's 189 features across three dimensions: human oversight, knowledge provenance, and experience accumulation. For the full chronological list, see [FEATURES.md](https://github.com/albertodiazdurana/take-ai-bite/blob/main/FEATURES.md).
 
 ---
 
@@ -34,6 +34,8 @@ The gate model itself has grown two refinements. When a task contains sub-tasks 
 Sessions are not "start working, stop working." Each session starts by checking inbox messages, validating project state, comparing versions, and loading context. Each session ends by saving memory, committing work, and creating continuity documents. If a session ends unexpectedly, the next session detects the gap and offers recovery. Continuity documents are now read before they are filed, not after: a handoff left for the next session is surfaced in the boot report alongside the checkpoint, and only then archived, so the sessions that most need the context stop losing it.
 
 Lightweight sessions handle quick follow-ups. Session baselines track what changed. Configuration recommendations match settings to the planned work scope. A wrap-up type marker lets the next session-start command know whether the previous session ended light or full, so the two ends of the lifecycle stay aligned. Before suggesting wrap-up, the agent now re-reads the sprint plan and checks completed deliverables against actual evidence, so "sprint complete" cannot be declared while gates are still open. Session start also surfaces the CI status of any open pull request on the branch, so work never resumes on top of a check that has been red for days, and the reminder to mine the previous session's transcript no longer fires when that session has already been analyzed.
+
+Two boundary fixes followed, one at each end. The start-up cleanup that removes already-merged branches had been silently passing over any it could not delete; because the safe delete tests a branch against its own remote copy rather than the main line, a branch genuinely merged to main whose remote had fallen behind was left to pile up unseen. It is now reported as a leftover needing attention instead of skipped, and the methodology text that described the test as the main line is corrected to match what it actually checks. At the other end, the wrap-up guard meant to keep the read-only public mirror from committing its own inbox had been identifying that mirror by a single hub-only file every ordinary project also lacks, so it quietly dropped each project's own inbox changes from the wrap-up commit while logging the omission as the protection working. The guard now recognizes the mirror positively, by the absence of every role signal a real project carries, so hub, clone, and spoke all commit their inbox normally.
 
 ### Safety guardrails
 
@@ -75,6 +77,8 @@ Inheritance turned out leakier than it looked. Hook installation on a spoke had 
 
 Inheritance has a sharp edge: when a project inherits a skill, the skill's output is authoritative. If the skill skips a check because it does not apply in this context, that silence is the answer, not an invitation for the agent to run the check by hand and fold the result into the skill's report. The principle is "silence from the skill on a concern is the skill's answer," and the lesson came from an incident where an agent correctly skipped a check on a spoke project, then ran the check anyway as a side action, then reported fabricated drift counts in the skill's output. The fix names the principle and gives the agent three honest options when a check feels missing: audit out-of-band under its own label, file a backlog item to extend the skill's scope, or skip. The specific report wording that triggered the incident was also pinned down so the field always emits a clear "not applicable" sentinel instead of a blank line that invites invention.
 
+The setup path kept getting refined from both ends. Standing up a fresh fork of the public mirror smoothed several rough edges at once: the bootstrap now prints the exact one-line ignore rule a fresh fork needs instead of editing its git config itself, stops flagging the mirror's own load-bearing command copies as orphaned and deletable, and ends with a readiness checklist of the tools the boot gates depend on. A cross-repo-write guard that had shipped non-executable on the mirror was also corrected so it actually runs. The case the bootstrap had never covered got its own command: a fresh empty directory meant to become a spoke, which the clone-oriented setup would have wrongly registered as its own hub, is now scaffolded by a dedicated new-spoke command that points it at an existing hub, builds the standard folders, and runs the spoke alignment, with session start routing a directory caught in that bind to the command instead of failing on it.
+
 ### Versioned knowledge
 
 Every change to the methodology is tracked in a changelog, tagged with semantic versions, and checkpointed. Design decisions are numbered and documented with rationale and alternatives. Research findings are preserved with sources and dates.
@@ -82,6 +86,8 @@ Every change to the methodology is tracked in a changelog, tagged with semantic 
 The point is preventing knowledge loss. When a protocol decision was made six months ago, the rationale is recoverable. When research informed a design choice, the original evidence is still there. The same standard applies in the moment: before answering a question about a file, a definition, or a piece of documentation, the agent reads the source. No partial knowledge passing as understanding.
 
 The record grew a distinction it had been missing: a log states what a pass actually found and is never rewritten, while an index asserts current status and is a defect when false, which is what finally answers whether a given file may be edited at all. A research file that claimed twenty-five sources confirmed over a pass that had checked thirteen is the overclaim it now catches. And a change to any document sweeps for every phrase it removed or renamed and reads each surviving mention, so a dangling reference or a stale self-count surfaces before the change ships rather than after.
+
+That index-versus-reality check became an audit of its own. The alignment pass now checks the active backlog index against the files on disk in both directions, telling an item filed without its index row, invisible to every planning pass, apart from an index row whose file has moved; a companion audit cross-references decision records marked complete against items still listed as active work. Both only report, since placing or closing an item is a human call, and both stay silent when the index is clean so they never decay into warnings nobody reads. The same concern reached the public surface: session start now recomputes the real number of feature entries and checks it against the totals the feature list and its README each state, flagging a mismatch with both the claimed and the measured figure, so a count that drifts after a release is caught at the next boot rather than left standing on the published page.
 
 A recent principle extends this outward, to the tools themselves. "Read the User's Manual" treats external-tool understanding as a prerequisite to collaboration design, not an optional afterthought. Before building a pattern on a platform feature, the agent reads the platform's own documentation and verifies the understanding against it, not against memory or experiential knowledge. The motivating incident was a per-turn enforcement hook that sat broken for two and a half months because an assumption about git's index mode never got checked. Methodology knowledge is versioned; tool knowledge has to be grounded the same way. The same discipline now reaches outbound work: before drafting a pull request for an external project, the agent reads that project's own contribution guide, its PR template, its CI gates, and a couple of recently merged requests, then drafts against those conventions instead of an internal default.
 
@@ -96,6 +102,8 @@ The newest addition targets the place where provenance leaks most reliably: the 
 Those same two are the ones that now carry mechanisms in the methodology itself, a version after the principle was named. A backlog item that settles something later items will build on records the coupling on itself, while the interface is still cheap to change; when the consuming item is eventually built, the record is checked against what actually happened, and the output that matters is the mismatch. A session's pending list states, per item, what the continuation requires, what it depends on, what order that forces, and what breaks if it is skipped. The rule bounds its own verbosity: an item is longer by exactly the causal links the receiver would otherwise rebuild, and an item with no dependency is stated plainly rather than padded with invented rationale. The planning face is still only named.
 
 Provenance also has an outward edge. The public mirror had been carrying real project and client names in its provenance lines, a confidentiality leak and, to an outside reader, a dead end. Those names are now reworded to keep the session and backlog id and drop the name, and the rule is methodology rather than habit. The framing stays honest: the scanner is a backstop and operator review the last gate, not a claim of impossibility.
+
+That outward edge has a sharp corollary: the scan that looks for a stray name before it can cross to the public mirror must not become the leak itself. Reporting a hit by quoting the name, or the search pattern that contains it, back into the transcript, the memory file, or the lessons log, the very append-only files being checked, would write the exposure into the record it was meant to protect. The scan now reports only generically, a clean result or line numbers, never the matched text, and an always-loaded pointer keeps the rule in view where the transcript is written.
 
 ---
 
@@ -133,13 +141,15 @@ That full-read intent needed a bound that worked. The mirror's two original size
 
 The bound set the file's total size, but a second target, how many entries to keep, could not hold alongside it at the length entries were actually written. The missing lever was per-entry length, not how many entries accumulate. Each one now targets about 600 characters, where the two targets meet, and an over-length entry is shortened or split rather than dropped.
 
+The lessons pipeline gained two more guards. The agent that mines a transcript for them, and a transcript on a sensitive project can hold real names, now has to keep every quoted excerpt and saved lesson name-free, by role rather than name, because that file propagates to the hub and into every future session's startup context; it states that propagation chain inline so the stakes are visible from where the writing happens, and recommends scrubbing names before analysis on any project that declares a privacy policy. And the hub's aggregation of those same lessons, which every project feeds, got the same discipline one level up plus a prune it had never had: a soft size bound, a per-entry ceiling, and a pass that archives lessons already codified into protocols, consolidates duplicates reported by several projects, and retires lessons from projects that no longer exist, each leaving a tombstone so nothing vanishes silently. The bound is an honest long-term target, since the first prune found the file mostly irreducible cross-project value rather than slack to compress.
+
 The loop keeps closing on itself. One recurring move, the user reshaping a proposal instead of answering it, showed up six times across four months in the reasoning lessons before it was promoted into a named rule: when the user reframes, the agent re-decomposes rather than defending its first framing. The way structured prose gets drafted changed from the same kind of evidence, one section at a time, written to a file the user edits in place instead of pasted into chat, a pattern borrowed from notebook collaboration and validated on a four-part blog series. The behavior was observed enough times to earn a protocol; the protocol now shapes the next session.
 
 ---
 
 ## The compound effect
 
-No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 180 features work together as a system, and the system learns. The count keeps moving because the methodology is in active use; the shape of what it covers, though, has stayed recognizable across every version.
+No single feature here is new. Pre-generation briefs, memory systems, feedback loops, they exist in various forms elsewhere. What is different is that 189 features work together as a system, and the system learns. The count keeps moving because the methodology is in active use; the shape of what it covers, though, has stayed recognizable across every version.
 
 A feedback observation from a spoke project becomes a backlog item in the central repository. That item becomes a protocol change. That change propagates to every project. The next session in any project benefits from an insight that started in a completely different context.
 
