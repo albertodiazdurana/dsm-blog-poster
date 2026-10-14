@@ -786,3 +786,37 @@ None of these made the framework more careful. They changed how it is built, so 
 Full post: https://take-ai-bite.com/blog/2026-09-24-tab-structural-fixes-release/
 
 #SoftwareEngineering #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite
+
+## Post 28: A bug can come back without your code changing (2026-10-14)
+
+**URL:** https://www.linkedin.com/posts/albertodiazdurana_humanaicollaboration-claudecode-aiagents-share-7516164667736481792-6O55/ (resolved from the shortlink `https://lnkd.in/p/dUpf92Ej` via a single 301; tracking params stripped)
+**Status:** Published 2026-10-14. /humanizer clean on draft v1 (249 words); post-publication re-check of the author's added paragraph below.
+**Blog post:** https://take-ai-bite.com/blog/2026-10-14-he-who-must-not-be-named-again/ (live; verified S43, HTTP 200, in /blog/ listing and RSS)
+**Source:** S43 Front E-shaped cross-post for "When Euphemisms Defeat He Who Must Not Be Named Again", the sequel to Post 26. Hub F-192 (v1.33.0) dedicated post. First-person engineering story, sibling shape to Post 26.
+**Hashtag set:** #AIEngineering #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite. Leads with #AIEngineering to keep the slug distinct from Post 27's `softwareengineering-`, Post 26's `contextengineering-`, Post 25's `multiagent-` and Post 24's `aisafety-`.
+**Lead-asset note (lesson 83/123):** opens on the CAUSE-frame (a fixed bug returns with no code change, because the threshold moved), not on the blog's opener (the Post 26 recap and "He came back"), and not on Post 26's lead (the bug I was not allowed to write down). No "Thin + King" repeat.
+**Slug observation (BL-023):** PREDICTION (pre-publication): hashtag-derived, on the declared basis that the opener is not a clean keyword phrase. Lead-3 `aiengineering-humanaicollaboration-claudecode` is 45 chars, under Post 26's fitting 50, so a length-bounded reading predicts lead-3 here. Confidence low per the S28 non-determinism finding. To be scored from the resolved canonical URL. **CONFIRMED (branch and count) / lead hashtag changed by the author:** actual slug `humanaicollaboration-claudecode-aiagents-share-7516164667736481792-6O55`, hashtag-derived, lead-3, `share` + activity id, the Posts 23-26 shape. The predicted string missed only because the author dropped #AIEngineering before posting, so the published set's lead-3 is HumanAICollaboration, ClaudeCode, AIAgents (40 chars, inside the 50 that fitted Post 26). Scored against the PUBLISHED hashtag set, read from the public post page, not the draft. Second data point after Post 27 for a length-bounded lead-N; the S28 non-determinism half of BL-023 is untouched.
+
+**Author edits between draft v1 and publication (read from the public post page, S43):**
+
+1. **Added** a paragraph 2 that names the safeguard's error token verbatim and defines it in one sentence. Not reproduced in this file on purpose: the euphemism discipline keeps the true name out of repo files a session may read, and this file is read in full when drafting the next post. The author's choice to name it publicly is deliberate and is the opposite move to Post 26's "Thin + King" riddle.
+2. **Dropped** #AIEngineering, leaving #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite.
+3. **Replaced** the "Full post:" link with a `lnkd.in` shortlink and moved the hashtags onto the same line.
+
+**Humanizer re-check on the published text (late, post-publication, per the BL-032 lesson):** the draft-v1 paragraphs are unchanged. The added paragraph 2 opens as a definition ("The [token] error is a safeguard block ... that triggers when ..."), a mild rule-35 definitional opener; the extracted page text also shows "the models internal" and "someone elses" without apostrophes and two paragraph breaks collapsed, which may be an artifact of the page's structured-data text rather than the post itself (not verified). Nothing else matched. As with Post 26, a pass run after publication verifies nothing about the decision to publish.
+
+**Text (draft v1):**
+
+A bug can come back without a single line of your code changing.
+
+Last month I wrote about the bug I was not allowed to write down: a safety classifier refusing my sessions at boot, set off by the very words I kept recording about it. I reworded one instruction and filed it as solved.
+
+Then Opus 5.5 started refusing again. My files had not changed. The line had. Every model generation tightens what it will accept, and text that passed on Opus 5 now tripped on 5.5. When you build on someone else's safeguards, you do not get a vote on where the line moves. You find out at boot.
+
+This time there was no single culprit. Three things, each harmless alone, added up to just enough: an old file name used as a path, a few marker phrases in a formatting table, and one section that still read like a confession. Removing any one did nothing. Removing all three did. Every test ran on the strict model with me at the keyboard; the assistant doing the cutting ran on Opus 4.8 and could not even see it.
+
+Fixing it twice taught me not to count on remembering a third time. The framework now has a doorman: a hook on every file a session reads at boot, which refuses to let the old name back in. It will not catch every new phrasing. It does close the loop where my own memory system kept copying the problem forward.
+
+Full post: https://take-ai-bite.com/blog/2026-10-14-he-who-must-not-be-named-again/
+
+#AIEngineering #HumanAICollaboration #ClaudeCode #AIAgents #TakeAIBite

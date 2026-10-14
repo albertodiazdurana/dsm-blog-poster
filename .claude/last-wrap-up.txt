@@ -1,11 +1,4 @@
-session: 42
-date: 2026-10-13
+session: 43
+date: 2026-10-14
 type: full
-note: Full wrap-up. Closed BL-585 Step 8 (spot-check: all S41 migration claims
-  reproduce) and passed Step 9: strict-model Opus 5.5 /dsm-go boot of this spoke
-  ran clean. Reported to Central via the §5 operator line + an approved inbox
-  entry. S41 (Opus 4.8, BL-585 Step 8, /dsm-align 1.29.0->1.33.1) had ended
-  without a wrap-up; folded into MEMORY here. 3 [auto] lessons pushed to Central.
-  Marker written BEFORE the commit this time (Step 12 ordering leaves it dirty).
-  Compact mirror 1.51x over the 61,440 B bound (BL-030). Carried: BL-035 Front F,
-  Front A stack decision (BL-029/034/035), BL-032 disposition. STAA: no.
+note: Marker written before the Step 9 commit (deliberate deviation from Step 12 order, per the S42 lesson) so it ships in the wrap-up commit instead of sitting dirty on main.
